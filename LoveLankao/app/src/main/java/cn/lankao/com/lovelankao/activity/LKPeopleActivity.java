@@ -52,7 +52,7 @@ public class LKPeopleActivity extends AppCompatActivity implements ILKPeopleView
         MapStatusUpdate mMapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mMapStatus);
         map.setMapStatus(mMapStatusUpdate);
         bitmap = BitmapDescriptorFactory.fromResource(R.drawable.ic_common_map_meishi);
-        option = new MarkerOptions().zIndex(0).period(10).icon(bitmap);
+        option = new MarkerOptions().zIndex(0).period(10).icon(bitmap).animateType(MarkerOptions.MarkerAnimateType.none);
         presenter = new LKPeoplePresenter(this);
         presenter.getPeople();
     }

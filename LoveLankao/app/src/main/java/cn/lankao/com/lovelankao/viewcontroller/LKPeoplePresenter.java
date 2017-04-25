@@ -23,7 +23,7 @@ public class LKPeoplePresenter implements ILKPeoplePresenter{
         query.findObjects(new FindListener<MyUser>() {
             @Override
             public void done(List<MyUser> list, BmobException e) {
-                if (list.size() > 0){
+                if (list != null && list.size() > 0){
                     for (int i=0;i<list.size();i++){
                         view.setMapMarker(list.get(i));
                     }

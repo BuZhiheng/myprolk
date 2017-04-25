@@ -49,7 +49,6 @@ public class LBSActivityController implements View.OnClickListener {
         initView();
         initData(CommonCode.ADVERT_OTHER);
     }
-
     private void initData(int type) {
         map.clear();
         data = new ArrayList<>();

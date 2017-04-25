@@ -18308,6 +18308,23 @@ cn.lankao.com.lovelankao.adapter.AdvertBannerHolder$1 -> cn.lankao.com.lovelanka
     cn.lankao.com.lovelankao.adapter.AdvertBannerHolder this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.adapter.AdvertBannerHolder,android.content.Context,java.lang.String) -> <init>
     void onClick(android.view.View) -> onClick
+cn.lankao.com.lovelankao.adapter.BannerIndexHolder -> cn.lankao.com.lovelankao.adapter.BannerIndexHolder:
+    android.view.View view -> view
+    android.widget.FrameLayout fLayout -> fLayout
+    android.widget.ImageView iv -> iv
+    android.widget.TextView tv -> tv
+    android.widget.TextView tvIndex -> tvIndex
+    int size -> size
+    void <init>(int) -> <init>
+    android.view.View createView(android.content.Context) -> createView
+    void UpdateUI(android.content.Context,int,cn.lankao.com.lovelankao.model.LanKaoNews) -> UpdateUI
+    void UpdateUI(android.content.Context,int,java.lang.Object) -> UpdateUI
+cn.lankao.com.lovelankao.adapter.BannerIndexHolder$1 -> cn.lankao.com.lovelankao.adapter.BannerIndexHolder$1:
+    android.content.Context val$context -> val$context
+    cn.lankao.com.lovelankao.model.LanKaoNews val$news -> val$news
+    cn.lankao.com.lovelankao.adapter.BannerIndexHolder this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.adapter.BannerIndexHolder,android.content.Context,cn.lankao.com.lovelankao.model.LanKaoNews) -> <init>
+    void onClick(android.view.View) -> onClick
 cn.lankao.com.lovelankao.adapter.ChatRoomAdapter -> cn.lankao.com.lovelankao.adapter.ChatRoomAdapter:
     android.content.Context context -> context
     java.util.List data -> data
@@ -18723,9 +18740,45 @@ cn.lankao.com.lovelankao.adapter.WzMsgAdapter$MyViewHolder -> cn.lankao.com.love
     cn.lankao.com.lovelankao.adapter.WzMsgAdapter this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.adapter.WzMsgAdapter,android.view.View) -> <init>
 cn.lankao.com.lovelankao.fragment.IndexFragment -> cn.lankao.com.lovelankao.fragment.IndexFragment:
+    cn.lankao.com.lovelankao.ipresenter.IIndexPresenter presenter -> presenter
     android.view.View view -> view
+    android.support.v4.widget.SwipeRefreshLayout refreshLayout -> refreshLayout
+    com.bigkoo.convenientbanner.ConvenientBanner banner -> banner
+    android.support.v7.widget.RecyclerView rvService -> rvService
+    android.support.v7.widget.RecyclerView rvNews -> rvNews
+    com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader header -> header
+    cn.lankao.com.lovelankao.adapter.LKNewsAdapter adapterNews -> adapterNews
+    cn.lankao.com.lovelankao.adapter.IndexServiceAdapter adapterService -> adapterService
     void <init>() -> <init>
     android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void initView() -> initView
+    void onClick(android.view.View) -> onClick
+    void showToast(java.lang.String) -> showToast
+    void setBannerAndNews(java.util.List,java.util.List) -> setBannerAndNews
+    void setMainService(java.util.List) -> setMainService
+    void setRefreshStop() -> setRefreshStop
+    void showNewVersion(cn.lankao.com.lovelankao.model.Setting) -> showNewVersion
+    cn.lankao.com.lovelankao.ipresenter.IIndexPresenter access$000(cn.lankao.com.lovelankao.fragment.IndexFragment) -> access$000
+cn.lankao.com.lovelankao.fragment.IndexFragment$$ViewBinder -> cn.lankao.com.lovelankao.fragment.IndexFragment$$ViewBinder:
+    void <init>() -> <init>
+    void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.fragment.IndexFragment,java.lang.Object) -> bind
+    void unbind(cn.lankao.com.lovelankao.fragment.IndexFragment) -> unbind
+    void unbind(java.lang.Object) -> unbind
+    void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object) -> bind
+cn.lankao.com.lovelankao.fragment.IndexFragment$1 -> cn.lankao.com.lovelankao.fragment.IndexFragment$1:
+    cn.lankao.com.lovelankao.fragment.IndexFragment this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.fragment.IndexFragment) -> <init>
+    void onRefresh() -> onRefresh
+cn.lankao.com.lovelankao.fragment.IndexFragment$2 -> cn.lankao.com.lovelankao.fragment.IndexFragment$2:
+    java.util.List val$banners -> val$banners
+    cn.lankao.com.lovelankao.fragment.IndexFragment this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.fragment.IndexFragment,java.util.List) -> <init>
+    cn.lankao.com.lovelankao.adapter.BannerIndexHolder createHolder() -> createHolder
+    java.lang.Object createHolder() -> createHolder
+cn.lankao.com.lovelankao.fragment.IndexFragment$3 -> cn.lankao.com.lovelankao.fragment.IndexFragment$3:
+    cn.lankao.com.lovelankao.fragment.IndexFragment this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.fragment.IndexFragment) -> <init>
+    void onClick(android.content.DialogInterface,int) -> onClick
 cn.lankao.com.lovelankao.fragment.MainFragment -> cn.lankao.com.lovelankao.fragment.MainFragment:
     android.view.View view -> view
     void <init>() -> <init>
@@ -18773,6 +18826,8 @@ cn.lankao.com.lovelankao.fragment.TempFragment$2 -> cn.lankao.com.lovelankao.fra
     void onError(java.lang.Throwable) -> onError
     void onNext(java.lang.String) -> onNext
     void onNext(java.lang.Object) -> onNext
+cn.lankao.com.lovelankao.ipresenter.IIndexPresenter -> cn.lankao.com.lovelankao.ipresenter.IIndexPresenter:
+    void getData() -> getData
 cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter -> cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter:
     void getPeople() -> getPeople
 cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter -> cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter:
@@ -18781,6 +18836,12 @@ cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter -> cn.lankao.com.lovelankao
     void getCitys() -> getCitys
 cn.lankao.com.lovelankao.ipresenter.IWzPresenter -> cn.lankao.com.lovelankao.ipresenter.IWzPresenter:
     void getWz(android.widget.EditText,android.widget.EditText,android.widget.EditText) -> getWz
+cn.lankao.com.lovelankao.iview.IIndexView -> cn.lankao.com.lovelankao.iview.IIndexView:
+    void showToast(java.lang.String) -> showToast
+    void setBannerAndNews(java.util.List,java.util.List) -> setBannerAndNews
+    void setMainService(java.util.List) -> setMainService
+    void setRefreshStop() -> setRefreshStop
+    void showNewVersion(cn.lankao.com.lovelankao.model.Setting) -> showNewVersion
 cn.lankao.com.lovelankao.iview.ILKPeopleView -> cn.lankao.com.lovelankao.iview.ILKPeopleView:
     void showToast(java.lang.String) -> showToast
     void setMapMarker(cn.lankao.com.lovelankao.model.MyUser) -> setMapMarker
@@ -19722,22 +19783,16 @@ cn.lankao.com.lovelankao.viewcontroller.CookActivityController$2 -> cn.lankao.co
     void <init>(cn.lankao.com.lovelankao.viewcontroller.CookActivityController) -> <init>
     void toBottom() -> toBottom
 cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController -> cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController:
-    android.content.Context context -> context
-    android.view.View view -> view
-    android.support.v4.widget.SwipeRefreshLayout refreshLayout -> refreshLayout
-    cn.lankao.com.lovelankao.adapter.IndexAdapter adapter -> adapter
-    void <init>(android.content.Context,android.view.View) -> <init>
-    void initView() -> initView
-    void initData() -> initData
+    cn.lankao.com.lovelankao.iview.IIndexView view -> view
+    void <init>(cn.lankao.com.lovelankao.iview.IIndexView) -> <init>
     void initSetting() -> initSetting
-    void onRefresh() -> onRefresh
-    void onClick(android.view.View) -> onClick
-    android.support.v4.widget.SwipeRefreshLayout access$000(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController) -> access$000
-    android.content.Context access$100(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController) -> access$100
+    void getData() -> getData
+    cn.lankao.com.lovelankao.iview.IIndexView access$000(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController) -> access$000
 cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$1 -> cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$1:
     cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController) -> <init>
-    void success() -> success
+    void done(java.util.List,cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object,java.lang.Object) -> done
 cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$2 -> cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$2:
     cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController) -> <init>
@@ -19747,6 +19802,11 @@ cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$2$1 -> cn.lankao
     cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$2 this$1 -> this$1
     void <init>(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$2) -> <init>
     void onClick(android.content.DialogInterface,int) -> onClick
+cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$3 -> cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController$3:
+    cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController) -> <init>
+    void done(java.util.List,cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object,java.lang.Object) -> done
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController -> cn.lankao.com.lovelankao.viewcontroller.JockActivityController:
     java.lang.String url -> url
     cn.lankao.com.lovelankao.activity.JockActivity context -> context
