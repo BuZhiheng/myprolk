@@ -18790,9 +18790,38 @@ cn.lankao.com.lovelankao.fragment.MineFragment -> cn.lankao.com.lovelankao.fragm
     android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
     void onDestroy() -> onDestroy
 cn.lankao.com.lovelankao.fragment.TalkFragment -> cn.lankao.com.lovelankao.fragment.TalkFragment:
+    cn.lankao.com.lovelankao.ipresenter.ITalkPresnter presnter -> presnter
     android.view.View view -> view
+    android.support.v7.widget.RecyclerView recyclerView -> recyclerView
+    android.support.v4.widget.SwipeRefreshLayout refresh -> refresh
+    android.widget.TextView tvMsg -> tvMsg
+    cn.lankao.com.lovelankao.adapter.SquareAdapter adapter -> adapter
+    int cout -> cout
     void <init>() -> <init>
     android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void initView() -> initView
+    void refresh(cn.lankao.com.lovelankao.model.Square) -> refresh
+    void userMsg(cn.lankao.com.lovelankao.model.MyUser) -> userMsg
+    void onClick(android.view.View) -> onClick
+    void setData(java.util.List) -> setData
+    void setReadedMsg() -> setReadedMsg
+    int access$002(cn.lankao.com.lovelankao.fragment.TalkFragment,int) -> access$002
+    int access$000(cn.lankao.com.lovelankao.fragment.TalkFragment) -> access$000
+    cn.lankao.com.lovelankao.ipresenter.ITalkPresnter access$100(cn.lankao.com.lovelankao.fragment.TalkFragment) -> access$100
+cn.lankao.com.lovelankao.fragment.TalkFragment$$ViewBinder -> cn.lankao.com.lovelankao.fragment.TalkFragment$$ViewBinder:
+    void <init>() -> <init>
+    void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.fragment.TalkFragment,java.lang.Object) -> bind
+    void unbind(cn.lankao.com.lovelankao.fragment.TalkFragment) -> unbind
+    void unbind(java.lang.Object) -> unbind
+    void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object) -> bind
+cn.lankao.com.lovelankao.fragment.TalkFragment$1 -> cn.lankao.com.lovelankao.fragment.TalkFragment$1:
+    cn.lankao.com.lovelankao.fragment.TalkFragment this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.fragment.TalkFragment) -> <init>
+    void onRefresh() -> onRefresh
+cn.lankao.com.lovelankao.fragment.TalkFragment$2 -> cn.lankao.com.lovelankao.fragment.TalkFragment$2:
+    cn.lankao.com.lovelankao.fragment.TalkFragment this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.fragment.TalkFragment) -> <init>
+    void toBottom() -> toBottom
 cn.lankao.com.lovelankao.fragment.TempFragment -> cn.lankao.com.lovelankao.fragment.TempFragment:
     java.lang.String url -> url
     android.support.v7.widget.RecyclerView rv -> rv
@@ -18832,6 +18861,9 @@ cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter -> cn.lankao.com.lovelank
     void getPeople() -> getPeople
 cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter -> cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter:
     void getMyMsg() -> getMyMsg
+cn.lankao.com.lovelankao.ipresenter.ITalkPresnter -> cn.lankao.com.lovelankao.ipresenter.ITalkPresnter:
+    void getData(int) -> getData
+    void onMsgClick() -> onMsgClick
 cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter -> cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter:
     void getCitys() -> getCitys
 cn.lankao.com.lovelankao.ipresenter.IWzPresenter -> cn.lankao.com.lovelankao.ipresenter.IWzPresenter:
@@ -18848,6 +18880,9 @@ cn.lankao.com.lovelankao.iview.ILKPeopleView -> cn.lankao.com.lovelankao.iview.I
 cn.lankao.com.lovelankao.iview.ISquareMsgView -> cn.lankao.com.lovelankao.iview.ISquareMsgView:
     void showToast(java.lang.String) -> showToast
     void setComment(java.util.List) -> setComment
+cn.lankao.com.lovelankao.iview.ITalkView -> cn.lankao.com.lovelankao.iview.ITalkView:
+    void setData(java.util.List) -> setData
+    void setReadedMsg() -> setReadedMsg
 cn.lankao.com.lovelankao.iview.IWzCityView -> cn.lankao.com.lovelankao.iview.IWzCityView:
     void showToast(java.lang.String) -> showToast
     void setCity(java.util.List) -> setCity
@@ -20299,41 +20334,21 @@ cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController$3$1 -> cn.l
     void <init>(cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController$3) -> <init>
     void done(java.lang.Object,cn.bmob.v3.exception.BmobException) -> done
 cn.lankao.com.lovelankao.viewcontroller.TalkController -> cn.lankao.com.lovelankao.viewcontroller.TalkController:
-    android.content.Context context -> context
-    android.view.View view -> view
-    android.support.v7.widget.RecyclerView recyclerView -> recyclerView
-    android.support.v4.widget.SwipeRefreshLayout refresh -> refresh
-    cn.lankao.com.lovelankao.adapter.SquareAdapter adapter -> adapter
-    android.widget.TextView tvMsg -> tvMsg
-    int cout -> cout
-    boolean isRefresh -> isRefresh
-    boolean canLoadMore -> canLoadMore
-    void <init>(android.content.Context,android.view.View) -> <init>
-    void initView() -> initView
-    void initData() -> initData
-    void onClick(android.view.View) -> onClick
-    void refresh(cn.lankao.com.lovelankao.model.Square) -> refresh
-    void userMsg(cn.lankao.com.lovelankao.model.MyUser) -> userMsg
-    void onRefresh() -> onRefresh
-    boolean access$000(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$000
-    boolean access$102(cn.lankao.com.lovelankao.viewcontroller.TalkController,boolean) -> access$102
-    boolean access$002(cn.lankao.com.lovelankao.viewcontroller.TalkController,boolean) -> access$002
-    int access$200(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$200
-    int access$202(cn.lankao.com.lovelankao.viewcontroller.TalkController,int) -> access$202
-    void access$300(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$300
-    cn.lankao.com.lovelankao.adapter.SquareAdapter access$400(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$400
-    android.support.v4.widget.SwipeRefreshLayout access$500(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$500
-    android.content.Context access$600(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$600
-    android.widget.TextView access$700(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$700
+    cn.lankao.com.lovelankao.iview.ITalkView view -> view
+    void <init>(cn.lankao.com.lovelankao.iview.ITalkView) -> <init>
+    void getData(int) -> getData
+    void onMsgClick() -> onMsgClick
+    cn.lankao.com.lovelankao.iview.ITalkView access$000(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> access$000
 cn.lankao.com.lovelankao.viewcontroller.TalkController$1 -> cn.lankao.com.lovelankao.viewcontroller.TalkController$1:
-    cn.lankao.com.lovelankao.viewcontroller.TalkController this$0 -> this$0
-    void <init>(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> <init>
-    void toBottom() -> toBottom
-cn.lankao.com.lovelankao.viewcontroller.TalkController$2 -> cn.lankao.com.lovelankao.viewcontroller.TalkController$2:
     cn.lankao.com.lovelankao.viewcontroller.TalkController this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> <init>
     void done(java.util.List,cn.bmob.v3.exception.BmobException) -> done
     void done(java.lang.Object,java.lang.Object) -> done
+cn.lankao.com.lovelankao.viewcontroller.TalkController$2 -> cn.lankao.com.lovelankao.viewcontroller.TalkController$2:
+    cn.lankao.com.lovelankao.viewcontroller.TalkController this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> <init>
+    void done(cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object) -> done
 cn.lankao.com.lovelankao.viewcontroller.TalkController$3 -> cn.lankao.com.lovelankao.viewcontroller.TalkController$3:
     cn.lankao.com.lovelankao.viewcontroller.TalkController this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.viewcontroller.TalkController) -> <init>
