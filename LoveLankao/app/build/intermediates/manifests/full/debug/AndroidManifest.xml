@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.lankao.com.lovelankao"
+    android:versionCode="8"
+    android:versionName="1.3.2" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <permission
+        android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <application
+        android:name="cn.lankao.com.lovelankao.LApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="cn.lankao.com.lovelankao.activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 百度地图配置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="RBzZyrCY0SoyR7EG5X3rI2oPkGarMLPf" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- Bmob自動更新功能 -->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        //QQ分享
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105245681" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.AdvertMsgActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.AdvertDetailActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.AllBusinessActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.ChatRoomActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.CookActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.CommentActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.JockActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.LKNewsActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.LKNewsMsgActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.LKPeopleActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.LBSActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.LoginActivity" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.PicShowActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.RegisterActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.ReadWeixinActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.SettingActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.SquareActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.SquareMsgActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.SquareSendActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.ShopLocationActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.TopActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.WebViewActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.WZCityActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.WZActivity" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.wxapi.WXEntryActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
