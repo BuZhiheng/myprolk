@@ -9014,6 +9014,8 @@ cn.lankao.com.lovelankao.activity.LKPeopleActivity
 cn.lankao.com.lovelankao.activity.LKPeopleActivity: cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter presenter
 cn.lankao.com.lovelankao.activity.LKPeopleActivity: com.baidu.mapapi.map.MapView mapView
 cn.lankao.com.lovelankao.activity.LKPeopleActivity: com.baidu.mapapi.map.BaiduMap map
+cn.lankao.com.lovelankao.activity.LKPeopleActivity: com.baidu.mapapi.map.BitmapDescriptor bitmap
+cn.lankao.com.lovelankao.activity.LKPeopleActivity: com.baidu.mapapi.map.MarkerOptions option
 cn.lankao.com.lovelankao.activity.LKPeopleActivity: LKPeopleActivity()
 cn.lankao.com.lovelankao.activity.LKPeopleActivity: void onCreate(android.os.Bundle)
 cn.lankao.com.lovelankao.activity.LKPeopleActivity: void initView()
@@ -10764,6 +10766,8 @@ cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: com.oguzdev.circu
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: com.oguzdev.circularfloatingactionmenu.library.SubActionButton btn5
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu menu
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: java.util.List data
+cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: com.baidu.mapapi.map.BitmapDescriptor bitmap
+cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: com.baidu.mapapi.map.MarkerOptions option
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: LBSActivityController(cn.lankao.com.lovelankao.activity.LBSActivity)
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: void initData(int)
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController: void setMapMarker()

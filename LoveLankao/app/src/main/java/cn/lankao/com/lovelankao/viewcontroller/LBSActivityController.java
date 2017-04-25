@@ -42,6 +42,8 @@ public class LBSActivityController implements View.OnClickListener {
     private SubActionButton btn1, btn2, btn3, btn4, btn5;
     private FloatingActionMenu menu;
     private List<AdvertNormal> data;
+    private BitmapDescriptor bitmap;
+    private MarkerOptions option;
     public LBSActivityController(LBSActivity context) {
         this.context = context;
         initView();
@@ -69,20 +71,15 @@ public class LBSActivityController implements View.OnClickListener {
     private void setMapMarker() {
         AdvertNormal advert;
         LatLng ll;
-        BitmapDescriptor bitmap;
-        MarkerOptions option;
+        bitmap = BitmapDescriptorFactory.fromResource(R.drawable.ic_common_map_meishi);
+        option = new MarkerOptions().icon(bitmap).zIndex(0).period(10).animateType(MarkerOptions.MarkerAnimateType.drop);
         for(int i=0;i<data.size();i++){
-            Marker marker;
             advert = data.get(i);
             if (advert.getAdvLat() != null && advert.getAdvLng() != null){
                 ll = new LatLng(advert.getAdvLat(), advert.getAdvLng());
-                bitmap = BitmapDescriptorFactory.fromResource(R.drawable.ic_common_map_meishi);
-                option = new MarkerOptions().position(ll).icon(bitmap).zIndex(0).period(10);
-                option.animateType(MarkerOptions.MarkerAnimateType.drop);
-                marker = (Marker) map.addOverlay(option);
                 Bundle b = new Bundle();
                 b.putSerializable("data",data.get(i));
-                marker.setExtraInfo(b);
+                map.addOverlay(option.position(ll)).setExtraInfo(b);
             }
         }
     }

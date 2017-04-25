@@ -18048,6 +18048,8 @@ cn.lankao.com.lovelankao.activity.LKPeopleActivity -> cn.lankao.com.lovelankao.a
     cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter presenter -> presenter
     com.baidu.mapapi.map.MapView mapView -> mapView
     com.baidu.mapapi.map.BaiduMap map -> map
+    com.baidu.mapapi.map.BitmapDescriptor bitmap -> bitmap
+    com.baidu.mapapi.map.MarkerOptions option -> option
     void <init>() -> <init>
     void onCreate(android.os.Bundle) -> onCreate
     void initView() -> initView
@@ -19798,6 +19800,8 @@ cn.lankao.com.lovelankao.viewcontroller.LBSActivityController -> cn.lankao.com.l
     com.oguzdev.circularfloatingactionmenu.library.SubActionButton btn5 -> btn5
     com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu menu -> menu
     java.util.List data -> data
+    com.baidu.mapapi.map.BitmapDescriptor bitmap -> bitmap
+    com.baidu.mapapi.map.MarkerOptions option -> option
     void <init>(cn.lankao.com.lovelankao.activity.LBSActivity) -> <init>
     void initData(int) -> initData
     void setMapMarker() -> setMapMarker

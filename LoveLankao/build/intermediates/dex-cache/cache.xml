@@ -1,3 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\libs\gson-2.6.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="cea3a9be08d0dcf89783b2cc87c8787fdb2a0d12">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\gson-2.6.2_2cded8d1ae2d5859ed0a1cde4420119255f87f65.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.bigkoo\convenientbanner\2.0.5\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b99798f653c15a17af6779bb9f01a66f2ee6e6ef">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.bigkoo-convenientbanner-2.0.5_3ced89f6eeeead4466f3c4832fc389d90e472994.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="db07e261b40c27240f44c368cb66682b2269c3c1">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\cn.bmob.android-bmob-sdk-3.5.3_583500006cdea2c92752201a9897ad935101d57d.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\libs\baidumapapi_base_v3_7_3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="26aec1b74c9e42fb4f27432b79cf9e65365f5612">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\baidumapapi_base_v3_7_3_b3eca7a3131f249a8d22fe79c9c447a7d2044ed6.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5ddf5f4817565c9db82613c16093f76640a54e15">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.android.support-support-v13-23.1.1_1ee87056cac5aaaa26944a4f40ad2449792f9a27.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_d6ae9b2507df2ad720970a3d5f9d6a64eeadd84d.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f4d7a07120e76988f3a15403838d323c2400db83">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_fd939a46049645d486e4cf28bde71f0e0abbe2e0.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\libs\rxandroid-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="84127ad71f76445b8215afceb38e8b05f58eafa6">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\rxandroid-1.2.0_480a558003fa76b83754ac1c324abd382910a6e0.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\libs\rxjava-1.1.6.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="79f0c1e382e8b62e91064ef6b71130dda83f338e">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\rxjava-1.1.6_d8437cd9504012a9f7eff4080c1e112a9522ab1d.jar" />
+    </item>
+    <item
+        jar="C:\Users\buzhiheng\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\butterknife-7.0.1_54d813de24836169580a73b6596a433dce8e7c6b.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_799981ac5c7e7536d773ed85cc89e873519a8e76.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_dbc46ca55ad10d9dc8c17878c86bfc9c4a137904.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.oguzdev\CircularFloatingActionMenu\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.oguzdev-CircularFloatingActionMenu-1.0.2_37ecbea196a9375cc05c6d6d8df6f70c3a7230f9.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\libs\okio-1.7.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f64e0f80ef26fbc722b4bc9f024370d5b1e8f6d6">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\okio-1.7.0_42c663bfca0f6cc4e7565f1aeb10d97567f6c1a0.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.bartoszlipinski\recyclerviewheader2\2.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3324ea9b0bf0491c7d2304ffba1322d9c11ef017">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.bartoszlipinski-recyclerviewheader2-2.0.1_3cbb5aa4f113326a841d20b6a838cb2ab9bf6e5d.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\libs\baidumapapi_util_v3_7_3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="77f23565c6bc14129d2ec152c809161343cdeaad">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\baidumapapi_util_v3_7_3_b632655ac1f86991f8e7ef58d54a1b774748da69.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.bm.photoview\library\1.4.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="772452261af8eb9c1df9ae71fb621afe393277da">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.bm.photoview-library-1.4.1_fbe1bed30a63ed9bcb52f21cb61f99f3a97582b9.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\libs\baidumapapi_map_v3_7_3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b18498f0ff59163574118729da41b7e89971d713">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\baidumapapi_map_v3_7_3_51a7bf00ec9d1f213074eaea2dd71a01d5d1e44a.jar" />
+    </item>
+    <item
+        jar="C:\Users\buzhiheng\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\eventbus-3.0.0_cc804283d9864169d34fc0f34748ef78c2ff263c.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="11b09244aedaa51bfd09269637be7c32c60da314">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\libammsdk_8684dd8b41bc486ddcf1c53931963c3a71d7e4e6.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_82dc1c6a0bc803405b812eb6a199861a952ad927.jar" />
+    </item>
+    <item
+        jar="D:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_7c3d3f95d8ab53d18f101dcf68ec97190430e6fc.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\libs\locSDK_6.13.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\locSDK_6.13_b574dd298e19f905d5858b391a2b044ea47d1c1c.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\org.xutils\xutils\3.3.26\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3a2244dfa317fddb1eec0bbcd1b68c74f93b13c5">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\org.xutils-xutils-3.3.26_409a785a44e26e44c559145be521e39c18c44f21.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\libs\BmobSDK_3.5.3_20161116.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="33ab1fe71bed8c534fd2d48d39a407c33c7c46f3">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\BmobSDK_3.5.3_20161116_578507da5b89b87b078b075d4ced1dd0cfd752ea.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\libs\open_sdk_r5509.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="538ea8fb21ea76e8cb424598ac38127cb3344d79">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\open_sdk_r5509_3ac7aeb962be6132749dc34ce2008c904efd1b7b.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\cn.bmob.android\bmob-sdk\3.5.3\jars\libs\okhttp-3.3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e009af854d43130a9a13bcba900ddd1124e835d5">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\okhttp-3.3.1_4810a0b195901394a8aad0b4129fcb2f4b73b1e9.jar" />
+    </item>
+    <item
+        jar="E:\GIT\LKpro\LoveLankao\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\GIT\LKpro\LoveLankao\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_6079caf26f8e83275b6cdcf81b2d78adf1160fb8.jar" />
+    </item>
+
+</items>
