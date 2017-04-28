@@ -31,6 +31,7 @@ import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.model.LanKaoNews;
 import cn.lankao.com.lovelankao.model.MainService;
 import cn.lankao.com.lovelankao.model.Setting;
+import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.viewcontroller.IndexFragmentController;
 import cn.lankao.com.lovelankao.widget.MyDialog;
 /**
@@ -118,6 +119,7 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
     }
     @Override
     public void showToast(String toast) {
+        ToastUtil.show(toast);
     }
     @Override
     public void setBannerAndNews(final List<LanKaoNews> banners,final List<LanKaoNews> news) {

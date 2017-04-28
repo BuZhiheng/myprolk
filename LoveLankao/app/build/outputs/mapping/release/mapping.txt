@@ -18805,6 +18805,7 @@ cn.lankao.com.lovelankao.fragment.TalkFragment -> cn.lankao.com.lovelankao.fragm
     void onClick(android.view.View) -> onClick
     void setData(java.util.List) -> setData
     void setReadedMsg() -> setReadedMsg
+    void setRefreshStop() -> setRefreshStop
     int access$002(cn.lankao.com.lovelankao.fragment.TalkFragment,int) -> access$002
     int access$000(cn.lankao.com.lovelankao.fragment.TalkFragment) -> access$000
     cn.lankao.com.lovelankao.ipresenter.ITalkPresnter access$100(cn.lankao.com.lovelankao.fragment.TalkFragment) -> access$100
@@ -18883,6 +18884,7 @@ cn.lankao.com.lovelankao.iview.ISquareMsgView -> cn.lankao.com.lovelankao.iview.
 cn.lankao.com.lovelankao.iview.ITalkView -> cn.lankao.com.lovelankao.iview.ITalkView:
     void setData(java.util.List) -> setData
     void setReadedMsg() -> setReadedMsg
+    void setRefreshStop() -> setRefreshStop
 cn.lankao.com.lovelankao.iview.IWzCityView -> cn.lankao.com.lovelankao.iview.IWzCityView:
     void showToast(java.lang.String) -> showToast
     void setCity(java.util.List) -> setCity
@@ -19425,10 +19427,16 @@ cn.lankao.com.lovelankao.utils.MyLocationClient -> cn.lankao.com.lovelankao.util
     com.baidu.location.LocationClient locationClient -> locationClient
     void <init>() -> <init>
     void locSingle(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener) -> locSingle
+    void loc(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener) -> loc
+    void stopLoc() -> stopLoc
     void initLocation() -> initLocation
     com.baidu.location.LocationClient access$000() -> access$000
     com.baidu.location.LocationClient access$002(com.baidu.location.LocationClient) -> access$002
 cn.lankao.com.lovelankao.utils.MyLocationClient$1 -> cn.lankao.com.lovelankao.utils.MyLocationClient$1:
+    cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener val$locationListener -> val$locationListener
+    void <init>(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener) -> <init>
+    void onReceiveLocation(com.baidu.location.BDLocation) -> onReceiveLocation
+cn.lankao.com.lovelankao.utils.MyLocationClient$2 -> cn.lankao.com.lovelankao.utils.MyLocationClient$2:
     cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener val$locationListener -> val$locationListener
     void <init>(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener) -> <init>
     void onReceiveLocation(com.baidu.location.BDLocation) -> onReceiveLocation

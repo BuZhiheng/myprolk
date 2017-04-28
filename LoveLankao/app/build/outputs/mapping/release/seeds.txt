@@ -9771,6 +9771,7 @@ cn.lankao.com.lovelankao.fragment.TalkFragment: void userMsg(cn.lankao.com.lovel
 cn.lankao.com.lovelankao.fragment.TalkFragment: void onClick(android.view.View)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void setData(java.util.List)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void setReadedMsg()
+cn.lankao.com.lovelankao.fragment.TalkFragment: void setRefreshStop()
 cn.lankao.com.lovelankao.fragment.TalkFragment: int access$002(cn.lankao.com.lovelankao.fragment.TalkFragment,int)
 cn.lankao.com.lovelankao.fragment.TalkFragment: int access$000(cn.lankao.com.lovelankao.fragment.TalkFragment)
 cn.lankao.com.lovelankao.fragment.TalkFragment: cn.lankao.com.lovelankao.ipresenter.ITalkPresnter access$100(cn.lankao.com.lovelankao.fragment.TalkFragment)
@@ -9849,6 +9850,7 @@ cn.lankao.com.lovelankao.iview.ISquareMsgView: void setComment(java.util.List)
 cn.lankao.com.lovelankao.iview.ITalkView
 cn.lankao.com.lovelankao.iview.ITalkView: void setData(java.util.List)
 cn.lankao.com.lovelankao.iview.ITalkView: void setReadedMsg()
+cn.lankao.com.lovelankao.iview.ITalkView: void setRefreshStop()
 cn.lankao.com.lovelankao.iview.IWzCityView
 cn.lankao.com.lovelankao.iview.IWzCityView: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.iview.IWzCityView: void setCity(java.util.List)
@@ -10391,6 +10393,8 @@ cn.lankao.com.lovelankao.utils.MyLocationClient
 cn.lankao.com.lovelankao.utils.MyLocationClient: com.baidu.location.LocationClient locationClient
 cn.lankao.com.lovelankao.utils.MyLocationClient: MyLocationClient()
 cn.lankao.com.lovelankao.utils.MyLocationClient: void locSingle(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener)
+cn.lankao.com.lovelankao.utils.MyLocationClient: void loc(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener)
+cn.lankao.com.lovelankao.utils.MyLocationClient: void stopLoc()
 cn.lankao.com.lovelankao.utils.MyLocationClient: void initLocation()
 cn.lankao.com.lovelankao.utils.MyLocationClient: com.baidu.location.LocationClient access$000()
 cn.lankao.com.lovelankao.utils.MyLocationClient: com.baidu.location.LocationClient access$002(com.baidu.location.LocationClient)
@@ -10398,6 +10402,10 @@ cn.lankao.com.lovelankao.utils.MyLocationClient$1
 cn.lankao.com.lovelankao.utils.MyLocationClient$1: cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener val$locationListener
 cn.lankao.com.lovelankao.utils.MyLocationClient$1: MyLocationClient$1(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener)
 cn.lankao.com.lovelankao.utils.MyLocationClient$1: void onReceiveLocation(com.baidu.location.BDLocation)
+cn.lankao.com.lovelankao.utils.MyLocationClient$2
+cn.lankao.com.lovelankao.utils.MyLocationClient$2: cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener val$locationListener
+cn.lankao.com.lovelankao.utils.MyLocationClient$2: MyLocationClient$2(cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener)
+cn.lankao.com.lovelankao.utils.MyLocationClient$2: void onReceiveLocation(com.baidu.location.BDLocation)
 cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener
 cn.lankao.com.lovelankao.utils.MyLocationClient$MyLocationListener: void onLocSuccess(com.baidu.location.BDLocation)
 cn.lankao.com.lovelankao.utils.OkHttpUtil

@@ -23,7 +23,7 @@
             android:layout_marginBottom="@dimen/common_margin"
             android:layout_marginLeft="@dimen/common_margin_large"
             android:text="点击分享"
-            android:textColor="@color/color_gray_deep"
+            android:textColor="@color/color_green"
             android:textSize="@dimen/text_common_item_content" />
         <TextView
             android:id="@+id/tv_jock_item_time"
