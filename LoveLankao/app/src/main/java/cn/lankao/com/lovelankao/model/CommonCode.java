@@ -35,6 +35,11 @@ public class CommonCode {
     public static String USER_VIP_TYPE1 = "100";//用户VIP类型1
     public static String USER_VIP_TYPE2 = "200";//用户VIP类型2
     public static String USER_VIP_TYPE3 = "300";//用户VIP类型3
+
+    public static final String CAR_SERVICE_TYPE_WORK = "1";
+    public static final String CAR_SERVICE_TYPE_WORK_OUT = "0";
+    public static final String CAR_SERVICE_TYPE_TEXI = "1000";
+
 //    书童、秀才、举人、进士、状元
     public static final int INTENT_COMMON_ACTIVITY_CODE = 10000;
     public static final String INTENT_COMMON_OBJ = "INTENT_COMMON_OBJ";

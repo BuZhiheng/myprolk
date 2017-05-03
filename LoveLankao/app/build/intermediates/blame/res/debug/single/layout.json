@@ -148,6 +148,10 @@
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\include_title_bar_common_right.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\include_title_bar_common_right.xml"
+    },
+    {
         "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view.xml"
     },
@@ -676,6 +680,10 @@
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_top.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bus_line.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_bus_line.xml"
+    },
+    {
         "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_mine.xml",
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\fragment_mine.xml"
     },
@@ -894,6 +902,10 @@
     {
         "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bmob_update_dialog.xml",
         "source": "D:\\git\\lankao\\LoveLankao\\app\\src\\main\\res\\layout\\bmob_update_dialog.xml"
+    },
+    {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bus.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_bus.xml"
     },
     {
         "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lknews.xml",

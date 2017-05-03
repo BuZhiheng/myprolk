@@ -66,6 +66,8 @@
         <activity android:name=".activity.AdvertMsgActivity" />
         <activity android:name=".activity.AdvertDetailActivity" />
         <activity android:name=".activity.AllBusinessActivity" />
+        <activity android:name=".activity.BusActivity"/>
+        <activity android:name=".activity.BusLineActivity"/>
         <activity android:name=".activity.ChatRoomActivity" />
         <activity android:name=".activity.CookActivity" />
         <activity android:name=".activity.CommentActivity" />

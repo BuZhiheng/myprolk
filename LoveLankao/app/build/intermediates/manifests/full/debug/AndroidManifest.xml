@@ -84,6 +84,8 @@
         <activity android:name="cn.lankao.com.lovelankao.activity.AdvertMsgActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.AdvertDetailActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.AllBusinessActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.BusActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.BusLineActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.ChatRoomActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.CookActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.CommentActivity" />

@@ -76,6 +76,7 @@
 
 # view res/layout/activity_advertdetail.xml #generated:34
 # view res/layout/activity_allbusiess.xml #generated:33
+# view res/layout/activity_bus_line.xml #generated:8
 # view res/layout/activity_chat_room.xml #generated:27
 # view res/layout/activity_cook.xml #generated:33
 # view res/layout/activity_jock.xml #generated:33
@@ -118,83 +119,90 @@
 -keep class cn.lankao.com.lovelankao.activity.AllBusinessActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:87
--keep class cn.lankao.com.lovelankao.activity.ChatRoomActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:89
--keep class cn.lankao.com.lovelankao.activity.CommentActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.BusActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:88
--keep class cn.lankao.com.lovelankao.activity.CookActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.BusLineActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:90
--keep class cn.lankao.com.lovelankao.activity.JockActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:94
--keep class cn.lankao.com.lovelankao.activity.LBSActivity { <init>(...); }
+# view AndroidManifest.xml #generated:89
+-keep class cn.lankao.com.lovelankao.activity.ChatRoomActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:91
--keep class cn.lankao.com.lovelankao.activity.LKNewsActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.CommentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class cn.lankao.com.lovelankao.activity.CookActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:92
--keep class cn.lankao.com.lovelankao.activity.LKNewsMsgActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:93
--keep class cn.lankao.com.lovelankao.activity.LKPeopleActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:95
--keep class cn.lankao.com.lovelankao.activity.LoginActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.JockActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:96
+-keep class cn.lankao.com.lovelankao.activity.LBSActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class cn.lankao.com.lovelankao.activity.LKNewsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class cn.lankao.com.lovelankao.activity.LKNewsMsgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class cn.lankao.com.lovelankao.activity.LKPeopleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class cn.lankao.com.lovelankao.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
 -keep class cn.lankao.com.lovelankao.activity.MainActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:100
+# view AndroidManifest.xml #generated:102
 -keep class cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:99
+# view AndroidManifest.xml #generated:101
 -keep class cn.lankao.com.lovelankao.activity.PicShowActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:102
+# view AndroidManifest.xml #generated:104
 -keep class cn.lankao.com.lovelankao.activity.ReadWeixinActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:101
+# view AndroidManifest.xml #generated:103
 -keep class cn.lankao.com.lovelankao.activity.RegisterActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:103
+# view AndroidManifest.xml #generated:105
 -keep class cn.lankao.com.lovelankao.activity.SettingActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:107
+# view AndroidManifest.xml #generated:109
 -keep class cn.lankao.com.lovelankao.activity.ShopLocationActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:45
 -keep class cn.lankao.com.lovelankao.activity.SplashActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:104
+# view AndroidManifest.xml #generated:106
 -keep class cn.lankao.com.lovelankao.activity.SquareActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:105
+# view AndroidManifest.xml #generated:107
 -keep class cn.lankao.com.lovelankao.activity.SquareMsgActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:106
+# view AndroidManifest.xml #generated:108
 -keep class cn.lankao.com.lovelankao.activity.SquareSendActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:108
+# view AndroidManifest.xml #generated:110
 -keep class cn.lankao.com.lovelankao.activity.TopActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:111
+# view AndroidManifest.xml #generated:113
 -keep class cn.lankao.com.lovelankao.activity.WZActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:110
+# view AndroidManifest.xml #generated:112
 -keep class cn.lankao.com.lovelankao.activity.WZCityActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:109
+# view AndroidManifest.xml #generated:111
 -keep class cn.lankao.com.lovelankao.activity.WebViewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:112
+# view AndroidManifest.xml #generated:114
 -keep class cn.lankao.com.lovelankao.wxapi.WXEntryActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:57
 -keep class com.baidu.location.f { <init>(...); }
 
+# view res/layout/activity_bus.xml #generated:7
 # view res/layout/activity_lbs.xml #generated:6
 # view res/layout/activity_lkpeople.xml #generated:7
 # view res/layout/activity_shop_loc.xml #generated:5
@@ -217,6 +225,7 @@
 # view AndroidManifest.xml #generated:67
 -keep class com.tencent.tauth.AuthActivity { <init>(...); }
 
+# onClick res/layout/activity_bus.xml #generated:12
 # onClick res/layout/activity_comment.xml #generated:36
 # onClick res/layout/activity_square_msg.xml #generated:19
 # onClick res/layout/activity_square_msg.xml #generated:28
@@ -226,5 +235,7 @@
 # onClick res/layout/activity_square_msg_header.xml #generated:247
 # onClick res/layout/activity_wz_msg.xml #generated:100
 # onClick res/layout/include_title_bar_common.xml #generated:15
+# onClick res/layout/include_title_bar_common_right.xml #generated:15
+# onClick res/layout/include_title_bar_common_right.xml #generated:23
 -keepclassmembers class * { *** onClick(...); }
 

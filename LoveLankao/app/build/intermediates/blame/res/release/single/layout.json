@@ -376,6 +376,10 @@
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_search_view.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\include_title_bar_common_right.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\include_title_bar_common_right.xml"
+    },
+    {
         "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
@@ -744,6 +748,10 @@
         "source": "D:\\git\\lankao\\LoveLankao\\app\\src\\main\\res\\layout\\activity_advert_msg.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_bus_line.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_bus_line.xml"
+    },
+    {
         "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\design_layout_snackbar_include.xml",
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_layout_snackbar_include.xml"
     },
@@ -894,6 +902,10 @@
     {
         "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_wz_city.xml",
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_wz_city.xml"
+    },
+    {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_bus.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_bus.xml"
     },
     {
         "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",

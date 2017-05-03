@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_bus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include layout="@layout/include_title_bar_common_right"/>
+    <Button
+        android:id="@+id/btn_bus_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/common_title_height39"
+        android:background="@color/color_green"
+        android:text="刷新"
+        android:textColor="@color/color_white"
+        android:onClick="onClick"
+        />
+</FrameLayout>

@@ -22,7 +22,7 @@
             android:layout_gravity="center|right"
             android:paddingRight="@dimen/common_margin"
             android:gravity="center"
-            android:text="兰考人"
+            android:text="公交车"
             android:textColor="@color/color_white"
             android:textSize="@dimen/text_common_item_title" />
     </FrameLayout>

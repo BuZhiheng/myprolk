@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
@@ -56,30 +57,39 @@ public class LoginController implements View.OnClickListener {
             if (checkPhone(un) == false){
                 ToastUtil.show("请正确输入手机号");
                 return;
-            }else if("".equals(pwd)){
+            } else if ("".equals(pwd)){
                 ToastUtil.show("请输入密码");
                 return;
             }
+            BmobQuery<MyUser> query1 = new BmobQuery<>();
+            query1.addWhereEqualTo("mobile", un);
+
+            BmobQuery<MyUser> query2 = new BmobQuery<>();
+            query2.addWhereEqualTo("passWord", pwd);
+
+            List<BmobQuery<MyUser>> queryList = new ArrayList<>();
+            queryList.add(query1);
+            queryList.add(query2);
+
             BmobQuery<MyUser> query = new BmobQuery<>();
-            query.addWhereEqualTo("mobile",un);
-            query.addWhereEqualTo("passWord",pwd);
+            query.and(queryList);
             query.findObjects(new FindListener<MyUser>() {
                 @Override
                 public void done(List<MyUser> list, BmobException e) {
-                    if (e == null){
-                        if (list != null && list.size() > 0){
+                    if (e == null) {
+                        if (list != null && list.size() > 0) {
                             MyUser user = list.get(0);
                             PrefUtil.putString(CommonCode.SP_USER_USERID, user.getObjectId());
                             PrefUtil.putString(CommonCode.SP_USER_USERMOBILE, user.getMobile());
                             PrefUtil.putString(CommonCode.SP_USER_NICKNAME, user.getNickName());
                             PrefUtil.putString(CommonCode.SP_USER_USERTYPE, user.getUserType());
-                            if (user.getPhoto() != null){
+                            if (user.getPhoto() != null) {
                                 PrefUtil.putString(CommonCode.SP_USER_PHOTO, user.getPhoto().getFileUrl());
                             }
                             Integer point = user.getCoupon();
-                            if (point == null){
+                            if (point == null) {
                                 PrefUtil.putInt(CommonCode.SP_USER_POINT, 0);
-                            }else{
+                            } else {
                                 PrefUtil.putInt(CommonCode.SP_USER_POINT, point);
                             }
                             EventBus.getDefault().post(user);
