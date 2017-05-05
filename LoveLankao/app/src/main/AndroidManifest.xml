@@ -84,6 +84,7 @@
         <activity android:name=".activity.PhotoViewPagerActivity" />
         <activity android:name=".activity.RegisterActivity" />
         <activity android:name=".activity.ReadWeixinActivity" />
+        <activity android:name=".activity.RoadActivity"/>
         <activity android:name=".activity.SettingActivity" />
         <activity android:name=".activity.SquareActivity" />
         <activity android:name=".activity.SquareMsgActivity" />

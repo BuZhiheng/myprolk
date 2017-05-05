@@ -4,4 +4,4 @@
     android:layout_height="0.5dp"
     android:layout_marginLeft="@dimen/common_margin"
     android:layout_marginRight="@dimen/common_margin"
-    android:background="@color/color_gray" />
+    android:background="@color/color_bg" />

@@ -26,6 +26,7 @@ import cn.lankao.com.lovelankao.adapter.ChatRoomAdapter;
 import cn.lankao.com.lovelankao.model.ChatRoom;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
+import cn.lankao.com.lovelankao.utils.SystemUtils;
 import cn.lankao.com.lovelankao.utils.TextUtil;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.utils.WindowUtils;
@@ -46,31 +47,14 @@ public class ChatRoomController implements View.OnClickListener {
     public ChatRoomController(ChatRoomActivity context){
         this.context = context;
         initView();
+        initRoom();
     }
-    private void initView() {
-        dialog = ProDialog.getProDialog(context);
-        dialog.show();
-        realTimeData = new BmobRealTimeData();
-        adapter = new ChatRoomAdapter(context);
-        context.findViewById(R.id.btn_chat_send).setOnClickListener(this);
-        context.findViewById(R.id.iv_chatroom_back).setOnClickListener(this);
-        etContent = (EditText) context.findViewById(R.id.et_chat_content);
-        ivNewMsg = (ImageView) context.findViewById(R.id.iv_chatroom_newmsg);
-        ivNewMsg.setOnClickListener(this);
-        rvChat = (RecyclerView) context.findViewById(R.id.rv_chat_room);
-        rvChat.setLayoutManager(new LinearLayoutManager(context));
-        rvChat.setAdapter(adapter);
-        rvChat.addOnScrollListener(new OnRvScrollListener(){
-            @Override
-            public void toBottom() {
-                isBottom = true;
-                ivNewMsg.setVisibility(View.GONE);
-            }
-            @Override
-            public void toMid() {
-                isBottom = false;
-            }
-        });
+
+    private void initRoom() {
+        if (!SystemUtils.networkState()){
+            ToastUtil.show(CommonCode.MSG_NETWORK_ERR);
+            return;
+        }
         realTimeData.start(new ValueEventListener() {
             @Override
             public void onConnectCompleted(Exception e) {
@@ -103,6 +87,33 @@ public class ChatRoomController implements View.OnClickListener {
                     WindowUtils.showVoice(context);
                 }
                 dialog.dismiss();
+            }
+        });
+    }
+
+    private void initView() {
+        dialog = ProDialog.getProDialog(context);
+        dialog.show();
+        realTimeData = new BmobRealTimeData();
+        adapter = new ChatRoomAdapter(context);
+        context.findViewById(R.id.btn_chat_send).setOnClickListener(this);
+        context.findViewById(R.id.iv_chatroom_back).setOnClickListener(this);
+        etContent = (EditText) context.findViewById(R.id.et_chat_content);
+        ivNewMsg = (ImageView) context.findViewById(R.id.iv_chatroom_newmsg);
+        ivNewMsg.setOnClickListener(this);
+        rvChat = (RecyclerView) context.findViewById(R.id.rv_chat_room);
+        rvChat.setLayoutManager(new LinearLayoutManager(context));
+        rvChat.setAdapter(adapter);
+        rvChat.addOnScrollListener(new OnRvScrollListener() {
+            @Override
+            public void toBottom() {
+                isBottom = true;
+                ivNewMsg.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void toMid() {
+                isBottom = false;
             }
         });
     }

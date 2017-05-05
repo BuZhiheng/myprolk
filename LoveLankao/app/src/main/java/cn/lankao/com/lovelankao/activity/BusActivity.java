@@ -62,6 +62,8 @@ public class BusActivity extends AppCompatActivity implements IBusView {
                 .build();
         MapStatusUpdate mMapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mMapStatus);
         map.setMapStatus(mMapStatusUpdate);
+//        map.setBaiduHeatMapEnabled(true);
+//        map.setTrafficEnabled(true);
         bitmap = BitmapDescriptorFactory.fromResource(R.drawable.ic_common_map_meishi);
         option = new MarkerOptions().zIndex(0).period(10).icon(bitmap).animateType(MarkerOptions.MarkerAnimateType.none);
         presenter.getBus(line);

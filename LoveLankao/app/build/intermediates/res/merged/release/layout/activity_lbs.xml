@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/common_title_height"
         android:paddingLeft="@dimen/common_margin"
-        android:background="#88cccccc"
+        android:background="@color/color_alpha_gray"
         android:text="点击地图中红色标记查看详情"
         />
 </FrameLayout>

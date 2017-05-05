@@ -31,7 +31,7 @@ import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
  * Created by BuZhiheng on 2016/3/30.
  */
 public class TalkFragment extends Fragment implements ITalkView, View.OnClickListener {
-    private ITalkPresnter presnter;
+    private ITalkPresnter presnter = new TalkController(this);
     private View view;
     @Bind(R.id.rv_square_frm)
     RecyclerView recyclerView;
@@ -46,7 +46,6 @@ public class TalkFragment extends Fragment implements ITalkView, View.OnClickLis
         view = inflater.inflate(R.layout.fragment_talknew,container,false);
         EventBus.getDefault().register(this);
         ButterKnife.bind(this,view);
-        presnter = new TalkController(this);
         initView();
         return view;
     }
@@ -70,7 +69,9 @@ public class TalkFragment extends Fragment implements ITalkView, View.OnClickLis
         });
         tvMsg.setOnClickListener(this);
         view.findViewById(R.id.iv_talkfrm_send).setOnClickListener(this);
-        presnter.getData(cout);
+    }
+    public void initData(){
+        presnter.initData();
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void refresh(Square s){

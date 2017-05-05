@@ -28,71 +28,122 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             >
-            <FrameLayout
-                android:id="@+id/fl_indexfrm_more_chat"
+            <LinearLayout
+                android:id="@+id/ll_indexfrm_more_chat"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:background="@drawable/common_ll_bg"
-                android:paddingTop="@dimen/common_margin"
-                android:paddingBottom="@dimen/common_margin"
-                android:paddingRight="@dimen/common_margin"
-                android:paddingLeft="@dimen/common_margin_large"
+                android:orientation="vertical"
                 >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="聊天室"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <ImageView
+                        android:layout_gravity="center|right"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:src="@drawable/ic_indexfrm_chat"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="聊天室"
-                    android:textSize="@dimen/text_common_item_title"
-                    android:textColor="@color/color_black_text"
-                    />
-                <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin"
                     android:text="进来聊聊吧"
                     android:textSize="@dimen/text_common_item_title"
                     android:textColor="@color/color_gray"
                     />
-                <ImageView
-                    android:layout_gravity="center|right"
-                    android:layout_width="39dp"
-                    android:layout_height="39dp"
-                    android:src="@drawable/ic_indexfrm_chat"/>
-            </FrameLayout>
+            </LinearLayout>
             <include layout="@layout/include_slid_img_vertical_margintop"/>
-            <FrameLayout
-                android:id="@+id/fl_indexfrm_more_menu"
+            <LinearLayout
+                android:id="@+id/ll_indexfrm_more_lkpeople"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:background="@drawable/common_ll_bg"
-                android:paddingTop="@dimen/common_margin"
-                android:paddingBottom="@dimen/common_margin"
-                android:paddingRight="@dimen/common_margin_large"
-                android:paddingLeft="@dimen/common_margin"
+                android:orientation="vertical"
                 >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="兰考人"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <ImageView
+                        android:layout_gravity="center|right"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:src="@drawable/ic_common_map_meishi"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="找菜谱"
-                    android:textSize="@dimen/text_common_item_title"
-                    android:textColor="@color/color_black_text"
-                    />
-                <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="今天的饭我来!"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="老乡们都在哪"
                     android:textSize="@dimen/text_common_item_title"
                     android:textColor="@color/color_gray"
                     />
-                <ImageView
-                    android:layout_gravity="center|right"
-                    android:layout_width="39dp"
-                    android:layout_height="39dp"
-                    android:src="@drawable/ic_indexfrm_menu"/>
-            </FrameLayout>
+            </LinearLayout>
+            <include layout="@layout/include_slid_img_vertical_margintop"/>
+            <LinearLayout
+                android:id="@+id/ll_indexfrm_more_road"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/common_ll_bg"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="路况"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <ImageView
+                        android:layout_gravity="center|right"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:src="@drawable/ic_indexfrm_road"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="兰考实时路况"
+                    android:textSize="@dimen/text_common_item_title"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
         </LinearLayout>
         <include layout="@layout/include_slid_img_margin_lr"/>
         <LinearLayout
@@ -101,73 +152,123 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             >
-            <FrameLayout
-                android:id="@+id/fl_indexfrm_more_eat"
+            <LinearLayout
+                android:id="@+id/ll_indexfrm_more_eat"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:background="@drawable/common_ll_bg"
-                android:paddingTop="@dimen/common_margin"
-                android:paddingBottom="@dimen/common_margin"
-                android:paddingRight="@dimen/common_margin"
-                android:paddingLeft="@dimen/common_margin_large"
+                android:orientation="vertical"
                 >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="饮食健康"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <ImageView
+                        android:layout_gravity="center|right"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:src="@drawable/ic_indexfrm_eat"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="健康饮食"
-                    android:textSize="@dimen/text_common_item_title"
-                    android:textColor="@color/color_black_text"
-                    />
-                <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="民以食为天"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="民以食为天！"
                     android:textSize="@dimen/text_common_item_title"
                     android:textColor="@color/color_gray"
                     />
-                <ImageView
-                    android:layout_gravity="center|right"
-                    android:layout_width="39dp"
-                    android:layout_height="39dp"
-                    android:src="@drawable/ic_indexfrm_eat"/>
-            </FrameLayout>
+            </LinearLayout>
             <include layout="@layout/include_slid_img_vertical_marginbottom"/>
-            <FrameLayout
-                android:id="@+id/fl_indexfrm_more_jock"
+            <LinearLayout
+                android:id="@+id/ll_indexfrm_more_menu"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:background="@drawable/common_ll_bg"
-                android:paddingTop="@dimen/common_margin"
-                android:paddingBottom="@dimen/common_margin"
-                android:paddingRight="@dimen/common_margin_large"
-                android:paddingLeft="@dimen/common_margin"
+                android:orientation="vertical"
                 >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="找菜谱"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <ImageView
+                        android:layout_gravity="center|right"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:src="@drawable/ic_indexfrm_menu"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="笑话"
-                    android:textSize="@dimen/text_common_item_title"
-                    android:textColor="@color/color_black_text"
-                    />
-                <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="从前有座山"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="今天的饭我来!"
                     android:textSize="@dimen/text_common_item_title"
                     android:textColor="@color/color_gray"
                     />
-                <ImageView
-                    android:layout_gravity="center|right"
-                    android:layout_width="39dp"
-                    android:layout_height="39dp"
-                    android:src="@drawable/ic_indexfrm_jock"/>
-            </FrameLayout>
+            </LinearLayout>
+            <include layout="@layout/include_slid_img_vertical_marginbottom"/>
+            <LinearLayout
+                android:id="@+id/ll_indexfrm_more_jock"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/common_ll_bg"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="笑话"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <ImageView
+                        android:layout_gravity="center|right"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:src="@drawable/ic_indexfrm_jock"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:text="一笑十年少"
+                    android:textSize="@dimen/text_common_item_title"
+                    android:textColor="@color/color_gray"
+                    />
+            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
     <include layout="@layout/include_slid_img_height5"/>
     <FrameLayout

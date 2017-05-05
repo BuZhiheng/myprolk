@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.lankao.com.lovelankao"
-    android:versionCode="9"
-    android:versionName="1.3.5" >
+    android:versionCode="10"
+    android:versionName="1.3.6" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -102,6 +102,7 @@
         <activity android:name="cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.RegisterActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.ReadWeixinActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.RoadActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SettingActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareMsgActivity" />

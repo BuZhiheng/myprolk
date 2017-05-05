@@ -144,6 +144,10 @@
         "source": "D:\\git\\lankao\\LoveLankao\\app\\src\\main\\res\\layout\\activity_shop_loc.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_road.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_road.xml"
+    },
+    {
         "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_splash.xml",
         "source": "D:\\git\\lankao\\LoveLankao\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },

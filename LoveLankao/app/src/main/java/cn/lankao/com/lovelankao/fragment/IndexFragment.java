@@ -17,11 +17,13 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
+import cn.lankao.com.lovelankao.activity.BusActivity;
 import cn.lankao.com.lovelankao.activity.ChatRoomActivity;
 import cn.lankao.com.lovelankao.activity.CookActivity;
 import cn.lankao.com.lovelankao.activity.JockActivity;
 import cn.lankao.com.lovelankao.activity.LKNewsActivity;
 import cn.lankao.com.lovelankao.activity.LKPeopleActivity;
+import cn.lankao.com.lovelankao.activity.RoadActivity;
 import cn.lankao.com.lovelankao.adapter.BannerIndexHolder;
 import cn.lankao.com.lovelankao.adapter.IndexServiceAdapter;
 import cn.lankao.com.lovelankao.adapter.LKNewsAdapter;
@@ -76,12 +78,13 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
         rvService.setLayoutManager(manager);
         adapterService = new IndexServiceAdapter(getActivity());
         rvService.setAdapter(adapterService);
-        view.findViewById(R.id.fl_indexfrm_more_chat).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_chat).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_menu).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_eat).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_jock).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_road).setOnClickListener(this);
         view.findViewById(R.id.fl_indexfrm_more_news).setOnClickListener(this);
-        view.findViewById(R.id.fl_indexfrm_more_menu).setOnClickListener(this);
-        view.findViewById(R.id.fl_indexfrm_more_eat).setOnClickListener(this);
-        view.findViewById(R.id.fl_indexfrm_more_jock).setOnClickListener(this);
-        view.findViewById(R.id.tv_indexfrm_lkpeople).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_lkpeople).setOnClickListener(this);
         presenter.getData();
     }
     @Override
@@ -91,27 +94,31 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
                 Intent intentNews = new Intent(getActivity(), LKNewsActivity.class);
                 startActivity(intentNews);
                 break;
-            case R.id.fl_indexfrm_more_chat:
+            case R.id.ll_indexfrm_more_chat:
                 Intent intentChat = new Intent(getActivity(), ChatRoomActivity.class);
                 startActivity(intentChat);
                 break;
-            case R.id.fl_indexfrm_more_menu:
+            case R.id.ll_indexfrm_more_menu:
                 Intent intentMenu = new Intent(getActivity(), CookActivity.class);
                 intentMenu.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_COOK);
                 startActivity(intentMenu);
                 break;
-            case R.id.fl_indexfrm_more_eat:
+            case R.id.ll_indexfrm_more_eat:
                 Intent intentEat = new Intent(getActivity(), CookActivity.class);
                 intentEat.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_FOOD);
                 startActivity(intentEat);
                 break;
-            case R.id.fl_indexfrm_more_jock:
+            case R.id.ll_indexfrm_more_jock:
                 Intent intentJock = new Intent(getActivity(), JockActivity.class);
                 startActivity(intentJock);
                 break;
-            case R.id.tv_indexfrm_lkpeople:
+            case R.id.ll_indexfrm_more_lkpeople:
                 Intent intentPeople = new Intent(getActivity(), LKPeopleActivity.class);
                 startActivity(intentPeople);
+                break;
+            case R.id.ll_indexfrm_more_road:
+                Intent intentRoad = new Intent(getActivity(), RoadActivity.class);
+                startActivity(intentRoad);
                 break;
             default:
                 break;

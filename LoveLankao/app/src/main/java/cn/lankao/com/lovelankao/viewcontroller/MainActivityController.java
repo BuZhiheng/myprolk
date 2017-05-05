@@ -40,7 +40,9 @@ public class MainActivityController implements View.OnClickListener{
     private TextView tvUser;
     ViewPager viewPager;
     private List<Fragment> fragments;
-
+    private TalkFragment talkFragment = new TalkFragment();
+    private MainFragment mainFragment = new MainFragment();
+    private MineFragment mineFragment = new MineFragment();
     public MainActivityController(MainActivity context) {
         this.context = context;
         llIndex = (LinearLayout) context.findViewById(R.id.ll_main_index);
@@ -69,13 +71,12 @@ public class MainActivityController implements View.OnClickListener{
         } else {
             fragments.add(new TempFragment());
         }
-        fragments.add(new TalkFragment());
-        fragments.add(new MainFragment());
-        fragments.add(new MineFragment());
+        fragments.add(talkFragment);
+        fragments.add(mainFragment);
+        fragments.add(mineFragment);
         viewPager.setAdapter(new MyFragmentAdapter(context.getFragmentManager()));
         viewPager.addOnPageChangeListener(new MyFragmentListener());
-        viewPager.setOffscreenPageLimit(3);
-
+        viewPager.setOffscreenPageLimit(4);
     }
     @Override
     public void onClick(View v) {
@@ -98,39 +99,29 @@ public class MainActivityController implements View.OnClickListener{
         }
     }
     class MyFragmentAdapter extends FragmentPagerAdapter {
-
         public MyFragmentAdapter(FragmentManager fm) {
             super(fm);
         }
-
         @Override
         public Fragment getItem(int position) {
             return fragments.get(position);
         }
-
         @Override
         public int getCount() {
             return fragments.size();
         }
-
     }
     class MyFragmentListener implements ViewPager.OnPageChangeListener {
-
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
         }
-
         @Override
         public void onPageSelected(int position) {
             setBottom(position);
         }
-
         @Override
         public void onPageScrollStateChanged(int state) {
-
         }
-
     }
     private void setBottom(int position) {
         switch (position) {
@@ -143,17 +134,19 @@ public class MainActivityController implements View.OnClickListener{
                 initBottom();
                 ivTalk.setImageResource(R.drawable.ic_main_talkc);
                 tvTalk.setTextColor(ContextCompat.getColor(context, R.color.color_green));
+                talkFragment.initData();
                 break;
             case 2:
                 initBottom();
                 ivLbs.setImageResource(R.drawable.ic_main_lbsc);
                 tvLbs.setTextColor(ContextCompat.getColor(context, R.color.color_green));
+                mainFragment.initData();
                 break;
             case 3:
                 initBottom();
                 ivUser.setImageResource(R.drawable.ic_main_minec);
                 tvUser.setTextColor(ContextCompat.getColor(context, R.color.color_green));
-
+                mineFragment.initData();
                 break;
             default:
                 break;

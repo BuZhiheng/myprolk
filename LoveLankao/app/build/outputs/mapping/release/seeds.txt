@@ -7184,6 +7184,7 @@ cn.lankao.com.lovelankao.R$color: int colorAccent
 cn.lankao.com.lovelankao.R$color: int colorPrimary
 cn.lankao.com.lovelankao.R$color: int colorPrimaryDark
 cn.lankao.com.lovelankao.R$color: int color_alpha_black
+cn.lankao.com.lovelankao.R$color: int color_alpha_gray
 cn.lankao.com.lovelankao.R$color: int color_alpha_green
 cn.lankao.com.lovelankao.R$color: int color_bg
 cn.lankao.com.lovelankao.R$color: int color_black
@@ -7496,6 +7497,7 @@ cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_chat
 cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_eat
 cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_jock
 cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_menu
+cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_road
 cn.lankao.com.lovelankao.R$drawable: int ic_launcher
 cn.lankao.com.lovelankao.R$drawable: int ic_launcher_216
 cn.lankao.com.lovelankao.R$drawable: int ic_launcher_256
@@ -7654,10 +7656,6 @@ cn.lankao.com.lovelankao.R$id: int fill_horizontal
 cn.lankao.com.lovelankao.R$id: int fill_vertical
 cn.lankao.com.lovelankao.R$id: int fixed
 cn.lankao.com.lovelankao.R$id: int fl_indexfrm_head
-cn.lankao.com.lovelankao.R$id: int fl_indexfrm_more_chat
-cn.lankao.com.lovelankao.R$id: int fl_indexfrm_more_eat
-cn.lankao.com.lovelankao.R$id: int fl_indexfrm_more_jock
-cn.lankao.com.lovelankao.R$id: int fl_indexfrm_more_menu
 cn.lankao.com.lovelankao.R$id: int fl_indexfrm_more_news
 cn.lankao.com.lovelankao.R$id: int fl_lknews_content
 cn.lankao.com.lovelankao.R$id: int fl_mainfrm_content
@@ -7668,6 +7666,7 @@ cn.lankao.com.lovelankao.R$id: int fl_minefrm_mypartner
 cn.lankao.com.lovelankao.R$id: int fl_minefrm_needpartner
 cn.lankao.com.lovelankao.R$id: int fl_minefrm_setting
 cn.lankao.com.lovelankao.R$id: int fl_minefrm_tuijian
+cn.lankao.com.lovelankao.R$id: int fl_minefrm_wz
 cn.lankao.com.lovelankao.R$id: int fl_read_content
 cn.lankao.com.lovelankao.R$id: int fl_talkfrm_chatroom
 cn.lankao.com.lovelankao.R$id: int fl_talkfrm_cook
@@ -7793,6 +7792,12 @@ cn.lankao.com.lovelankao.R$id: int ll_advertmsg_bottom
 cn.lankao.com.lovelankao.R$id: int ll_advertmsg_comment
 cn.lankao.com.lovelankao.R$id: int ll_cook_content
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_item
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_chat
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_eat
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_jock
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_lkpeople
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_menu
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_road
 cn.lankao.com.lovelankao.R$id: int ll_main_index
 cn.lankao.com.lovelankao.R$id: int ll_main_lbs
 cn.lankao.com.lovelankao.R$id: int ll_main_talk
@@ -7829,6 +7834,7 @@ cn.lankao.com.lovelankao.R$id: int map_activity_shoploc
 cn.lankao.com.lovelankao.R$id: int map_bus
 cn.lankao.com.lovelankao.R$id: int map_lbs_act
 cn.lankao.com.lovelankao.R$id: int map_lk_people
+cn.lankao.com.lovelankao.R$id: int map_road
 cn.lankao.com.lovelankao.R$id: int media_actions
 cn.lankao.com.lovelankao.R$id: int middle
 cn.lankao.com.lovelankao.R$id: int mini
@@ -7944,7 +7950,6 @@ cn.lankao.com.lovelankao.R$id: int tv_cookact_title
 cn.lankao.com.lovelankao.R$id: int tv_indexfrm_headview_index
 cn.lankao.com.lovelankao.R$id: int tv_indexfrm_headview_title
 cn.lankao.com.lovelankao.R$id: int tv_indexfrm_item_title
-cn.lankao.com.lovelankao.R$id: int tv_indexfrm_lkpeople
 cn.lankao.com.lovelankao.R$id: int tv_jock_item_click
 cn.lankao.com.lovelankao.R$id: int tv_jock_item_content
 cn.lankao.com.lovelankao.R$id: int tv_jock_item_time
@@ -8083,6 +8088,7 @@ cn.lankao.com.lovelankao.R$layout: int activity_pic_show
 cn.lankao.com.lovelankao.R$layout: int activity_read_item
 cn.lankao.com.lovelankao.R$layout: int activity_read_weixin
 cn.lankao.com.lovelankao.R$layout: int activity_register
+cn.lankao.com.lovelankao.R$layout: int activity_road
 cn.lankao.com.lovelankao.R$layout: int activity_setting
 cn.lankao.com.lovelankao.R$layout: int activity_shop_loc
 cn.lankao.com.lovelankao.R$layout: int activity_splash
@@ -9116,6 +9122,19 @@ cn.lankao.com.lovelankao.activity.ReadWeixinActivity: void onCreate(android.os.B
 cn.lankao.com.lovelankao.activity.RegisterActivity
 cn.lankao.com.lovelankao.activity.RegisterActivity: RegisterActivity()
 cn.lankao.com.lovelankao.activity.RegisterActivity: void onCreate(android.os.Bundle)
+cn.lankao.com.lovelankao.activity.RoadActivity
+cn.lankao.com.lovelankao.activity.RoadActivity: com.baidu.mapapi.map.MapView mapView
+cn.lankao.com.lovelankao.activity.RoadActivity: com.baidu.mapapi.map.BaiduMap map
+cn.lankao.com.lovelankao.activity.RoadActivity: RoadActivity()
+cn.lankao.com.lovelankao.activity.RoadActivity: void onCreate(android.os.Bundle)
+cn.lankao.com.lovelankao.activity.RoadActivity: void initView()
+cn.lankao.com.lovelankao.activity.RoadActivity: void onClick(android.view.View)
+cn.lankao.com.lovelankao.activity.RoadActivity$$ViewBinder
+cn.lankao.com.lovelankao.activity.RoadActivity$$ViewBinder: RoadActivity$$ViewBinder()
+cn.lankao.com.lovelankao.activity.RoadActivity$$ViewBinder: void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.activity.RoadActivity,java.lang.Object)
+cn.lankao.com.lovelankao.activity.RoadActivity$$ViewBinder: void unbind(cn.lankao.com.lovelankao.activity.RoadActivity)
+cn.lankao.com.lovelankao.activity.RoadActivity$$ViewBinder: void unbind(java.lang.Object)
+cn.lankao.com.lovelankao.activity.RoadActivity$$ViewBinder: void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object)
 cn.lankao.com.lovelankao.activity.SettingActivity
 cn.lankao.com.lovelankao.activity.SettingActivity: cn.lankao.com.lovelankao.viewcontroller.SettingActivityController controller
 cn.lankao.com.lovelankao.activity.SettingActivity: SettingActivity()
@@ -9816,15 +9835,56 @@ cn.lankao.com.lovelankao.fragment.IndexFragment$3: cn.lankao.com.lovelankao.frag
 cn.lankao.com.lovelankao.fragment.IndexFragment$3: IndexFragment$3(cn.lankao.com.lovelankao.fragment.IndexFragment)
 cn.lankao.com.lovelankao.fragment.IndexFragment$3: void onClick(android.content.DialogInterface,int)
 cn.lankao.com.lovelankao.fragment.MainFragment
+cn.lankao.com.lovelankao.fragment.MainFragment: cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter presenter
 cn.lankao.com.lovelankao.fragment.MainFragment: android.view.View view
+cn.lankao.com.lovelankao.fragment.MainFragment: android.support.v4.widget.SwipeRefreshLayout refresh
+cn.lankao.com.lovelankao.fragment.MainFragment: android.support.v7.widget.RecyclerView rvShop
+cn.lankao.com.lovelankao.fragment.MainFragment: com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader header
+cn.lankao.com.lovelankao.fragment.MainFragment: cn.lankao.com.lovelankao.adapter.MyAdapter adapter
 cn.lankao.com.lovelankao.fragment.MainFragment: MainFragment()
 cn.lankao.com.lovelankao.fragment.MainFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
+cn.lankao.com.lovelankao.fragment.MainFragment: void initView()
+cn.lankao.com.lovelankao.fragment.MainFragment: void initData()
+cn.lankao.com.lovelankao.fragment.MainFragment: void showToast(java.lang.String)
+cn.lankao.com.lovelankao.fragment.MainFragment: void setData(java.util.List)
+cn.lankao.com.lovelankao.fragment.MainFragment: void onClick(android.view.View)
+cn.lankao.com.lovelankao.fragment.MainFragment: void toAdvert(int,java.lang.String)
+cn.lankao.com.lovelankao.fragment.MainFragment: cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter access$000(cn.lankao.com.lovelankao.fragment.MainFragment)
+cn.lankao.com.lovelankao.fragment.MainFragment$$ViewBinder
+cn.lankao.com.lovelankao.fragment.MainFragment$$ViewBinder: MainFragment$$ViewBinder()
+cn.lankao.com.lovelankao.fragment.MainFragment$$ViewBinder: void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.fragment.MainFragment,java.lang.Object)
+cn.lankao.com.lovelankao.fragment.MainFragment$$ViewBinder: void unbind(cn.lankao.com.lovelankao.fragment.MainFragment)
+cn.lankao.com.lovelankao.fragment.MainFragment$$ViewBinder: void unbind(java.lang.Object)
+cn.lankao.com.lovelankao.fragment.MainFragment$$ViewBinder: void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object)
+cn.lankao.com.lovelankao.fragment.MainFragment$1
+cn.lankao.com.lovelankao.fragment.MainFragment$1: cn.lankao.com.lovelankao.fragment.MainFragment this$0
+cn.lankao.com.lovelankao.fragment.MainFragment$1: MainFragment$1(cn.lankao.com.lovelankao.fragment.MainFragment)
+cn.lankao.com.lovelankao.fragment.MainFragment$1: void onRefresh()
 cn.lankao.com.lovelankao.fragment.MineFragment
-cn.lankao.com.lovelankao.fragment.MineFragment: cn.lankao.com.lovelankao.viewcontroller.MineFragmentController controller
+cn.lankao.com.lovelankao.fragment.MineFragment: cn.lankao.com.lovelankao.viewcontroller.MineFragmentController presenter
 cn.lankao.com.lovelankao.fragment.MineFragment: android.view.View view
+cn.lankao.com.lovelankao.fragment.MineFragment: android.widget.TextView tvNickName
+cn.lankao.com.lovelankao.fragment.MineFragment: android.widget.TextView tvPhone
+cn.lankao.com.lovelankao.fragment.MineFragment: android.widget.TextView tvJifen
+cn.lankao.com.lovelankao.fragment.MineFragment: android.widget.ImageView photo
 cn.lankao.com.lovelankao.fragment.MineFragment: MineFragment()
 cn.lankao.com.lovelankao.fragment.MineFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
+cn.lankao.com.lovelankao.fragment.MineFragment: void initView()
 cn.lankao.com.lovelankao.fragment.MineFragment: void onDestroy()
+cn.lankao.com.lovelankao.fragment.MineFragment: void showToast(java.lang.String)
+cn.lankao.com.lovelankao.fragment.MineFragment: void exit()
+cn.lankao.com.lovelankao.fragment.MineFragment: void setPhoto(java.lang.String)
+cn.lankao.com.lovelankao.fragment.MineFragment: void setUserMsg(cn.lankao.com.lovelankao.model.MyUser)
+cn.lankao.com.lovelankao.fragment.MineFragment: void onClick(android.view.View)
+cn.lankao.com.lovelankao.fragment.MineFragment: void toAdvert(int,java.lang.String)
+cn.lankao.com.lovelankao.fragment.MineFragment: void toWebView(java.lang.String,java.lang.String)
+cn.lankao.com.lovelankao.fragment.MineFragment: void initData()
+cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder
+cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: MineFragment$$ViewBinder()
+cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.fragment.MineFragment,java.lang.Object)
+cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: void unbind(cn.lankao.com.lovelankao.fragment.MineFragment)
+cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: void unbind(java.lang.Object)
+cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object)
 cn.lankao.com.lovelankao.fragment.TalkFragment
 cn.lankao.com.lovelankao.fragment.TalkFragment: cn.lankao.com.lovelankao.ipresenter.ITalkPresnter presnter
 cn.lankao.com.lovelankao.fragment.TalkFragment: android.view.View view
@@ -9836,6 +9896,7 @@ cn.lankao.com.lovelankao.fragment.TalkFragment: int cout
 cn.lankao.com.lovelankao.fragment.TalkFragment: TalkFragment()
 cn.lankao.com.lovelankao.fragment.TalkFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void initView()
+cn.lankao.com.lovelankao.fragment.TalkFragment: void initData()
 cn.lankao.com.lovelankao.fragment.TalkFragment: void refresh(cn.lankao.com.lovelankao.model.Square)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void userMsg(cn.lankao.com.lovelankao.model.MyUser)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void onClick(android.view.View)
@@ -9898,11 +9959,15 @@ cn.lankao.com.lovelankao.ipresenter.IIndexPresenter
 cn.lankao.com.lovelankao.ipresenter.IIndexPresenter: void getData()
 cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter
 cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter: void getPeople()
+cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter
+cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter: void getData()
+cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter: void initData()
 cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter
 cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter: void getMyMsg()
 cn.lankao.com.lovelankao.ipresenter.ITalkPresnter
 cn.lankao.com.lovelankao.ipresenter.ITalkPresnter: void getData(int)
 cn.lankao.com.lovelankao.ipresenter.ITalkPresnter: void onMsgClick()
+cn.lankao.com.lovelankao.ipresenter.ITalkPresnter: void initData()
 cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter
 cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter: void getCitys()
 cn.lankao.com.lovelankao.ipresenter.IWzPresenter
@@ -9920,6 +9985,14 @@ cn.lankao.com.lovelankao.iview.IIndexView: void showNewVersion(cn.lankao.com.lov
 cn.lankao.com.lovelankao.iview.ILKPeopleView
 cn.lankao.com.lovelankao.iview.ILKPeopleView: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.iview.ILKPeopleView: void setMapMarker(cn.lankao.com.lovelankao.model.MyUser)
+cn.lankao.com.lovelankao.iview.IMainFrmView
+cn.lankao.com.lovelankao.iview.IMainFrmView: void showToast(java.lang.String)
+cn.lankao.com.lovelankao.iview.IMainFrmView: void setData(java.util.List)
+cn.lankao.com.lovelankao.iview.IMineFrmView
+cn.lankao.com.lovelankao.iview.IMineFrmView: void showToast(java.lang.String)
+cn.lankao.com.lovelankao.iview.IMineFrmView: void exit()
+cn.lankao.com.lovelankao.iview.IMineFrmView: void setPhoto(java.lang.String)
+cn.lankao.com.lovelankao.iview.IMineFrmView: void setUserMsg(cn.lankao.com.lovelankao.model.MyUser)
 cn.lankao.com.lovelankao.iview.ISquareMsgView
 cn.lankao.com.lovelankao.iview.ISquareMsgView: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.iview.ISquareMsgView: void setComment(java.util.List)
@@ -10135,6 +10208,7 @@ cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_USER_USERTYPE
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_USER_USER_POST_MSG
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_REGISTER_CODE_PHONE
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_REGISTER_CODE
+cn.lankao.com.lovelankao.model.CommonCode: java.lang.String MSG_NETWORK_ERR
 cn.lankao.com.lovelankao.model.CommonCode: CommonCode()
 cn.lankao.com.lovelankao.model.CommonCode: void <clinit>()
 cn.lankao.com.lovelankao.model.Cook
@@ -10567,6 +10641,15 @@ cn.lankao.com.lovelankao.utils.ShareManager: void onComplete(java.lang.Object)
 cn.lankao.com.lovelankao.utils.ShareManager: void onError(com.tencent.tauth.UiError)
 cn.lankao.com.lovelankao.utils.ShareManager: void onCancel()
 cn.lankao.com.lovelankao.utils.ShareManager: void <clinit>()
+cn.lankao.com.lovelankao.utils.SystemUtils
+cn.lankao.com.lovelankao.utils.SystemUtils: java.lang.String MAP_BAIDU
+cn.lankao.com.lovelankao.utils.SystemUtils: java.lang.String MAP_ALI
+cn.lankao.com.lovelankao.utils.SystemUtils: double x_pi
+cn.lankao.com.lovelankao.utils.SystemUtils: SystemUtils()
+cn.lankao.com.lovelankao.utils.SystemUtils: boolean networkState()
+cn.lankao.com.lovelankao.utils.SystemUtils: double[] bd09_To_Gcj02(double,double)
+cn.lankao.com.lovelankao.utils.SystemUtils: boolean isAvilibleApk(java.lang.String)
+cn.lankao.com.lovelankao.utils.SystemUtils: void <clinit>()
 cn.lankao.com.lovelankao.utils.TextUtil
 cn.lankao.com.lovelankao.utils.TextUtil: java.lang.String EX_EMAIL
 cn.lankao.com.lovelankao.utils.TextUtil: java.lang.String EX_PHONE
@@ -10786,32 +10869,33 @@ cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.widget.Image
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.app.ProgressDialog dialog
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: boolean isBottom
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: ChatRoomController(cn.lankao.com.lovelankao.activity.ChatRoomActivity)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void initRoom()
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void initView()
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void initChatRoomHis()
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void onDestory()
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void onClick(android.view.View)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void sendMsg(int)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: boolean access$002(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController,boolean)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.widget.ImageView access$100(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: cn.bmob.v3.BmobRealTimeData access$200(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void access$300(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: cn.lankao.com.lovelankao.adapter.ChatRoomAdapter access$400(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: boolean access$000(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.support.v7.widget.RecyclerView access$500(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: cn.bmob.v3.BmobRealTimeData access$000(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void access$100(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: cn.lankao.com.lovelankao.adapter.ChatRoomAdapter access$200(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: boolean access$300(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.support.v7.widget.RecyclerView access$400(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.widget.ImageView access$500(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: cn.lankao.com.lovelankao.activity.ChatRoomActivity access$600(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.app.ProgressDialog access$700(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: boolean access$302(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController,boolean)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: void access$800(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController,int)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController: android.widget.EditText access$900(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1: cn.lankao.com.lovelankao.viewcontroller.ChatRoomController this$0
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1: ChatRoomController$1(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1: void toBottom()
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1: void toMid()
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1: void onConnectCompleted(java.lang.Exception)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$1: void onDataChange(org.json.JSONObject)
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2: cn.lankao.com.lovelankao.viewcontroller.ChatRoomController this$0
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2: ChatRoomController$2(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2: void onConnectCompleted(java.lang.Exception)
-cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2: void onDataChange(org.json.JSONObject)
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2: void toBottom()
+cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$2: void toMid()
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$3
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$3: cn.lankao.com.lovelankao.viewcontroller.ChatRoomController this$0
 cn.lankao.com.lovelankao.viewcontroller.ChatRoomController$3: ChatRoomController$3(cn.lankao.com.lovelankao.viewcontroller.ChatRoomController)
@@ -11082,6 +11166,9 @@ cn.lankao.com.lovelankao.viewcontroller.MainActivityController: android.widget.T
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController: android.widget.TextView tvUser
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController: android.support.v4.view.ViewPager viewPager
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController: java.util.List fragments
+cn.lankao.com.lovelankao.viewcontroller.MainActivityController: cn.lankao.com.lovelankao.fragment.TalkFragment talkFragment
+cn.lankao.com.lovelankao.viewcontroller.MainActivityController: cn.lankao.com.lovelankao.fragment.MainFragment mainFragment
+cn.lankao.com.lovelankao.viewcontroller.MainActivityController: cn.lankao.com.lovelankao.fragment.MineFragment mineFragment
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController: MainActivityController(cn.lankao.com.lovelankao.activity.MainActivity)
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController: void onClick(android.view.View)
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController: void setBottom(int)
@@ -11100,39 +11187,22 @@ cn.lankao.com.lovelankao.viewcontroller.MainActivityController$MyFragmentListene
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController$MyFragmentListener: void onPageSelected(int)
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController$MyFragmentListener: void onPageScrollStateChanged(int)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: android.content.Context context
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: android.view.View view
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: android.support.v4.widget.SwipeRefreshLayout refresh
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: android.support.v7.widget.RecyclerView rvShop
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader header
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: cn.lankao.com.lovelankao.adapter.MyAdapter adapter
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: MainFragmentController(android.content.Context,android.view.View)
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void initView()
+cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: cn.lankao.com.lovelankao.iview.IMainFrmView view
+cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: boolean isInit
+cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: MainFragmentController(cn.lankao.com.lovelankao.iview.IMainFrmView)
+cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void getData()
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void initData()
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void onClick(android.view.View)
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void toAdvert(int,java.lang.String)
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void setBottom(java.util.List)
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void onRefresh()
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void access$000(cn.lankao.com.lovelankao.viewcontroller.MainFragmentController,java.util.List)
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: android.support.v4.widget.SwipeRefreshLayout access$100(cn.lankao.com.lovelankao.viewcontroller.MainFragmentController)
+cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: cn.lankao.com.lovelankao.iview.IMainFrmView access$000(cn.lankao.com.lovelankao.viewcontroller.MainFragmentController)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: cn.lankao.com.lovelankao.viewcontroller.MainFragmentController this$0
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: MainFragmentController$1(cn.lankao.com.lovelankao.viewcontroller.MainFragmentController)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: void done(java.util.List,cn.bmob.v3.exception.BmobException)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: void done(java.lang.Object,java.lang.Object)
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: android.content.Context context
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: android.view.View view
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: android.widget.TextView tvNickName
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: android.widget.TextView tvPhone
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: android.widget.TextView tvJifen
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: android.widget.ImageView photo
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: MineFragmentController(android.content.Context,android.view.View)
+cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: cn.lankao.com.lovelankao.iview.IMineFrmView view
+cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: boolean isInit
+cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: MineFragmentController(cn.lankao.com.lovelankao.iview.IMineFrmView)
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void initUser()
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void initView()
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void onClick(android.view.View)
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void toAdvert(int,java.lang.String)
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void toWebView(java.lang.String,java.lang.String)
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void onEventMainThread(cn.lankao.com.lovelankao.model.MyUser)
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void onDestroy()
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController$1
@@ -11409,9 +11479,11 @@ cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController$3$1: Square
 cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController$3$1: void done(java.lang.Object,cn.bmob.v3.exception.BmobException)
 cn.lankao.com.lovelankao.viewcontroller.TalkController
 cn.lankao.com.lovelankao.viewcontroller.TalkController: cn.lankao.com.lovelankao.iview.ITalkView view
+cn.lankao.com.lovelankao.viewcontroller.TalkController: boolean isInit
 cn.lankao.com.lovelankao.viewcontroller.TalkController: TalkController(cn.lankao.com.lovelankao.iview.ITalkView)
 cn.lankao.com.lovelankao.viewcontroller.TalkController: void getData(int)
 cn.lankao.com.lovelankao.viewcontroller.TalkController: void onMsgClick()
+cn.lankao.com.lovelankao.viewcontroller.TalkController: void initData()
 cn.lankao.com.lovelankao.viewcontroller.TalkController: cn.lankao.com.lovelankao.iview.ITalkView access$000(cn.lankao.com.lovelankao.viewcontroller.TalkController)
 cn.lankao.com.lovelankao.viewcontroller.TalkController$1
 cn.lankao.com.lovelankao.viewcontroller.TalkController$1: cn.lankao.com.lovelankao.viewcontroller.TalkController this$0

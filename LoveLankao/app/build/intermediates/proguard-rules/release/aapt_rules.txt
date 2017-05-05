@@ -27,7 +27,7 @@
 # view res/layout/activity_read_weixin.xml #generated:27
 # view res/layout/activity_square.xml #generated:34
 # view res/layout/activity_top.xml #generated:27
-# view res/layout/fragment_index.xml #generated:29
+# view res/layout/fragment_index.xml #generated:19
 # view res/layout/fragment_main.xml #generated:29
 # view res/layout/fragment_talknew.xml #generated:27
 -keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
@@ -87,7 +87,7 @@
 # view res/layout/activity_top.xml #generated:32
 # view res/layout/activity_wz_city.xml #generated:8
 # view res/layout/activity_wz_msg.xml #generated:112
-# view res/layout/fragment_index.xml #generated:38
+# view res/layout/fragment_index.xml #generated:28
 # view res/layout/fragment_index_header.xml #generated:13
 # view res/layout/fragment_main.xml #generated:38
 # view res/layout/fragment_talknew.xml #generated:33
@@ -167,36 +167,39 @@
 -keep class cn.lankao.com.lovelankao.activity.RegisterActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:105
+-keep class cn.lankao.com.lovelankao.activity.RoadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
 -keep class cn.lankao.com.lovelankao.activity.SettingActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:109
+# view AndroidManifest.xml #generated:110
 -keep class cn.lankao.com.lovelankao.activity.ShopLocationActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:45
 -keep class cn.lankao.com.lovelankao.activity.SplashActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:106
+# view AndroidManifest.xml #generated:107
 -keep class cn.lankao.com.lovelankao.activity.SquareActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:107
+# view AndroidManifest.xml #generated:108
 -keep class cn.lankao.com.lovelankao.activity.SquareMsgActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:108
+# view AndroidManifest.xml #generated:109
 -keep class cn.lankao.com.lovelankao.activity.SquareSendActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:110
+# view AndroidManifest.xml #generated:111
 -keep class cn.lankao.com.lovelankao.activity.TopActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:113
+# view AndroidManifest.xml #generated:114
 -keep class cn.lankao.com.lovelankao.activity.WZActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:112
+# view AndroidManifest.xml #generated:113
 -keep class cn.lankao.com.lovelankao.activity.WZCityActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:111
+# view AndroidManifest.xml #generated:112
 -keep class cn.lankao.com.lovelankao.activity.WebViewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:114
+# view AndroidManifest.xml #generated:115
 -keep class cn.lankao.com.lovelankao.wxapi.WXEntryActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:57
@@ -205,10 +208,11 @@
 # view res/layout/activity_bus.xml #generated:7
 # view res/layout/activity_lbs.xml #generated:6
 # view res/layout/activity_lkpeople.xml #generated:7
+# view res/layout/activity_road.xml #generated:7
 # view res/layout/activity_shop_loc.xml #generated:5
 -keep class com.baidu.mapapi.map.MapView { <init>(...); }
 
-# view res/layout/fragment_index.xml #generated:44
+# view res/layout/fragment_index.xml #generated:34
 # view res/layout/fragment_main.xml #generated:44
 -keep class com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader { <init>(...); }
 

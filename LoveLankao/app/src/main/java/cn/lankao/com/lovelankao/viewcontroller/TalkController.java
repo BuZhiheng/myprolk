@@ -10,12 +10,14 @@ import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.model.MyUser;
 import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
+import cn.lankao.com.lovelankao.utils.SystemUtils;
 import cn.lankao.com.lovelankao.utils.TextUtil;
 /**
  * Created by BuZhiheng on 2016/5/20.
  */
 public class TalkController implements ITalkPresnter {
     private ITalkView view;
+    private boolean isInit = false;
     public TalkController(ITalkView view){
         this.view = view;
     }
@@ -51,5 +53,15 @@ public class TalkController implements ITalkPresnter {
                 }
             }
         });
+    }
+    @Override
+    public void initData() {
+        if (!SystemUtils.networkState()){
+            return;
+        }
+        if (!isInit){
+            isInit = true;
+            getData(CommonCode.RV_ITEMS_COUT);
+        }
     }
 }

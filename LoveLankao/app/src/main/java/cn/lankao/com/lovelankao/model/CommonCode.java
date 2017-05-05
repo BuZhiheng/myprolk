@@ -76,4 +76,6 @@ public class CommonCode {
     public static final String SP_REGISTER_CODE_PHONE = "SP_REGISTER_CODE_PHONE";
     public static final String SP_REGISTER_CODE = "SP_REGISTER_CODE";
 
+    public static final String MSG_NETWORK_ERR = "请检查您的网络";
+
 }

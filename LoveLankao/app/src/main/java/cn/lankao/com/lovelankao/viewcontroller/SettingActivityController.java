@@ -118,12 +118,12 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
             if (PermissionUtil.checkNoPermission(context,permission)) {
                 if (PermissionUtil.checkDismissPermissionWindow(context,
                         permission)) {
-                    ToastUtil.show("权限被关闭,请打开相机权限");
-                    Intent intentSet = new Intent();
-                    intentSet.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                    Uri uri = Uri.fromParts("package", context.getPackageName(), null);
-                    intentSet.setData(uri);
-                    context.startActivity(intentSet);
+                    ToastUtil.show("相机权限被关闭,请去>设置>权限管理打开");
+//                    Intent intentSet = new Intent();
+//                    intentSet.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+//                    Uri uri = Uri.fromParts("package", context.getPackageName(), null);
+//                    intentSet.setData(uri);
+//                    context.startActivity(intentSet);
                     return;
                 }
             } else {
@@ -136,6 +136,9 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == context.RESULT_OK) {
+            if (data == null){
+                return;
+            }
             if (requestCode == BitmapUtil.PIC_PICTURE){//相册
                 Bitmap b = BitmapUtil.getBitmapByPicture(context,data);
                 String path = BitmapUtil.compressImage(context, b);

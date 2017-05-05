@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/common_title_height"
         android:paddingLeft="@dimen/common_margin"
-        android:background="@color/color_alpha_black"
+        android:background="@color/color_alpha_gray"
         android:text="掌上兰考注册用户分布图(部分)"
         />
 </FrameLayout>

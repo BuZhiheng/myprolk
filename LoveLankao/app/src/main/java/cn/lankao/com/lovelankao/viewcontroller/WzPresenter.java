@@ -21,7 +21,7 @@ import rx.Subscriber;
  * Created by buzhiheng on 2017/4/22.
  */
 public class WzPresenter implements IWzPresenter {
-    private String url = "http://v.juhe.cn/wz/query";
+    private String url = "http://v.juhe.cn/sweizhang/query";
     private IWzView view;
     private JWzCitys city;
     public WzPresenter(IWzView view,Intent intent){
@@ -79,7 +79,7 @@ public class WzPresenter implements IWzPresenter {
             }
         }
         RequestBody body = new FormBody.Builder()
-                .add("key", "d33b537656a3e1a29d38048ee9d138a6")
+                .add("key", "80213ce00ded56d453cc89c497632e9a")
                 .add("city", city.city_code)
                 .add("hphm", sNo)
                 .add("classno", sClass)

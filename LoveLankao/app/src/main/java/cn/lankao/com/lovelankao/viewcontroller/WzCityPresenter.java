@@ -14,7 +14,7 @@ import rx.Subscriber;
  * Created by buzhiheng on 2017/4/22.
  */
 public class WzCityPresenter implements IWzCityPresenter{
-    private String url = "http://v.juhe.cn/wz/citys";
+    private String url = "http://v.juhe.cn/sweizhang/citys";
     private IWzCityView view;
     public WzCityPresenter(IWzCityView view){
         this.view = view;
@@ -24,7 +24,7 @@ public class WzCityPresenter implements IWzCityPresenter{
         RequestBody body = new FormBody.Builder()
                 .add("province","HN")
                 .add("format","2")
-                .add("key","d33b537656a3e1a29d38048ee9d138a6")
+                .add("key","80213ce00ded56d453cc89c497632e9a")
                 .build();
         OkHttpUtil.post(url, body, new Subscriber<String>() {
             @Override
