@@ -4,8 +4,5 @@ package cn.lankao.com.lovelankao.ipresenter;
  */
 public interface ITalkPresnter {
     void getData(int cout);
-
     void onMsgClick();
-
-    void initData();
 }

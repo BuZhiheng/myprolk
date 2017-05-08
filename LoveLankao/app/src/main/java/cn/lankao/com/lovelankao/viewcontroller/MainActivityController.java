@@ -134,19 +134,16 @@ public class MainActivityController implements View.OnClickListener{
                 initBottom();
                 ivTalk.setImageResource(R.drawable.ic_main_talkc);
                 tvTalk.setTextColor(ContextCompat.getColor(context, R.color.color_green));
-                talkFragment.initData();
                 break;
             case 2:
                 initBottom();
                 ivLbs.setImageResource(R.drawable.ic_main_lbsc);
                 tvLbs.setTextColor(ContextCompat.getColor(context, R.color.color_green));
-                mainFragment.initData();
                 break;
             case 3:
                 initBottom();
                 ivUser.setImageResource(R.drawable.ic_main_minec);
                 tvUser.setTextColor(ContextCompat.getColor(context, R.color.color_green));
-                mineFragment.initData();
                 break;
             default:
                 break;

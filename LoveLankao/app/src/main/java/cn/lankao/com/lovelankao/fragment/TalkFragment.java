@@ -69,9 +69,7 @@ public class TalkFragment extends Fragment implements ITalkView, View.OnClickLis
         });
         tvMsg.setOnClickListener(this);
         view.findViewById(R.id.iv_talkfrm_send).setOnClickListener(this);
-    }
-    public void initData(){
-        presnter.initData();
+        presnter.getData(cout);
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void refresh(Square s){

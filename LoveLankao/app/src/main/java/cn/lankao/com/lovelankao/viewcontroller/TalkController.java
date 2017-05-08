@@ -17,7 +17,6 @@ import cn.lankao.com.lovelankao.utils.TextUtil;
  */
 public class TalkController implements ITalkPresnter {
     private ITalkView view;
-    private boolean isInit = false;
     public TalkController(ITalkView view){
         this.view = view;
     }
@@ -53,15 +52,5 @@ public class TalkController implements ITalkPresnter {
                 }
             }
         });
-    }
-    @Override
-    public void initData() {
-        if (!SystemUtils.networkState()){
-            return;
-        }
-        if (!isInit){
-            isInit = true;
-            getData(CommonCode.RV_ITEMS_COUT);
-        }
     }
 }

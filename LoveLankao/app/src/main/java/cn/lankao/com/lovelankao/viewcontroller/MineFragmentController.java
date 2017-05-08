@@ -16,19 +16,24 @@ import cn.lankao.com.lovelankao.utils.TextUtil;
  */
 public class MineFragmentController {
     private IMineFrmView view;
-    private boolean isInit = false;
     public MineFragmentController(IMineFrmView view) {
         this.view = view;
         EventBus.getDefault().register(this);
     }
     public void initUser() {
         if (!SystemUtils.networkState()){
+            MyUser user = new MyUser();
+            user.setNickName(PrefUtil.getString(CommonCode.SP_USER_NICKNAME, ""));
+            user.setMobile(PrefUtil.getString(CommonCode.SP_USER_USERMOBILE, ""));
+            user.setCoupon(PrefUtil.getInt(CommonCode.SP_USER_POINT, 0));
+            if (TextUtil.isNull(PrefUtil.getString(CommonCode.SP_USER_PHOTO,""))){
+                view.setPhoto(CommonCode.APP_ICON);
+            } else {
+                view.setPhoto(PrefUtil.getString(CommonCode.SP_USER_PHOTO,""));
+            }
+            view.setUserMsg(user);
             return;
         }
-        if (isInit){
-            return;
-        }
-        isInit = true;
         String userid = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
         if (!TextUtil.isNull(userid)){
             BmobQuery<MyUser> query = new BmobQuery<>();

@@ -15,6 +15,6 @@
         android:layout_marginTop="@dimen/common_title_height"
         android:paddingLeft="@dimen/common_margin"
         android:background="@color/color_alpha_gray"
-        android:text="道路显绿色表示畅通,黄色表示拥堵,红色表示堵车;紫色阴影表示人口分布较多"
+        android:text="道路显绿色表示畅通,黄色表示拥堵,红色表示堵车;紫色阴影表示人口分布比较密集"
         />
 </FrameLayout>

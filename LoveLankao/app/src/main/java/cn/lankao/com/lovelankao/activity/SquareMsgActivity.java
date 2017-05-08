@@ -13,6 +13,7 @@ import cn.lankao.com.lovelankao.adapter.MySquareMsgAdapter;
 import cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter;
 import cn.lankao.com.lovelankao.iview.ISquareMsgView;
 import cn.lankao.com.lovelankao.model.Comment;
+import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.viewcontroller.SquareMsgPresenter;
 /**
  * Created by buzhiheng on 2017/4/22.
@@ -39,7 +40,7 @@ public class SquareMsgActivity extends AppCompatActivity implements ISquareMsgVi
     }
     @Override
     public void showToast(String toast) {
-
+        ToastUtil.show(toast);
     }
     public void onClick(View v){
         switch (v.getId()){

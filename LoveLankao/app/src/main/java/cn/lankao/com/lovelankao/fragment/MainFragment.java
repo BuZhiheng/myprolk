@@ -74,10 +74,7 @@ public class MainFragment extends Fragment implements IMainFrmView, View.OnClick
         view.findViewById(R.id.tv_mainfrm_tuiian).setOnClickListener(this);
         view.findViewById(R.id.tv_mainfrm_toall).setOnClickListener(this);
         view.findViewById(R.id.fl_mainfrm_more).setOnClickListener(this);
-
-    }
-    public void initData() {
-        presenter.initData();
+        presenter.getData();
     }
     @Override
     public void showToast(String toast) {
@@ -89,6 +86,12 @@ public class MainFragment extends Fragment implements IMainFrmView, View.OnClick
         adapter.notifyDataSetChanged();
         refresh.setRefreshing(false);
     }
+
+    @Override
+    public void setRefreshStop() {
+        refresh.setRefreshing(false);
+    }
+
     @Override
     public void onClick(View v) {
         int id = v.getId();

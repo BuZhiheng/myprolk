@@ -15,6 +15,7 @@ import cn.lankao.com.lovelankao.activity.AdvertDetailActivity;
 import cn.lankao.com.lovelankao.adapter.MyAdapter;
 import cn.lankao.com.lovelankao.model.AdvertNormal;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.SystemUtils;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 import cn.lankao.com.lovelankao.widget.ProDialog;
@@ -71,6 +72,12 @@ public class AdvertDetailController implements View.OnClickListener, SwipeRefres
         }
     }
     private void getAdvert(int type){
+        if (!SystemUtils.networkState()){
+            ToastUtil.show(CommonCode.MSG_NETWORK_ERR);
+            refresh.setRefreshing(false);
+            dialog.dismiss();
+            return;
+        }
         BmobQuery<AdvertNormal> query = new BmobQuery<>();
         if (type < 100){//一般广告
             query.addWhereEqualTo("advType",type);
@@ -105,7 +112,6 @@ public class AdvertDetailController implements View.OnClickListener, SwipeRefres
                     refresh.setRefreshing(false);
                     dialog.dismiss();
                 } else {
-                    ToastUtil.show(e.getMessage());
                     refresh.setRefreshing(false);
                 }
             }

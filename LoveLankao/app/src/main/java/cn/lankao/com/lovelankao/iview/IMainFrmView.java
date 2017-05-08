@@ -12,4 +12,6 @@ public interface IMainFrmView {
 
     void setData(List<AdvertNormal> list);
 
+    void setRefreshStop();
+
 }

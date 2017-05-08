@@ -5,5 +5,4 @@ package cn.lankao.com.lovelankao.ipresenter;
  */
 public interface IMainFrmPresenter {
     void getData();
-    void initData();
 }

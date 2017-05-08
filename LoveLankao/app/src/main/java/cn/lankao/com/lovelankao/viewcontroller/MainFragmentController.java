@@ -8,20 +8,18 @@ import cn.lankao.com.lovelankao.iview.IMainFrmView;
 import cn.lankao.com.lovelankao.model.AdvertNormal;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.SystemUtils;
-
 /**
  * Created by BuZhiheng on 2016/3/31.
  */
 public class MainFragmentController implements IMainFrmPresenter {
     private IMainFrmView view;
-    private boolean isInit = false;
     public MainFragmentController(IMainFrmView view) {
         this.view = view;
     }
     @Override
     public void getData() {
         if (!SystemUtils.networkState()){
-            view.showToast(CommonCode.MSG_NETWORK_ERR);
+            view.setRefreshStop();
             return;
         }
         BmobQuery<AdvertNormal> query = new BmobQuery<>();
@@ -36,15 +34,5 @@ public class MainFragmentController implements IMainFrmPresenter {
                 }
             }
         });
-    }
-    @Override
-    public void initData() {
-        if (!SystemUtils.networkState()){
-            return;
-        }
-        if (!isInit){
-            isInit = true;
-            getData();
-        }
     }
 }

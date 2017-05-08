@@ -9,6 +9,7 @@ import cn.lankao.com.lovelankao.iview.ISquareMsgView;
 import cn.lankao.com.lovelankao.model.Comment;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
+import cn.lankao.com.lovelankao.utils.SystemUtils;
 import cn.lankao.com.lovelankao.utils.TextUtil;
 /**
  * Created by buzhiheng on 2017/4/22.
@@ -20,6 +21,10 @@ public class SquareMsgPresenter implements ISquareMsgPresenter {
     }
     @Override
     public void getMyMsg() {
+        if (!SystemUtils.networkState()){
+            view.showToast(CommonCode.MSG_NETWORK_ERR);
+            return;
+        }
         String userId = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
         if (TextUtil.isNull(userId)){
             return;

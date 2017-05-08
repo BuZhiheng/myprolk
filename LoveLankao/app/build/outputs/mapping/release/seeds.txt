@@ -9844,9 +9844,9 @@ cn.lankao.com.lovelankao.fragment.MainFragment: cn.lankao.com.lovelankao.adapter
 cn.lankao.com.lovelankao.fragment.MainFragment: MainFragment()
 cn.lankao.com.lovelankao.fragment.MainFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
 cn.lankao.com.lovelankao.fragment.MainFragment: void initView()
-cn.lankao.com.lovelankao.fragment.MainFragment: void initData()
 cn.lankao.com.lovelankao.fragment.MainFragment: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.fragment.MainFragment: void setData(java.util.List)
+cn.lankao.com.lovelankao.fragment.MainFragment: void setRefreshStop()
 cn.lankao.com.lovelankao.fragment.MainFragment: void onClick(android.view.View)
 cn.lankao.com.lovelankao.fragment.MainFragment: void toAdvert(int,java.lang.String)
 cn.lankao.com.lovelankao.fragment.MainFragment: cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter access$000(cn.lankao.com.lovelankao.fragment.MainFragment)
@@ -9878,7 +9878,6 @@ cn.lankao.com.lovelankao.fragment.MineFragment: void setUserMsg(cn.lankao.com.lo
 cn.lankao.com.lovelankao.fragment.MineFragment: void onClick(android.view.View)
 cn.lankao.com.lovelankao.fragment.MineFragment: void toAdvert(int,java.lang.String)
 cn.lankao.com.lovelankao.fragment.MineFragment: void toWebView(java.lang.String,java.lang.String)
-cn.lankao.com.lovelankao.fragment.MineFragment: void initData()
 cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder
 cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: MineFragment$$ViewBinder()
 cn.lankao.com.lovelankao.fragment.MineFragment$$ViewBinder: void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.fragment.MineFragment,java.lang.Object)
@@ -9896,7 +9895,6 @@ cn.lankao.com.lovelankao.fragment.TalkFragment: int cout
 cn.lankao.com.lovelankao.fragment.TalkFragment: TalkFragment()
 cn.lankao.com.lovelankao.fragment.TalkFragment: android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void initView()
-cn.lankao.com.lovelankao.fragment.TalkFragment: void initData()
 cn.lankao.com.lovelankao.fragment.TalkFragment: void refresh(cn.lankao.com.lovelankao.model.Square)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void userMsg(cn.lankao.com.lovelankao.model.MyUser)
 cn.lankao.com.lovelankao.fragment.TalkFragment: void onClick(android.view.View)
@@ -9961,13 +9959,11 @@ cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter
 cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter: void getPeople()
 cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter
 cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter: void getData()
-cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter: void initData()
 cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter
 cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter: void getMyMsg()
 cn.lankao.com.lovelankao.ipresenter.ITalkPresnter
 cn.lankao.com.lovelankao.ipresenter.ITalkPresnter: void getData(int)
 cn.lankao.com.lovelankao.ipresenter.ITalkPresnter: void onMsgClick()
-cn.lankao.com.lovelankao.ipresenter.ITalkPresnter: void initData()
 cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter
 cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter: void getCitys()
 cn.lankao.com.lovelankao.ipresenter.IWzPresenter
@@ -9988,6 +9984,7 @@ cn.lankao.com.lovelankao.iview.ILKPeopleView: void setMapMarker(cn.lankao.com.lo
 cn.lankao.com.lovelankao.iview.IMainFrmView
 cn.lankao.com.lovelankao.iview.IMainFrmView: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.iview.IMainFrmView: void setData(java.util.List)
+cn.lankao.com.lovelankao.iview.IMainFrmView: void setRefreshStop()
 cn.lankao.com.lovelankao.iview.IMineFrmView
 cn.lankao.com.lovelankao.iview.IMineFrmView: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.iview.IMineFrmView: void exit()
@@ -11188,10 +11185,8 @@ cn.lankao.com.lovelankao.viewcontroller.MainActivityController$MyFragmentListene
 cn.lankao.com.lovelankao.viewcontroller.MainActivityController$MyFragmentListener: void onPageScrollStateChanged(int)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: cn.lankao.com.lovelankao.iview.IMainFrmView view
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: boolean isInit
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: MainFragmentController(cn.lankao.com.lovelankao.iview.IMainFrmView)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void getData()
-cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: void initData()
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController: cn.lankao.com.lovelankao.iview.IMainFrmView access$000(cn.lankao.com.lovelankao.viewcontroller.MainFragmentController)
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: cn.lankao.com.lovelankao.viewcontroller.MainFragmentController this$0
@@ -11200,7 +11195,6 @@ cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: void done(java
 cn.lankao.com.lovelankao.viewcontroller.MainFragmentController$1: void done(java.lang.Object,java.lang.Object)
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: cn.lankao.com.lovelankao.iview.IMineFrmView view
-cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: boolean isInit
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: MineFragmentController(cn.lankao.com.lovelankao.iview.IMineFrmView)
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void initUser()
 cn.lankao.com.lovelankao.viewcontroller.MineFragmentController: void onEventMainThread(cn.lankao.com.lovelankao.model.MyUser)
@@ -11479,11 +11473,9 @@ cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController$3$1: Square
 cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController$3$1: void done(java.lang.Object,cn.bmob.v3.exception.BmobException)
 cn.lankao.com.lovelankao.viewcontroller.TalkController
 cn.lankao.com.lovelankao.viewcontroller.TalkController: cn.lankao.com.lovelankao.iview.ITalkView view
-cn.lankao.com.lovelankao.viewcontroller.TalkController: boolean isInit
 cn.lankao.com.lovelankao.viewcontroller.TalkController: TalkController(cn.lankao.com.lovelankao.iview.ITalkView)
 cn.lankao.com.lovelankao.viewcontroller.TalkController: void getData(int)
 cn.lankao.com.lovelankao.viewcontroller.TalkController: void onMsgClick()
-cn.lankao.com.lovelankao.viewcontroller.TalkController: void initData()
 cn.lankao.com.lovelankao.viewcontroller.TalkController: cn.lankao.com.lovelankao.iview.ITalkView access$000(cn.lankao.com.lovelankao.viewcontroller.TalkController)
 cn.lankao.com.lovelankao.viewcontroller.TalkController$1
 cn.lankao.com.lovelankao.viewcontroller.TalkController$1: cn.lankao.com.lovelankao.viewcontroller.TalkController this$0

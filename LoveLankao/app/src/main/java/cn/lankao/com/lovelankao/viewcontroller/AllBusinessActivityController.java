@@ -15,6 +15,7 @@ import cn.lankao.com.lovelankao.activity.LBSActivity;
 import cn.lankao.com.lovelankao.adapter.MyAdapter;
 import cn.lankao.com.lovelankao.model.AdvertNormal;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.SystemUtils;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 /**
@@ -56,6 +57,11 @@ public class AllBusinessActivityController implements View.OnClickListener, Swip
         });
     }
     private void initData() {
+        if (!SystemUtils.networkState()){
+            ToastUtil.show(CommonCode.MSG_NETWORK_ERR);
+            refresh.setRefreshing(false);
+            return;
+        }
         BmobQuery<AdvertNormal> query = new BmobQuery<>();
         if (isRefresh){
             query.setLimit(CommonCode.RV_ITEMS_COUT);
@@ -82,7 +88,6 @@ public class AllBusinessActivityController implements View.OnClickListener, Swip
                     adapter.notifyDataSetChanged();
                     refresh.setRefreshing(false);
                 } else {
-                    ToastUtil.show(e.getMessage());
                     refresh.setRefreshing(false);
                 }
             }

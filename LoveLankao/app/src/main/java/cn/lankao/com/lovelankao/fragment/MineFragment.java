@@ -143,8 +143,4 @@ public class MineFragment extends Fragment implements IMineFrmView, View.OnClick
         intent.putExtra(CommonCode.INTENT_SETTING_URL, url);
         startActivity(intent);
     }
-
-    public void initData() {
-        presenter.initUser();
-    }
 }
