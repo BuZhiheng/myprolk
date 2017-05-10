@@ -2588,6 +2588,7 @@ containing a value of this type.
         public static final int ll_indexfrm_more_lkpeople=0x7f0b015b;
         public static final int ll_indexfrm_more_menu=0x7f0b015e;
         public static final int ll_indexfrm_more_road=0x7f0b015c;
+        public static final int ll_jock_item=0x7f0b00a8;
         public static final int ll_main_index=0x7f0b00c2;
         public static final int ll_main_lbs=0x7f0b00c8;
         public static final int ll_main_talk=0x7f0b00c5;
@@ -2740,9 +2741,8 @@ containing a value of this type.
         public static final int tv_indexfrm_headview_index=0x7f0b00a3;
         public static final int tv_indexfrm_headview_title=0x7f0b00a2;
         public static final int tv_indexfrm_item_title=0x7f0b0163;
-        public static final int tv_jock_item_click=0x7f0b00a9;
-        public static final int tv_jock_item_content=0x7f0b00a8;
-        public static final int tv_jock_item_time=0x7f0b00aa;
+        public static final int tv_jock_item_click=0x7f0b00aa;
+        public static final int tv_jock_item_content=0x7f0b00a9;
         public static final int tv_jock_title=0x7f0b00a4;
         public static final int tv_lbsact_title=0x7f0b00ac;
         public static final int tv_lknews_item_from=0x7f0b00b5;

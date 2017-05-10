@@ -1,16 +1,11 @@
 package cn.lankao.com.lovelankao.viewcontroller;
-
 import android.app.ProgressDialog;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
-
-import com.google.gson.JsonElement;
-
 import java.util.List;
-
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.JockActivity;
 import cn.lankao.com.lovelankao.adapter.JockAdapter;
@@ -25,14 +20,11 @@ import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 import cn.lankao.com.lovelankao.widget.ProDialog;
 import cn.lankao.com.lovelankao.widget.SharePopupWindow;
 import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
-
 /**
  * Created by BuZhiheng on 2016/4/18.
  */
 public class JockActivityController implements SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
-    private final String url = "http://japi.juhe.cn/joke/content/list.from?key=da46a2a9e5d5a3bfefb5694bfa0e04c1&sort=asc&time=0000000000&pagesize=";
+    private final String url = "http://v.juhe.cn/joke/randJoke.php?&key=da46a2a9e5d5a3bfefb5694bfa0e04c1";
     private JockActivity context;
     private RecyclerView rv;
     private SwipeRefreshLayout refresh;
@@ -41,7 +33,6 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
     private ShareManager manager;
     private SharePopupWindow popWin;
     private String shareString;
-    private int page = 1;
     private boolean isRefresh = true;
     private boolean canLoadMore = true;
     public JockActivityController(JockActivity context){
@@ -50,30 +41,19 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
         initData();
     }
     private void initData() {
-        String finalUrl;
-        if (isRefresh){
-            finalUrl = url+ CommonCode.RV_ITEMS_COUT+"&page="+1;
-        }else{
-            finalUrl = url+CommonCode.RV_ITEMS_COUT+"&page="+page;
-        }
-        OkHttpUtil.get(finalUrl, new Subscriber<String>() {
+        OkHttpUtil.get(url, new Subscriber<String>() {
             @Override
             public void onCompleted() {
-
             }
-
             @Override
             public void onError(Throwable throwable) {
-
             }
-
             @Override
             public void onNext(String s) {
                 JuheApiResult res = GsonUtil.jsonToObject(s, JuheApiResult.class);
                 if (res.getError_code() == 0) {
                     try {
-                        JsonElement list = res.getResult().getAsJsonObject().getAsJsonArray("data");
-                        List<Jock> data = GsonUtil.jsonToList(list, Jock.class);
+                        List<Jock> data = GsonUtil.jsonToList(res.getResult(), Jock.class);
                         if (isRefresh) {
                             adapter.setData(data);
                         } else {
@@ -90,7 +70,6 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
             }
         });
     }
-
     private void initView() {
         manager = ShareManager.getInstance(context);
         popWin = new SharePopupWindow(context,this);
@@ -111,7 +90,6 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
                 if (canLoadMore) {
                     isRefresh = false;
                     canLoadMore = false;
-                    page++;
                     initData();
                 }
             }
@@ -136,7 +114,6 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
     @Override
     public void onRefresh() {
         isRefresh = true;
-        page = 1;
         initData();
     }
     public void onItemClick(String jock){

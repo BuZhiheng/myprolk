@@ -43,7 +43,6 @@ public class TempAdapter extends RecyclerView.Adapter<TempAdapter.MyViewHolder> 
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         final Jock news = data.get(position);
         holder.tvContent.setText(news.getContent());
-        holder.tvTime.setText(news.getUpdatetime());
         holder.tvClick.setVisibility(View.GONE);
     }
     @Override
@@ -53,12 +52,10 @@ public class TempAdapter extends RecyclerView.Adapter<TempAdapter.MyViewHolder> 
 
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tvContent;
-        TextView tvTime;
         TextView tvClick;
         public MyViewHolder(View view) {
             super(view);
             tvContent = (TextView) view.findViewById(R.id.tv_jock_item_content);
-            tvTime = (TextView) view.findViewById(R.id.tv_jock_item_time);
             tvClick = (TextView) view.findViewById(R.id.tv_jock_item_click);
         }
     }

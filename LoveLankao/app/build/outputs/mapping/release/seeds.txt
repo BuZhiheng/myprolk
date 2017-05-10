@@ -7798,6 +7798,7 @@ cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_jock
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_lkpeople
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_menu
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_road
+cn.lankao.com.lovelankao.R$id: int ll_jock_item
 cn.lankao.com.lovelankao.R$id: int ll_main_index
 cn.lankao.com.lovelankao.R$id: int ll_main_lbs
 cn.lankao.com.lovelankao.R$id: int ll_main_talk
@@ -7952,7 +7953,6 @@ cn.lankao.com.lovelankao.R$id: int tv_indexfrm_headview_title
 cn.lankao.com.lovelankao.R$id: int tv_indexfrm_item_title
 cn.lankao.com.lovelankao.R$id: int tv_jock_item_click
 cn.lankao.com.lovelankao.R$id: int tv_jock_item_content
-cn.lankao.com.lovelankao.R$id: int tv_jock_item_time
 cn.lankao.com.lovelankao.R$id: int tv_jock_title
 cn.lankao.com.lovelankao.R$id: int tv_lbsact_title
 cn.lankao.com.lovelankao.R$id: int tv_lknews_item_from
@@ -9535,8 +9535,8 @@ cn.lankao.com.lovelankao.adapter.JockAdapter$1: cn.lankao.com.lovelankao.adapter
 cn.lankao.com.lovelankao.adapter.JockAdapter$1: JockAdapter$1(cn.lankao.com.lovelankao.adapter.JockAdapter,cn.lankao.com.lovelankao.model.Jock)
 cn.lankao.com.lovelankao.adapter.JockAdapter$1: void onClick(android.view.View)
 cn.lankao.com.lovelankao.adapter.JockAdapter$MyViewHolder
+cn.lankao.com.lovelankao.adapter.JockAdapter$MyViewHolder: android.widget.LinearLayout ll
 cn.lankao.com.lovelankao.adapter.JockAdapter$MyViewHolder: android.widget.TextView tvContent
-cn.lankao.com.lovelankao.adapter.JockAdapter$MyViewHolder: android.widget.TextView tvTime
 cn.lankao.com.lovelankao.adapter.JockAdapter$MyViewHolder: cn.lankao.com.lovelankao.adapter.JockAdapter this$0
 cn.lankao.com.lovelankao.adapter.JockAdapter$MyViewHolder: JockAdapter$MyViewHolder(cn.lankao.com.lovelankao.adapter.JockAdapter,android.view.View)
 cn.lankao.com.lovelankao.adapter.LKNewsAdapter
@@ -9725,7 +9725,6 @@ cn.lankao.com.lovelankao.adapter.TempAdapter: void onBindViewHolder(android.supp
 cn.lankao.com.lovelankao.adapter.TempAdapter: android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int)
 cn.lankao.com.lovelankao.adapter.TempAdapter$MyViewHolder
 cn.lankao.com.lovelankao.adapter.TempAdapter$MyViewHolder: android.widget.TextView tvContent
-cn.lankao.com.lovelankao.adapter.TempAdapter$MyViewHolder: android.widget.TextView tvTime
 cn.lankao.com.lovelankao.adapter.TempAdapter$MyViewHolder: android.widget.TextView tvClick
 cn.lankao.com.lovelankao.adapter.TempAdapter$MyViewHolder: cn.lankao.com.lovelankao.adapter.TempAdapter this$0
 cn.lankao.com.lovelankao.adapter.TempAdapter$MyViewHolder: TempAdapter$MyViewHolder(cn.lankao.com.lovelankao.adapter.TempAdapter,android.view.View)
@@ -11007,7 +11006,6 @@ cn.lankao.com.lovelankao.viewcontroller.JockActivityController: android.app.Prog
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: cn.lankao.com.lovelankao.utils.ShareManager manager
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: cn.lankao.com.lovelankao.widget.SharePopupWindow popWin
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: java.lang.String shareString
-cn.lankao.com.lovelankao.viewcontroller.JockActivityController: int page
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: boolean isRefresh
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: boolean canLoadMore
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: JockActivityController(cn.lankao.com.lovelankao.activity.JockActivity)
@@ -11025,8 +11023,7 @@ cn.lankao.com.lovelankao.viewcontroller.JockActivityController: android.support.
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: android.app.ProgressDialog access$400(cn.lankao.com.lovelankao.viewcontroller.JockActivityController)
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: boolean access$200(cn.lankao.com.lovelankao.viewcontroller.JockActivityController)
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController: boolean access$002(cn.lankao.com.lovelankao.viewcontroller.JockActivityController,boolean)
-cn.lankao.com.lovelankao.viewcontroller.JockActivityController: int access$508(cn.lankao.com.lovelankao.viewcontroller.JockActivityController)
-cn.lankao.com.lovelankao.viewcontroller.JockActivityController: void access$600(cn.lankao.com.lovelankao.viewcontroller.JockActivityController)
+cn.lankao.com.lovelankao.viewcontroller.JockActivityController: void access$500(cn.lankao.com.lovelankao.viewcontroller.JockActivityController)
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController$1
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController$1: cn.lankao.com.lovelankao.viewcontroller.JockActivityController this$0
 cn.lankao.com.lovelankao.viewcontroller.JockActivityController$1: JockActivityController$1(cn.lankao.com.lovelankao.viewcontroller.JockActivityController)

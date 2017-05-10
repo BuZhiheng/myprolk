@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import org.xutils.x;
 import java.util.ArrayList;
@@ -48,8 +49,7 @@ public class JockAdapter extends RecyclerView.Adapter<JockAdapter.MyViewHolder> 
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         final Jock news = data.get(position);
         holder.tvContent.setText(news.getContent());
-        holder.tvTime.setText(news.getUpdatetime());
-        holder.tvContent.setOnClickListener(new View.OnClickListener() {
+        holder.ll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 jock.onItemClick(news.getContent());
@@ -63,12 +63,12 @@ public class JockAdapter extends RecyclerView.Adapter<JockAdapter.MyViewHolder> 
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder {
+        LinearLayout ll;
         TextView tvContent;
-        TextView tvTime;
         public MyViewHolder(View view) {
             super(view);
+            ll = (LinearLayout) view.findViewById(R.id.ll_jock_item);
             tvContent = (TextView) view.findViewById(R.id.tv_jock_item_content);
-            tvTime = (TextView) view.findViewById(R.id.tv_jock_item_time);
         }
     }
 }

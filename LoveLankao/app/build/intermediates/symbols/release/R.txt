@@ -935,6 +935,7 @@ int id ll_indexfrm_more_jock 0x7f0b015f
 int id ll_indexfrm_more_lkpeople 0x7f0b015b
 int id ll_indexfrm_more_menu 0x7f0b015e
 int id ll_indexfrm_more_road 0x7f0b015c
+int id ll_jock_item 0x7f0b00a8
 int id ll_main_index 0x7f0b00c2
 int id ll_main_lbs 0x7f0b00c8
 int id ll_main_talk 0x7f0b00c5
@@ -1087,9 +1088,8 @@ int id tv_cookact_title 0x7f0b0097
 int id tv_indexfrm_headview_index 0x7f0b00a3
 int id tv_indexfrm_headview_title 0x7f0b00a2
 int id tv_indexfrm_item_title 0x7f0b0163
-int id tv_jock_item_click 0x7f0b00a9
-int id tv_jock_item_content 0x7f0b00a8
-int id tv_jock_item_time 0x7f0b00aa
+int id tv_jock_item_click 0x7f0b00aa
+int id tv_jock_item_content 0x7f0b00a9
 int id tv_jock_title 0x7f0b00a4
 int id tv_lbsact_title 0x7f0b00ac
 int id tv_lknews_item_from 0x7f0b00b5
