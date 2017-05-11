@@ -62,6 +62,7 @@ public class CommonCode {
     public static final String SP_SET_PARTNERURL = "SP_SET_PARTNERURL";
     public static final String SP_SET_ABOUTUSURL = "SP_SET_ABOUTUSURL";
     public static final String SP_SET_JCLKURL = "SP_SET_JCLKURL";
+    public static final String SP_SET_BIKE_NEWS = "SP_SET_BIKE_NEWS";
     public static final String SP_LOCATION_ADDRESS = "SP_LOCATION_ADDRESS";
     public static final String SP_LOCATION_LAT = "SP_LOCATION_LAT";
     public static final String SP_LOCATION_LNG = "SP_LOCATION_LNG";

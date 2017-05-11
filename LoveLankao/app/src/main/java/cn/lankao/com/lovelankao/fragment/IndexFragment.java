@@ -21,6 +21,7 @@ import cn.lankao.com.lovelankao.activity.BusActivity;
 import cn.lankao.com.lovelankao.activity.ChatRoomActivity;
 import cn.lankao.com.lovelankao.activity.CookActivity;
 import cn.lankao.com.lovelankao.activity.JockActivity;
+import cn.lankao.com.lovelankao.activity.LKBikeActivity;
 import cn.lankao.com.lovelankao.activity.LKNewsActivity;
 import cn.lankao.com.lovelankao.activity.LKPeopleActivity;
 import cn.lankao.com.lovelankao.activity.RoadActivity;
@@ -80,7 +81,7 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
         rvService.setAdapter(adapterService);
         view.findViewById(R.id.ll_indexfrm_more_chat).setOnClickListener(this);
         view.findViewById(R.id.ll_indexfrm_more_menu).setOnClickListener(this);
-        view.findViewById(R.id.ll_indexfrm_more_eat).setOnClickListener(this);
+        view.findViewById(R.id.ll_indexfrm_more_bike).setOnClickListener(this);
         view.findViewById(R.id.ll_indexfrm_more_jock).setOnClickListener(this);
         view.findViewById(R.id.ll_indexfrm_more_road).setOnClickListener(this);
         view.findViewById(R.id.fl_indexfrm_more_news).setOnClickListener(this);
@@ -103,10 +104,9 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
                 intentMenu.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_COOK);
                 startActivity(intentMenu);
                 break;
-            case R.id.ll_indexfrm_more_eat:
-                Intent intentEat = new Intent(getActivity(), CookActivity.class);
-                intentEat.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_FOOD);
-                startActivity(intentEat);
+            case R.id.ll_indexfrm_more_bike:
+                Intent intentBike = new Intent(getActivity(), LKBikeActivity.class);
+                startActivity(intentBike);
                 break;
             case R.id.ll_indexfrm_more_jock:
                 Intent intentJock = new Intent(getActivity(), JockActivity.class);

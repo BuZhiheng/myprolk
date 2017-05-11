@@ -32,6 +32,7 @@ public class IndexFragmentController implements IIndexPresenter{
                     PrefUtil.putString(CommonCode.SP_SET_PARTNERURL, setting.getSetPartnerUrl());
                     PrefUtil.putString(CommonCode.SP_SET_ABOUTUSURL, setting.getSetAboutusUrl());
                     PrefUtil.putString(CommonCode.SP_SET_JCLKURL, setting.getSetJCLKUrl());
+                    PrefUtil.putString(CommonCode.SP_SET_BIKE_NEWS, setting.getSetBikeNews());
                     if (WindowUtils.getAppVersionCode() < setting.getAndroidVersionCode()){
                         view.showNewVersion(setting);
                     }

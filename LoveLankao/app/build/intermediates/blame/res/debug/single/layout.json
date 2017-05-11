@@ -472,6 +472,10 @@
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_comment.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_public_bike.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_public_bike.xml"
+    },
+    {
         "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },

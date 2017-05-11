@@ -10,8 +10,8 @@ public class BusActivity$$ViewBinder<T extends cn.lankao.com.lovelankao.activity
     View view;
     view = finder.findRequiredView(source, 2131427464, "field 'mapView'");
     target.mapView = finder.castView(view, 2131427464, "field 'mapView'");
-    view = finder.findRequiredView(source, 2131427771, "field 'tvLine'");
-    target.tvLine = finder.castView(view, 2131427771, "field 'tvLine'");
+    view = finder.findRequiredView(source, 2131427773, "field 'tvLine'");
+    target.tvLine = finder.castView(view, 2131427773, "field 'tvLine'");
     view = finder.findRequiredView(source, 2131427465, "field 'btnRefresh'");
     target.btnRefresh = finder.castView(view, 2131427465, "field 'btnRefresh'");
   }

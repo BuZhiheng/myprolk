@@ -7493,6 +7493,7 @@ cn.lankao.com.lovelankao.R$drawable: int ic_common_call_yellow
 cn.lankao.com.lovelankao.R$drawable: int ic_common_defult
 cn.lankao.com.lovelankao.R$drawable: int ic_common_map_meishi
 cn.lankao.com.lovelankao.R$drawable: int ic_common_right_green
+cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_bike
 cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_chat
 cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_eat
 cn.lankao.com.lovelankao.R$drawable: int ic_indexfrm_jock
@@ -7539,6 +7540,8 @@ cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_photo_bg
 cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_setting
 cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_tuijian
 cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_wz
+cn.lankao.com.lovelankao.R$drawable: int ic_public_bike
+cn.lankao.com.lovelankao.R$drawable: int ic_public_bike1
 cn.lankao.com.lovelankao.R$drawable: int ic_quan_camera
 cn.lankao.com.lovelankao.R$drawable: int ic_register_code
 cn.lankao.com.lovelankao.R$drawable: int ic_register_nickname
@@ -7792,8 +7795,8 @@ cn.lankao.com.lovelankao.R$id: int ll_advertmsg_bottom
 cn.lankao.com.lovelankao.R$id: int ll_advertmsg_comment
 cn.lankao.com.lovelankao.R$id: int ll_cook_content
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_item
+cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_bike
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_chat
-cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_eat
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_jock
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_lkpeople
 cn.lankao.com.lovelankao.R$id: int ll_indexfrm_more_menu
@@ -7832,6 +7835,7 @@ cn.lankao.com.lovelankao.R$id: int ll_square_msg_content
 cn.lankao.com.lovelankao.R$id: int ll_webview_content
 cn.lankao.com.lovelankao.R$id: int loPageTurningPoint
 cn.lankao.com.lovelankao.R$id: int map_activity_shoploc
+cn.lankao.com.lovelankao.R$id: int map_bike
 cn.lankao.com.lovelankao.R$id: int map_bus
 cn.lankao.com.lovelankao.R$id: int map_lbs_act
 cn.lankao.com.lovelankao.R$id: int map_lk_people
@@ -7947,6 +7951,7 @@ cn.lankao.com.lovelankao.R$id: int tv_comment_last
 cn.lankao.com.lovelankao.R$id: int tv_cook_item_desc
 cn.lankao.com.lovelankao.R$id: int tv_cook_item_food
 cn.lankao.com.lovelankao.R$id: int tv_cook_item_title
+cn.lankao.com.lovelankao.R$id: int tv_cookact_eat
 cn.lankao.com.lovelankao.R$id: int tv_cookact_title
 cn.lankao.com.lovelankao.R$id: int tv_indexfrm_headview_index
 cn.lankao.com.lovelankao.R$id: int tv_indexfrm_headview_title
@@ -8085,6 +8090,7 @@ cn.lankao.com.lovelankao.R$layout: int activity_my_msg
 cn.lankao.com.lovelankao.R$layout: int activity_my_msg_item
 cn.lankao.com.lovelankao.R$layout: int activity_photo_viewpage
 cn.lankao.com.lovelankao.R$layout: int activity_pic_show
+cn.lankao.com.lovelankao.R$layout: int activity_public_bike
 cn.lankao.com.lovelankao.R$layout: int activity_read_item
 cn.lankao.com.lovelankao.R$layout: int activity_read_weixin
 cn.lankao.com.lovelankao.R$layout: int activity_register
@@ -9059,6 +9065,28 @@ cn.lankao.com.lovelankao.activity.JockActivity: void onCreate(android.os.Bundle)
 cn.lankao.com.lovelankao.activity.LBSActivity
 cn.lankao.com.lovelankao.activity.LBSActivity: LBSActivity()
 cn.lankao.com.lovelankao.activity.LBSActivity: void onCreate(android.os.Bundle)
+cn.lankao.com.lovelankao.activity.LKBikeActivity
+cn.lankao.com.lovelankao.activity.LKBikeActivity: cn.lankao.com.lovelankao.ipresenter.ILKBikePresenter presenter
+cn.lankao.com.lovelankao.activity.LKBikeActivity: com.baidu.mapapi.map.MapView mapView
+cn.lankao.com.lovelankao.activity.LKBikeActivity: com.baidu.mapapi.map.BaiduMap map
+cn.lankao.com.lovelankao.activity.LKBikeActivity: com.baidu.mapapi.map.BitmapDescriptor bitmap
+cn.lankao.com.lovelankao.activity.LKBikeActivity: com.baidu.mapapi.map.MarkerOptions option
+cn.lankao.com.lovelankao.activity.LKBikeActivity: LKBikeActivity()
+cn.lankao.com.lovelankao.activity.LKBikeActivity: void onCreate(android.os.Bundle)
+cn.lankao.com.lovelankao.activity.LKBikeActivity: void initView()
+cn.lankao.com.lovelankao.activity.LKBikeActivity: void onClick(android.view.View)
+cn.lankao.com.lovelankao.activity.LKBikeActivity: void showToast(java.lang.String)
+cn.lankao.com.lovelankao.activity.LKBikeActivity: void setMapMarker(cn.lankao.com.lovelankao.model.PublicBike)
+cn.lankao.com.lovelankao.activity.LKBikeActivity$$ViewBinder
+cn.lankao.com.lovelankao.activity.LKBikeActivity$$ViewBinder: LKBikeActivity$$ViewBinder()
+cn.lankao.com.lovelankao.activity.LKBikeActivity$$ViewBinder: void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.activity.LKBikeActivity,java.lang.Object)
+cn.lankao.com.lovelankao.activity.LKBikeActivity$$ViewBinder: void unbind(cn.lankao.com.lovelankao.activity.LKBikeActivity)
+cn.lankao.com.lovelankao.activity.LKBikeActivity$$ViewBinder: void unbind(java.lang.Object)
+cn.lankao.com.lovelankao.activity.LKBikeActivity$$ViewBinder: void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object)
+cn.lankao.com.lovelankao.activity.LKBikeActivity$1
+cn.lankao.com.lovelankao.activity.LKBikeActivity$1: cn.lankao.com.lovelankao.activity.LKBikeActivity this$0
+cn.lankao.com.lovelankao.activity.LKBikeActivity$1: LKBikeActivity$1(cn.lankao.com.lovelankao.activity.LKBikeActivity)
+cn.lankao.com.lovelankao.activity.LKBikeActivity$1: boolean onMarkerClick(com.baidu.mapapi.map.Marker)
 cn.lankao.com.lovelankao.activity.LKNewsActivity
 cn.lankao.com.lovelankao.activity.LKNewsActivity: LKNewsActivity()
 cn.lankao.com.lovelankao.activity.LKNewsActivity: void onCreate(android.os.Bundle)
@@ -9954,6 +9982,8 @@ cn.lankao.com.lovelankao.ipresenter.IBusPresenter
 cn.lankao.com.lovelankao.ipresenter.IBusPresenter: void getBus(java.lang.String)
 cn.lankao.com.lovelankao.ipresenter.IIndexPresenter
 cn.lankao.com.lovelankao.ipresenter.IIndexPresenter: void getData()
+cn.lankao.com.lovelankao.ipresenter.ILKBikePresenter
+cn.lankao.com.lovelankao.ipresenter.ILKBikePresenter: void getBike()
 cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter
 cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter: void getPeople()
 cn.lankao.com.lovelankao.ipresenter.IMainFrmPresenter
@@ -9977,6 +10007,9 @@ cn.lankao.com.lovelankao.iview.IIndexView: void setBannerAndNews(java.util.List,
 cn.lankao.com.lovelankao.iview.IIndexView: void setMainService(java.util.List)
 cn.lankao.com.lovelankao.iview.IIndexView: void setRefreshStop()
 cn.lankao.com.lovelankao.iview.IIndexView: void showNewVersion(cn.lankao.com.lovelankao.model.Setting)
+cn.lankao.com.lovelankao.iview.ILKBikeView
+cn.lankao.com.lovelankao.iview.ILKBikeView: void showToast(java.lang.String)
+cn.lankao.com.lovelankao.iview.ILKBikeView: void setMapMarker(cn.lankao.com.lovelankao.model.PublicBike)
 cn.lankao.com.lovelankao.iview.ILKPeopleView
 cn.lankao.com.lovelankao.iview.ILKPeopleView: void showToast(java.lang.String)
 cn.lankao.com.lovelankao.iview.ILKPeopleView: void setMapMarker(cn.lankao.com.lovelankao.model.MyUser)
@@ -10192,6 +10225,7 @@ cn.lankao.com.lovelankao.model.CommonCode: java.lang.String INTENT_COMMENT_LASTC
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_SET_PARTNERURL
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_SET_ABOUTUSURL
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_SET_JCLKURL
+cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_SET_BIKE_NEWS
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_LOCATION_ADDRESS
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_LOCATION_LAT
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_LOCATION_LNG
@@ -10373,6 +10407,11 @@ cn.lankao.com.lovelankao.model.MyUser: java.lang.Float getUserLng()
 cn.lankao.com.lovelankao.model.MyUser: void setUserLng(java.lang.Float)
 cn.lankao.com.lovelankao.model.NewsList
 cn.lankao.com.lovelankao.model.NewsList: NewsList()
+cn.lankao.com.lovelankao.model.PublicBike
+cn.lankao.com.lovelankao.model.PublicBike: java.lang.Float bikeLat
+cn.lankao.com.lovelankao.model.PublicBike: java.lang.Float bikeLng
+cn.lankao.com.lovelankao.model.PublicBike: java.lang.String bikeAddress
+cn.lankao.com.lovelankao.model.PublicBike: PublicBike()
 cn.lankao.com.lovelankao.model.PushData
 cn.lankao.com.lovelankao.model.PushData: java.lang.String title
 cn.lankao.com.lovelankao.model.PushData: java.lang.String msg
@@ -10403,6 +10442,7 @@ cn.lankao.com.lovelankao.model.Setting: java.lang.Integer setType
 cn.lankao.com.lovelankao.model.Setting: java.lang.String setPartnerUrl
 cn.lankao.com.lovelankao.model.Setting: java.lang.String setAboutusUrl
 cn.lankao.com.lovelankao.model.Setting: java.lang.String setJCLKUrl
+cn.lankao.com.lovelankao.model.Setting: java.lang.String setBikeNews
 cn.lankao.com.lovelankao.model.Setting: java.lang.String androidUpdateLog
 cn.lankao.com.lovelankao.model.Setting: java.lang.Integer androidVersionCode
 cn.lankao.com.lovelankao.model.Setting: Setting()
@@ -10418,6 +10458,8 @@ cn.lankao.com.lovelankao.model.Setting: java.lang.String getAndroidUpdateLog()
 cn.lankao.com.lovelankao.model.Setting: void setAndroidUpdateLog(java.lang.String)
 cn.lankao.com.lovelankao.model.Setting: java.lang.Integer getAndroidVersionCode()
 cn.lankao.com.lovelankao.model.Setting: void setAndroidVersionCode(java.lang.Integer)
+cn.lankao.com.lovelankao.model.Setting: java.lang.String getSetBikeNews()
+cn.lankao.com.lovelankao.model.Setting: void setSetBikeNews(java.lang.String)
 cn.lankao.com.lovelankao.model.Shared
 cn.lankao.com.lovelankao.model.Shared: java.lang.String title
 cn.lankao.com.lovelankao.model.Shared: java.lang.String desc
@@ -10939,6 +10981,7 @@ cn.lankao.com.lovelankao.viewcontroller.CookActivityController: cn.lankao.com.lo
 cn.lankao.com.lovelankao.viewcontroller.CookActivityController: android.support.v7.widget.RecyclerView rv
 cn.lankao.com.lovelankao.viewcontroller.CookActivityController: android.support.v4.widget.SwipeRefreshLayout refresh
 cn.lankao.com.lovelankao.viewcontroller.CookActivityController: android.widget.TextView tvTitle
+cn.lankao.com.lovelankao.viewcontroller.CookActivityController: android.widget.TextView tvEat
 cn.lankao.com.lovelankao.viewcontroller.CookActivityController: cn.lankao.com.lovelankao.adapter.CookAdapter adapter
 cn.lankao.com.lovelankao.viewcontroller.CookActivityController: android.app.ProgressDialog dialog
 cn.lankao.com.lovelankao.viewcontroller.CookActivityController: java.lang.String url
@@ -11074,6 +11117,16 @@ cn.lankao.com.lovelankao.viewcontroller.LBSActivityController$2$1: cn.lankao.com
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController$2$1: cn.lankao.com.lovelankao.viewcontroller.LBSActivityController$2 this$1
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController$2$1: LBSActivityController$2$1(cn.lankao.com.lovelankao.viewcontroller.LBSActivityController$2,cn.lankao.com.lovelankao.model.AdvertNormal)
 cn.lankao.com.lovelankao.viewcontroller.LBSActivityController$2$1: void onClick(android.view.View)
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter: cn.lankao.com.lovelankao.iview.ILKBikeView view
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter: LKBikePresenter(cn.lankao.com.lovelankao.iview.ILKBikeView)
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter: void getBike()
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter: cn.lankao.com.lovelankao.iview.ILKBikeView access$000(cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter)
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter$1
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter$1: cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter this$0
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter$1: LKBikePresenter$1(cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter)
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter$1: void done(java.util.List,cn.bmob.v3.exception.BmobException)
+cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter$1: void done(java.lang.Object,java.lang.Object)
 cn.lankao.com.lovelankao.viewcontroller.LKNewsActivityController
 cn.lankao.com.lovelankao.viewcontroller.LKNewsActivityController: cn.lankao.com.lovelankao.activity.LKNewsActivity context
 cn.lankao.com.lovelankao.viewcontroller.LKNewsActivityController: android.support.v7.widget.RecyclerView rv

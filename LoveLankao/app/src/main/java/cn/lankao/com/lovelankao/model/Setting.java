@@ -8,6 +8,7 @@ public class Setting extends BmobObject{
     private String setPartnerUrl;
     private String setAboutusUrl;
     private String setJCLKUrl;
+    private String setBikeNews;
     private String androidUpdateLog;
     private Integer androidVersionCode;
     public String getSetJCLKUrl() {
@@ -56,5 +57,13 @@ public class Setting extends BmobObject{
 
     public void setAndroidVersionCode(Integer androidVersionCode) {
         this.androidVersionCode = androidVersionCode;
+    }
+
+    public String getSetBikeNews() {
+        return setBikeNews;
+    }
+
+    public void setSetBikeNews(String setBikeNews) {
+        this.setBikeNews = setBikeNews;
     }
 }

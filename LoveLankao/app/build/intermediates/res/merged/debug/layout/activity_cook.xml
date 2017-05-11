@@ -24,6 +24,16 @@
             android:layout_height="25dp"
             android:layout_marginLeft="@dimen/common_margin"
             android:src="@drawable/ic_common_back_white"/>
+        <TextView
+            android:id="@+id/tv_cookact_eat"
+            android:layout_gravity="center|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_margin"
+            android:text="健康饮食"
+            android:textSize="@dimen/text_common_item_title"
+            android:textColor="@color/color_white"
+            />
     </FrameLayout>
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/srl_cook_activity"

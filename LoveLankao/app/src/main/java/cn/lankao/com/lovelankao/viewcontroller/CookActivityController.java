@@ -1,5 +1,4 @@
 package cn.lankao.com.lovelankao.viewcontroller;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -7,11 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-
 import com.google.gson.JsonElement;
-
 import java.util.List;
-
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.CookActivity;
 import cn.lankao.com.lovelankao.adapter.CookAdapter;
@@ -23,9 +19,6 @@ import cn.lankao.com.lovelankao.utils.OkHttpUtil;
 import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 import cn.lankao.com.lovelankao.widget.ProDialog;
 import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
-
 /**
  * Created by BuZhiheng on 2016/4/18.
  */
@@ -42,6 +35,7 @@ public class CookActivityController implements SwipeRefreshLayout.OnRefreshListe
     private RecyclerView rv;
     private SwipeRefreshLayout refresh;
     private TextView tvTitle;
+    private TextView tvEat;
     private CookAdapter adapter;
     private ProgressDialog dialog;
     private String url = URL_COOK;
@@ -104,7 +98,9 @@ public class CookActivityController implements SwipeRefreshLayout.OnRefreshListe
         dialog.show();
         context.setContentView(R.layout.activity_cook);
         context.findViewById(R.id.iv_cook_back).setOnClickListener(this);
+        context.findViewById(R.id.tv_cookact_eat).setOnClickListener(this);
         tvTitle = (TextView) context.findViewById(R.id.tv_cookact_title);
+        tvEat = (TextView) context.findViewById(R.id.tv_cookact_eat);
         Intent intent = context.getIntent();
         if (intent != null){
             if ((CommonCode.INTENT_COOK).equals(intent.getStringExtra(CommonCode.INTENT_COOK_OR_FOOD))){
@@ -115,6 +111,7 @@ public class CookActivityController implements SwipeRefreshLayout.OnRefreshListe
                 url = URL_FOOD;
                 toUrl = TO_URL_FOOD;
                 tvTitle.setText("健康饮食");
+                tvEat.setVisibility(View.GONE);
             }
         }
         adapter = new CookAdapter(context,toUrl);
@@ -148,7 +145,11 @@ public class CookActivityController implements SwipeRefreshLayout.OnRefreshListe
             case R.id.iv_cook_back:
                 context.finish();
                 break;
+            case R.id.tv_cookact_eat:
+                Intent intent = new Intent(context, CookActivity.class);
+                intent.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_FOOD);
+                context.startActivity(intent);
+                break;
         }
     }
 }
-
