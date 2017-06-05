@@ -49,7 +49,6 @@ public class ChatRoomController implements View.OnClickListener {
         initView();
         initRoom();
     }
-
     private void initRoom() {
         if (!SystemUtils.networkState()){
             ToastUtil.show(CommonCode.MSG_NETWORK_ERR);

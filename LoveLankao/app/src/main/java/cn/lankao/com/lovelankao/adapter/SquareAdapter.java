@@ -79,8 +79,8 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         } else {
             x.image().bind(holder.ivPhoto, CommonCode.APP_ICON, BitmapUtil.getOptionCommonRadius());
         }
-        holder.llPhoto.setVisibility(View.VISIBLE);
         if (square.getSquarePhoto1() != null){
+            holder.llPhoto.setVisibility(View.VISIBLE);
             //            params.width = width/3;
 //            params.leftMargin = 10;
 //            holder.ivPhoto1.setLayoutParams(params);
@@ -101,8 +101,7 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
                 x.image().bind(holder.ivPhoto3, square.getSquarePhoto3().getFileUrl(), BitmapUtil.getOptionCommon());
 //                holder.ivPhoto3.setLayoutParams(params);
             }
-        }
-        if (square.getSquarePhoto1() == null){
+        } else {
             holder.llPhoto.setVisibility(View.GONE);
         }
         final String nickname = PrefUtil.getString(CommonCode.SP_USER_NICKNAME,"");
