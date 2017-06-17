@@ -108,6 +108,7 @@
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareMsgActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareSendActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.SquarePersonalActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.ShopLocationActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.TopActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.WebViewActivity" />

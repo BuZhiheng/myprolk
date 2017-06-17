@@ -17,6 +17,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
+import cn.lankao.com.lovelankao.activity.LoginActivity;
 import cn.lankao.com.lovelankao.activity.SquareMsgActivity;
 import cn.lankao.com.lovelankao.activity.SquareSendActivity;
 import cn.lankao.com.lovelankao.adapter.SquareAdapter;
@@ -68,7 +69,8 @@ public class TalkFragment extends Fragment implements ITalkView, View.OnClickLis
             }
         });
         tvMsg.setOnClickListener(this);
-        view.findViewById(R.id.iv_talkfrm_send).setOnClickListener(this);
+        view.findViewById(R.id.ll_talkfrm_send).setOnClickListener(this);
+        view.findViewById(R.id.tv_talkfrm_my).setOnClickListener(this);
         presnter.getData(cout);
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -85,12 +87,20 @@ public class TalkFragment extends Fragment implements ITalkView, View.OnClickLis
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.iv_talkfrm_send:
+            case R.id.ll_talkfrm_send:
                 Intent intentSend = new Intent(getActivity(), SquareSendActivity.class);
                 startActivity(intentSend);
                 break;
             case R.id.tv_squarefrm_msg:
                 presnter.onMsgClick();
+                break;
+            case R.id.tv_talkfrm_my:
+                if (MyUser.isLogin()){
+                    setReadedMsg();
+                } else {
+                    Intent intent = new Intent(getActivity(), LoginActivity.class);
+                    startActivity(intent);
+                }
                 break;
         }
     }

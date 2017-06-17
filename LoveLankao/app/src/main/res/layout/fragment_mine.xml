@@ -113,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
-                    android:text="我的消息"
+                    android:text="我的论坛"
                     android:textSize="@dimen/text_common_item_title"
                     android:textColor="@color/color_black_text"
                     />

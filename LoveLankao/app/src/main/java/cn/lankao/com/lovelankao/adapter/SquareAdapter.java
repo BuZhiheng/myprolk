@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.CommentActivity;
 import cn.lankao.com.lovelankao.activity.LoginActivity;
 import cn.lankao.com.lovelankao.activity.SquareActivity;
+import cn.lankao.com.lovelankao.activity.SquarePersonalActivity;
 import cn.lankao.com.lovelankao.model.Comment;
 import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
@@ -79,7 +81,9 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         } else {
             x.image().bind(holder.ivPhoto, CommonCode.APP_ICON, BitmapUtil.getOptionCommonRadius());
         }
-        if (square.getSquarePhoto1() != null){
+        if (square.getSquarePhoto1() == null){
+            holder.llPhoto.setVisibility(View.GONE);
+        } else {
             holder.llPhoto.setVisibility(View.VISIBLE);
             //            params.width = width/3;
 //            params.leftMargin = 10;
@@ -101,8 +105,6 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
                 x.image().bind(holder.ivPhoto3, square.getSquarePhoto3().getFileUrl(), BitmapUtil.getOptionCommon());
 //                holder.ivPhoto3.setLayoutParams(params);
             }
-        } else {
-            holder.llPhoto.setVisibility(View.GONE);
         }
         final String nickname = PrefUtil.getString(CommonCode.SP_USER_NICKNAME,"");
         holder.ivLikeTimes.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.ic_square_liketimes));
@@ -177,6 +179,37 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
                 context.startActivity(intent);
             }
         });
+        holder.fl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!TextUtil.isNull(square.getUserId())){
+                    Intent intent = new Intent(context, SquarePersonalActivity.class);
+                    intent.putExtra(CommonCode.SP_USER_USERID,square.getUserId());
+                    intent.putExtra(CommonCode.SP_USER_NICKNAME,square.getNickName());
+                    context.startActivity(intent);
+                }
+            }
+        });
+        if (!TextUtil.isNull(square.getUserId()) && square.getUserId().equals(PrefUtil.getString(CommonCode.SP_USER_USERID,""))){
+            holder.tvDelete.setVisibility(View.VISIBLE);
+            holder.tvDelete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    square.delete(square.getObjectId(), new UpdateListener() {
+                        @Override
+                        public void done(BmobException e) {
+                            if (e == null){
+                                data.remove(square);
+                                notifyDataSetChanged();
+                                ToastUtil.show("删除成功");
+                            }
+                        }
+                    });
+                }
+            });
+        } else {
+            holder.tvDelete.setVisibility(View.GONE);
+        }
     }
     private boolean isLogin(){
         String nickname = PrefUtil.getString(CommonCode.SP_USER_NICKNAME, "");
@@ -187,6 +220,7 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         return true;
     }
     class MyViewHolder extends RecyclerView.ViewHolder {
+        FrameLayout fl;
         ImageView ivPhoto;
         TextView tvNickname;
         TextView tvTime;
@@ -204,8 +238,11 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         LinearLayout llComment;
         LinearLayout llLikeTimes;
         LinearLayout llContent;
+
+        TextView tvDelete;
         public MyViewHolder(View view) {
             super(view);
+            fl = (FrameLayout) view.findViewById(R.id.fl_square_item_personal);
             ivPhoto = (ImageView) view.findViewById(R.id.iv_square_item_photo);
             ivPhoto1 = (ImageView) view.findViewById(R.id.iv_square_item_photo1);
             ivPhoto2 = (ImageView) view.findViewById(R.id.iv_square_item_photo2);
@@ -223,6 +260,7 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
             llLikeTimes = (LinearLayout) view.findViewById(R.id.ll_square_item_liketimes);
             llComment = (LinearLayout) view.findViewById(R.id.ll_square_item_comment);
             llContent = (LinearLayout) view.findViewById(R.id.ll_square_item_content);
+            tvDelete = (TextView) view.findViewById(R.id.tv_square_item_delete);
         }
     }
 }

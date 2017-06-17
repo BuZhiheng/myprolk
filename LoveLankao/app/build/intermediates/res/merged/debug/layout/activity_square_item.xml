@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <FrameLayout
+        android:id="@+id/fl_square_item_personal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="@dimen/common_margin"
@@ -50,10 +51,20 @@
             android:layout_height="25dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="25dp"
-            android:text="@string/app_test"
+            android:text=""
             android:textSize="@dimen/text_common_item_content"
             android:textColor="@color/color_gray_deep"
             android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/tv_square_item_delete"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_margin"
+            android:text="删除"
+            android:textSize="@dimen/text_common_item_title"
+            android:textColor="@color/color_yellow"
             />
     </FrameLayout>
     <TextView
@@ -82,7 +93,6 @@
         android:layout_marginLeft="@dimen/common_margin"
         android:layout_marginRight="@dimen/common_margin"
         android:orientation="horizontal"
-        android:visibility="gone"
         >
         <ImageView
             android:id="@+id/iv_square_item_photo1"

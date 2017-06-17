@@ -1,6 +1,12 @@
 package cn.lankao.com.lovelankao.model;
+import android.content.Intent;
+
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobFile;
+import cn.lankao.com.lovelankao.activity.LoginActivity;
+import cn.lankao.com.lovelankao.utils.PrefUtil;
+import cn.lankao.com.lovelankao.utils.TextUtil;
+
 /**
  * Created by BuZhiheng on 2016/4/2.
  */
@@ -84,5 +90,12 @@ public class MyUser extends BmobObject{
 
     public void setUserLng(Float userLng) {
         this.userLng = userLng;
+    }
+    public static boolean isLogin(){
+        if (TextUtil.isNull(PrefUtil.getString(CommonCode.SP_USER_USERID, ""))) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }

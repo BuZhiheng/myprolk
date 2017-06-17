@@ -15,6 +15,7 @@ import cn.lankao.com.lovelankao.activity.AdvertDetailActivity;
 import cn.lankao.com.lovelankao.activity.LoginActivity;
 import cn.lankao.com.lovelankao.activity.SettingActivity;
 import cn.lankao.com.lovelankao.activity.SquareMsgActivity;
+import cn.lankao.com.lovelankao.activity.SquarePersonalActivity;
 import cn.lankao.com.lovelankao.activity.WZCityActivity;
 import cn.lankao.com.lovelankao.activity.WebViewActivity;
 import cn.lankao.com.lovelankao.iview.IMineFrmView;
@@ -98,7 +99,9 @@ public class MineFragment extends Fragment implements IMineFrmView, View.OnClick
                     Intent intent = new Intent(getActivity(), LoginActivity.class);
                     startActivity(intent);
                 } else {
-                    Intent intentMsg = new Intent(getActivity(), SquareMsgActivity.class);
+                    Intent intentMsg = new Intent(getActivity(), SquarePersonalActivity.class);
+                    intentMsg.putExtra(CommonCode.SP_USER_USERID,PrefUtil.getString(CommonCode.SP_USER_USERID,""));
+                    intentMsg.putExtra(CommonCode.SP_USER_NICKNAME,"我的论坛");
                     startActivity(intentMsg);
                 }
                 break;

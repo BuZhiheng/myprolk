@@ -21,6 +21,7 @@ import cn.bmob.v3.listener.UploadFileListener;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.SettingActivity;
 import cn.lankao.com.lovelankao.model.MyUser;
+import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.OkHttpUtil;
@@ -98,6 +99,7 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
                 user.setNickName("未登录");
                 PrefUtil.clear();
                 context.finish();
+                EventBus.getDefault().post(new Square());
                 EventBus.getDefault().post(user);
                 break;
             case R.id.btn_setting_exit:

@@ -8,7 +8,7 @@
     <com.bigkoo.convenientbanner.ConvenientBanner
         android:id="@+id/banner_indexfrm"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="180dp"
         app:canLoop="true"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_indexfrm_service"
@@ -284,7 +284,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/common_margin"
-            android:text="兰考新闻"
+            android:text="兰考头条"
             android:textSize="@dimen/text_common_item_title"
             android:textColor="@color/color_black_text"
             />

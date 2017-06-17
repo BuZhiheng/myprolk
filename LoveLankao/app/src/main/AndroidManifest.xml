@@ -90,6 +90,7 @@
         <activity android:name=".activity.SquareActivity" />
         <activity android:name=".activity.SquareMsgActivity" />
         <activity android:name=".activity.SquareSendActivity" />
+        <activity android:name=".activity.SquarePersonalActivity"/>
         <activity android:name=".activity.ShopLocationActivity" />
         <activity android:name=".activity.TopActivity" />
         <activity android:name=".activity.WebViewActivity" />
