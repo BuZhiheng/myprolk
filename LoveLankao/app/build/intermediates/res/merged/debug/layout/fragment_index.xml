@@ -15,6 +15,15 @@
             android:text="@string/main_index"
             android:textColor="@color/color_white"
             android:textSize="@dimen/text_main_title" />
+        <TextView
+            android:id="@+id/tv_indexfrm_msg_board"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/common_margin"
+            android:text="留言板"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_common_item_title" />
     </FrameLayout>
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/srl_index_frm"

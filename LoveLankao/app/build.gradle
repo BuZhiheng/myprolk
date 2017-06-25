@@ -12,6 +12,15 @@ android {
         targetSdkVersion 23
         versionCode 15
         versionName "1.5.1"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86_64'
+        }
+        manifestPlaceholders = [
+                GETUI_APP_ID : "EfrrWfWLdZ89Tv806TBbK",
+                GETUI_APP_KEY : "72qBudOA6z9uzbpgnPHH3",
+                GETUI_APP_SECRET : "ZnppgIjubAA8BktsQCEMe3"
+        ]
     }
     buildTypes {
         release {
@@ -51,6 +60,7 @@ dependencies {
 //    compile 'com.google.code.gson:gson:2.2.4'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.getui:sdk:2.10.2.0'
     compile files('libs/open_sdk_r5509.jar')
     compile files('libs/libammsdk.jar')
 }

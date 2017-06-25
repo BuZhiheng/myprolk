@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class CommentActivity$$ViewBinder<T extends cn.lankao.com.lovelankao.activity.CommentActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131427476, "field 'etContent'");
-    target.etContent = finder.castView(view, 2131427476, "field 'etContent'");
-    view = finder.findRequiredView(source, 2131427477, "field 'tvLast'");
-    target.tvLast = finder.castView(view, 2131427477, "field 'tvLast'");
+    view = finder.findRequiredView(source, 2131493012, "field 'etContent'");
+    target.etContent = finder.castView(view, 2131493012, "field 'etContent'");
+    view = finder.findRequiredView(source, 2131493013, "field 'tvLast'");
+    target.tvLast = finder.castView(view, 2131493013, "field 'tvLast'");
   }
 
   @Override public void unbind(T target) {

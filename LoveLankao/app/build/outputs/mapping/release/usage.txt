@@ -799,10 +799,15 @@ android.support.v4.content.Loader$OnLoadCanceledListener:
     public abstract void onLoadCanceled(android.support.v4.content.Loader)
 android.support.v4.content.Loader$OnLoadCompleteListener:
     public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
-android.support.v4.content.LocalBroadcastManager
-android.support.v4.content.LocalBroadcastManager$1
-android.support.v4.content.LocalBroadcastManager$BroadcastRecord
-android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.LocalBroadcastManager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    static final int MSG_EXEC_PENDING_BROADCASTS
+    134:152:public void registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)
+    164:188:public void unregisterReceiver(android.content.BroadcastReceiver)
+    277:280:public void sendBroadcastSync(android.content.Intent)
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord:
+    52:55:LocalBroadcastManager$ReceiverRecord(android.content.IntentFilter,android.content.BroadcastReceiver)
 android.support.v4.content.ModernAsyncTask
 android.support.v4.content.ModernAsyncTask$1
 android.support.v4.content.ModernAsyncTask$2

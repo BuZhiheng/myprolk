@@ -3248,6 +3248,33 @@ android.support.v4.content.Loader -> android.support.v4.content.n:
     void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
 android.support.v4.content.Loader$OnLoadCanceledListener -> android.support.v4.content.o:
 android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.content.p:
+android.support.v4.content.LocalBroadcastManager -> android.support.v4.content.q:
+    android.content.Context mAppContext -> a
+    java.util.HashMap mReceivers -> b
+    java.util.HashMap mActions -> c
+    java.util.ArrayList mPendingBroadcasts -> d
+    android.os.Handler mHandler -> e
+    java.lang.Object mLock -> f
+    android.support.v4.content.LocalBroadcastManager mInstance -> g
+    android.support.v4.content.LocalBroadcastManager getInstance(android.content.Context) -> a
+    void <init>(android.content.Context) -> <init>
+    boolean sendBroadcast(android.content.Intent) -> a
+    void executePendingBroadcasts() -> a
+    void access$000(android.support.v4.content.LocalBroadcastManager) -> a
+    void <clinit>() -> <clinit>
+android.support.v4.content.LocalBroadcastManager$1 -> android.support.v4.content.r:
+    android.support.v4.content.LocalBroadcastManager this$0 -> a
+    void <init>(android.support.v4.content.LocalBroadcastManager,android.os.Looper) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord -> android.support.v4.content.s:
+    android.content.Intent intent -> a
+    java.util.ArrayList receivers -> b
+    void <init>(android.content.Intent,java.util.ArrayList) -> <init>
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord -> android.support.v4.content.t:
+    android.content.IntentFilter filter -> a
+    android.content.BroadcastReceiver receiver -> b
+    boolean broadcasting -> c
+    java.lang.String toString() -> toString
 android.support.v4.content.PermissionChecker -> android.support.v4.content.PermissionChecker:
 android.support.v4.content.PermissionChecker$PermissionResult -> android.support.v4.content.PermissionChecker$PermissionResult:
 android.support.v4.content.WakefulBroadcastReceiver -> android.support.v4.content.WakefulBroadcastReceiver:
@@ -16705,6 +16732,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int fl_minefrm_tuijian -> fl_minefrm_tuijian
     int fl_minefrm_wz -> fl_minefrm_wz
     int fl_read_content -> fl_read_content
+    int fl_square_item_personal -> fl_square_item_personal
     int fl_talkfrm_chatroom -> fl_talkfrm_chatroom
     int fl_talkfrm_cook -> fl_talkfrm_cook
     int fl_talkfrm_food -> fl_talkfrm_food
@@ -16782,6 +16810,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int iv_main_user -> iv_main_user
     int iv_mainfrm_item_photo -> iv_mainfrm_item_photo
     int iv_minefrm_photo -> iv_minefrm_photo
+    int iv_msg_board_item_photo -> iv_msg_board_item_photo
     int iv_picshow_0 -> iv_picshow_0
     int iv_picshow_1 -> iv_picshow_1
     int iv_picshow_2 -> iv_picshow_2
@@ -16866,6 +16895,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int ll_square_item_photo1 -> ll_square_item_photo1
     int ll_square_item_photo2 -> ll_square_item_photo2
     int ll_square_msg_content -> ll_square_msg_content
+    int ll_talkfrm_send -> ll_talkfrm_send
     int ll_webview_content -> ll_webview_content
     int loPageTurningPoint -> loPageTurningPoint
     int map_activity_shoploc -> map_activity_shoploc
@@ -16901,9 +16931,11 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int rv_lknews_activity -> rv_lknews_activity
     int rv_mainfrm_header -> rv_mainfrm_header
     int rv_mainfrm_shop -> rv_mainfrm_shop
+    int rv_msg_board -> rv_msg_board
     int rv_read_activity -> rv_read_activity
     int rv_square_frm -> rv_square_frm
     int rv_square_msg -> rv_square_msg
+    int rv_square_personal -> rv_square_personal
     int rv_square_room -> rv_square_room
     int rv_top_activity -> rv_top_activity
     int rv_wz_city -> rv_wz_city
@@ -16945,9 +16977,11 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int srl_jock_activity -> srl_jock_activity
     int srl_lknews_activity -> srl_lknews_activity
     int srl_main_frm -> srl_main_frm
+    int srl_msg_board -> srl_msg_board
     int srl_read_activity -> srl_read_activity
     int srl_square_activity -> srl_square_activity
     int srl_square_frm -> srl_square_frm
+    int srl_square_personal -> srl_square_personal
     int srl_top_activity -> srl_top_activity
     int start -> start
     int status_bar_latest_event_content -> status_bar_latest_event_content
@@ -16990,6 +17024,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int tv_indexfrm_headview_index -> tv_indexfrm_headview_index
     int tv_indexfrm_headview_title -> tv_indexfrm_headview_title
     int tv_indexfrm_item_title -> tv_indexfrm_item_title
+    int tv_indexfrm_msg_board -> tv_indexfrm_msg_board
     int tv_jock_item_click -> tv_jock_item_click
     int tv_jock_item_content -> tv_jock_item_content
     int tv_jock_title -> tv_jock_title
@@ -17017,6 +17052,9 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int tv_minefrm_jifen -> tv_minefrm_jifen
     int tv_minefrm_nickname -> tv_minefrm_nickname
     int tv_minefrm_phone -> tv_minefrm_phone
+    int tv_msg_board_item_content -> tv_msg_board_item_content
+    int tv_msg_board_item_nickname -> tv_msg_board_item_nickname
+    int tv_msg_board_item_time -> tv_msg_board_item_time
     int tv_popwinshare_cancel -> tv_popwinshare_cancel
     int tv_readact_item_source -> tv_readact_item_source
     int tv_readact_item_title -> tv_readact_item_title
@@ -17035,6 +17073,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int tv_square_item_clicktimes -> tv_square_item_clicktimes
     int tv_square_item_commenttimes -> tv_square_item_commenttimes
     int tv_square_item_content -> tv_square_item_content
+    int tv_square_item_delete -> tv_square_item_delete
     int tv_square_item_liketimes -> tv_square_item_liketimes
     int tv_square_item_nickname -> tv_square_item_nickname
     int tv_square_item_time -> tv_square_item_time
@@ -17042,6 +17081,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int tv_square_item_usertype -> tv_square_item_usertype
     int tv_square_msg_comment -> tv_square_msg_comment
     int tv_squarefrm_msg -> tv_squarefrm_msg
+    int tv_talkfrm_my -> tv_talkfrm_my
     int tv_titlebar_right -> tv_titlebar_right
     int tv_titlebar_title -> tv_titlebar_title
     int tv_top_item_desc -> tv_top_item_desc
@@ -17106,7 +17146,7 @@ cn.lankao.com.lovelankao.R$layout -> cn.lankao.com.lovelankao.R$layout:
     int activity_bus -> activity_bus
     int activity_bus_line -> activity_bus_line
     int activity_chat_room -> activity_chat_room
-    int activity_chatroom_items -> activity_chatroom_items
+    int activity_chat_room_items -> activity_chat_room_items
     int activity_comment -> activity_comment
     int activity_cook -> activity_cook
     int activity_cook_item -> activity_cook_item
@@ -17120,6 +17160,8 @@ cn.lankao.com.lovelankao.R$layout -> cn.lankao.com.lovelankao.R$layout:
     int activity_lkpeople -> activity_lkpeople
     int activity_login -> activity_login
     int activity_main -> activity_main
+    int activity_msg_board -> activity_msg_board
+    int activity_msg_board_item -> activity_msg_board_item
     int activity_my_msg -> activity_my_msg
     int activity_my_msg_item -> activity_my_msg_item
     int activity_photo_viewpage -> activity_photo_viewpage
@@ -17137,6 +17179,7 @@ cn.lankao.com.lovelankao.R$layout -> cn.lankao.com.lovelankao.R$layout:
     int activity_square_item -> activity_square_item
     int activity_square_msg -> activity_square_msg
     int activity_square_msg_header -> activity_square_msg_header
+    int activity_square_personal -> activity_square_personal
     int activity_square_pop -> activity_square_pop
     int activity_square_send -> activity_square_send
     int activity_top -> activity_top
@@ -17193,6 +17236,9 @@ cn.lankao.com.lovelankao.R$layout -> cn.lankao.com.lovelankao.R$layout:
     int select_dialog_multichoice_material -> select_dialog_multichoice_material
     int select_dialog_singlechoice_material -> select_dialog_singlechoice_material
     int support_simple_spinner_dropdown_item -> support_simple_spinner_dropdown_item
+    void <init>() -> <init>
+cn.lankao.com.lovelankao.R$raw -> cn.lankao.com.lovelankao.R$raw:
+    int keep -> keep
     void <init>() -> <init>
 cn.lankao.com.lovelankao.R$string -> cn.lankao.com.lovelankao.R$string:
     int BMAppUpdate -> BMAppUpdate
@@ -18158,6 +18204,39 @@ cn.lankao.com.lovelankao.activity.MainActivity$1 -> cn.lankao.com.lovelankao.act
     cn.lankao.com.lovelankao.activity.MainActivity this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.activity.MainActivity) -> <init>
     void run() -> run
+cn.lankao.com.lovelankao.activity.MessageBoardActivity -> cn.lankao.com.lovelankao.activity.MessageBoardActivity:
+    android.support.v7.widget.RecyclerView recyclerView -> recyclerView
+    android.support.v4.widget.SwipeRefreshLayout refresh -> refresh
+    cn.lankao.com.lovelankao.adapter.MsgBoardAdapter adapter -> adapter
+    int cout -> cout
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void initView() -> initView
+    void getData(int) -> getData
+    void onClick(android.view.View) -> onClick
+    int access$000(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> access$000
+    int access$002(cn.lankao.com.lovelankao.activity.MessageBoardActivity,int) -> access$002
+    void access$100(cn.lankao.com.lovelankao.activity.MessageBoardActivity,int) -> access$100
+    cn.lankao.com.lovelankao.adapter.MsgBoardAdapter access$200(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> access$200
+cn.lankao.com.lovelankao.activity.MessageBoardActivity$$ViewBinder -> cn.lankao.com.lovelankao.activity.MessageBoardActivity$$ViewBinder:
+    void <init>() -> <init>
+    void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.activity.MessageBoardActivity,java.lang.Object) -> bind
+    void unbind(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> unbind
+    void unbind(java.lang.Object) -> unbind
+    void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object) -> bind
+cn.lankao.com.lovelankao.activity.MessageBoardActivity$1 -> cn.lankao.com.lovelankao.activity.MessageBoardActivity$1:
+    cn.lankao.com.lovelankao.activity.MessageBoardActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> <init>
+    void toBottom() -> toBottom
+cn.lankao.com.lovelankao.activity.MessageBoardActivity$2 -> cn.lankao.com.lovelankao.activity.MessageBoardActivity$2:
+    cn.lankao.com.lovelankao.activity.MessageBoardActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> <init>
+    void onRefresh() -> onRefresh
+cn.lankao.com.lovelankao.activity.MessageBoardActivity$3 -> cn.lankao.com.lovelankao.activity.MessageBoardActivity$3:
+    cn.lankao.com.lovelankao.activity.MessageBoardActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> <init>
+    void done(java.util.List,cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object,java.lang.Object) -> done
 cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity -> cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity:
     android.support.v4.view.ViewPager mPager -> mPager
     java.util.List list -> list
@@ -18312,6 +18391,40 @@ cn.lankao.com.lovelankao.activity.SquareMsgActivity$$ViewBinder -> cn.lankao.com
     void unbind(cn.lankao.com.lovelankao.activity.SquareMsgActivity) -> unbind
     void unbind(java.lang.Object) -> unbind
     void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object) -> bind
+cn.lankao.com.lovelankao.activity.SquarePersonalActivity -> cn.lankao.com.lovelankao.activity.SquarePersonalActivity:
+    android.support.v7.widget.RecyclerView recyclerView -> recyclerView
+    android.support.v4.widget.SwipeRefreshLayout refresh -> refresh
+    cn.lankao.com.lovelankao.adapter.SquareAdapter adapter -> adapter
+    int cout -> cout
+    java.lang.String userId -> userId
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void initView() -> initView
+    void getData() -> getData
+    void onClick(android.view.View) -> onClick
+    int access$000(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> access$000
+    int access$002(cn.lankao.com.lovelankao.activity.SquarePersonalActivity,int) -> access$002
+    void access$100(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> access$100
+    cn.lankao.com.lovelankao.adapter.SquareAdapter access$200(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> access$200
+cn.lankao.com.lovelankao.activity.SquarePersonalActivity$$ViewBinder -> cn.lankao.com.lovelankao.activity.SquarePersonalActivity$$ViewBinder:
+    void <init>() -> <init>
+    void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.activity.SquarePersonalActivity,java.lang.Object) -> bind
+    void unbind(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> unbind
+    void unbind(java.lang.Object) -> unbind
+    void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object) -> bind
+cn.lankao.com.lovelankao.activity.SquarePersonalActivity$1 -> cn.lankao.com.lovelankao.activity.SquarePersonalActivity$1:
+    cn.lankao.com.lovelankao.activity.SquarePersonalActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> <init>
+    void toBottom() -> toBottom
+cn.lankao.com.lovelankao.activity.SquarePersonalActivity$2 -> cn.lankao.com.lovelankao.activity.SquarePersonalActivity$2:
+    cn.lankao.com.lovelankao.activity.SquarePersonalActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> <init>
+    void onRefresh() -> onRefresh
+cn.lankao.com.lovelankao.activity.SquarePersonalActivity$3 -> cn.lankao.com.lovelankao.activity.SquarePersonalActivity$3:
+    cn.lankao.com.lovelankao.activity.SquarePersonalActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.SquarePersonalActivity) -> <init>
+    void done(java.util.List,cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object,java.lang.Object) -> done
 cn.lankao.com.lovelankao.activity.SquareSendActivity -> cn.lankao.com.lovelankao.activity.SquareSendActivity:
     cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController controller -> controller
     void <init>() -> <init>
@@ -18626,6 +18739,25 @@ cn.lankao.com.lovelankao.adapter.LKNewsAdapter$MyViewHolder -> cn.lankao.com.lov
     android.widget.TextView tvFrom -> tvFrom
     cn.lankao.com.lovelankao.adapter.LKNewsAdapter this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.adapter.LKNewsAdapter,android.view.View) -> <init>
+cn.lankao.com.lovelankao.adapter.MsgBoardAdapter -> cn.lankao.com.lovelankao.adapter.MsgBoardAdapter:
+    android.content.Context context -> context
+    java.util.List data -> data
+    void <init>(android.content.Context) -> <init>
+    void addData(cn.lankao.com.lovelankao.model.Comment) -> addData
+    void setData(java.util.List) -> setData
+    cn.lankao.com.lovelankao.adapter.MsgBoardAdapter$MyViewHolder onCreateViewHolder(android.view.ViewGroup,int) -> onCreateViewHolder
+    int getItemCount() -> getItemCount
+    void onBindViewHolder(cn.lankao.com.lovelankao.adapter.MsgBoardAdapter$MyViewHolder,int) -> onBindViewHolder
+    void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int) -> onBindViewHolder
+    android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int) -> onCreateViewHolder
+    void <clinit>() -> <clinit>
+cn.lankao.com.lovelankao.adapter.MsgBoardAdapter$MyViewHolder -> cn.lankao.com.lovelankao.adapter.MsgBoardAdapter$MyViewHolder:
+    android.widget.ImageView imageView -> imageView
+    android.widget.TextView tvNickname -> tvNickname
+    android.widget.TextView tvContent -> tvContent
+    android.widget.TextView tvTime -> tvTime
+    cn.lankao.com.lovelankao.adapter.MsgBoardAdapter this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.adapter.MsgBoardAdapter,android.view.View) -> <init>
 cn.lankao.com.lovelankao.adapter.MyAdapter -> cn.lankao.com.lovelankao.adapter.MyAdapter:
     android.content.Context context -> context
     java.util.List data -> data
@@ -18727,6 +18859,7 @@ cn.lankao.com.lovelankao.adapter.SquareAdapter -> cn.lankao.com.lovelankao.adapt
     android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int) -> onCreateViewHolder
     boolean access$000(cn.lankao.com.lovelankao.adapter.SquareAdapter) -> access$000
     android.content.Context access$100(cn.lankao.com.lovelankao.adapter.SquareAdapter) -> access$100
+    java.util.List access$200(cn.lankao.com.lovelankao.adapter.SquareAdapter) -> access$200
 cn.lankao.com.lovelankao.adapter.SquareAdapter$1 -> cn.lankao.com.lovelankao.adapter.SquareAdapter$1:
     cn.lankao.com.lovelankao.model.Square val$square -> val$square
     java.lang.String val$nickname -> val$nickname
@@ -18754,7 +18887,27 @@ cn.lankao.com.lovelankao.adapter.SquareAdapter$3 -> cn.lankao.com.lovelankao.ada
     cn.lankao.com.lovelankao.adapter.SquareAdapter this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.adapter.SquareAdapter,cn.lankao.com.lovelankao.model.Square) -> <init>
     void onClick(android.view.View) -> onClick
+cn.lankao.com.lovelankao.adapter.SquareAdapter$4 -> cn.lankao.com.lovelankao.adapter.SquareAdapter$4:
+    cn.lankao.com.lovelankao.model.Square val$square -> val$square
+    cn.lankao.com.lovelankao.adapter.SquareAdapter this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.adapter.SquareAdapter,cn.lankao.com.lovelankao.model.Square) -> <init>
+    void onClick(android.view.View) -> onClick
+cn.lankao.com.lovelankao.adapter.SquareAdapter$5 -> cn.lankao.com.lovelankao.adapter.SquareAdapter$5:
+    cn.lankao.com.lovelankao.model.Square val$square -> val$square
+    cn.lankao.com.lovelankao.adapter.SquareAdapter this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.adapter.SquareAdapter,cn.lankao.com.lovelankao.model.Square) -> <init>
+    void onClick(android.view.View) -> onClick
+cn.lankao.com.lovelankao.adapter.SquareAdapter$5$1 -> cn.lankao.com.lovelankao.adapter.SquareAdapter$5$1:
+    cn.lankao.com.lovelankao.adapter.SquareAdapter$5 this$1 -> this$1
+    void <init>(cn.lankao.com.lovelankao.adapter.SquareAdapter$5) -> <init>
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.lankao.com.lovelankao.adapter.SquareAdapter$5$1$1 -> cn.lankao.com.lovelankao.adapter.SquareAdapter$5$1$1:
+    cn.lankao.com.lovelankao.adapter.SquareAdapter$5$1 this$2 -> this$2
+    void <init>(cn.lankao.com.lovelankao.adapter.SquareAdapter$5$1) -> <init>
+    void done(cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object) -> done
 cn.lankao.com.lovelankao.adapter.SquareAdapter$MyViewHolder -> cn.lankao.com.lovelankao.adapter.SquareAdapter$MyViewHolder:
+    android.widget.FrameLayout fl -> fl
     android.widget.ImageView ivPhoto -> ivPhoto
     android.widget.TextView tvNickname -> tvNickname
     android.widget.TextView tvTime -> tvTime
@@ -18772,6 +18925,7 @@ cn.lankao.com.lovelankao.adapter.SquareAdapter$MyViewHolder -> cn.lankao.com.lov
     android.widget.LinearLayout llComment -> llComment
     android.widget.LinearLayout llLikeTimes -> llLikeTimes
     android.widget.LinearLayout llContent -> llContent
+    android.widget.TextView tvDelete -> tvDelete
     cn.lankao.com.lovelankao.adapter.SquareAdapter this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.adapter.SquareAdapter,android.view.View) -> <init>
 cn.lankao.com.lovelankao.adapter.TempAdapter -> cn.lankao.com.lovelankao.adapter.TempAdapter:
@@ -19439,6 +19593,7 @@ cn.lankao.com.lovelankao.model.MyUser -> cn.lankao.com.lovelankao.model.MyUser:
     void setUserLat(java.lang.Float) -> setUserLat
     java.lang.Float getUserLng() -> getUserLng
     void setUserLng(java.lang.Float) -> setUserLng
+    boolean isLogin() -> isLogin
 cn.lankao.com.lovelankao.model.NewsList -> cn.lankao.com.lovelankao.model.NewsList:
     void <init>() -> <init>
 cn.lankao.com.lovelankao.model.PublicBike -> cn.lankao.com.lovelankao.model.PublicBike:
@@ -19596,6 +19751,20 @@ cn.lankao.com.lovelankao.model.Top -> cn.lankao.com.lovelankao.model.Top:
     void setFromname(java.lang.String) -> setFromname
     java.lang.String getFromurl() -> getFromurl
     void setFromurl(java.lang.String) -> setFromurl
+cn.lankao.com.lovelankao.service.PushIntentService -> cn.lankao.com.lovelankao.service.PushIntentService:
+    void <init>() -> <init>
+    void onReceiveServicePid(android.content.Context,int) -> onReceiveServicePid
+    void onReceiveMessageData(android.content.Context,com.igexin.sdk.message.GTTransmitMessage) -> onReceiveMessageData
+    void onReceiveClientId(android.content.Context,java.lang.String) -> onReceiveClientId
+    void onReceiveOnlineState(android.content.Context,boolean) -> onReceiveOnlineState
+    void onReceiveCommandResult(android.content.Context,com.igexin.sdk.message.GTCmdMessage) -> onReceiveCommandResult
+cn.lankao.com.lovelankao.service.PushService -> cn.lankao.com.lovelankao.service.PushService:
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    void onLowMemory() -> onLowMemory
 cn.lankao.com.lovelankao.utils.BitmapUtil -> cn.lankao.com.lovelankao.utils.BitmapUtil:
     int PIC_PICTURE -> PIC_PICTURE
     int PIC_CAMERA -> PIC_CAMERA
@@ -29422,6 +29591,3818 @@ com.google.gson.stream.MalformedJsonException -> com.google.gson.stream.Malforme
     void <init>(java.lang.String) -> <init>
     void <init>(java.lang.String,java.lang.Throwable) -> <init>
     void <init>(java.lang.Throwable) -> <init>
+com.igexin.BuildConfig -> com.igexin.BuildConfig:
+    boolean DEBUG -> DEBUG
+    java.lang.String APPLICATION_ID -> APPLICATION_ID
+    java.lang.String BUILD_TYPE -> BUILD_TYPE
+    java.lang.String FLAVOR -> FLAVOR
+    int VERSION_CODE -> VERSION_CODE
+    java.lang.String VERSION_NAME -> VERSION_NAME
+    void <init>() -> <init>
+com.igexin.R -> com.igexin.R:
+    void <init>() -> <init>
+com.igexin.R$id -> com.igexin.R$id:
+    int getui_big_bigtext_defaultView -> getui_big_bigtext_defaultView
+    int getui_big_bigview_defaultView -> getui_big_bigview_defaultView
+    int getui_big_defaultView -> getui_big_defaultView
+    int getui_big_default_Content -> getui_big_default_Content
+    int getui_big_imageView_headsup -> getui_big_imageView_headsup
+    int getui_big_imageView_headsup2 -> getui_big_imageView_headsup2
+    int getui_big_notification -> getui_big_notification
+    int getui_big_notification_content -> getui_big_notification_content
+    int getui_big_notification_date -> getui_big_notification_date
+    int getui_big_notification_icon -> getui_big_notification_icon
+    int getui_big_notification_icon2 -> getui_big_notification_icon2
+    int getui_big_notification_title -> getui_big_notification_title
+    int getui_big_notification_title_center -> getui_big_notification_title_center
+    int getui_big_text_headsup -> getui_big_text_headsup
+    int getui_bigview_banner -> getui_bigview_banner
+    int getui_bigview_expanded -> getui_bigview_expanded
+    int getui_headsup_banner -> getui_headsup_banner
+    int getui_icon_headsup -> getui_icon_headsup
+    int getui_message_headsup -> getui_message_headsup
+    int getui_notification__style2_title -> getui_notification__style2_title
+    int getui_notification_bg -> getui_notification_bg
+    int getui_notification_date -> getui_notification_date
+    int getui_notification_download_content -> getui_notification_download_content
+    int getui_notification_download_progressbar -> getui_notification_download_progressbar
+    int getui_notification_headsup -> getui_notification_headsup
+    int getui_notification_icon -> getui_notification_icon
+    int getui_notification_icon2 -> getui_notification_icon2
+    int getui_notification_style1 -> getui_notification_style1
+    int getui_notification_style1_content -> getui_notification_style1_content
+    int getui_notification_style1_title -> getui_notification_style1_title
+    int getui_notification_style2 -> getui_notification_style2
+    int getui_notification_style3 -> getui_notification_style3
+    int getui_notification_style3_content -> getui_notification_style3_content
+    int getui_notification_style4 -> getui_notification_style4
+    int getui_time_headsup -> getui_time_headsup
+    int getui_title_headsup -> getui_title_headsup
+    void <init>() -> <init>
+com.igexin.R$layout -> com.igexin.R$layout:
+    int getui_notification -> getui_notification
+    void <init>() -> <init>
+com.igexin.R$raw -> com.igexin.R$raw:
+    int keep -> keep
+    void <init>() -> <init>
+com.igexin.a.a -> com.igexin.a.a:
+    void <init>() -> <init>
+    void a(android.content.Context,java.lang.String[],java.lang.String,java.io.File,com.igexin.a.h) -> a
+    long a(java.io.InputStream,java.io.OutputStream) -> a
+    void a(java.io.Closeable) -> a
+com.igexin.a.a.a -> com.igexin.a.a.a:
+    void <init>(com.igexin.a.a.j,com.igexin.a.a.e,long,int) -> <init>
+com.igexin.a.a.b -> com.igexin.a.a.b:
+    void <init>(com.igexin.a.a.j,com.igexin.a.a.e,long,int) -> <init>
+com.igexin.a.a.c -> com.igexin.a.a.c:
+com.igexin.a.a.d -> com.igexin.a.a.d:
+    long a -> a
+    long b -> b
+    void <init>() -> <init>
+com.igexin.a.a.e -> com.igexin.a.a.e:
+    boolean a -> a
+    int b -> b
+    long c -> c
+    long d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    void <init>() -> <init>
+    com.igexin.a.a.g a(int) -> a
+    com.igexin.a.a.f a(long) -> a
+    com.igexin.a.a.d a(long,int) -> a
+com.igexin.a.a.f -> com.igexin.a.a.f:
+    long a -> a
+    long b -> b
+    long c -> c
+    long d -> d
+    void <init>() -> <init>
+com.igexin.a.a.g -> com.igexin.a.a.g:
+    long a -> a
+    void <init>() -> <init>
+com.igexin.a.a.h -> com.igexin.a.a.h:
+    com.igexin.a.a.j j -> j
+    void <init>(boolean,com.igexin.a.a.j) -> <init>
+    com.igexin.a.a.g a(int) -> a
+    com.igexin.a.a.f a(long) -> a
+    com.igexin.a.a.d a(long,int) -> a
+com.igexin.a.a.i -> com.igexin.a.a.i:
+    com.igexin.a.a.j j -> j
+    void <init>(boolean,com.igexin.a.a.j) -> <init>
+    com.igexin.a.a.g a(int) -> a
+    com.igexin.a.a.f a(long) -> a
+    com.igexin.a.a.d a(long,int) -> a
+com.igexin.a.a.j -> com.igexin.a.a.j:
+    int a -> a
+    java.nio.channels.FileChannel b -> b
+    void <init>(java.io.File) -> <init>
+    com.igexin.a.a.e a() -> a
+    java.util.List b() -> b
+    long a(com.igexin.a.a.e,long,long) -> a
+    void close() -> close
+    java.lang.String a(java.nio.ByteBuffer,long) -> a
+    long b(java.nio.ByteBuffer,long) -> b
+    long c(java.nio.ByteBuffer,long) -> c
+    int d(java.nio.ByteBuffer,long) -> d
+    short e(java.nio.ByteBuffer,long) -> e
+    void a(java.nio.ByteBuffer,long,int) -> a
+com.igexin.a.a.k -> com.igexin.a.a.k:
+    void <init>(com.igexin.a.a.j,com.igexin.a.a.e,long) -> <init>
+com.igexin.a.a.l -> com.igexin.a.a.l:
+    void <init>(com.igexin.a.a.j,com.igexin.a.a.e,long) -> <init>
+com.igexin.a.a.m -> com.igexin.a.a.m:
+    void <init>(com.igexin.a.a.j,com.igexin.a.a.e,int) -> <init>
+com.igexin.a.a.n -> com.igexin.a.a.n:
+    void <init>(com.igexin.a.a.j,com.igexin.a.a.e,int) -> <init>
+com.igexin.a.b -> com.igexin.a.b:
+    void <init>(java.lang.String) -> <init>
+com.igexin.a.c -> com.igexin.a.c:
+    com.igexin.a.h a(com.igexin.a.g) -> a
+com.igexin.a.d -> com.igexin.a.d:
+    void a(android.content.Context,java.lang.String[],java.lang.String,java.io.File,com.igexin.a.h) -> a
+com.igexin.a.e -> com.igexin.a.e:
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    java.lang.String c(java.lang.String) -> c
+    java.lang.String d(java.lang.String) -> d
+    java.lang.String[] a() -> a
+com.igexin.a.f -> com.igexin.a.f:
+    void a() -> a
+    void a(java.lang.Throwable) -> a
+com.igexin.a.g -> com.igexin.a.g:
+    void a(java.lang.String) -> a
+com.igexin.a.h -> com.igexin.a.h:
+    java.util.Set a -> a
+    com.igexin.a.e b -> b
+    com.igexin.a.d c -> c
+    boolean d -> d
+    boolean e -> e
+    com.igexin.a.g f -> f
+    void <init>() -> <init>
+    void <init>(com.igexin.a.e,com.igexin.a.d) -> <init>
+    com.igexin.a.h a(com.igexin.a.g) -> a
+    com.igexin.a.h a() -> a
+    com.igexin.a.h b() -> b
+    void a(android.content.Context,java.lang.String) -> a
+    void a(android.content.Context,java.lang.String,java.lang.String,com.igexin.a.f) -> a
+    void c(android.content.Context,java.lang.String,java.lang.String) -> c
+    java.io.File a(android.content.Context) -> a
+    java.io.File a(android.content.Context,java.lang.String,java.lang.String) -> a
+    void b(android.content.Context,java.lang.String,java.lang.String) -> b
+    void a(java.lang.String,java.lang.Object[]) -> a
+    void a(java.lang.String) -> a
+com.igexin.a.i -> com.igexin.a.i:
+    java.lang.String a -> a
+    com.igexin.a.h b -> b
+    void <init>(com.igexin.a.h,java.lang.String) -> <init>
+    boolean accept(java.io.File,java.lang.String) -> accept
+com.igexin.a.j -> com.igexin.a.j:
+    void <init>() -> <init>
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    java.lang.String c(java.lang.String) -> c
+    java.lang.String d(java.lang.String) -> d
+    java.lang.String[] a() -> a
+com.igexin.a.k -> com.igexin.a.k:
+    boolean a(java.lang.CharSequence) -> a
+com.igexin.assist.MessageBean -> com.igexin.assist.MessageBean:
+    java.lang.String messageSource -> messageSource
+    java.lang.String messageType -> messageType
+    java.lang.Object message -> message
+    android.content.Context context -> context
+    java.lang.Object getMessage() -> getMessage
+    void <init>(android.content.Context,java.lang.String,java.lang.Object) -> <init>
+    android.content.Context getContext() -> getContext
+    java.lang.String getMessageType() -> getMessageType
+    java.lang.Object getObjectMessage() -> getObjectMessage
+    java.lang.String getStringMessage() -> getStringMessage
+    java.lang.String getMessageSource() -> getMessageSource
+    void setMessageSource(java.lang.String) -> setMessageSource
+com.igexin.assist.a.a -> com.igexin.assist.a.a:
+    byte[] a(byte[]) -> a
+    java.lang.String a(java.lang.String,java.lang.String) -> a
+com.igexin.assist.a.b -> com.igexin.assist.a.b:
+    void a(android.content.Context) -> a
+com.igexin.assist.action.MessageManger -> com.igexin.assist.action.MessageManger:
+    java.util.concurrent.ThreadPoolExecutor a -> a
+    void <init>() -> <init>
+    com.igexin.assist.action.MessageManger getInstance() -> getInstance
+    void addMessage(com.igexin.assist.MessageBean) -> addMessage
+    void a(com.igexin.assist.action.d,android.content.Context) -> a
+    void a(java.lang.String) -> a
+    java.lang.Class a(android.content.Context) -> a
+    void <init>(com.igexin.assist.action.a) -> <init>
+    void a(com.igexin.assist.action.MessageManger,java.lang.String) -> a
+    void a(com.igexin.assist.action.MessageManger,com.igexin.assist.action.d,android.content.Context) -> a
+com.igexin.assist.action.a -> com.igexin.assist.action.a:
+com.igexin.assist.action.b -> com.igexin.assist.action.b:
+    com.igexin.assist.MessageBean a -> a
+    com.igexin.assist.action.MessageManger b -> b
+    void <init>(com.igexin.assist.action.MessageManger,com.igexin.assist.MessageBean) -> <init>
+    void run() -> run
+com.igexin.assist.action.c -> com.igexin.assist.action.c:
+    com.igexin.assist.action.MessageManger a -> a
+    com.igexin.assist.action.MessageManger a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.assist.action.d -> com.igexin.assist.action.d:
+    byte[] a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    void <init>() -> <init>
+    void a(com.igexin.assist.MessageBean) -> a
+    boolean a() -> a
+    byte[] b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String f() -> f
+    java.lang.String g() -> g
+com.igexin.assist.control.AbstractPushManager -> com.igexin.assist.control.AbstractPushManager:
+    void register(android.content.Context) -> register
+    void unregister(android.content.Context) -> unregister
+    void turnOnPush(android.content.Context) -> turnOnPush
+    void turnOffPush(android.content.Context) -> turnOffPush
+    java.lang.String getToken(android.content.Context) -> getToken
+    void setSilentTime(android.content.Context,int,int) -> setSilentTime
+com.igexin.assist.control.a -> com.igexin.assist.control.a:
+    com.igexin.assist.control.HmsPushManager a -> a
+    void <init>(com.igexin.assist.control.HmsPushManager) -> <init>
+    void a(com.huawei.hms.support.api.push.TokenResult) -> a
+    void onResult(java.lang.Object) -> onResult
+com.igexin.assist.sdk.AssistPushConsts -> com.igexin.assist.sdk.AssistPushConsts:
+    java.lang.String LOG_TAG -> LOG_TAG
+    java.lang.String MZ_PREFIX -> MZ_PREFIX
+    java.lang.String XM_PREFIX -> XM_PREFIX
+    java.lang.String HW_PREFIX -> HW_PREFIX
+    java.lang.String GETUI_APPID -> GETUI_APPID
+    java.lang.String GETUI_APPKEY -> GETUI_APPKEY
+    java.lang.String GETUI_APPSECRET -> GETUI_APPSECRET
+    java.lang.String MEIZUPUSH_APPID -> MEIZUPUSH_APPID
+    java.lang.String MEIZUPUSH_APPKEY -> MEIZUPUSH_APPKEY
+    java.lang.String MIPUSH_APPID -> MIPUSH_APPID
+    java.lang.String MIPUSH_APPKEY -> MIPUSH_APPKEY
+    java.lang.String MSG_KEY_TASKID -> MSG_KEY_TASKID
+    java.lang.String MSG_KEY_ACTION -> MSG_KEY_ACTION
+    java.lang.String MSG_KEY_CONTENT -> MSG_KEY_CONTENT
+    java.lang.String MSG_VALUE_PAYLOAD -> MSG_VALUE_PAYLOAD
+    java.lang.String MSG_TYPE_TOKEN -> MSG_TYPE_TOKEN
+    java.lang.String MSG_TYPE_PAYLOAD -> MSG_TYPE_PAYLOAD
+    void <init>() -> <init>
+com.igexin.assist.sdk.a -> com.igexin.assist.sdk.a:
+    com.igexin.assist.control.AbstractPushManager a(android.content.Context) -> a
+    boolean b(android.content.Context) -> b
+    boolean c(android.content.Context) -> c
+    boolean d(android.content.Context) -> d
+com.igexin.assist.sdk.b -> com.igexin.assist.sdk.b:
+    com.igexin.assist.control.AbstractPushManager a -> a
+    void <init>() -> <init>
+    com.igexin.assist.sdk.b a() -> a
+    void a(android.content.Context) -> a
+    void b(android.content.Context) -> b
+    void c(android.content.Context) -> c
+    void d(android.content.Context) -> d
+    void a(android.content.Context,int,int) -> a
+    void <init>(com.igexin.assist.sdk.c) -> <init>
+com.igexin.assist.sdk.c -> com.igexin.assist.sdk.c:
+com.igexin.assist.sdk.d -> com.igexin.assist.sdk.d:
+    com.igexin.assist.sdk.b a -> a
+    com.igexin.assist.sdk.b a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.b.a.a.a -> com.igexin.b.a.a.a:
+    byte[] a(byte[],java.lang.String) -> a
+    byte[] b(byte[],java.lang.String) -> b
+    byte[] c(byte[],java.lang.String) -> c
+    byte[] d(byte[],java.lang.String) -> d
+    byte[] a(byte[],byte[]) -> a
+    boolean a(byte[]) -> a
+    void a(int[],int,int) -> a
+com.igexin.b.a.b.a -> com.igexin.b.a.b.a:
+    java.io.OutputStream a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    void <init>(java.io.OutputStream,int) -> <init>
+    void write(int) -> write
+    void close() -> close
+    void a() -> a
+com.igexin.b.a.b.a.a.a -> com.igexin.b.a.b.a.a.a:
+    boolean e -> e
+    com.igexin.b.a.b.a.a.b f -> f
+    java.lang.String g -> g
+    boolean h -> h
+    void <init>(int,java.lang.String,com.igexin.b.a.b.b) -> <init>
+    void d() -> d
+    void e() -> e
+    boolean g() -> g
+com.igexin.b.a.b.a.a.a.a -> com.igexin.b.a.b.a.a.a.a:
+    void a(com.igexin.b.a.b.e) -> a
+com.igexin.b.a.b.a.a.a.b -> com.igexin.b.a.b.a.a.a.b:
+    void a(java.lang.Exception) -> a
+com.igexin.b.a.b.a.a.a.c -> com.igexin.b.a.b.a.a.a.c:
+    void a(com.igexin.b.a.b.a.a.k) -> a
+    void a(java.lang.Exception) -> a
+com.igexin.b.a.b.a.a.a.d -> com.igexin.b.a.b.a.a.a.d:
+    void a(java.lang.String) -> a
+    void a(java.net.Socket) -> a
+    void a(java.lang.Exception) -> a
+com.igexin.b.a.b.a.a.b -> com.igexin.b.a.b.a.a.b:
+    com.igexin.b.a.b.a.a.b a -> a
+    com.igexin.b.a.b.a.a.b b -> b
+    com.igexin.b.a.b.a.a.b c -> c
+    com.igexin.b.a.b.a.a.b[] d -> d
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.b.a.b.a.a.c -> com.igexin.b.a.b.a.a.c:
+    java.lang.String i -> i
+    com.igexin.b.a.b.a.a.a.d j -> j
+    java.net.Socket L -> L
+    void <init>(com.igexin.b.a.b.a.a.a.d) -> <init>
+    int b() -> b
+    void f() -> f
+    void a_() -> a_
+    void h() -> h
+    void <clinit>() -> <clinit>
+com.igexin.b.a.b.a.a.d -> com.igexin.b.a.b.a.a.d:
+    java.lang.String e -> e
+    com.igexin.b.a.b.b f -> f
+    com.igexin.b.a.b.d g -> g
+    java.net.Socket h -> h
+    com.igexin.b.a.b.a.a.j i -> i
+    com.igexin.b.a.b.a.a.l j -> j
+    com.igexin.b.a.b.a.a.c k -> k
+    boolean l -> l
+    com.igexin.b.a.b.a.a.d m -> m
+    java.util.concurrent.locks.Lock a -> a
+    java.util.concurrent.locks.Condition b -> b
+    java.util.concurrent.ConcurrentLinkedQueue c -> c
+    java.util.List d -> d
+    java.lang.Object n -> n
+    com.igexin.b.a.b.a.a.i o -> o
+    long p -> p
+    java.util.Comparator q -> q
+    com.igexin.b.a.b.a.a.d a() -> a
+    void <init>() -> <init>
+    void a(com.igexin.b.a.b.b) -> a
+    void b() -> b
+    void c() -> c
+    void d() -> d
+    void a(boolean) -> a
+    void a(com.igexin.b.a.b.a.a.k) -> a
+    void f() -> f
+    void a(java.net.Socket) -> a
+    void g() -> g
+    void h() -> h
+    void i() -> i
+    boolean j() -> j
+    boolean k() -> k
+    void b(java.net.Socket) -> b
+    void c(java.net.Socket) -> c
+    void b(com.igexin.b.a.b.a.a.k) -> b
+    void l() -> l
+    void a(java.lang.String) -> a
+    boolean a(com.igexin.b.a.b.a.a.d) -> a
+    void b(com.igexin.b.a.b.a.a.d) -> b
+    boolean a(com.igexin.b.a.b.a.a.d,boolean) -> a
+    void a(com.igexin.b.a.b.a.a.d,java.net.Socket) -> a
+    boolean c(com.igexin.b.a.b.a.a.d) -> c
+    void d(com.igexin.b.a.b.a.a.d) -> d
+    void e(com.igexin.b.a.b.a.a.d) -> e
+    com.igexin.b.a.b.a.a.c f(com.igexin.b.a.b.a.a.d) -> f
+    com.igexin.b.a.b.a.a.l g(com.igexin.b.a.b.a.a.d) -> g
+    com.igexin.b.a.b.a.a.j h(com.igexin.b.a.b.a.a.d) -> h
+    void i(com.igexin.b.a.b.a.a.d) -> i
+    java.lang.String e() -> e
+    com.igexin.b.a.b.a.a.i j(com.igexin.b.a.b.a.a.d) -> j
+    void a(com.igexin.b.a.b.a.a.d,com.igexin.b.a.b.a.a.k) -> a
+    void <clinit>() -> <clinit>
+com.igexin.b.a.b.a.a.e -> com.igexin.b.a.b.a.a.e:
+    com.igexin.b.a.b.a.a.d a -> a
+    void <init>(com.igexin.b.a.b.a.a.d) -> <init>
+    void a(com.igexin.b.a.b.e) -> a
+    void a(java.lang.String) -> a
+    void a(java.net.Socket) -> a
+    void a(java.lang.Exception) -> a
+com.igexin.b.a.b.a.a.f -> com.igexin.b.a.b.a.a.f:
+    com.igexin.b.a.b.a.a.d a -> a
+    void <init>(com.igexin.b.a.b.a.a.d) -> <init>
+    void a(com.igexin.b.a.b.e) -> a
+    void a(java.lang.Exception) -> a
+com.igexin.b.a.b.a.a.g -> com.igexin.b.a.b.a.a.g:
+    com.igexin.b.a.b.a.a.d a -> a
+    void <init>(com.igexin.b.a.b.a.a.d) -> <init>
+    void a(com.igexin.b.a.b.e) -> a
+    void a(com.igexin.b.a.b.a.a.k) -> a
+    void a(java.lang.Exception) -> a
+com.igexin.b.a.b.a.a.h -> com.igexin.b.a.b.a.a.h:
+    com.igexin.b.a.b.a.a.d a -> a
+    void <init>(com.igexin.b.a.b.a.a.d) -> <init>
+    int a(com.igexin.b.a.b.a.a.k,com.igexin.b.a.b.a.a.k) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.igexin.b.a.b.a.a.i -> com.igexin.b.a.b.a.a.i:
+    com.igexin.b.a.b.a.a.d a -> a
+    void <init>(com.igexin.b.a.b.a.a.d) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+com.igexin.b.a.b.a.a.j -> com.igexin.b.a.b.a.a.j:
+    java.lang.String L -> L
+    com.igexin.b.a.b.a.a.m i -> i
+    com.igexin.b.a.b.a.a.a.b M -> M
+    byte[] N -> N
+    com.igexin.b.a.b.b j -> j
+    com.igexin.b.a.b.d O -> O
+    void <init>(com.igexin.b.a.b.a.a.m,com.igexin.b.a.b.b,com.igexin.b.a.b.d) -> <init>
+    int b() -> b
+    void f() -> f
+    void a_() -> a_
+    void h() -> h
+    void a(com.igexin.b.a.b.a.a.a.b) -> a
+    void <clinit>() -> <clinit>
+com.igexin.b.a.b.a.a.k -> com.igexin.b.a.b.a.a.k:
+    int b() -> b
+    void <init>(java.lang.String,com.igexin.b.a.b.b) -> <init>
+    void d() -> d
+    void a_() -> a_
+    void f() -> f
+    void e() -> e
+com.igexin.b.a.b.a.a.l -> com.igexin.b.a.b.a.a.l:
+    java.lang.String L -> L
+    com.igexin.b.a.b.a.a.a.c M -> M
+    com.igexin.b.a.b.b i -> i
+    com.igexin.b.a.b.d N -> N
+    com.igexin.b.a.b.a.a.n j -> j
+    void <init>(com.igexin.b.a.b.a.a.n,com.igexin.b.a.b.b,com.igexin.b.a.b.d) -> <init>
+    int b() -> b
+    void f() -> f
+    void a_() -> a_
+    void h() -> h
+    void a(com.igexin.b.a.b.a.a.a.c) -> a
+    void <clinit>() -> <clinit>
+com.igexin.b.a.b.a.a.m -> com.igexin.b.a.b.a.a.m:
+    java.io.BufferedInputStream a -> a
+    void <init>(java.io.InputStream) -> <init>
+    int a(byte[]) -> a
+    void a() -> a
+com.igexin.b.a.b.a.a.n -> com.igexin.b.a.b.a.a.n:
+    java.io.BufferedOutputStream a -> a
+    void <init>(java.io.OutputStream) -> <init>
+    void a(byte[]) -> a
+    void a() -> a
+com.igexin.b.a.b.b -> com.igexin.b.a.b.b:
+    java.lang.String c -> c
+    com.igexin.b.a.b.b d -> d
+    com.igexin.b.a.b.b e -> e
+    boolean f -> f
+    void <init>(java.lang.String,boolean) -> <init>
+    java.lang.Object d(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> d
+    void a(com.igexin.b.a.b.b) -> a
+    java.lang.Object a(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> a
+    java.lang.Object c(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> c
+    void a(boolean) -> a
+com.igexin.b.a.b.c -> com.igexin.b.a.b.c:
+    com.igexin.b.a.b.c a -> a
+    long b -> b
+    long c -> c
+    long d -> d
+    long e -> e
+    byte[] v -> v
+    byte[] w -> w
+    com.igexin.b.a.d.a.a f -> f
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] a() -> a
+    com.igexin.b.a.b.c b() -> b
+    void a(com.igexin.b.a.d.a.a) -> a
+    void c() -> c
+    boolean a(com.igexin.b.a.b.e,java.lang.Object,boolean,int,long,byte,java.lang.Object,com.igexin.b.a.d.a.c) -> a
+    com.igexin.b.a.b.e a(java.lang.String,int,com.igexin.b.a.b.b,java.lang.Object,boolean,int,long,byte,java.lang.Object,com.igexin.b.a.d.a.c) -> a
+    com.igexin.b.a.b.e a(java.lang.String,int,com.igexin.b.a.b.b,java.lang.Object,boolean,int,long,byte,java.lang.Object,com.igexin.b.a.d.a.c,int,com.igexin.b.a.d.a.f) -> a
+    com.igexin.b.a.b.e a(java.lang.String,int,com.igexin.b.a.b.b,java.lang.Object,boolean,int,com.igexin.b.a.d.a.f) -> a
+    com.igexin.b.a.b.e a(java.lang.String,int,com.igexin.b.a.b.b,java.lang.Object,boolean) -> a
+    void d() -> d
+com.igexin.b.a.b.d -> com.igexin.b.a.b.d:
+    void <init>() -> <init>
+    int b() -> b
+com.igexin.b.a.b.e -> com.igexin.b.a.b.e:
+    java.lang.String a -> a
+    com.igexin.b.a.b.b b -> b
+    java.lang.Object c -> c
+    com.igexin.b.a.b.d d -> d
+    void <init>(java.lang.String,com.igexin.b.a.b.b) -> <init>
+    void <init>(int,java.lang.String,com.igexin.b.a.b.b) -> <init>
+    java.lang.String a(java.lang.String) -> a
+    void f() -> f
+com.igexin.b.a.b.f -> com.igexin.b.a.b.f:
+    byte[] a(int) -> a
+    int a(long,byte[],int) -> a
+    int a(int,byte[],int) -> a
+    byte[] b(int) -> b
+    int b(int,byte[],int) -> b
+    int c(int,byte[],int) -> c
+    int a(byte[],int,byte[],int,int) -> a
+    int a(byte[],int) -> a
+    short b(byte[],int) -> b
+    int c(byte[],int) -> c
+    int d(byte[],int) -> d
+    long e(byte[],int) -> e
+    java.lang.String[] a(java.lang.String) -> a
+    java.lang.String a(java.lang.String[]) -> a
+    byte[] a(byte[]) -> a
+    byte[] b(byte[]) -> b
+    byte[] c(byte[]) -> c
+    byte[] d(byte[]) -> d
+    byte[] f(byte[],int) -> f
+    void a(java.io.InputStream,java.io.OutputStream,int) -> a
+    void a(java.io.InputStream,java.io.OutputStream) -> a
+com.igexin.b.a.c.a -> com.igexin.b.a.c.a:
+    boolean a -> a
+    void a(java.lang.String,java.lang.String) -> a
+    void b(java.lang.String,java.lang.String) -> b
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    void <clinit>() -> <clinit>
+com.igexin.b.a.d.a -> com.igexin.b.a.d.a:
+    java.lang.String l -> l
+    boolean a -> a
+    long b -> b
+    void <init>() -> <init>
+    void c(boolean) -> c
+    boolean l() -> l
+    long m() -> m
+com.igexin.b.a.d.a.a -> com.igexin.b.a.d.a.a:
+    com.igexin.b.a.d.d a(java.lang.Object,java.lang.Object,java.lang.Object) -> a
+com.igexin.b.a.d.a.b -> com.igexin.b.a.d.a.b:
+    boolean a(com.igexin.b.a.d.a.e,com.igexin.b.a.d.e) -> a
+    boolean a(com.igexin.b.a.d.d,com.igexin.b.a.d.e) -> a
+    boolean n() -> n
+    long o() -> o
+com.igexin.b.a.d.a.c -> com.igexin.b.a.d.a.c:
+    void a(com.igexin.b.a.d.a.d) -> a
+com.igexin.b.a.d.a.d -> com.igexin.b.a.d.a.d:
+    com.igexin.b.a.d.a.d a -> a
+    com.igexin.b.a.d.a.d b -> b
+    com.igexin.b.a.d.a.d c -> c
+    com.igexin.b.a.d.a.d d -> d
+    com.igexin.b.a.d.a.d e -> e
+    com.igexin.b.a.d.a.d f -> f
+    com.igexin.b.a.d.a.d[] g -> g
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.b.a.d.a.e -> com.igexin.b.a.d.a.e:
+    int b() -> b
+    void c(boolean) -> c
+    boolean l() -> l
+    long m() -> m
+com.igexin.b.a.d.a.f -> com.igexin.b.a.d.a.f:
+    void a(com.igexin.b.a.d.d) -> a
+    boolean a(long,com.igexin.b.a.d.d) -> a
+    long b(long,com.igexin.b.a.d.d) -> b
+com.igexin.b.a.d.b -> com.igexin.b.a.d.b:
+    boolean a -> a
+    void <init>() -> <init>
+    void a() -> a
+    boolean a(long,com.igexin.b.a.d.d) -> a
+    long b(long,com.igexin.b.a.d.d) -> b
+com.igexin.b.a.d.c -> com.igexin.b.a.d.c:
+    java.lang.String a -> a
+    java.util.concurrent.locks.ReentrantLock b -> b
+    java.util.concurrent.locks.Condition c -> c
+    java.util.TreeSet d -> d
+    java.util.concurrent.atomic.AtomicInteger e -> e
+    int f -> f
+    com.igexin.b.a.d.e g -> g
+    java.util.concurrent.atomic.AtomicLong h -> h
+    boolean i -> i
+    void <init>(java.util.Comparator,com.igexin.b.a.d.e) -> <init>
+    boolean a(com.igexin.b.a.d.d) -> a
+    com.igexin.b.a.d.d a() -> a
+    com.igexin.b.a.d.d e() -> e
+    int a(com.igexin.b.a.d.d,long,java.util.concurrent.TimeUnit) -> a
+    boolean b() -> b
+    com.igexin.b.a.d.d c() -> c
+    void d() -> d
+    boolean a(java.lang.Class) -> a
+    void <clinit>() -> <clinit>
+com.igexin.b.a.d.d -> com.igexin.b.a.d.d:
+    boolean k -> k
+    boolean m -> m
+    boolean n -> n
+    boolean o -> o
+    boolean p -> p
+    boolean q -> q
+    boolean r -> r
+    boolean s -> s
+    boolean t -> t
+    long u -> u
+    int v -> v
+    byte a -> a
+    long w -> w
+    int x -> x
+    int y -> y
+    int z -> z
+    int A -> A
+    java.lang.Exception B -> B
+    java.lang.Object C -> C
+    com.igexin.b.a.d.a.f D -> D
+    com.igexin.b.a.d.e E -> E
+    java.util.concurrent.locks.ReentrantLock F -> F
+    java.util.concurrent.locks.Condition G -> G
+    java.lang.Thread H -> H
+    boolean I -> I
+    int J -> J
+    com.igexin.b.a.d.a.c K -> K
+    void <init>(int) -> <init>
+    void <init>(int,com.igexin.b.a.d.a.c) -> <init>
+    void a(int,com.igexin.b.a.d.a.f) -> a
+    void b(long) -> b
+    void n() -> n
+    int a(long,java.util.concurrent.TimeUnit) -> a
+    long a(java.util.concurrent.TimeUnit) -> a
+    long o() -> o
+    void p() -> p
+    boolean q() -> q
+    boolean r() -> r
+    boolean s() -> s
+    void a(int) -> a
+    void f() -> f
+    void d() -> d
+    void a_() -> a_
+    void t() -> t
+    void u() -> u
+    void v() -> v
+    void c() -> c
+    void e() -> e
+    void w() -> w
+    void a(com.igexin.b.a.d.a.c) -> a
+com.igexin.b.a.d.e -> com.igexin.b.a.d.e:
+    java.lang.String g -> g
+    com.igexin.b.a.d.i h -> h
+    java.util.HashMap i -> i
+    java.util.concurrent.ConcurrentLinkedQueue j -> j
+    com.igexin.b.a.d.c k -> k
+    java.util.concurrent.locks.ReentrantLock l -> l
+    android.os.PowerManager m -> m
+    android.app.AlarmManager n -> n
+    android.content.Intent o -> o
+    android.app.PendingIntent p -> p
+    android.content.Intent q -> q
+    android.app.PendingIntent r -> r
+    java.lang.String s -> s
+    boolean t -> t
+    long u -> u
+    boolean a -> a
+    void <init>() -> <init>
+    void a(long) -> a
+    void b(long) -> b
+    void e() -> e
+    void a(android.content.Context) -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    int a(com.igexin.b.a.d.d,com.igexin.b.a.d.d) -> a
+    boolean a(com.igexin.b.a.d.a.b) -> a
+    boolean a(java.lang.Class) -> a
+    boolean a(com.igexin.b.a.d.d,boolean,boolean) -> a
+    boolean a(com.igexin.b.a.d.d,boolean) -> a
+    boolean a(java.lang.Object) -> a
+    void f() -> f
+    void g() -> g
+    boolean a(com.igexin.b.a.d.a.e,com.igexin.b.a.d.a.b) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+    void <clinit>() -> <clinit>
+com.igexin.b.a.d.f -> com.igexin.b.a.d.f:
+    java.util.concurrent.BlockingQueue a -> a
+    java.util.HashMap b -> b
+    java.util.concurrent.locks.ReentrantLock c -> c
+    java.util.concurrent.ThreadFactory d -> d
+    long e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    com.igexin.b.a.d.e i -> i
+    void a(com.igexin.b.a.d.d) -> a
+    void b(com.igexin.b.a.d.d) -> b
+    boolean c(com.igexin.b.a.d.d) -> c
+    boolean d(com.igexin.b.a.d.d) -> d
+    void e(com.igexin.b.a.d.d) -> e
+    void <init>(com.igexin.b.a.d.e) -> <init>
+    java.lang.Thread f(com.igexin.b.a.d.d) -> f
+    boolean a(com.igexin.b.a.d.g) -> a
+    com.igexin.b.a.d.d a() -> a
+com.igexin.b.a.d.g -> com.igexin.b.a.d.g:
+    java.util.concurrent.BlockingQueue a -> a
+    com.igexin.b.a.d.d b -> b
+    com.igexin.b.a.d.d c -> c
+    int d -> d
+    com.igexin.b.a.d.f e -> e
+    void <init>(com.igexin.b.a.d.f,com.igexin.b.a.d.d) -> <init>
+    void a() -> a
+    void a(com.igexin.b.a.d.d) -> a
+    com.igexin.b.a.d.d b() -> b
+    void run() -> run
+com.igexin.b.a.d.h -> com.igexin.b.a.d.h:
+    java.util.concurrent.atomic.AtomicInteger a -> a
+    com.igexin.b.a.d.f b -> b
+    void <init>(com.igexin.b.a.d.f) -> <init>
+    java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.igexin.b.a.d.i -> com.igexin.b.a.d.i:
+    boolean a -> a
+    com.igexin.b.a.d.f b -> b
+    com.igexin.b.a.d.e c -> c
+    void <init>(com.igexin.b.a.d.e) -> <init>
+    void run() -> run
+com.igexin.b.b.a -> com.igexin.b.b.a:
+    char[] a -> a
+    byte[] a(byte[]) -> a
+    java.lang.String a(android.content.Context,java.lang.String) -> a
+    java.lang.String a(java.lang.String) -> a
+    java.lang.String a(byte[],int,int) -> a
+    java.lang.String a(int) -> a
+    byte[] b(byte[]) -> b
+    byte[] c(byte[]) -> c
+    boolean a(java.lang.String,java.lang.String) -> a
+    void <clinit>() -> <clinit>
+com.igexin.download.DownloadInfo -> com.igexin.download.DownloadInfo:
+    int mId -> mId
+    java.lang.String mUri -> mUri
+    boolean mNoIntegrity -> mNoIntegrity
+    java.lang.String mHint -> mHint
+    java.lang.String mFileName -> mFileName
+    java.lang.String mMimeType -> mMimeType
+    int mDestination -> mDestination
+    int mVisibility -> mVisibility
+    int mControl -> mControl
+    int mStatus -> mStatus
+    int mNumFailed -> mNumFailed
+    int mRetryAfter -> mRetryAfter
+    int mRedirectCount -> mRedirectCount
+    long mLastMod -> mLastMod
+    long mCreateMod -> mCreateMod
+    java.lang.String mExtras -> mExtras
+    java.lang.String mCookies -> mCookies
+    java.lang.String mUserAgent -> mUserAgent
+    java.lang.String mReferer -> mReferer
+    long mDownSpeed -> mDownSpeed
+    int mLastBytes -> mLastBytes
+    int mTotalBytes -> mTotalBytes
+    int mCurrentBytes -> mCurrentBytes
+    long a -> a
+    java.lang.String mETag -> mETag
+    boolean mMediaScanned -> mMediaScanned
+    java.lang.String mData1 -> mData1
+    java.lang.String mData2 -> mData2
+    java.lang.String mData3 -> mData3
+    java.lang.String mData4 -> mData4
+    java.lang.String mData5 -> mData5
+    java.lang.String mData6 -> mData6
+    java.lang.String mData7 -> mData7
+    java.lang.String mData8 -> mData8
+    java.lang.String mData9 -> mData9
+    long mData10 -> mData10
+    int mIsWebIcon -> mIsWebIcon
+    int mFuzz -> mFuzz
+    boolean mNotice -> mNotice
+    boolean mNotify -> mNotify
+    boolean mHasActiveThread -> mHasActiveThread
+    void refreshSpeed() -> refreshSpeed
+    void <init>() -> <init>
+    void <init>(int,java.lang.String,boolean,java.lang.String,java.lang.String,java.lang.String,int,int,int,int,int,int,int,long,long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,long,int,boolean) -> <init>
+    long restartTime() -> restartTime
+    boolean isReadyToStart(long) -> isReadyToStart
+    boolean isReadyToRestart(long) -> isReadyToRestart
+    boolean hasCompletionNotification() -> hasCompletionNotification
+    boolean canUseNetwork(boolean,boolean) -> canUseNetwork
+    com.igexin.download.DownloadInfo clone() -> clone
+    void copyFrom(com.igexin.download.DownloadInfo) -> copyFrom
+    java.lang.Object clone() -> clone
+com.igexin.download.DownloadProvider -> com.igexin.download.DownloadProvider:
+    java.lang.String a -> a
+    android.content.UriMatcher b -> b
+    java.lang.String[] c -> c
+    java.util.HashSet d -> d
+    android.database.sqlite.SQLiteOpenHelper e -> e
+    void <init>() -> <init>
+    boolean onCreate() -> onCreate
+    void a(java.lang.String) -> a
+    java.lang.String getType(android.net.Uri) -> getType
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+    int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    android.os.ParcelFileDescriptor openFile(android.net.Uri,java.lang.String) -> openFile
+    void a(java.lang.String,android.content.ContentValues,android.content.ContentValues) -> a
+    void b(java.lang.String,android.content.ContentValues,android.content.ContentValues) -> b
+    void c(java.lang.String,android.content.ContentValues,android.content.ContentValues) -> c
+    void d(java.lang.String,android.content.ContentValues,android.content.ContentValues) -> d
+    java.lang.String a() -> a
+    void a(com.igexin.download.DownloadProvider,android.database.sqlite.SQLiteDatabase) -> a
+    void b(com.igexin.download.DownloadProvider,android.database.sqlite.SQLiteDatabase) -> b
+    void <clinit>() -> <clinit>
+com.igexin.download.DownloadReceiver -> com.igexin.download.DownloadReceiver:
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.igexin.download.DownloadService -> com.igexin.download.DownloadService:
+    boolean a -> a
+    com.igexin.download.d b -> b
+    java.util.ArrayList c -> c
+    com.igexin.download.f d -> d
+    boolean e -> e
+    com.igexin.download.e f -> f
+    boolean g -> g
+    java.lang.Object h -> h
+    android.database.CharArrayBuffer i -> i
+    android.database.CharArrayBuffer j -> j
+    void <init>() -> <init>
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onStart(android.content.Intent,int) -> onStart
+    void onDestroy() -> onDestroy
+    void a() -> a
+    boolean a(int) -> a
+    void a(android.database.Cursor,int,boolean,boolean,long) -> a
+    void b(android.database.Cursor,int,boolean,boolean,long) -> b
+    java.lang.String a(java.lang.String,android.database.Cursor,java.lang.String) -> a
+    void b(int) -> b
+    long a(int,long) -> a
+    boolean c(int) -> c
+    boolean d(int) -> d
+    boolean a(java.lang.String) -> a
+    boolean b() -> b
+    boolean a(android.database.Cursor,int) -> a
+    void a(com.igexin.download.DownloadService) -> a
+    boolean a(com.igexin.download.DownloadService,boolean) -> a
+    java.lang.Object a(com.igexin.download.DownloadService,java.lang.Object) -> a
+    java.lang.Object b(com.igexin.download.DownloadService) -> b
+    com.igexin.download.f c(com.igexin.download.DownloadService) -> c
+    boolean d(com.igexin.download.DownloadService) -> d
+    com.igexin.download.f a(com.igexin.download.DownloadService,com.igexin.download.f) -> a
+    android.database.CharArrayBuffer a(com.igexin.download.DownloadService,android.database.CharArrayBuffer) -> a
+    android.database.CharArrayBuffer b(com.igexin.download.DownloadService,android.database.CharArrayBuffer) -> b
+    boolean b(com.igexin.download.DownloadService,boolean) -> b
+    java.util.ArrayList e(com.igexin.download.DownloadService) -> e
+    void a(com.igexin.download.DownloadService,int) -> a
+    void a(com.igexin.download.DownloadService,android.database.Cursor,int,boolean,boolean,long) -> a
+    boolean b(com.igexin.download.DownloadService,int) -> b
+    boolean f(com.igexin.download.DownloadService) -> f
+    boolean a(com.igexin.download.DownloadService,android.database.Cursor,int) -> a
+    boolean c(com.igexin.download.DownloadService,int) -> c
+    long a(com.igexin.download.DownloadService,int,long) -> a
+    void b(com.igexin.download.DownloadService,android.database.Cursor,int,boolean,boolean,long) -> b
+    boolean g(com.igexin.download.DownloadService) -> g
+    com.igexin.download.e h(com.igexin.download.DownloadService) -> h
+    void <clinit>() -> <clinit>
+com.igexin.download.Downloads -> com.igexin.download.Downloads:
+    java.lang.String authority -> authority
+    java.lang.String PERMISSION_ACCESS -> PERMISSION_ACCESS
+    java.lang.String PERMISSION_ACCESS_ADVANCED -> PERMISSION_ACCESS_ADVANCED
+    java.lang.String PERMISSION_CACHE -> PERMISSION_CACHE
+    java.lang.String PERMISSION_SEND_INTENTS -> PERMISSION_SEND_INTENTS
+    android.net.Uri a -> a
+    android.net.Uri b -> b
+    java.lang.String ACTION_DOWNLOAD_COMPLETED -> ACTION_DOWNLOAD_COMPLETED
+    java.lang.String ACTION_NOTIFICATION_CLICKED -> ACTION_NOTIFICATION_CLICKED
+    java.lang.String COLUMN_URI -> COLUMN_URI
+    java.lang.String COLUMN_APP_DATA -> COLUMN_APP_DATA
+    java.lang.String COLUMN_NO_INTEGRITY -> COLUMN_NO_INTEGRITY
+    java.lang.String COLUMN_FILE_NAME_HINT -> COLUMN_FILE_NAME_HINT
+    java.lang.String _DATA -> _DATA
+    java.lang.String COLUMN_MIME_TYPE -> COLUMN_MIME_TYPE
+    java.lang.String COLUMN_DESTINATION -> COLUMN_DESTINATION
+    java.lang.String COLUMN_VISIBILITY -> COLUMN_VISIBILITY
+    java.lang.String COLUMN_CONTROL -> COLUMN_CONTROL
+    java.lang.String COLUMN_STATUS -> COLUMN_STATUS
+    java.lang.String COLUMN_LAST_MODIFICATION -> COLUMN_LAST_MODIFICATION
+    java.lang.String COLUMN_CREATE_MODIFICATION -> COLUMN_CREATE_MODIFICATION
+    java.lang.String COLUMN_EXTRAS -> COLUMN_EXTRAS
+    java.lang.String COLUMN_COOKIE_DATA -> COLUMN_COOKIE_DATA
+    java.lang.String COLUMN_USER_AGENT -> COLUMN_USER_AGENT
+    java.lang.String COLUMN_REFERER -> COLUMN_REFERER
+    java.lang.String COLUMN_TOTAL_BYTES -> COLUMN_TOTAL_BYTES
+    java.lang.String COLUMN_CURRENT_BYTES -> COLUMN_CURRENT_BYTES
+    java.lang.String COLUMN_OTHER_UID -> COLUMN_OTHER_UID
+    java.lang.String COLUMN_TITLE -> COLUMN_TITLE
+    java.lang.String COLUMN_DESCRIPTION -> COLUMN_DESCRIPTION
+    java.lang.String COLUMN_DATA1 -> COLUMN_DATA1
+    java.lang.String COLUMN_DATA2 -> COLUMN_DATA2
+    java.lang.String COLUMN_DATA3 -> COLUMN_DATA3
+    java.lang.String COLUMN_DATA4 -> COLUMN_DATA4
+    java.lang.String COLUMN_DATA5 -> COLUMN_DATA5
+    java.lang.String COLUMN_DATA6 -> COLUMN_DATA6
+    java.lang.String COLUMN_DATA7 -> COLUMN_DATA7
+    java.lang.String COLUMN_DATA8 -> COLUMN_DATA8
+    java.lang.String COLUMN_DATA9 -> COLUMN_DATA9
+    java.lang.String COLUMN_DATA10 -> COLUMN_DATA10
+    java.lang.String COLUMN_IS_WEB_ICON -> COLUMN_IS_WEB_ICON
+    int DESTINATION_EXTERNAL -> DESTINATION_EXTERNAL
+    int DESTINATION_CACHE_PARTITION -> DESTINATION_CACHE_PARTITION
+    int DESTINATION_CACHE_PARTITION_PURGEABLE -> DESTINATION_CACHE_PARTITION_PURGEABLE
+    int DESTINATION_CACHE_PARTITION_NOROAMING -> DESTINATION_CACHE_PARTITION_NOROAMING
+    int CONTROL_RUN -> CONTROL_RUN
+    int CONTROL_PAUSED -> CONTROL_PAUSED
+    int STATUS_PENDING -> STATUS_PENDING
+    int STATUS_PENDING_PAUSED -> STATUS_PENDING_PAUSED
+    int STATUS_RUNNING -> STATUS_RUNNING
+    int STATUS_RUNNING_PAUSED -> STATUS_RUNNING_PAUSED
+    int STATUS_SUCCESS -> STATUS_SUCCESS
+    int STATUS_BAD_REQUEST -> STATUS_BAD_REQUEST
+    int STATUS_NOT_ACCEPTABLE -> STATUS_NOT_ACCEPTABLE
+    int STATUS_LENGTH_REQUIRED -> STATUS_LENGTH_REQUIRED
+    int STATUS_PRECONDITION_FAILED -> STATUS_PRECONDITION_FAILED
+    int STATUS_CANCELED -> STATUS_CANCELED
+    int STATUS_UNKNOWN_ERROR -> STATUS_UNKNOWN_ERROR
+    int STATUS_FILE_ERROR -> STATUS_FILE_ERROR
+    int STATUS_UNHANDLED_REDIRECT -> STATUS_UNHANDLED_REDIRECT
+    int STATUS_UNHANDLED_HTTP_CODE -> STATUS_UNHANDLED_HTTP_CODE
+    int STATUS_HTTP_DATA_ERROR -> STATUS_HTTP_DATA_ERROR
+    int STATUS_HTTP_EXCEPTION -> STATUS_HTTP_EXCEPTION
+    int STATUS_TOO_MANY_REDIRECTS -> STATUS_TOO_MANY_REDIRECTS
+    int VISIBILITY_VISIBLE -> VISIBILITY_VISIBLE
+    int VISIBILITY_VISIBLE_NOTIFY_COMPLETED -> VISIBILITY_VISIBLE_NOTIFY_COMPLETED
+    int VISIBILITY_HIDDEN -> VISIBILITY_HIDDEN
+    void <init>() -> <init>
+    void setContentUrl(java.lang.String) -> setContentUrl
+    boolean isStatusInformational(int) -> isStatusInformational
+    boolean isStatusSuspended(int) -> isStatusSuspended
+    boolean isStatusSuccess(int) -> isStatusSuccess
+    boolean isStatusError(int) -> isStatusError
+    boolean isStatusClientError(int) -> isStatusClientError
+    boolean isStatusServerError(int) -> isStatusServerError
+    boolean isStatusCompleted(int) -> isStatusCompleted
+    void <clinit>() -> <clinit>
+com.igexin.download.IDownloadCallback -> com.igexin.download.IDownloadCallback:
+    boolean isVisibilty -> isVisibilty
+    void update(com.igexin.download.DownloadInfo) -> update
+    java.lang.String getName() -> getName
+com.igexin.download.SdkDownLoader -> com.igexin.download.SdkDownLoader:
+    int a -> a
+    java.lang.String b -> b
+    com.igexin.download.SdkDownLoader c -> c
+    android.content.Context f -> f
+    java.util.List g -> g
+    android.os.Handler d -> d
+    java.util.Map updateData -> updateData
+    java.lang.Object h -> h
+    java.lang.String[] e -> e
+    void registerDownloadCallback(com.igexin.download.IDownloadCallback) -> registerDownloadCallback
+    void unregisterDownloadCallback(com.igexin.download.IDownloadCallback) -> unregisterDownloadCallback
+    boolean isRegistered(java.lang.String) -> isRegistered
+    com.igexin.download.IDownloadCallback getCallback(java.lang.String) -> getCallback
+    void a(java.util.Collection) -> a
+    void <init>(android.content.Context) -> <init>
+    com.igexin.download.IDownloadCallback a(java.lang.String) -> a
+    com.igexin.download.SdkDownLoader getInstantiate(android.content.Context) -> getInstantiate
+    void setDownloadDir(java.lang.String) -> setDownloadDir
+    int a(android.content.ContentValues) -> a
+    int newTask(java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String) -> newTask
+    int a(java.lang.String,java.lang.String,android.content.ContentValues,java.lang.String) -> a
+    boolean startTask(int) -> startTask
+    boolean pauseTask(int) -> pauseTask
+    boolean updateTask(int,java.lang.String,java.lang.String) -> updateTask
+    boolean pauseAllTask() -> pauseAllTask
+    boolean deleteTask(int) -> deleteTask
+    boolean queryTask(java.lang.String) -> queryTask
+    boolean deleteTask(int[]) -> deleteTask
+    void refreshList() -> refreshList
+    java.lang.Object a(com.igexin.download.SdkDownLoader) -> a
+    java.util.List b(com.igexin.download.SdkDownLoader) -> b
+    void <clinit>() -> <clinit>
+com.igexin.download.a -> com.igexin.download.a:
+    java.lang.String a -> a
+    java.io.FileOutputStream b -> b
+    int c -> c
+    void <init>(java.lang.String,java.io.FileOutputStream,int) -> <init>
+com.igexin.download.b -> com.igexin.download.b:
+    com.igexin.download.DownloadProvider a -> a
+    void <init>(com.igexin.download.DownloadProvider,android.content.Context) -> <init>
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.igexin.download.c -> com.igexin.download.c:
+    android.database.CrossProcessCursor b -> b
+    com.igexin.download.DownloadProvider a -> a
+    void <init>(com.igexin.download.DownloadProvider,android.database.Cursor) -> <init>
+    void fillWindow(int,android.database.CursorWindow) -> fillWindow
+    android.database.CursorWindow getWindow() -> getWindow
+    boolean onMove(int,int) -> onMove
+com.igexin.download.d -> com.igexin.download.d:
+    com.igexin.download.DownloadService a -> a
+    void <init>(com.igexin.download.DownloadService) -> <init>
+    void onChange(boolean) -> onChange
+com.igexin.download.e -> com.igexin.download.e:
+    com.igexin.download.DownloadService a -> a
+    void <init>(com.igexin.download.DownloadService) -> <init>
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void a() -> a
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.igexin.download.f -> com.igexin.download.f:
+    com.igexin.download.DownloadService a -> a
+    void <init>(com.igexin.download.DownloadService) -> <init>
+    void run() -> run
+com.igexin.download.g -> com.igexin.download.g:
+    android.content.Context a -> a
+    com.igexin.download.DownloadInfo b -> b
+    void <init>(android.content.Context,com.igexin.download.DownloadInfo) -> <init>
+    java.lang.String a() -> a
+    void run() -> run
+    void a(int,boolean,int,int,boolean,java.lang.String,java.lang.String,java.lang.String) -> a
+    void b(int,boolean,int,int,boolean,java.lang.String,java.lang.String,java.lang.String) -> b
+    java.lang.String a(java.lang.String) -> a
+com.igexin.download.h -> com.igexin.download.h:
+    java.util.Random a -> a
+    java.util.regex.Pattern b -> b
+    java.lang.String b(java.lang.String) -> b
+    com.igexin.download.a a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int) -> a
+    java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int) -> a
+    java.lang.String a(java.lang.String,boolean) -> a
+    java.lang.String a(java.lang.String,int,java.lang.String,int) -> a
+    java.lang.String a(int,java.lang.String,java.lang.String,boolean) -> a
+    boolean a(android.content.Context,long) -> a
+    boolean a(android.content.Context) -> a
+    boolean b(android.content.Context) -> b
+    boolean c(android.content.Context) -> c
+    boolean a(java.lang.String) -> a
+    void a(java.lang.String,java.util.Set) -> a
+    void a(com.igexin.download.i) -> a
+    void b(com.igexin.download.i) -> b
+    void <clinit>() -> <clinit>
+com.igexin.download.i -> com.igexin.download.i:
+    java.lang.String a -> a
+    java.util.Set b -> b
+    int c -> c
+    int d -> d
+    char[] e -> e
+    void <init>(java.lang.String,java.util.Set) -> <init>
+    int a() -> a
+    void b() -> b
+    boolean a(char) -> a
+    boolean b(char) -> b
+com.igexin.download.j -> com.igexin.download.j:
+    com.igexin.download.SdkDownLoader a -> a
+    void <init>(com.igexin.download.SdkDownLoader,android.os.Looper) -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+com.igexin.push.a.a.a -> com.igexin.push.a.a.a:
+    long a -> a
+    void <init>() -> <init>
+    void a() -> a
+    boolean b() -> b
+    void a(long) -> a
+com.igexin.push.a.a.b -> com.igexin.push.a.a.b:
+    java.lang.String a -> a
+    long b -> b
+    void <init>() -> <init>
+    void a() -> a
+    boolean b() -> b
+    void a(long) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.a.a.c -> com.igexin.push.a.a.c:
+    long a -> a
+    long b -> b
+    com.igexin.push.a.a.c c -> c
+    boolean d -> d
+    void <init>() -> <init>
+    com.igexin.push.a.a.c c() -> c
+    void a() -> a
+    boolean b() -> b
+    void a(long) -> a
+    void d() -> d
+com.igexin.push.a.a.d -> com.igexin.push.a.a.d:
+    java.lang.String a -> a
+    long b -> b
+    long c -> c
+    void <init>() -> <init>
+    void a() -> a
+    void c() -> c
+    boolean b() -> b
+    void a(long) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.a.a.e -> com.igexin.push.a.a.e:
+    com.igexin.push.a.a.d a -> a
+    void <init>(com.igexin.push.a.a.d) -> <init>
+    void a() -> a
+com.igexin.push.b.a -> com.igexin.push.b.a:
+    java.lang.String e -> e
+    android.database.sqlite.SQLiteDatabase a -> a
+    android.database.Cursor b -> b
+    java.util.List c -> c
+    boolean d -> d
+    void <init>() -> <init>
+    void a(com.igexin.push.core.b.a) -> a
+    void a_() -> a_
+    void c() -> c
+    void d() -> d
+    void e() -> e
+    int b() -> b
+    void <clinit>() -> <clinit>
+com.igexin.push.b.b -> com.igexin.push.b.b:
+    android.database.sqlite.SQLiteDatabase a -> a
+    void <init>(android.content.Context) -> <init>
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    void onDowngrade(android.database.sqlite.SQLiteDatabase,int,int) -> onDowngrade
+    void a(java.lang.String,android.content.ContentValues) -> a
+    void a(java.lang.String,java.lang.String[],java.lang.String[]) -> a
+    void a(java.lang.String,java.lang.String) -> a
+    java.lang.String a(java.lang.String[],java.lang.String[],int) -> a
+    java.lang.String b(java.lang.String,java.lang.String) -> b
+    android.database.Cursor a(java.lang.String,java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String) -> a
+    void a(java.lang.String,android.content.ContentValues,java.lang.String[],java.lang.String[]) -> a
+com.igexin.push.b.c -> com.igexin.push.b.c:
+    int a -> a
+    void <init>(int) -> <init>
+    int b() -> b
+com.igexin.push.b.d -> com.igexin.push.b.d:
+    java.lang.String a -> a
+    android.database.sqlite.SQLiteDatabase c -> c
+    android.database.Cursor d -> d
+    android.content.ContentValues e -> e
+    com.igexin.push.b.c f -> f
+    void <init>() -> <init>
+    void <init>(android.content.ContentValues) -> <init>
+    void a_() -> a_
+    void a() -> a
+    void c() -> c
+    void d() -> d
+    void e() -> e
+    int b() -> b
+    void <clinit>() -> <clinit>
+com.igexin.push.c.a -> com.igexin.push.c.a:
+    java.lang.String f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    com.igexin.push.c.j j -> j
+    java.util.List k -> k
+    java.util.List l -> l
+    java.lang.Object m -> m
+    java.lang.Object n -> n
+    com.igexin.push.c.d a -> a
+    int o -> o
+    java.util.concurrent.atomic.AtomicBoolean b -> b
+    int c -> c
+    long d -> d
+    long e -> e
+    java.util.Comparator p -> p
+    void <init>() -> <init>
+    void a() -> a
+    void b() -> b
+    void c() -> c
+    void a(java.util.List) -> a
+    void b(java.util.List) -> b
+    void d() -> d
+    java.lang.String a(boolean) -> a
+    java.lang.String b(boolean) -> b
+    void e() -> e
+    void f() -> f
+    void k() -> k
+    void g() -> g
+    void h() -> h
+    void i() -> i
+    void a(com.igexin.push.c.d) -> a
+    boolean j() -> j
+    void <clinit>() -> <clinit>
+com.igexin.push.c.b -> com.igexin.push.c.b:
+    com.igexin.push.c.a a -> a
+    void <init>(com.igexin.push.c.a) -> <init>
+    int a(com.igexin.push.c.j,com.igexin.push.c.j) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.igexin.push.c.c -> com.igexin.push.c.c:
+    int[] a -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.c.d -> com.igexin.push.c.d:
+    com.igexin.push.c.d a -> a
+    com.igexin.push.c.d b -> b
+    com.igexin.push.c.d c -> c
+    int d -> d
+    com.igexin.push.c.d[] e -> e
+    com.igexin.push.c.d[] a() -> a
+    void <init>(java.lang.String,int,int) -> <init>
+    com.igexin.push.c.d a(int) -> a
+    int b() -> b
+    void <clinit>() -> <clinit>
+com.igexin.push.c.e -> com.igexin.push.c.e:
+    java.lang.String a -> a
+    long b -> b
+    void <init>() -> <init>
+    java.lang.String toString() -> toString
+com.igexin.push.c.f -> com.igexin.push.c.f:
+    long a -> a
+    long b -> b
+    void <clinit>() -> <clinit>
+com.igexin.push.c.g -> com.igexin.push.c.g:
+    com.igexin.push.c.g a -> a
+    com.igexin.push.c.g b -> b
+    com.igexin.push.c.g c -> c
+    com.igexin.push.c.g[] d -> d
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.c.h -> com.igexin.push.c.h:
+    com.igexin.push.c.h a -> a
+    com.igexin.push.c.h b -> b
+    com.igexin.push.c.h[] c -> c
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.c.i -> com.igexin.push.c.i:
+    java.lang.String b -> b
+    com.igexin.push.c.i c -> c
+    com.igexin.push.c.h d -> d
+    boolean a -> a
+    com.igexin.push.c.i a() -> a
+    void <init>() -> <init>
+    void b() -> b
+    void c() -> c
+    void d() -> d
+    com.igexin.push.c.a e() -> e
+    boolean f() -> f
+    java.lang.String g() -> g
+    void h() -> h
+    com.igexin.push.c.m i() -> i
+    void <clinit>() -> <clinit>
+com.igexin.push.c.j -> com.igexin.push.c.j:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    int d -> d
+    long e -> e
+    long f -> f
+    boolean g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    void <init>() -> <init>
+    void <init>(java.lang.String,int) -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    void a(java.lang.String,long,long) -> a
+    void b() -> b
+    void b(java.lang.String) -> b
+    java.lang.String c() -> c
+    void a(long) -> a
+    void b(long) -> b
+    void a(boolean) -> a
+    int d() -> d
+    void a(int) -> a
+    long e() -> e
+    void b(int) -> b
+    boolean f() -> f
+    java.lang.String g() -> g
+    java.lang.String b(boolean) -> b
+    void h() -> h
+    void j() -> j
+    boolean k() -> k
+    org.json.JSONObject i() -> i
+    void <clinit>() -> <clinit>
+com.igexin.push.c.k -> com.igexin.push.c.k:
+    java.lang.String b -> b
+    com.igexin.push.c.k c -> c
+    boolean e -> e
+    java.util.concurrent.atomic.AtomicBoolean a -> a
+    com.igexin.push.c.k b_() -> b_
+    void <init>() -> <init>
+    void a(long) -> a
+    void a() -> a
+    int b() -> b
+    void g() -> g
+    void <clinit>() -> <clinit>
+com.igexin.push.c.l -> com.igexin.push.c.l:
+    java.lang.String e -> e
+    com.igexin.push.c.l f -> f
+    com.igexin.push.c.l a() -> a
+    void <init>() -> <init>
+    void a(com.igexin.push.c.j) -> a
+    void a(com.igexin.push.c.g,com.igexin.push.c.j) -> a
+    com.igexin.push.c.h b() -> b
+    com.igexin.push.c.o c() -> c
+    void <clinit>() -> <clinit>
+com.igexin.push.c.m -> com.igexin.push.c.m:
+    java.lang.String e -> e
+    long a -> a
+    java.util.Map b -> b
+    java.util.Map c -> c
+    java.lang.Object f -> f
+    java.lang.Object g -> g
+    int h -> h
+    java.util.concurrent.atomic.AtomicBoolean i -> i
+    com.igexin.push.c.a d -> d
+    java.util.Comparator j -> j
+    int k -> k
+    com.igexin.push.c.h b() -> b
+    com.igexin.push.c.o c() -> c
+    void <init>(java.lang.String,java.lang.String) -> <init>
+    void b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    java.util.List a(org.json.JSONArray) -> a
+    void a(boolean) -> a
+    java.util.List a() -> a
+    com.igexin.push.c.j a(org.json.JSONObject) -> a
+    com.igexin.push.c.j d(java.lang.String) -> d
+    void b(org.json.JSONArray) -> b
+    void d() -> d
+    void e() -> e
+    void f() -> f
+    com.igexin.push.c.j g() -> g
+    void h() -> h
+    void i() -> i
+    void j() -> j
+    void a(com.igexin.push.c.j) -> a
+    void r() -> r
+    void k() -> k
+    void l() -> l
+    boolean m() -> m
+    com.igexin.push.c.p a(java.lang.String) -> a
+    void b(com.igexin.push.c.j) -> b
+    void n() -> n
+    void o() -> o
+    void p() -> p
+    int s() -> s
+    java.lang.String c(com.igexin.push.c.j) -> c
+    boolean q() -> q
+    boolean t() -> t
+    void <clinit>() -> <clinit>
+com.igexin.push.c.n -> com.igexin.push.c.n:
+    com.igexin.push.c.m a -> a
+    void <init>(com.igexin.push.c.m) -> <init>
+    int a(java.util.Map$Entry,java.util.Map$Entry) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.igexin.push.c.o -> com.igexin.push.c.o:
+    void a(com.igexin.push.c.j) -> a
+    void a(com.igexin.push.c.g,com.igexin.push.c.j) -> a
+com.igexin.push.c.p -> com.igexin.push.c.p:
+    java.lang.String b -> b
+    com.igexin.push.c.j c -> c
+    java.lang.Thread e -> e
+    com.igexin.push.c.o f -> f
+    long g -> g
+    java.util.concurrent.locks.Lock h -> h
+    java.util.concurrent.locks.Condition i -> i
+    java.util.List j -> j
+    boolean L -> L
+    boolean M -> M
+    int a -> a
+    void <init>() -> <init>
+    void a(com.igexin.push.c.o) -> a
+    com.igexin.push.c.j c_() -> c_
+    void a(com.igexin.push.c.j) -> a
+    void d() -> d
+    void a() -> a
+    void x() -> x
+    void y() -> y
+    void g() -> g
+    void h() -> h
+    void i() -> i
+    void j() -> j
+    void a(boolean) -> a
+    long a(long) -> a
+    void c() -> c
+    int b() -> b
+    java.lang.String z() -> z
+    void A() -> A
+    void B() -> B
+    boolean a(com.igexin.push.c.p) -> a
+    java.lang.Thread b(com.igexin.push.c.p) -> b
+    java.util.concurrent.locks.Lock c(com.igexin.push.c.p) -> c
+    java.util.List d(com.igexin.push.c.p) -> d
+    java.util.concurrent.locks.Condition e(com.igexin.push.c.p) -> e
+    boolean f(com.igexin.push.c.p) -> f
+    com.igexin.push.c.o g(com.igexin.push.c.p) -> g
+    com.igexin.push.c.j h(com.igexin.push.c.p) -> h
+    java.lang.String k() -> k
+    java.lang.String i(com.igexin.push.c.p) -> i
+    void <clinit>() -> <clinit>
+com.igexin.push.c.q -> com.igexin.push.c.q:
+    com.igexin.push.c.p a -> a
+    void <init>(com.igexin.push.c.p) -> <init>
+    void run() -> run
+com.igexin.push.c.r -> com.igexin.push.c.r:
+    java.lang.String e -> e
+    com.igexin.push.c.r f -> f
+    com.igexin.push.c.r a() -> a
+    void <init>() -> <init>
+    void a(com.igexin.push.c.j) -> a
+    void a(com.igexin.push.c.g,com.igexin.push.c.j) -> a
+    com.igexin.push.c.h b() -> b
+    com.igexin.push.c.o c() -> c
+    void <clinit>() -> <clinit>
+com.igexin.push.config.SDKUrlConfig -> com.igexin.push.config.SDKUrlConfig:
+    java.lang.Object a -> a
+    java.lang.String[] b -> b
+    java.lang.String c -> c
+    java.lang.String[] d -> d
+    java.lang.String[] XFR_ADDRESS_BAK -> XFR_ADDRESS_BAK
+    java.lang.String[] BI_ADDRESS_IPS -> BI_ADDRESS_IPS
+    java.lang.String[] CONFIG_ADDRESS_IPS -> CONFIG_ADDRESS_IPS
+    java.lang.String[] STATE_ADDRESS_IPS -> STATE_ADDRESS_IPS
+    java.lang.String[] LOG_ADDRESS_IPS -> LOG_ADDRESS_IPS
+    java.lang.String[] AMP_ADDRESS_IPS -> AMP_ADDRESS_IPS
+    java.lang.String[] LBS_ADDRESS_IPS -> LBS_ADDRESS_IPS
+    java.lang.String[] INC_ADDRESS_IPS -> INC_ADDRESS_IPS
+    java.lang.String e -> e
+    void <init>() -> <init>
+    void setCmAddress(java.lang.String) -> setCmAddress
+    java.lang.String getCmAddress() -> getCmAddress
+    void setXfrAddressIps(java.lang.String[]) -> setXfrAddressIps
+    java.lang.String[] getXfrAddress() -> getXfrAddress
+    java.lang.String getIncreaseServiceUrl() -> getIncreaseServiceUrl
+    java.lang.String getLbsServiceUrl() -> getLbsServiceUrl
+    java.lang.String getAmpServiceUrl() -> getAmpServiceUrl
+    java.lang.String getLogServiceUrl() -> getLogServiceUrl
+    java.lang.String getStatServiceUrl() -> getStatServiceUrl
+    java.lang.String getConfigServiceUrl() -> getConfigServiceUrl
+    java.lang.String getBiUploadServiceUrl() -> getBiUploadServiceUrl
+    java.lang.String[] getIdcConfigUrl() -> getIdcConfigUrl
+    void setIdcConfigUrl(java.lang.String[]) -> setIdcConfigUrl
+    java.lang.String getLocation() -> getLocation
+    void setLocation(java.lang.String) -> setLocation
+    boolean realXfrListIsOnly() -> realXfrListIsOnly
+    void <clinit>() -> <clinit>
+com.igexin.push.config.a -> com.igexin.push.config.a:
+    java.lang.String a -> a
+    com.igexin.push.config.a b -> b
+    void <init>() -> <init>
+    com.igexin.push.config.a a() -> a
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    void c(android.database.sqlite.SQLiteDatabase) -> c
+    void a(android.database.sqlite.SQLiteDatabase,int,java.lang.String) -> a
+    void a(android.database.sqlite.SQLiteDatabase,int,byte[]) -> a
+    void a(android.database.sqlite.SQLiteDatabase,int) -> a
+    void b() -> b
+    void c() -> c
+    void d() -> d
+    void e() -> e
+    void f() -> f
+    void g() -> g
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void h() -> h
+    void a(com.igexin.push.config.a,android.database.sqlite.SQLiteDatabase,int,java.lang.String) -> a
+    void a(com.igexin.push.config.a,android.database.sqlite.SQLiteDatabase,int,byte[]) -> a
+    void a(com.igexin.push.config.a,android.database.sqlite.SQLiteDatabase,int) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.config.b -> com.igexin.push.config.b:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.c -> com.igexin.push.config.c:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.d -> com.igexin.push.config.d:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.e -> com.igexin.push.config.e:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.f -> com.igexin.push.config.f:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.g -> com.igexin.push.config.g:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.h -> com.igexin.push.config.h:
+    com.igexin.push.config.a a -> a
+    void <init>(com.igexin.push.config.a) -> <init>
+    void a() -> a
+com.igexin.push.config.i -> com.igexin.push.config.i:
+    java.lang.String a -> a
+    com.igexin.push.config.a b -> b
+    void <init>(com.igexin.push.config.a,java.lang.String) -> <init>
+    void a() -> a
+com.igexin.push.config.j -> com.igexin.push.config.j:
+    java.lang.String a -> a
+    com.igexin.push.config.a b -> b
+    void <init>(com.igexin.push.config.a,java.lang.String) -> <init>
+    void a() -> a
+com.igexin.push.config.k -> com.igexin.push.config.k:
+    com.igexin.push.config.k a -> a
+    void <init>() -> <init>
+    com.igexin.push.config.k a() -> a
+    boolean b() -> b
+com.igexin.push.config.l -> com.igexin.push.config.l:
+    java.lang.String a -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.config.m -> com.igexin.push.config.m:
+    int a -> a
+    int b -> b
+    long c -> c
+    int d -> d
+    int e -> e
+    boolean f -> f
+    boolean g -> g
+    boolean h -> h
+    boolean i -> i
+    boolean j -> j
+    boolean k -> k
+    boolean l -> l
+    boolean m -> m
+    boolean n -> n
+    long o -> o
+    boolean p -> p
+    boolean q -> q
+    boolean r -> r
+    com.igexin.push.core.bean.g s -> s
+    java.lang.String t -> t
+    java.lang.String u -> u
+    boolean v -> v
+    boolean w -> w
+    boolean x -> x
+    long y -> y
+    long z -> z
+    int A -> A
+    int B -> B
+    long C -> C
+    long D -> D
+    int E -> E
+    java.lang.String F -> F
+    boolean G -> G
+    int H -> H
+    long I -> I
+    int J -> J
+    int K -> K
+    java.lang.String L -> L
+    boolean M -> M
+    boolean N -> N
+    boolean O -> O
+    void <clinit>() -> <clinit>
+com.igexin.push.config.n -> com.igexin.push.config.n:
+    java.lang.String a -> a
+    void a(android.content.Context) -> a
+    void b(android.content.Context) -> b
+    void a() -> a
+    void a(java.io.InputStream) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.config.o -> com.igexin.push.config.o:
+    java.lang.String[] a(org.json.JSONObject,java.lang.String) -> a
+    void a(java.lang.String,boolean) -> a
+com.igexin.push.config.p -> com.igexin.push.config.p:
+    void a() -> a
+    void a(java.lang.String) -> a
+com.igexin.push.config.q -> com.igexin.push.config.q:
+    java.lang.String a -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a -> com.igexin.push.core.a:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    int l -> l
+    int m -> m
+    java.lang.String n -> n
+    java.lang.String o -> o
+    java.lang.String p -> p
+    java.lang.String q -> q
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.a -> com.igexin.push.core.a.a:
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+com.igexin.push.core.a.a.a -> com.igexin.push.core.a.a.a:
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+com.igexin.push.core.a.a.b -> com.igexin.push.core.a.a.b:
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+    boolean a(java.lang.String) -> a
+com.igexin.push.core.a.a.c -> com.igexin.push.core.a.a.c:
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    boolean a(com.igexin.push.core.bean.f) -> a
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+com.igexin.push.core.a.a.d -> com.igexin.push.core.a.a.d:
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+com.igexin.push.core.a.a.e -> com.igexin.push.core.a.a.e:
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+com.igexin.push.core.a.a.f -> com.igexin.push.core.a.a.f:
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+com.igexin.push.core.a.a.g -> com.igexin.push.core.a.a.g:
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+com.igexin.push.core.a.a.h -> com.igexin.push.core.a.a.h:
+    java.lang.String b -> b
+    java.util.HashMap a -> a
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+    void a(java.lang.String,java.lang.String,com.igexin.push.core.bean.i) -> a
+    android.app.PendingIntent a(java.lang.String,java.lang.String,java.lang.String,int) -> a
+    int a(com.igexin.push.core.bean.i) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.a.i -> com.igexin.push.core.a.a.i:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.a.j -> com.igexin.push.core.a.a.j:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+    void a(com.igexin.push.core.bean.m,java.lang.String) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.a.k -> com.igexin.push.core.a.a.k:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.a.l -> com.igexin.push.core.a.a.l:
+    android.content.pm.PackageManager a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    com.igexin.push.core.b a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> b
+    void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.String a(java.lang.String) -> a
+    com.igexin.push.core.bean.BaseAction a(org.json.JSONObject) -> a
+    java.util.List a(int,java.lang.String) -> a
+    void a(java.lang.String,boolean,com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> a
+    boolean b(java.lang.String,java.lang.String) -> b
+    void a(java.lang.StringBuffer,java.lang.String,java.lang.String,java.lang.String) -> a
+    void b(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+    void b(java.lang.String) -> b
+    boolean a(java.lang.String,java.lang.String) -> a
+    void a(java.util.Map) -> a
+    boolean c(java.lang.String) -> c
+    java.lang.String d(java.lang.String) -> d
+    java.lang.String a(com.igexin.push.core.a.a.l,java.lang.String) -> a
+    void a(com.igexin.push.core.a.a.l,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.a.m -> com.igexin.push.core.a.a.m:
+    java.util.Map a -> a
+    com.igexin.push.core.a.a.l b -> b
+    void <init>(com.igexin.push.core.a.a.l,long,java.util.Map) -> <init>
+    void a() -> a
+    int b() -> b
+com.igexin.push.core.a.b -> com.igexin.push.core.a.b:
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+com.igexin.push.core.a.c -> com.igexin.push.core.a.c:
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+com.igexin.push.core.a.d -> com.igexin.push.core.a.d:
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    void a(java.lang.String,com.igexin.push.d.c.a) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+com.igexin.push.core.a.e -> com.igexin.push.core.a.e:
+    java.util.Map a -> a
+    java.util.Map b -> b
+    com.igexin.push.core.a.e c -> c
+    boolean d -> d
+    java.util.concurrent.atomic.AtomicBoolean e -> e
+    long f -> f
+    com.igexin.push.core.a.e a() -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    void C() -> C
+    void f(boolean) -> f
+    boolean a(com.igexin.b.a.d.d) -> a
+    void a(android.content.Intent) -> a
+    void b(android.content.Intent) -> b
+    void c(android.content.Intent) -> c
+    void D() -> D
+    void f(android.content.Intent) -> f
+    void e(java.lang.String) -> e
+    void f(java.lang.String) -> f
+    void g(android.content.Intent) -> g
+    void a(android.os.Bundle) -> a
+    void b() -> b
+    void a(boolean) -> a
+    boolean a(com.igexin.push.d.c.e) -> a
+    com.igexin.push.d.c.k c() -> c
+    int d() -> d
+    void e() -> e
+    void f() -> f
+    int g() -> g
+    void a(java.lang.String) -> a
+    void h() -> h
+    void i() -> i
+    void j() -> j
+    void a(com.igexin.push.core.bean.PushTaskBean,java.lang.String) -> a
+    void a(com.igexin.push.core.bean.PushTaskBean,java.lang.String,java.lang.String) -> a
+    void a(com.igexin.push.core.bean.PushTaskBean) -> a
+    void b(com.igexin.push.core.bean.PushTaskBean,java.lang.String) -> b
+    void a(com.igexin.push.d.c.c,com.igexin.push.core.bean.PushTaskBean,java.lang.String,java.lang.String) -> a
+    void a(java.lang.String,java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void a(java.lang.String,boolean) -> a
+    void a(int,int,java.lang.String) -> a
+    void a(int,java.lang.String) -> a
+    void b(int,java.lang.String) -> b
+    void a(java.lang.String,byte[]) -> a
+    void b(java.lang.String,java.lang.String) -> b
+    void k() -> k
+    void l() -> l
+    void a(int) -> a
+    void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long) -> a
+    void a(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    void a(java.lang.String,java.lang.String,java.lang.String,byte[]) -> a
+    void b(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+    android.content.Intent E() -> E
+    java.lang.String m() -> m
+    void n() -> n
+    void g(java.lang.String) -> g
+    java.lang.String o() -> o
+    boolean p() -> p
+    void c(java.lang.String) -> c
+    void d(android.content.Intent) -> d
+    java.lang.String a(com.igexin.push.core.bean.g) -> a
+    com.igexin.push.core.bean.g a(org.json.JSONObject) -> a
+    void a(java.util.List) -> a
+    java.lang.String a(boolean,int) -> a
+    void q() -> q
+    void r() -> r
+    java.lang.String c(java.lang.String,java.lang.String) -> c
+    boolean a(org.json.JSONObject,com.igexin.push.core.bean.PushTaskBean) -> a
+    boolean a(java.lang.String,java.lang.String,java.lang.String) -> a
+    com.igexin.push.core.b d(java.lang.String,java.lang.String) -> d
+    boolean b(java.lang.String,java.lang.String,java.lang.String) -> b
+    void a(java.lang.String,com.igexin.push.d.c.a,com.igexin.push.core.bean.PushTaskBean) -> a
+    boolean a(org.json.JSONObject,byte[],boolean) -> a
+    void s() -> s
+    boolean t() -> t
+    void a(int,java.lang.String,java.lang.String) -> a
+    boolean F() -> F
+    void b(org.json.JSONObject,com.igexin.push.core.bean.PushTaskBean) -> b
+    void u() -> u
+    void v() -> v
+    void w() -> w
+    void x() -> x
+    void e(java.lang.String,java.lang.String) -> e
+    void y() -> y
+    void z() -> z
+    void A() -> A
+    java.lang.String d(java.lang.String) -> d
+    void b(boolean) -> b
+    void c(boolean) -> c
+    void d(boolean) -> d
+    void e(boolean) -> e
+    void e(android.content.Intent) -> e
+    boolean B() -> B
+    java.lang.Class a(android.content.Context) -> a
+    java.lang.Class b(android.content.Context) -> b
+    boolean a(long) -> a
+    void a(com.igexin.push.core.a.e,java.lang.String,java.lang.String) -> a
+com.igexin.push.core.a.f -> com.igexin.push.core.a.f:
+    com.igexin.push.core.a.e a -> a
+    void <init>(com.igexin.push.core.a.e) -> <init>
+    void a() -> a
+com.igexin.push.core.a.g -> com.igexin.push.core.a.g:
+    com.igexin.push.core.a.e a -> a
+    void <init>(com.igexin.push.core.a.e) -> <init>
+    void a() -> a
+com.igexin.push.core.a.h -> com.igexin.push.core.a.h:
+    com.igexin.push.core.a.e a -> a
+    void <init>(com.igexin.push.core.a.e) -> <init>
+    int a(com.igexin.push.core.bean.n,com.igexin.push.core.bean.n) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.igexin.push.core.a.i -> com.igexin.push.core.a.i:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    com.igexin.push.core.a.e c -> c
+    void <init>(com.igexin.push.core.a.e,long,java.lang.String,java.lang.String) -> <init>
+    void a() -> a
+    int b() -> b
+com.igexin.push.core.a.j -> com.igexin.push.core.a.j:
+    java.lang.String a -> a
+    java.util.Map b -> b
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.k -> com.igexin.push.core.a.k:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.l -> com.igexin.push.core.a.l:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.m -> com.igexin.push.core.a.m:
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+    void b() -> b
+    void a() -> a
+    void c() -> c
+    void d() -> d
+    void e() -> e
+    void f() -> f
+com.igexin.push.core.a.n -> com.igexin.push.core.a.n:
+    com.igexin.push.core.a.m a -> a
+    void <init>(com.igexin.push.core.a.m,long) -> <init>
+    void a() -> a
+    int b() -> b
+com.igexin.push.core.a.o -> com.igexin.push.core.a.o:
+    com.igexin.push.core.a.m a -> a
+    void <init>(com.igexin.push.core.a.m) -> <init>
+    void a() -> a
+com.igexin.push.core.a.p -> com.igexin.push.core.a.p:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.q -> com.igexin.push.core.a.q:
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+com.igexin.push.core.a.r -> com.igexin.push.core.a.r:
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+com.igexin.push.core.a.s -> com.igexin.push.core.a.s:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+    void a(java.lang.String,java.lang.String) -> a
+    void a(java.lang.String,org.json.JSONArray) -> a
+    java.lang.String[] a(org.json.JSONArray) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.t -> com.igexin.push.core.a.t:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object) -> a
+    boolean a(com.igexin.b.a.d.d) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.u -> com.igexin.push.core.a.u:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.a.v -> com.igexin.push.core.a.v:
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+com.igexin.push.core.a.w -> com.igexin.push.core.a.w:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a(java.lang.Object,org.json.JSONObject) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.b -> com.igexin.push.core.b:
+    com.igexin.push.core.b a -> a
+    com.igexin.push.core.b b -> b
+    com.igexin.push.core.b c -> c
+    com.igexin.push.core.b[] d -> d
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.core.b.a -> com.igexin.push.core.b.a:
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    void c(android.database.sqlite.SQLiteDatabase) -> c
+com.igexin.push.core.b.aa -> com.igexin.push.core.b.aa:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.ab -> com.igexin.push.core.b.ab:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.ac -> com.igexin.push.core.b.ac:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.ad -> com.igexin.push.core.b.ad:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.ae -> com.igexin.push.core.b.ae:
+    java.lang.String a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    java.util.ArrayList e -> e
+    com.igexin.push.core.b.ae f -> f
+    com.igexin.push.core.b.ae a() -> a
+    void <init>() -> <init>
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    void c(android.database.sqlite.SQLiteDatabase) -> c
+    void a(java.lang.String,java.lang.String) -> a
+    java.util.ArrayList a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    void a(java.lang.String,java.util.ArrayList) -> a
+    int a(com.igexin.push.core.b.ae) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.b.af -> com.igexin.push.core.b.af:
+    android.content.ContentValues a -> a
+    com.igexin.push.core.b.ae b -> b
+    void <init>(com.igexin.push.core.b.ae,android.content.ContentValues) -> <init>
+    void a() -> a
+com.igexin.push.core.b.b -> com.igexin.push.core.b.b:
+    java.util.Map a -> a
+    com.igexin.push.core.b.b b -> b
+    void <init>() -> <init>
+    com.igexin.push.core.b.b a() -> a
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    void c(android.database.sqlite.SQLiteDatabase) -> c
+com.igexin.push.core.b.c -> com.igexin.push.core.b.c:
+    android.content.SharedPreferences a -> a
+    void <init>(android.content.Context) -> <init>
+    org.json.JSONObject b() -> b
+    boolean a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    void a() -> a
+com.igexin.push.core.b.d -> com.igexin.push.core.b.d:
+    com.igexin.push.core.b.d a -> a
+    java.util.List b -> b
+    com.igexin.push.core.b.d a() -> a
+    void <init>() -> <init>
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    void c(android.database.sqlite.SQLiteDatabase) -> c
+    java.util.List b() -> b
+    android.content.ContentValues b(com.igexin.push.core.bean.j) -> b
+    void a(com.igexin.push.core.bean.j) -> a
+    int a(int) -> a
+    boolean a(long) -> a
+    com.igexin.push.core.bean.j b(long) -> b
+com.igexin.push.core.b.e -> com.igexin.push.core.b.e:
+    com.igexin.push.core.b.d a -> a
+    void <init>(com.igexin.push.core.b.d,android.content.ContentValues) -> <init>
+    void a() -> a
+com.igexin.push.core.b.f -> com.igexin.push.core.b.f:
+    long a -> a
+    com.igexin.push.core.b.d b -> b
+    void <init>(com.igexin.push.core.b.d,android.content.ContentValues,long) -> <init>
+    void a() -> a
+com.igexin.push.core.b.g -> com.igexin.push.core.b.g:
+    java.lang.String a -> a
+    com.igexin.push.core.b.g b -> b
+    java.util.Map c -> c
+    boolean d -> d
+    com.igexin.push.core.b.g a() -> a
+    void <init>() -> <init>
+    void a(android.database.sqlite.SQLiteDatabase) -> a
+    void e(android.database.sqlite.SQLiteDatabase) -> e
+    void d(android.database.sqlite.SQLiteDatabase) -> d
+    void f(android.database.sqlite.SQLiteDatabase) -> f
+    void g(android.database.sqlite.SQLiteDatabase) -> g
+    void h(android.database.sqlite.SQLiteDatabase) -> h
+    void i(android.database.sqlite.SQLiteDatabase) -> i
+    void j(android.database.sqlite.SQLiteDatabase) -> j
+    void k(android.database.sqlite.SQLiteDatabase) -> k
+    byte[] a(android.database.sqlite.SQLiteDatabase,int) -> a
+    java.lang.String b(android.database.sqlite.SQLiteDatabase,int) -> b
+    void b(android.database.sqlite.SQLiteDatabase) -> b
+    void c(android.database.sqlite.SQLiteDatabase) -> c
+    void a(android.database.sqlite.SQLiteDatabase,int,java.lang.String) -> a
+    void a(android.database.sqlite.SQLiteDatabase,int,byte[]) -> a
+    void b() -> b
+    boolean c() -> c
+    boolean a(java.lang.String,java.lang.String,long) -> a
+    boolean a(long) -> a
+    boolean e() -> e
+    byte[] g(java.lang.String) -> g
+    void f() -> f
+    boolean a(java.lang.String) -> a
+    boolean b(long) -> b
+    boolean b(java.lang.String) -> b
+    boolean c(java.lang.String) -> c
+    boolean d(java.lang.String) -> d
+    boolean c(long) -> c
+    boolean d(long) -> d
+    boolean e(long) -> e
+    boolean e(java.lang.String) -> e
+    boolean a(boolean) -> a
+    boolean f(long) -> f
+    boolean f(java.lang.String) -> f
+    boolean a(int) -> a
+    boolean a(java.lang.String,boolean) -> a
+    boolean b(java.lang.String,boolean) -> b
+    boolean g(long) -> g
+    boolean b(int) -> b
+    boolean b(boolean) -> b
+    java.util.Map d() -> d
+    java.lang.String g() -> g
+    void a(com.igexin.push.core.b.g,android.database.sqlite.SQLiteDatabase,int,java.lang.String) -> a
+    byte[] a(com.igexin.push.core.b.g,java.lang.String) -> a
+    void a(com.igexin.push.core.b.g,android.database.sqlite.SQLiteDatabase,int,byte[]) -> a
+    void a(com.igexin.push.core.b.g) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.b.h -> com.igexin.push.core.b.h:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.i -> com.igexin.push.core.b.i:
+    long a -> a
+    com.igexin.push.core.b.g b -> b
+    void <init>(com.igexin.push.core.b.g,long) -> <init>
+    void a() -> a
+com.igexin.push.core.b.j -> com.igexin.push.core.b.j:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.k -> com.igexin.push.core.b.k:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.l -> com.igexin.push.core.b.l:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.m -> com.igexin.push.core.b.m:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.n -> com.igexin.push.core.b.n:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.o -> com.igexin.push.core.b.o:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.p -> com.igexin.push.core.b.p:
+    java.lang.String a -> a
+    com.igexin.push.core.b.g b -> b
+    void <init>(com.igexin.push.core.b.g,java.lang.String) -> <init>
+    void a() -> a
+com.igexin.push.core.b.q -> com.igexin.push.core.b.q:
+    java.lang.String a -> a
+    com.igexin.push.core.b.g b -> b
+    void <init>(com.igexin.push.core.b.g,java.lang.String) -> <init>
+    void a() -> a
+com.igexin.push.core.b.r -> com.igexin.push.core.b.r:
+    java.lang.String a -> a
+    com.igexin.push.core.b.g b -> b
+    void <init>(com.igexin.push.core.b.g,java.lang.String) -> <init>
+    void a() -> a
+com.igexin.push.core.b.s -> com.igexin.push.core.b.s:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.t -> com.igexin.push.core.b.t:
+    java.lang.String a -> a
+    com.igexin.push.core.b.g b -> b
+    void <init>(com.igexin.push.core.b.g,java.lang.String) -> <init>
+    void a() -> a
+com.igexin.push.core.b.u -> com.igexin.push.core.b.u:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.v -> com.igexin.push.core.b.v:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.w -> com.igexin.push.core.b.w:
+    boolean a -> a
+    com.igexin.push.core.b.g b -> b
+    void <init>(com.igexin.push.core.b.g,boolean) -> <init>
+    void a() -> a
+com.igexin.push.core.b.x -> com.igexin.push.core.b.x:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.y -> com.igexin.push.core.b.y:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.b.z -> com.igexin.push.core.b.z:
+    com.igexin.push.core.b.g a -> a
+    void <init>(com.igexin.push.core.b.g) -> <init>
+    void a() -> a
+com.igexin.push.core.bean.BaseAction -> com.igexin.push.core.bean.BaseAction:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    boolean d -> d
+    void <init>() -> <init>
+    java.lang.String getActionId() -> getActionId
+    void setActionId(java.lang.String) -> setActionId
+    java.lang.String getType() -> getType
+    void setType(java.lang.String) -> setType
+    java.lang.String getDoActionId() -> getDoActionId
+    void setDoActionId(java.lang.String) -> setDoActionId
+    boolean isSupportExt() -> isSupportExt
+    void setSupportExt(boolean) -> setSupportExt
+com.igexin.push.core.bean.PushTaskBean -> com.igexin.push.core.bean.PushTaskBean:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.util.List f -> f
+    byte[] g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    int j -> j
+    int k -> k
+    boolean l -> l
+    boolean m -> m
+    boolean n -> n
+    java.util.Map o -> o
+    int p -> p
+    int q -> q
+    void <init>() -> <init>
+    java.lang.String getAction() -> getAction
+    void setAction(java.lang.String) -> setAction
+    java.lang.String getAppid() -> getAppid
+    void setAppid(java.lang.String) -> setAppid
+    java.lang.String getId() -> getId
+    void setId(java.lang.String) -> setId
+    java.lang.String getMessageId() -> getMessageId
+    void setMessageId(java.lang.String) -> setMessageId
+    java.util.List getActionChains() -> getActionChains
+    void setActionChains(java.util.List) -> setActionChains
+    int getCurrentActionid() -> getCurrentActionid
+    void setCurrentActionid(int) -> setCurrentActionid
+    java.lang.String getTaskId() -> getTaskId
+    void setTaskId(java.lang.String) -> setTaskId
+    byte[] getMsgExtra() -> getMsgExtra
+    void setMsgExtra(byte[]) -> setMsgExtra
+    java.lang.String getMsgAddress() -> getMsgAddress
+    void setMsgAddress(java.lang.String) -> setMsgAddress
+    java.lang.String getAppKey() -> getAppKey
+    void setAppKey(java.lang.String) -> setAppKey
+    int getPerActionid() -> getPerActionid
+    void setPerActionid(int) -> setPerActionid
+    boolean isCDNType() -> isCDNType
+    void setCDNType(boolean) -> setCDNType
+    void setHttpImg(boolean) -> setHttpImg
+    boolean isHttpImg() -> isHttpImg
+    int getStatus() -> getStatus
+    void setStatus(int) -> setStatus
+    java.util.Map getConditionMap() -> getConditionMap
+    void setConditionMap(java.util.Map) -> setConditionMap
+    com.igexin.push.core.bean.BaseAction getBaseAction(java.lang.String) -> getBaseAction
+    boolean isStop() -> isStop
+    void setStop(boolean) -> setStop
+    int getExecuteTimes() -> getExecuteTimes
+    void setExecuteTimes(int) -> setExecuteTimes
+com.igexin.push.core.bean.a -> com.igexin.push.core.bean.a:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    java.lang.String j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    java.lang.String m -> m
+    long n -> n
+    void <init>() -> <init>
+    java.lang.String a(com.igexin.push.core.bean.a) -> a
+com.igexin.push.core.bean.b -> com.igexin.push.core.bean.b:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    java.lang.String c() -> c
+    void c(java.lang.String) -> c
+com.igexin.push.core.bean.c -> com.igexin.push.core.bean.c:
+    java.lang.String a -> a
+    java.util.List b -> b
+    int c -> c
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.util.List b() -> b
+    void a(java.util.List) -> a
+    int c() -> c
+    void d() -> d
+    void e() -> e
+com.igexin.push.core.bean.d -> com.igexin.push.core.bean.d:
+    int[] a -> a
+    void <init>() -> <init>
+    int[] a() -> a
+    void a(int[]) -> a
+com.igexin.push.core.bean.e -> com.igexin.push.core.bean.e:
+    long a -> a
+    void <init>() -> <init>
+    long a() -> a
+    void a(long) -> a
+com.igexin.push.core.bean.f -> com.igexin.push.core.bean.f:
+    int a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    boolean g -> g
+    long h -> h
+    long i -> i
+    java.lang.String j -> j
+    void <init>() -> <init>
+    int a() -> a
+    void a(int) -> a
+    java.lang.String b() -> b
+    void a(java.lang.String) -> a
+    java.lang.String c() -> c
+    void b(java.lang.String) -> b
+    java.lang.String d() -> d
+    void c(java.lang.String) -> c
+    java.lang.String e() -> e
+    void d(java.lang.String) -> d
+    java.lang.String f() -> f
+    void e(java.lang.String) -> e
+    boolean g() -> g
+    void a(boolean) -> a
+    long h() -> h
+    void a(long) -> a
+    long i() -> i
+    void b(long) -> b
+    java.lang.String j() -> j
+    void f(java.lang.String) -> f
+com.igexin.push.core.bean.g -> com.igexin.push.core.bean.g:
+    java.lang.String a -> a
+    java.util.Map b -> b
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.util.Map b() -> b
+    void a(java.util.Map) -> a
+com.igexin.push.core.bean.h -> com.igexin.push.core.bean.h:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    java.lang.String getActionId() -> getActionId
+    void setActionId(java.lang.String) -> setActionId
+com.igexin.push.core.bean.i -> com.igexin.push.core.bean.i:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    boolean c -> c
+    boolean d -> d
+    boolean e -> e
+    boolean f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    java.lang.String i -> i
+    boolean j -> j
+    boolean k -> k
+    int l -> l
+    int m -> m
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    void a(boolean) -> a
+    boolean c() -> c
+    void b(boolean) -> b
+    boolean d() -> d
+    void c(boolean) -> c
+    boolean e() -> e
+    java.lang.String f() -> f
+    void c(java.lang.String) -> c
+    java.lang.String g() -> g
+    void d(java.lang.String) -> d
+    java.lang.String h() -> h
+    void e(java.lang.String) -> e
+    boolean i() -> i
+    void d(boolean) -> d
+com.igexin.push.core.bean.j -> com.igexin.push.core.bean.j:
+    long a -> a
+    java.lang.String b -> b
+    byte c -> c
+    long d -> d
+    void <init>(long,java.lang.String,byte,long) -> <init>
+    long a() -> a
+    java.lang.String b() -> b
+    byte c() -> c
+    long d() -> d
+    void a(long) -> a
+com.igexin.push.core.bean.k -> com.igexin.push.core.bean.k:
+    int a -> a
+    int b -> b
+    java.lang.String c -> c
+    long d -> d
+    void <init>() -> <init>
+    int a() -> a
+    void a(int) -> a
+    void b(int) -> b
+    java.lang.String b() -> b
+    void a(java.lang.String) -> a
+    void a(long) -> a
+com.igexin.push.core.bean.l -> com.igexin.push.core.bean.l:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    java.lang.String b() -> b
+    void c(java.lang.String) -> c
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    void d(java.lang.String) -> d
+com.igexin.push.core.bean.m -> com.igexin.push.core.bean.m:
+    java.lang.String a -> a
+    boolean b -> b
+    boolean c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    void a(boolean) -> a
+    void b(boolean) -> b
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    java.lang.String c() -> c
+com.igexin.push.core.bean.n -> com.igexin.push.core.bean.n:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    java.lang.String c() -> c
+    void c(java.lang.String) -> c
+    java.lang.String d() -> d
+    void d(java.lang.String) -> d
+com.igexin.push.core.bean.o -> com.igexin.push.core.bean.o:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    boolean e -> e
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    boolean b() -> b
+    void a(boolean) -> a
+    java.lang.String c() -> c
+    void b(java.lang.String) -> b
+    java.lang.String d() -> d
+    void c(java.lang.String) -> c
+    java.lang.String e() -> e
+    void d(java.lang.String) -> d
+com.igexin.push.core.c -> com.igexin.push.core.c:
+    com.igexin.push.core.c a -> a
+    com.igexin.push.core.c b -> b
+    com.igexin.push.core.c c -> c
+    com.igexin.push.core.c d -> d
+    com.igexin.push.core.c e -> e
+    com.igexin.push.core.c f -> f
+    com.igexin.push.core.c g -> g
+    com.igexin.push.core.c[] h -> h
+    com.igexin.push.core.c[] a() -> a
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.core.c.a -> com.igexin.push.core.c.a:
+    void <init>(java.lang.String,byte[]) -> <init>
+    int b() -> b
+com.igexin.push.core.c.b -> com.igexin.push.core.c.b:
+    void <init>(java.lang.String,java.lang.String) -> <init>
+    int b() -> b
+    void a(java.lang.String) -> a
+    void a(byte[]) -> a
+com.igexin.push.core.c.c -> com.igexin.push.core.c.c:
+    java.lang.String a -> a
+    java.lang.String g -> g
+    com.igexin.push.d.c.a h -> h
+    com.igexin.push.core.bean.PushTaskBean i -> i
+    void <init>(java.lang.String,com.igexin.push.d.c.a,com.igexin.push.core.bean.PushTaskBean) -> <init>
+    int b() -> b
+    void a(byte[]) -> a
+    void a(java.lang.Exception) -> a
+    void a(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.d.c.a) -> a
+    java.lang.String a(com.igexin.push.core.c.c) -> a
+    com.igexin.push.d.c.a b(com.igexin.push.core.c.c) -> b
+    com.igexin.push.core.bean.PushTaskBean c(com.igexin.push.core.c.c) -> c
+com.igexin.push.core.c.d -> com.igexin.push.core.c.d:
+    com.igexin.push.core.c.c a -> a
+    void <init>(com.igexin.push.core.c.c) -> <init>
+    void run() -> run
+com.igexin.push.core.c.e -> com.igexin.push.core.c.e:
+    com.igexin.push.core.bean.PushTaskBean a -> a
+    com.igexin.push.d.c.a b -> b
+    com.igexin.push.core.c.c c -> c
+    void <init>(com.igexin.push.core.c.c,com.igexin.push.core.bean.PushTaskBean,com.igexin.push.d.c.a) -> <init>
+    void run() -> run
+com.igexin.push.core.c.f -> com.igexin.push.core.c.f:
+    org.json.JSONArray a -> a
+    void <init>(java.lang.String,org.json.JSONArray) -> <init>
+    int b() -> b
+    void a(org.json.JSONArray) -> a
+    void a(java.lang.Exception) -> a
+    void a(byte[]) -> a
+com.igexin.push.core.c.g -> com.igexin.push.core.c.g:
+    java.lang.String a -> a
+    void <init>(java.lang.String) -> <init>
+    void a() -> a
+    void a(byte[]) -> a
+    int b() -> b
+    void c(byte[]) -> c
+    void d(byte[]) -> d
+    void <clinit>() -> <clinit>
+com.igexin.push.core.c.h -> com.igexin.push.core.c.h:
+    byte[] a -> a
+    com.igexin.push.core.c.g b -> b
+    void <init>(com.igexin.push.core.c.g,byte[]) -> <init>
+    void a() -> a
+com.igexin.push.core.c.i -> com.igexin.push.core.c.i:
+    android.content.Context a -> a
+    com.igexin.push.core.bean.f b -> b
+    boolean c -> c
+    int d -> d
+    void <init>(android.content.Context,com.igexin.push.core.bean.f,boolean) -> <init>
+    void run() -> run
+    boolean a(java.lang.String,java.lang.String,java.lang.String) -> a
+com.igexin.push.core.c.j -> com.igexin.push.core.c.j:
+    void <init>(java.lang.String,java.lang.String,boolean) -> <init>
+    int b() -> b
+    void a(java.lang.String,boolean) -> a
+    void a(byte[]) -> a
+com.igexin.push.core.c.k -> com.igexin.push.core.c.k:
+    boolean g -> g
+    boolean a -> a
+    int h -> h
+    void <init>(java.lang.String,byte[],int,boolean) -> <init>
+    void a(byte[],int) -> a
+    int b() -> b
+    void a(byte[]) -> a
+com.igexin.push.core.c.l -> com.igexin.push.core.c.l:
+    void <init>(java.lang.String,byte[],int) -> <init>
+    void a(byte[],int) -> a
+    int b() -> b
+    void a(byte[]) -> a
+com.igexin.push.core.c.m -> com.igexin.push.core.c.m:
+    java.lang.String a -> a
+    java.lang.String g -> g
+    java.util.ArrayList h -> h
+    void <init>(byte[],java.lang.String,java.util.ArrayList) -> <init>
+    void a(byte[],java.lang.String,java.util.ArrayList) -> a
+    int b() -> b
+    void a(byte[]) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.d -> com.igexin.push.core.d:
+    com.igexin.push.core.d a -> a
+    com.igexin.push.core.d b -> b
+    com.igexin.push.core.d c -> c
+    com.igexin.push.core.d d -> d
+    com.igexin.push.core.d[] e -> e
+    com.igexin.push.core.d[] a() -> a
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.core.d.a -> com.igexin.push.core.d.a:
+    java.lang.Long a -> a
+    android.app.Activity b -> b
+    java.lang.String c -> c
+    void <init>() -> <init>
+    void a(android.app.Activity) -> a
+    void a(java.lang.Long) -> a
+    java.lang.Long a() -> a
+    java.lang.String b() -> b
+    void a(java.lang.String) -> a
+    void a(android.content.Intent) -> a
+    void c() -> c
+    void d() -> d
+    void e() -> e
+    void f() -> f
+    void g() -> g
+    void h() -> h
+    boolean a(android.view.Menu) -> a
+    void a(android.content.res.Configuration) -> a
+    boolean a(int,android.view.KeyEvent) -> a
+    void i() -> i
+com.igexin.push.core.d.b -> com.igexin.push.core.d.b:
+    java.util.Map a -> a
+    com.igexin.push.core.d.b b -> b
+    com.igexin.push.core.d.b a() -> a
+    void <init>() -> <init>
+    void a(com.igexin.push.core.d.a) -> a
+    void b(com.igexin.push.core.d.a) -> b
+    void d(com.igexin.push.core.d.a) -> d
+    void c(com.igexin.push.core.d.a) -> c
+    com.igexin.push.core.d.a a(java.lang.Long) -> a
+com.igexin.push.core.e -> com.igexin.push.core.e:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    void handleMessage(android.os.Message) -> handleMessage
+    void a(android.content.Intent) -> a
+    void a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.f -> com.igexin.push.core.f:
+    android.content.Context a -> a
+    com.igexin.push.core.h b -> b
+    android.os.Handler c -> c
+    java.util.concurrent.ConcurrentLinkedQueue d -> d
+    com.igexin.push.core.a.e e -> e
+    android.net.ConnectivityManager f -> f
+    com.igexin.b.a.b.c g -> g
+    com.igexin.b.a.b.b h -> h
+    com.igexin.push.e.j i -> i
+    com.igexin.push.e.c j -> j
+    com.igexin.push.b.b k -> k
+    com.igexin.push.core.f l -> l
+    int m -> m
+    int n -> n
+    java.util.concurrent.atomic.AtomicBoolean o -> o
+    void <init>() -> <init>
+    com.igexin.push.core.f a() -> a
+    boolean a(android.os.Message) -> a
+    void b() -> b
+    com.igexin.push.f.b.a c() -> c
+    void d() -> d
+    void q() -> q
+    boolean a(android.content.Context) -> a
+    boolean a(boolean) -> a
+    boolean a(java.lang.String) -> a
+    boolean b(java.lang.String) -> b
+    void e() -> e
+    void a(com.igexin.push.core.e) -> a
+    com.igexin.b.a.b.b f() -> f
+    com.igexin.push.e.j g() -> g
+    com.igexin.push.e.c h() -> h
+    com.igexin.push.core.a.e i() -> i
+    android.net.ConnectivityManager j() -> j
+    com.igexin.push.b.b k() -> k
+    boolean a(com.igexin.push.f.b.h) -> a
+    boolean r() -> r
+    void l() -> l
+    java.lang.String m() -> m
+    boolean a(com.igexin.b.a.d.a.e,com.igexin.b.a.d.e) -> a
+    boolean a(com.igexin.b.a.d.d,com.igexin.b.a.d.e) -> a
+    boolean n() -> n
+    long o() -> o
+    boolean p() -> p
+    java.lang.reflect.Method a(java.lang.String,java.lang.Class[]) -> a
+com.igexin.push.core.g -> com.igexin.push.core.g:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    android.content.Context f -> f
+    java.util.concurrent.atomic.AtomicBoolean g -> g
+    boolean h -> h
+    boolean i -> i
+    boolean j -> j
+    boolean k -> k
+    boolean l -> l
+    boolean m -> m
+    boolean n -> n
+    int o -> o
+    int p -> p
+    long q -> q
+    java.lang.String r -> r
+    java.lang.String s -> s
+    java.lang.String t -> t
+    java.lang.String u -> u
+    java.lang.String v -> v
+    java.lang.String w -> w
+    java.lang.String x -> x
+    java.lang.String y -> y
+    java.lang.String z -> z
+    java.lang.String A -> A
+    java.lang.String B -> B
+    java.lang.String C -> C
+    java.lang.String D -> D
+    long E -> E
+    long F -> F
+    long G -> G
+    long H -> H
+    long I -> I
+    long J -> J
+    long K -> K
+    long L -> L
+    long M -> M
+    java.lang.String N -> N
+    boolean O -> O
+    long P -> P
+    long Q -> Q
+    java.lang.String R -> R
+    long S -> S
+    int T -> T
+    long U -> U
+    java.lang.String V -> V
+    java.lang.String W -> W
+    java.lang.String X -> X
+    java.lang.String Y -> Y
+    java.lang.String Z -> Z
+    java.lang.String aa -> aa
+    java.lang.String ab -> ab
+    java.lang.String ac -> ac
+    java.lang.String ad -> ad
+    byte[] ae -> ae
+    boolean af -> af
+    boolean ag -> ag
+    boolean ah -> ah
+    java.util.Map ai -> ai
+    java.util.Map aj -> aj
+    java.util.HashMap ak -> ak
+    java.util.HashMap al -> al
+    java.util.HashMap am -> am
+    int an -> an
+    java.util.Map ao -> ao
+    int ap -> ap
+    int aq -> aq
+    int ar -> ar
+    com.igexin.push.core.bean.g as -> as
+    boolean at -> at
+    java.lang.String au -> au
+    com.igexin.push.f.b.h av -> av
+    long aw -> aw
+    java.lang.String ax -> ax
+    java.lang.String ay -> ay
+    java.lang.String az -> az
+    java.lang.String aA -> aA
+    java.util.HashMap aD -> aD
+    java.util.Map aE -> aE
+    boolean aB -> aB
+    int aC -> aC
+    void <init>() -> <init>
+    boolean a(android.content.Context) -> a
+    void a(long) -> a
+    java.lang.String a() -> a
+    java.util.HashMap b() -> b
+    int a(java.lang.String,boolean) -> a
+    boolean a(java.lang.String,java.lang.Integer,boolean) -> a
+    java.util.HashMap c() -> c
+    void d() -> d
+    void e() -> e
+    boolean f() -> f
+    void g() -> g
+    void <clinit>() -> <clinit>
+com.igexin.push.core.h -> com.igexin.push.core.h:
+    void <init>() -> <init>
+    void run() -> run
+com.igexin.push.core.i -> com.igexin.push.core.i:
+    long a -> a
+    com.igexin.push.core.l b -> b
+    long c -> c
+    android.net.ConnectivityManager d -> d
+    com.igexin.push.core.i e -> e
+    void <init>() -> <init>
+    com.igexin.push.core.i a() -> a
+    long b() -> b
+    void a(com.igexin.push.core.k) -> a
+    void b(com.igexin.push.core.k) -> b
+    void c(com.igexin.push.core.k) -> c
+    void d(com.igexin.push.core.k) -> d
+    void a(com.igexin.push.core.l) -> a
+    void a(long) -> a
+com.igexin.push.core.j -> com.igexin.push.core.j:
+    int[] a -> a
+    int[] b -> b
+    void <clinit>() -> <clinit>
+com.igexin.push.core.k -> com.igexin.push.core.k:
+    com.igexin.push.core.k a -> a
+    com.igexin.push.core.k b -> b
+    com.igexin.push.core.k c -> c
+    com.igexin.push.core.k d -> d
+    com.igexin.push.core.k[] e -> e
+    com.igexin.push.core.k[] a() -> a
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.core.l -> com.igexin.push.core.l:
+    com.igexin.push.core.l a -> a
+    com.igexin.push.core.l b -> b
+    com.igexin.push.core.l c -> c
+    com.igexin.push.core.l[] d -> d
+    com.igexin.push.core.l[] a() -> a
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.core.m -> com.igexin.push.core.m:
+    com.igexin.push.core.m a -> a
+    void <init>() -> <init>
+    com.igexin.push.core.m a() -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.igexin.push.core.n -> com.igexin.push.core.n:
+    com.igexin.push.core.n a -> a
+    void <init>() -> <init>
+    com.igexin.push.core.n a() -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void a(android.content.Intent) -> a
+com.igexin.push.core.o -> com.igexin.push.core.o:
+    java.lang.String a -> a
+    com.igexin.sdk.aidl.a b -> b
+    com.igexin.sdk.aidl.a a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.core.p -> com.igexin.push.core.p:
+    void <init>() -> <init>
+    int startService(java.lang.String) -> startService
+    int stopService(java.lang.String) -> stopService
+    int isStarted(java.lang.String) -> isStarted
+    int setSilentTime(int,int,java.lang.String) -> setSilentTime
+    byte[] extFunction(byte[]) -> extFunction
+    int onASNLConnected(java.lang.String,java.lang.String,java.lang.String,long) -> onASNLConnected
+    int onPSNLConnected(java.lang.String,java.lang.String,java.lang.String,long) -> onPSNLConnected
+    int sendByASNL(java.lang.String,java.lang.String,byte[]) -> sendByASNL
+    int receiveToPSNL(java.lang.String,java.lang.String,byte[]) -> receiveToPSNL
+    int onASNLNetworkConnected() -> onASNLNetworkConnected
+    int onASNLNetworkDisconnected() -> onASNLNetworkDisconnected
+com.igexin.push.core.q -> com.igexin.push.core.q:
+    long a() -> a
+    long b() -> b
+com.igexin.push.core.stub.PushCore -> com.igexin.push.core.stub.PushCore:
+    com.igexin.push.core.f a -> a
+    java.util.Map b -> b
+    void <init>() -> <init>
+    boolean start(android.content.Context) -> start
+    void onServiceDestroy() -> onServiceDestroy
+    int onServiceStartCommand(android.content.Intent,int,int) -> onServiceStartCommand
+    android.os.IBinder onServiceBind(android.content.Intent) -> onServiceBind
+    boolean onActivityCreateOptionsMenu(android.app.Activity,android.view.Menu) -> onActivityCreateOptionsMenu
+    void onActivityConfigurationChanged(android.app.Activity,android.content.res.Configuration) -> onActivityConfigurationChanged
+    boolean onActivityKeyDown(android.app.Activity,int,android.view.KeyEvent) -> onActivityKeyDown
+    void onActivityStart(android.app.Activity,android.content.Intent) -> onActivityStart
+    void onActivityNewIntent(android.app.Activity,android.content.Intent) -> onActivityNewIntent
+    void onActivityRestart(android.app.Activity) -> onActivityRestart
+    void onActivityResume(android.app.Activity) -> onActivityResume
+    void onActivityPause(android.app.Activity) -> onActivityPause
+    void onActivityStop(android.app.Activity) -> onActivityStop
+    void onActivityDestroy(android.app.Activity) -> onActivityDestroy
+com.igexin.push.d.a -> com.igexin.push.d.a:
+    android.net.ConnectivityManager a -> a
+    android.content.Context b -> b
+    void <init>(android.content.Context,android.net.ConnectivityManager) -> <init>
+    com.igexin.b.a.b.e a(java.lang.String,java.lang.Integer,com.igexin.b.a.b.b) -> a
+    com.igexin.b.a.d.d a(java.lang.Object,java.lang.Object,java.lang.Object) -> a
+com.igexin.push.d.a.a -> com.igexin.push.d.a.a:
+    void <init>(java.lang.String,com.igexin.b.a.b.b) -> <init>
+    java.lang.Object a(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> a
+    com.igexin.b.a.d.a.e b(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> b
+    boolean a(com.igexin.push.d.c.b,com.igexin.push.d.c.e) -> a
+    java.lang.Object c(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> c
+com.igexin.push.d.a.b -> com.igexin.push.d.a.b:
+    java.lang.String a -> a
+    byte[] g -> g
+    int b -> b
+    void <init>(java.lang.String) -> <init>
+    com.igexin.b.a.b.b a() -> a
+    java.lang.Object a(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> a
+    com.igexin.b.a.d.a.e b(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> b
+    com.igexin.b.a.d.a.e a(com.igexin.b.a.b.e,com.igexin.b.a.b.d,com.igexin.b.a.b.a.a.m,com.igexin.push.d.c.g) -> a
+    com.igexin.b.a.d.a.e b(com.igexin.b.a.b.e,com.igexin.b.a.b.d,com.igexin.b.a.b.a.a.m,com.igexin.push.d.c.g) -> b
+    byte a(com.igexin.b.a.b.a.a.m) -> a
+    byte[] a(com.igexin.b.a.b.a.a.m,int) -> a
+    int b(com.igexin.b.a.b.a.a.m,int) -> b
+    com.igexin.push.d.c.g a(com.igexin.push.d.c.b) -> a
+    java.lang.Object c(com.igexin.b.a.b.e,com.igexin.b.a.b.d,java.lang.Object) -> c
+    void <clinit>() -> <clinit>
+com.igexin.push.d.b -> com.igexin.push.d.b:
+    int a -> a
+    int b -> b
+    boolean c -> c
+    int d -> d
+    long e -> e
+    int f -> f
+    long g -> g
+    com.igexin.push.d.d h -> h
+    com.igexin.push.d.i i -> i
+    void <init>() -> <init>
+    com.igexin.push.d.b a() -> a
+    void b() -> b
+    void h() -> h
+    com.igexin.push.d.i c() -> c
+    void d() -> d
+    void e() -> e
+    void a(boolean) -> a
+    void f() -> f
+    void g() -> g
+    void i() -> i
+    void j() -> j
+    void a(int) -> a
+    void <init>(com.igexin.push.d.c) -> <init>
+com.igexin.push.d.b.a -> com.igexin.push.d.b.a:
+    void <init>() -> <init>
+    int b() -> b
+com.igexin.push.d.b.b -> com.igexin.push.d.b.b:
+    boolean a -> a
+    void <init>(boolean) -> <init>
+    int b() -> b
+    boolean a() -> a
+com.igexin.push.d.b.c -> com.igexin.push.d.b.c:
+    boolean a -> a
+    void <init>(boolean) -> <init>
+    int b() -> b
+    boolean a() -> a
+com.igexin.push.d.b.d -> com.igexin.push.d.b.d:
+    void <init>() -> <init>
+    int b() -> b
+com.igexin.push.d.c -> com.igexin.push.d.c:
+com.igexin.push.d.c.a -> com.igexin.push.d.c.a:
+    int f -> f
+    int g -> g
+    int a -> a
+    int b -> b
+    java.lang.Object c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    void <init>() -> <init>
+    int a() -> a
+    void a(int) -> a
+    int c() -> c
+    void b(int) -> b
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.b -> com.igexin.push.d.c.b:
+    int a -> a
+    byte b -> b
+    byte c -> c
+    byte d -> d
+    byte[] e -> e
+    int f -> f
+    byte g -> g
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] a() -> a
+com.igexin.push.d.c.c -> com.igexin.push.d.c.c:
+    int a -> a
+    int b -> b
+    java.lang.Object c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    int f -> f
+    com.igexin.push.f.b.b g -> g
+    void <init>() -> <init>
+    void a() -> a
+    int c() -> c
+    void a(int) -> a
+    com.igexin.push.f.b.b e() -> e
+    void a(com.igexin.push.f.b.b) -> a
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.d -> com.igexin.push.d.c.d:
+    int a -> a
+    int b -> b
+    long c -> c
+    java.lang.String d -> d
+    java.lang.Object e -> e
+    java.lang.Object f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    void a() -> a
+    byte[] d() -> d
+com.igexin.push.d.c.e -> com.igexin.push.d.c.e:
+    int i -> i
+    byte j -> j
+    byte k -> k
+    void <init>() -> <init>
+    int b() -> b
+    void a(byte[]) -> a
+    byte[] d() -> d
+    java.lang.String a(byte) -> a
+    int a(java.lang.String) -> a
+com.igexin.push.d.c.f -> com.igexin.push.d.c.f:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    void <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+    java.lang.String a() -> a
+com.igexin.push.d.c.g -> com.igexin.push.d.c.g:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    byte g -> g
+    byte h -> h
+    byte i -> i
+    byte j -> j
+    byte k -> k
+    byte l -> l
+    byte m -> m
+    byte[] n -> n
+    int o -> o
+    int p -> p
+    int q -> q
+    void <init>() -> <init>
+    void a(byte) -> a
+    int a() -> a
+    int b() -> b
+com.igexin.push.d.c.h -> com.igexin.push.d.c.h:
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.i -> com.igexin.push.d.c.i:
+    java.lang.String a -> a
+    byte[] b -> b
+    byte c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+    java.lang.String a(byte[],int,int) -> a
+com.igexin.push.d.c.j -> com.igexin.push.d.c.j:
+    byte a -> a
+    byte b -> b
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.k -> com.igexin.push.d.c.k:
+    long a -> a
+    byte b -> b
+    int c -> c
+    java.lang.String d -> d
+    java.util.List e -> e
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    java.lang.String a(byte[],int,int) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.l -> com.igexin.push.d.c.l:
+    byte a -> a
+    java.lang.Object b -> b
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.m -> com.igexin.push.d.c.m:
+    boolean a -> a
+    boolean b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    long e -> e
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.n -> com.igexin.push.d.c.n:
+    long a -> a
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.o -> com.igexin.push.d.c.o:
+    boolean a -> a
+    boolean b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    long e -> e
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    byte[] d() -> d
+com.igexin.push.d.c.p -> com.igexin.push.d.c.p:
+    java.lang.String m -> m
+    int a -> a
+    int b -> b
+    long c -> c
+    java.lang.String d -> d
+    java.lang.Object e -> e
+    java.lang.Object f -> f
+    java.lang.String g -> g
+    java.lang.String h -> h
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    boolean a() -> a
+    byte[] d() -> d
+    void <clinit>() -> <clinit>
+com.igexin.push.d.c.q -> com.igexin.push.d.c.q:
+    long a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    void <init>() -> <init>
+    void a(byte[]) -> a
+    java.lang.String a(byte[],int,int) -> a
+    byte[] d() -> d
+com.igexin.push.d.d -> com.igexin.push.d.d:
+    com.igexin.push.d.d a -> a
+    com.igexin.push.d.d b -> b
+    com.igexin.push.d.d[] c -> c
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.d.e -> com.igexin.push.d.e:
+    com.igexin.push.d.b a -> a
+    com.igexin.push.d.b a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.d.f -> com.igexin.push.d.f:
+    void <init>() -> <init>
+    long a(boolean) -> a
+    long a(long) -> a
+com.igexin.push.d.g -> com.igexin.push.d.g:
+    void <init>() -> <init>
+    long a(boolean) -> a
+com.igexin.push.d.h -> com.igexin.push.d.h:
+    void <init>() -> <init>
+    void a() -> a
+    void a(com.igexin.b.a.d.d) -> a
+com.igexin.push.d.i -> com.igexin.push.d.i:
+    long a(boolean) -> a
+com.igexin.push.e.a -> com.igexin.push.e.a:
+    com.igexin.push.core.c a -> a
+    void <init>() -> <init>
+    void a(com.igexin.push.core.c) -> a
+com.igexin.push.e.b -> com.igexin.push.e.b:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    com.igexin.sdk.aidl.IGexinMsgService c -> c
+    android.content.ServiceConnection d -> d
+    java.lang.String e -> e
+    void <init>() -> <init>
+    java.lang.String a() -> a
+    void a(java.lang.String) -> a
+    java.lang.String b() -> b
+    void b(java.lang.String) -> b
+    com.igexin.sdk.aidl.IGexinMsgService c() -> c
+    void a(com.igexin.sdk.aidl.IGexinMsgService) -> a
+    android.content.ServiceConnection d() -> d
+    void a(android.content.ServiceConnection) -> a
+    java.lang.String e() -> e
+    void c(java.lang.String) -> c
+com.igexin.push.e.c -> com.igexin.push.e.c:
+    android.content.Context a -> a
+    com.igexin.push.core.d b -> b
+    com.igexin.push.f.b.h c -> c
+    com.igexin.push.f.b.h d -> d
+    com.igexin.push.e.b e -> e
+    java.util.List f -> f
+    java.util.Map g -> g
+    java.util.Map h -> h
+    boolean i -> i
+    void <init>() -> <init>
+    void a(android.content.Context) -> a
+    void a(com.igexin.push.e.a) -> a
+    void b(com.igexin.push.e.a) -> b
+    void c(com.igexin.push.e.a) -> c
+    void d(com.igexin.push.e.a) -> d
+    void e(com.igexin.push.e.a) -> e
+    void c() -> c
+    void d() -> d
+    void b(java.lang.String) -> b
+    java.util.List c(java.lang.String) -> c
+    void a(android.content.Intent) -> a
+    int a(java.lang.String) -> a
+    int a(java.lang.String,java.lang.String) -> a
+    int a(java.lang.String,com.igexin.push.d.c.e) -> a
+    int a(java.lang.String,java.lang.String,byte[]) -> a
+    int b(java.lang.String,com.igexin.push.d.c.e) -> b
+    int b(java.lang.String,java.lang.String,byte[]) -> b
+    boolean a() -> a
+    boolean b() -> b
+    com.igexin.push.d.c.e a(byte[]) -> a
+    com.igexin.push.d.c.b b(byte[]) -> b
+    void a(com.igexin.push.e.c) -> a
+    com.igexin.push.core.d b(com.igexin.push.e.c) -> b
+    com.igexin.push.e.b c(com.igexin.push.e.c) -> c
+    void d(com.igexin.push.e.c) -> d
+    java.util.Map e(com.igexin.push.e.c) -> e
+    java.util.List a(com.igexin.push.e.c,java.lang.String) -> a
+    java.util.Map f(com.igexin.push.e.c) -> f
+com.igexin.push.e.d -> com.igexin.push.e.d:
+    com.igexin.push.e.c a -> a
+    void <init>(com.igexin.push.e.c,long) -> <init>
+    int b() -> b
+    void a() -> a
+com.igexin.push.e.e -> com.igexin.push.e.e:
+    com.igexin.push.e.c a -> a
+    void <init>(com.igexin.push.e.c,long) -> <init>
+    int b() -> b
+    void a() -> a
+com.igexin.push.e.f -> com.igexin.push.e.f:
+    com.igexin.push.e.c a -> a
+    void <init>(com.igexin.push.e.c) -> <init>
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.igexin.push.e.g -> com.igexin.push.e.g:
+    com.igexin.push.e.b a -> a
+    java.lang.String b -> b
+    com.igexin.push.e.c c -> c
+    void <init>(com.igexin.push.e.c,com.igexin.push.e.b,java.lang.String) -> <init>
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.igexin.push.e.h -> com.igexin.push.e.h:
+    int[] a -> a
+    int[] b -> b
+    void <clinit>() -> <clinit>
+com.igexin.push.e.i -> com.igexin.push.e.i:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    long d -> d
+    long e -> e
+    void <init>() -> <init>
+    void a(java.lang.String) -> a
+    java.lang.String a() -> a
+    void b(java.lang.String) -> b
+    java.lang.String b() -> b
+    void c(java.lang.String) -> c
+    long c() -> c
+    void a(long) -> a
+    void b(long) -> b
+com.igexin.push.e.j -> com.igexin.push.e.j:
+    java.lang.String a -> a
+    com.igexin.b.a.b.c b -> b
+    com.igexin.push.e.k c -> c
+    boolean d -> d
+    long e -> e
+    long f -> f
+    boolean g -> g
+    void <init>() -> <init>
+    void a(android.content.Context,com.igexin.b.a.b.c,com.igexin.push.e.k) -> a
+    void a(boolean) -> a
+    boolean a() -> a
+    int a(java.lang.String,com.igexin.push.d.c.e) -> a
+    int a(java.lang.String,com.igexin.push.d.c.e,boolean) -> a
+    void b() -> b
+    void b(boolean) -> b
+    void a(com.igexin.push.d.c.e) -> a
+    void c(boolean) -> c
+    java.lang.String b(com.igexin.push.d.c.e) -> b
+    boolean c() -> c
+    void <clinit>() -> <clinit>
+com.igexin.push.e.k -> com.igexin.push.e.k:
+    void b() -> b
+    void a(boolean) -> a
+    boolean a(com.igexin.push.d.c.e) -> a
+com.igexin.push.extension.a -> com.igexin.push.extension.a:
+    java.lang.String a -> a
+    java.util.List b -> b
+    com.igexin.push.extension.a c -> c
+    com.igexin.push.extension.a a() -> a
+    void <init>() -> <init>
+    boolean a(android.content.Context) -> a
+    void b() -> b
+    boolean a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.util.List c() -> c
+    void b(android.content.Context) -> b
+    boolean a(android.content.Context,com.igexin.push.core.bean.f,java.lang.String) -> a
+    void a(com.igexin.push.core.bean.f,java.io.File) -> a
+    void a(com.igexin.push.core.bean.f) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.extension.mod.SecurityUtils -> com.igexin.push.extension.mod.SecurityUtils:
+    java.lang.String a -> a
+    boolean b -> b
+    java.lang.String c -> c
+    void <init>() -> <init>
+    byte[] a() -> a
+    byte[] b(byte[],byte[],byte[]) -> b
+    byte[] c(byte[],byte[],byte[]) -> c
+    byte[] d(byte[]) -> d
+    byte[] e() -> e
+    byte[] f(byte[],byte[],byte[]) -> f
+    byte[] g(byte[],byte[],byte[]) -> g
+    byte[] h(byte[]) -> h
+    byte[] i(byte[]) -> i
+    byte[] j() -> j
+    byte[] k() -> k
+    byte[] l(byte[],byte[]) -> l
+    byte[] m(byte[],byte[]) -> m
+    void <clinit>() -> <clinit>
+com.igexin.push.extension.mod.a -> com.igexin.push.extension.mod.a:
+    void <init>() -> <init>
+    void a() -> a
+    void a(java.lang.Throwable) -> a
+com.igexin.push.extension.stub.IPushExtension -> com.igexin.push.extension.stub.IPushExtension:
+    boolean init(android.content.Context) -> init
+    void onDestroy() -> onDestroy
+    boolean isActionSupported(java.lang.String) -> isActionSupported
+    com.igexin.push.core.b prepareExecuteAction(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> prepareExecuteAction
+    boolean executeAction(com.igexin.push.core.bean.PushTaskBean,com.igexin.push.core.bean.BaseAction) -> executeAction
+    com.igexin.push.core.bean.BaseAction parseAction(org.json.JSONObject) -> parseAction
+com.igexin.push.f.a -> com.igexin.push.f.a:
+    void a() -> a
+    void <init>() -> <init>
+    void d() -> d
+    void e() -> e
+    void c() -> c
+    int b() -> b
+    void a_() -> a_
+com.igexin.push.f.a.a -> com.igexin.push.f.a.a:
+    java.lang.String a -> a
+    com.igexin.push.f.a.b b -> b
+    java.net.HttpURLConnection c -> c
+    void <init>(com.igexin.push.f.a.b) -> <init>
+    void a_() -> a_
+    byte[] a(java.lang.String,byte[]) -> a
+    byte[] a(java.lang.String) -> a
+    void g() -> g
+    void f() -> f
+    void d() -> d
+    int b() -> b
+    void e() -> e
+    void <clinit>() -> <clinit>
+com.igexin.push.f.a.b -> com.igexin.push.f.a.b:
+    java.lang.String b -> b
+    byte[] c -> c
+    java.io.InputStream d -> d
+    long e -> e
+    boolean f -> f
+    void <init>(java.lang.String) -> <init>
+    java.lang.String c() -> c
+    byte[] d() -> d
+    java.io.InputStream e() -> e
+    long f() -> f
+    void b(byte[]) -> b
+    void a(byte[]) -> a
+    void a(java.lang.Exception) -> a
+com.igexin.push.f.a.c -> com.igexin.push.f.a.c:
+    com.igexin.push.f.a.b a -> a
+    java.net.HttpURLConnection b -> b
+    void <init>(com.igexin.push.f.a.b) -> <init>
+    void a_() -> a_
+    com.igexin.push.f.a.d a(java.lang.String,byte[]) -> a
+    com.igexin.push.f.a.d a(java.lang.String) -> a
+    void f() -> f
+    void d() -> d
+    void g() -> g
+    int b() -> b
+    void e() -> e
+    java.net.HttpURLConnection b(java.lang.String,byte[]) -> b
+    java.net.HttpURLConnection b(java.lang.String) -> b
+    void a(java.net.HttpURLConnection,byte[]) -> a
+    byte[] a(byte[],java.net.HttpURLConnection) -> a
+    void a(byte[]) -> a
+    byte[] a(java.net.HttpURLConnection) -> a
+    com.igexin.push.f.a.d b(java.net.HttpURLConnection,byte[]) -> b
+com.igexin.push.f.a.d -> com.igexin.push.f.a.d:
+    boolean a -> a
+    byte[] b -> b
+    com.igexin.push.f.a.c c -> c
+    void <init>(com.igexin.push.f.a.c,boolean,byte[]) -> <init>
+com.igexin.push.f.a.e -> com.igexin.push.f.a.e:
+    void <init>(com.igexin.push.f.a.b) -> <init>
+com.igexin.push.f.b.a -> com.igexin.push.f.b.a:
+    java.util.List a -> a
+    com.igexin.push.f.b.a b -> b
+    com.igexin.push.f.b.a g() -> g
+    void <init>() -> <init>
+    boolean a(com.igexin.push.f.b.d) -> a
+    int b() -> b
+    void a() -> a
+    void h() -> h
+com.igexin.push.f.b.b -> com.igexin.push.f.b.b:
+    com.igexin.push.core.bean.PushTaskBean a -> a
+    java.lang.String b -> b
+    void <init>(com.igexin.push.core.bean.PushTaskBean,java.lang.String,long) -> <init>
+    int b() -> b
+    void a() -> a
+    void c() -> c
+com.igexin.push.f.b.c -> com.igexin.push.f.b.c:
+    com.igexin.push.f.b.c a -> a
+    com.igexin.push.f.b.c g() -> g
+    void <init>() -> <init>
+    void h() -> h
+    void d() -> d
+    void a() -> a
+    void c() -> c
+    void i() -> i
+    int b() -> b
+com.igexin.push.f.b.d -> com.igexin.push.f.b.d:
+    void a() -> a
+    boolean b() -> b
+    void a(long) -> a
+com.igexin.push.f.b.e -> com.igexin.push.f.b.e:
+    long a -> a
+    java.util.concurrent.atomic.AtomicBoolean b -> b
+    com.igexin.push.f.b.e g() -> g
+    void <init>() -> <init>
+    void h() -> h
+    void a(long) -> a
+    void i() -> i
+    void a() -> a
+    int b() -> b
+com.igexin.push.f.b.f -> com.igexin.push.f.b.f:
+    com.igexin.push.f.b.e a -> a
+    com.igexin.push.f.b.e a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.f.b.g -> com.igexin.push.f.b.g:
+    com.igexin.push.f.b.g a -> a
+    com.igexin.push.f.b.g g() -> g
+    void <init>() -> <init>
+    void h() -> h
+    void d() -> d
+    void a() -> a
+    void c() -> c
+    int b() -> b
+com.igexin.push.f.b.h -> com.igexin.push.f.b.h:
+    long d -> d
+    void <init>(long,long) -> <init>
+    void <init>(long) -> <init>
+    void a() -> a
+    void a_() -> a_
+    void e() -> e
+com.igexin.push.util.EncryptUtils -> com.igexin.push.util.EncryptUtils:
+    java.lang.String a -> a
+    boolean b -> b
+    int c -> c
+    byte[] d -> d
+    byte[] e -> e
+    java.lang.String errorMsg -> errorMsg
+    void <init>() -> <init>
+    boolean isLoadSuccess() -> isLoadSuccess
+    byte[] getBytesEncrypted(byte[]) -> getBytesEncrypted
+    byte[] initHttpAESKey() -> initHttpAESKey
+    byte[] initSocketAESKey() -> initSocketAESKey
+    byte[] aesEncHttp(byte[],byte[]) -> aesEncHttp
+    byte[] aesDecHttp(byte[],byte[]) -> aesDecHttp
+    byte[] aesEncSocket(byte[],byte[]) -> aesEncSocket
+    byte[] aesDecSocket(byte[],byte[]) -> aesDecSocket
+    byte[] altAesEncSocket(byte[],byte[]) -> altAesEncSocket
+    byte[] altAesDecSocket(byte[],byte[]) -> altAesDecSocket
+    byte[] rsaEnc(byte[]) -> rsaEnc
+    byte[] getSocketAESKey() -> getSocketAESKey
+    byte[] getHttpAESKey() -> getHttpAESKey
+    byte[] getRSAKeyId() -> getRSAKeyId
+    java.lang.String getVersion() -> getVersion
+    boolean reset() -> reset
+    byte[] getIV(byte[]) -> getIV
+    byte[] getSocketSignature(com.igexin.push.d.c.b,int,int) -> getSocketSignature
+    java.lang.String getHttpSignature(java.lang.String,byte[]) -> getHttpSignature
+    int getPacketId() -> getPacketId
+    java.lang.String getHttpGTCV() -> getHttpGTCV
+    byte[] sha1(byte[]) -> sha1
+    byte[] md5(byte[]) -> md5
+    void <clinit>() -> <clinit>
+com.igexin.push.util.a -> com.igexin.push.util.a:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    boolean a() -> a
+    boolean b(java.lang.String) -> b
+    boolean a(java.lang.Class,java.lang.reflect.Method,java.lang.String) -> a
+    boolean b() -> b
+    boolean a(java.lang.String) -> a
+    void a(com.igexin.push.core.bean.g) -> a
+    boolean c() -> c
+    boolean d() -> d
+    boolean a(java.lang.String,java.lang.String) -> a
+    boolean a(org.json.JSONObject) -> a
+    void a(java.util.Map,java.lang.String) -> a
+    boolean a(android.content.Intent,android.content.Context) -> a
+    boolean e() -> e
+    boolean a(long) -> a
+    boolean a(android.content.pm.ServiceInfo,android.content.pm.PackageInfo) -> a
+    boolean b(android.content.Intent,android.content.Context) -> b
+    boolean a(java.lang.String,android.content.Context,java.lang.Class) -> a
+    boolean f() -> f
+    java.lang.String a(android.content.Context) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.util.b -> com.igexin.push.util.b:
+    void a(com.igexin.push.util.d,android.content.Context) -> a
+    boolean c(android.content.Context) -> c
+    java.lang.String d(android.content.Context) -> d
+    boolean a(android.content.Context) -> a
+    java.lang.String b(android.content.Context) -> b
+com.igexin.push.util.c -> com.igexin.push.util.c:
+    android.content.Context a -> a
+    com.igexin.push.util.d b -> b
+    void <init>(android.content.Context,com.igexin.push.util.d) -> <init>
+    void run() -> run
+com.igexin.push.util.d -> com.igexin.push.util.d:
+    void a(boolean) -> a
+com.igexin.push.util.e -> com.igexin.push.util.e:
+    java.lang.Object a -> a
+    void a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    long d() -> d
+    void e() -> e
+    void f() -> f
+    byte[] a(java.lang.String) -> a
+    boolean b(java.lang.String) -> b
+    void a(com.igexin.push.core.bean.f) -> a
+    boolean a(java.io.File,java.io.File,java.lang.String) -> a
+    void a(byte[],java.lang.String,boolean) -> a
+    boolean a(android.content.Context) -> a
+    void b(android.content.Context) -> b
+    void g() -> g
+    void b(android.content.Context,java.lang.String) -> b
+    java.lang.String h() -> h
+    boolean a(java.lang.String,java.lang.String,boolean) -> a
+    void b(java.io.File,java.io.File,java.lang.String) -> b
+    java.lang.String c(java.lang.String) -> c
+    void a(android.content.Context,java.lang.String) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.util.f -> com.igexin.push.util.f:
+    void <init>() -> <init>
+    void a() -> a
+com.igexin.push.util.g -> com.igexin.push.util.g:
+    android.content.Context a -> a
+    void <init>(android.content.Context) -> <init>
+    void a() -> a
+com.igexin.push.util.h -> com.igexin.push.util.h:
+    android.content.Context a -> a
+    void <init>(android.content.Context) -> <init>
+    void run() -> run
+com.igexin.push.util.i -> com.igexin.push.util.i:
+    boolean a -> a
+    byte[] a(java.lang.String,int) -> a
+    byte[] a(byte[],int) -> a
+    byte[] a(byte[],int,int,int) -> a
+    java.lang.String b(byte[],int) -> b
+    byte[] c(byte[],int) -> c
+    byte[] b(byte[],int,int,int) -> b
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.push.util.j -> com.igexin.push.util.j:
+    byte[] a -> a
+    int b -> b
+    void <init>() -> <init>
+com.igexin.push.util.k -> com.igexin.push.util.k:
+    int[] c -> c
+    int[] d -> d
+    int e -> e
+    int f -> f
+    int[] g -> g
+    void <init>(int,byte[]) -> <init>
+    boolean a(byte[],int,int,boolean) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.util.l -> com.igexin.push.util.l:
+    byte[] h -> h
+    byte[] i -> i
+    byte[] j -> j
+    int c -> c
+    int k -> k
+    boolean d -> d
+    boolean e -> e
+    boolean f -> f
+    byte[] l -> l
+    boolean g -> g
+    void <init>(int,byte[]) -> <init>
+    boolean a(byte[],int,int,boolean) -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.util.m -> com.igexin.push.util.m:
+    java.lang.String a(android.content.Context) -> a
+    int b(android.content.Context) -> b
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+com.igexin.push.util.n -> com.igexin.push.util.n:
+com.igexin.push.util.o -> com.igexin.push.util.o:
+    boolean a -> a
+    java.util.concurrent.LinkedBlockingQueue b -> b
+    void <init>() -> <init>
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    android.os.IBinder a() -> a
+    void <init>(com.igexin.push.util.n) -> <init>
+com.igexin.push.util.p -> com.igexin.push.util.p:
+    android.os.IBinder a -> a
+    void <init>(android.os.IBinder) -> <init>
+    android.os.IBinder asBinder() -> asBinder
+    java.lang.String a() -> a
+com.igexin.push.util.q -> com.igexin.push.util.q:
+    void a(android.content.Context,java.lang.String,java.lang.Object) -> a
+    java.lang.Object b(android.content.Context,java.lang.String,java.lang.Object) -> b
+com.igexin.push.util.r -> com.igexin.push.util.r:
+    char[] a -> a
+    java.lang.String a(int) -> a
+    long a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.push.util.s -> com.igexin.push.util.s:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    byte[] a(java.lang.String,byte[],int,int) -> a
+    byte[] a(java.lang.String,java.lang.String,byte[],int,int) -> a
+    java.net.HttpURLConnection a(java.net.URL,java.lang.String,java.lang.String) -> a
+    byte[] a(java.net.HttpURLConnection) -> a
+    java.lang.String b(java.net.HttpURLConnection) -> b
+    byte[] a(java.io.InputStream) -> a
+    java.lang.String a(java.io.InputStream,java.lang.String) -> a
+    java.lang.String a(java.lang.String) -> a
+    void <clinit>() -> <clinit>
+com.igexin.sdk.GActivity -> com.igexin.sdk.GActivity:
+    java.lang.String TAG -> TAG
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void <clinit>() -> <clinit>
+com.igexin.sdk.GTIntentService -> com.igexin.sdk.GTIntentService:
+    java.lang.String TAG -> TAG
+    void <init>() -> <init>
+    void onHandleIntent(android.content.Intent) -> onHandleIntent
+    void processOnHandleIntent(android.content.Intent) -> processOnHandleIntent
+    void onReceiveServicePid(android.content.Context,int) -> onReceiveServicePid
+    void onReceiveClientId(android.content.Context,java.lang.String) -> onReceiveClientId
+    void onReceiveMessageData(android.content.Context,com.igexin.sdk.message.GTTransmitMessage) -> onReceiveMessageData
+    void onReceiveOnlineState(android.content.Context,boolean) -> onReceiveOnlineState
+    void onReceiveCommandResult(android.content.Context,com.igexin.sdk.message.GTCmdMessage) -> onReceiveCommandResult
+com.igexin.sdk.GTServiceManager -> com.igexin.sdk.GTServiceManager:
+    java.lang.String TAG -> TAG
+    com.igexin.sdk.IPushCore a -> a
+    java.util.concurrent.atomic.AtomicBoolean b -> b
+    android.content.Context context -> context
+    com.igexin.sdk.GTServiceManager getInstance() -> getInstance
+    void <init>() -> <init>
+    void onCreate(android.content.Context) -> onCreate
+    int onStartCommand(android.app.Service,android.content.Intent,int,int) -> onStartCommand
+    void onLowMemory() -> onLowMemory
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    boolean isUserPushServiceSet(android.content.Context) -> isUserPushServiceSet
+    java.lang.Class getUserPushService(android.content.Context) -> getUserPushService
+    java.lang.Class getUserIntentService(android.content.Context) -> getUserIntentService
+    void a(android.app.Service,android.content.Intent) -> a
+    int a(android.content.Intent,int,int) -> a
+    int a(android.app.Service) -> a
+    int a(android.app.Service,android.content.Intent,int,int) -> a
+    int b(android.app.Service,android.content.Intent,int,int) -> b
+    boolean a(android.content.Context,boolean) -> a
+    void a(android.content.Intent) -> a
+    java.lang.reflect.Method a(java.lang.String,java.lang.Class[]) -> a
+    void <init>(com.igexin.sdk.a) -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.sdk.IPushCore -> com.igexin.sdk.IPushCore:
+    boolean start(android.content.Context) -> start
+    void onServiceDestroy() -> onServiceDestroy
+    int onServiceStartCommand(android.content.Intent,int,int) -> onServiceStartCommand
+    android.os.IBinder onServiceBind(android.content.Intent) -> onServiceBind
+    boolean onActivityCreateOptionsMenu(android.app.Activity,android.view.Menu) -> onActivityCreateOptionsMenu
+    void onActivityConfigurationChanged(android.app.Activity,android.content.res.Configuration) -> onActivityConfigurationChanged
+    boolean onActivityKeyDown(android.app.Activity,int,android.view.KeyEvent) -> onActivityKeyDown
+    void onActivityStart(android.app.Activity,android.content.Intent) -> onActivityStart
+    void onActivityNewIntent(android.app.Activity,android.content.Intent) -> onActivityNewIntent
+    void onActivityRestart(android.app.Activity) -> onActivityRestart
+    void onActivityResume(android.app.Activity) -> onActivityResume
+    void onActivityPause(android.app.Activity) -> onActivityPause
+    void onActivityStop(android.app.Activity) -> onActivityStop
+    void onActivityDestroy(android.app.Activity) -> onActivityDestroy
+com.igexin.sdk.PushActivity -> com.igexin.sdk.PushActivity:
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onStart() -> onStart
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onRestart() -> onRestart
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+com.igexin.sdk.PushBuildConfig -> com.igexin.sdk.PushBuildConfig:
+    java.lang.String sdk_conf_version -> sdk_conf_version
+    java.lang.String sdk_conf_branch -> sdk_conf_branch
+    java.lang.String sdk_conf_channelid -> sdk_conf_channelid
+    java.lang.String sdk_conf_debug_level -> sdk_conf_debug_level
+    java.lang.String sdk_conf_domain_switch_enable -> sdk_conf_domain_switch_enable
+    java.lang.String sdk_uploadapplist_enable -> sdk_uploadapplist_enable
+    java.lang.String sdk_conf_bilod_enable -> sdk_conf_bilod_enable
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.sdk.PushConsts -> com.igexin.sdk.PushConsts:
+    java.lang.String CMD_ACTION -> CMD_ACTION
+    int GET_MSG_DATA -> GET_MSG_DATA
+    int GET_CLIENTID -> GET_CLIENTID
+    int CHECK_CLIENTID -> CHECK_CLIENTID
+    int THIRDPART_FEEDBACK -> THIRDPART_FEEDBACK
+    int GET_SDKONLINESTATE -> GET_SDKONLINESTATE
+    int GET_SDKSERVICEPID -> GET_SDKSERVICEPID
+    int SET_TAG_RESULT -> SET_TAG_RESULT
+    int SETTAG_SUCCESS -> SETTAG_SUCCESS
+    int SETTAG_ERROR_COUNT -> SETTAG_ERROR_COUNT
+    int SETTAG_ERROR_FREQUENCY -> SETTAG_ERROR_FREQUENCY
+    int SETTAG_ERROR_REPEAT -> SETTAG_ERROR_REPEAT
+    int SETTAG_ERROR_UNBIND -> SETTAG_ERROR_UNBIND
+    int SETTAG_ERROR_EXCEPTION -> SETTAG_ERROR_EXCEPTION
+    int SETTAG_ERROR_NULL -> SETTAG_ERROR_NULL
+    int SETTAG_SN_NULL -> SETTAG_SN_NULL
+    int SETTAG_NOTONLINE -> SETTAG_NOTONLINE
+    int SETTAG_IN_BLACKLIST -> SETTAG_IN_BLACKLIST
+    int SETTAG_NUM_EXCEED -> SETTAG_NUM_EXCEED
+    java.lang.String SEND_MESSAGE_ERROR -> SEND_MESSAGE_ERROR
+    java.lang.String SEND_MESSAGE_ERROR_GENERAL -> SEND_MESSAGE_ERROR_GENERAL
+    java.lang.String SEND_MESSAGE_ERROR_TIME_OUT -> SEND_MESSAGE_ERROR_TIME_OUT
+    int MIN_FEEDBACK_ACTION -> MIN_FEEDBACK_ACTION
+    int MAX_FEEDBACK_ACTION -> MAX_FEEDBACK_ACTION
+    java.lang.String ACTION_BROADCAST_REFRESHLS -> ACTION_BROADCAST_REFRESHLS
+    java.lang.String ACTION_BROADCAST_PUSHMANAGER -> ACTION_BROADCAST_PUSHMANAGER
+    java.lang.String ACTION_BROADCAST_TO_BOOT -> ACTION_BROADCAST_TO_BOOT
+    java.lang.String ACTION_BROADCAST_NETWORK_CHANGE -> ACTION_BROADCAST_NETWORK_CHANGE
+    java.lang.String ACTION_BROADCAST_USER_PRESENT -> ACTION_BROADCAST_USER_PRESENT
+    java.lang.String ACTION_SERVICE_INITIALIZE -> ACTION_SERVICE_INITIALIZE
+    java.lang.String ACTION_SERVICE_INITIALIZE_SLAVE -> ACTION_SERVICE_INITIALIZE_SLAVE
+    java.lang.String KEY_MESSAGE_DATA -> KEY_MESSAGE_DATA
+    java.lang.String KEY_CMD_MSG -> KEY_CMD_MSG
+    java.lang.String KEY_CLIENT_ID -> KEY_CLIENT_ID
+    java.lang.String KEY_ONLINE_STATE -> KEY_ONLINE_STATE
+    java.lang.String KEY_SERVICE_PIT -> KEY_SERVICE_PIT
+    int KEY_CMD_RESULT -> KEY_CMD_RESULT
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+com.igexin.sdk.PushManager -> com.igexin.sdk.PushManager:
+    long a -> a
+    long b -> b
+    long c -> c
+    byte[] d -> d
+    com.igexin.sdk.PushManager getInstance() -> getInstance
+    void <init>() -> <init>
+    void initialize(android.content.Context,java.lang.Class) -> initialize
+    void registerPushIntentService(android.content.Context,java.lang.Class) -> registerPushIntentService
+    void turnOnPush(android.content.Context) -> turnOnPush
+    void turnOffPush(android.content.Context) -> turnOffPush
+    boolean isPushTurnedOn(android.content.Context) -> isPushTurnedOn
+    java.lang.String getVersion(android.content.Context) -> getVersion
+    int setTag(android.content.Context,com.igexin.sdk.Tag[],java.lang.String) -> setTag
+    boolean setSilentTime(android.content.Context,int,int) -> setSilentTime
+    boolean setHeartbeatInterval(android.content.Context,int) -> setHeartbeatInterval
+    boolean setSocketTimeout(android.content.Context,int) -> setSocketTimeout
+    boolean sendMessage(android.content.Context,java.lang.String,byte[]) -> sendMessage
+    boolean sendFeedbackMessage(android.content.Context,java.lang.String,java.lang.String,int) -> sendFeedbackMessage
+    void stopService(android.content.Context) -> stopService
+    java.lang.String getClientid(android.content.Context) -> getClientid
+    boolean bindAlias(android.content.Context,java.lang.String) -> bindAlias
+    boolean unBindAlias(android.content.Context,java.lang.String,boolean) -> unBindAlias
+    void a(android.content.Context,android.os.Bundle) -> a
+    java.lang.Class a(android.content.Context) -> a
+    java.lang.String a(java.lang.String) -> a
+    void <init>(com.igexin.sdk.c) -> <init>
+com.igexin.sdk.PushManagerReceiver -> com.igexin.sdk.PushManagerReceiver:
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.igexin.sdk.PushReceiver -> com.igexin.sdk.PushReceiver:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void <clinit>() -> <clinit>
+com.igexin.sdk.PushService -> com.igexin.sdk.PushService:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    void onCreate() -> onCreate
+    int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    int a(android.content.Intent) -> a
+    void onLowMemory() -> onLowMemory
+    void onDestroy() -> onDestroy
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void <clinit>() -> <clinit>
+com.igexin.sdk.Tag -> com.igexin.sdk.Tag:
+    java.lang.String a -> a
+    void <init>() -> <init>
+    void setName(java.lang.String) -> setName
+    java.lang.String getName() -> getName
+    boolean a(java.lang.String) -> a
+    boolean isValidTagValue(java.lang.String) -> isValidTagValue
+com.igexin.sdk.a -> com.igexin.sdk.a:
+    android.app.Service a -> a
+    com.igexin.sdk.GTServiceManager b -> b
+    void <init>(com.igexin.sdk.GTServiceManager,android.app.Service) -> <init>
+    void a(boolean) -> a
+com.igexin.sdk.a.a -> com.igexin.sdk.a.a:
+    java.lang.String a -> a
+    com.igexin.sdk.IPushCore b -> b
+    com.igexin.sdk.a.a c -> c
+    com.igexin.sdk.a.a a() -> a
+    void <init>() -> <init>
+    boolean a(android.content.Context) -> a
+    com.igexin.sdk.IPushCore b() -> b
+    void a(com.igexin.sdk.IPushCore) -> a
+    void <clinit>() -> <clinit>
+com.igexin.sdk.a.b -> com.igexin.sdk.a.b:
+    java.lang.String a -> a
+    void <init>(android.content.Context) -> <init>
+    void a() -> a
+    boolean b() -> b
+com.igexin.sdk.a.c -> com.igexin.sdk.a.c:
+    java.lang.String a -> a
+    void <init>(android.content.Context) -> <init>
+    void a() -> a
+    void b() -> b
+    boolean c() -> c
+com.igexin.sdk.a.d -> com.igexin.sdk.a.d:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    android.content.Context c -> c
+    void <init>(android.content.Context) -> <init>
+    void a() -> a
+    void b() -> b
+    boolean c() -> c
+com.igexin.sdk.aidl.IGexinMsgService -> com.igexin.sdk.aidl.IGexinMsgService:
+    int startService(java.lang.String) -> startService
+    int stopService(java.lang.String) -> stopService
+    int isStarted(java.lang.String) -> isStarted
+    int setSilentTime(int,int,java.lang.String) -> setSilentTime
+    byte[] extFunction(byte[]) -> extFunction
+    int onASNLConnected(java.lang.String,java.lang.String,java.lang.String,long) -> onASNLConnected
+    int onPSNLConnected(java.lang.String,java.lang.String,java.lang.String,long) -> onPSNLConnected
+    int sendByASNL(java.lang.String,java.lang.String,byte[]) -> sendByASNL
+    int receiveToPSNL(java.lang.String,java.lang.String,byte[]) -> receiveToPSNL
+    int onASNLNetworkConnected() -> onASNLNetworkConnected
+    int onASNLNetworkDisconnected() -> onASNLNetworkDisconnected
+com.igexin.sdk.aidl.UserServiceListener -> com.igexin.sdk.aidl.UserServiceListener:
+com.igexin.sdk.aidl.a -> com.igexin.sdk.aidl.a:
+    void <init>() -> <init>
+    com.igexin.sdk.aidl.IGexinMsgService a(android.os.IBinder) -> a
+    android.os.IBinder asBinder() -> asBinder
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.igexin.sdk.aidl.b -> com.igexin.sdk.aidl.b:
+    android.os.IBinder a -> a
+    void <init>(android.os.IBinder) -> <init>
+    android.os.IBinder asBinder() -> asBinder
+    int startService(java.lang.String) -> startService
+    int stopService(java.lang.String) -> stopService
+    int isStarted(java.lang.String) -> isStarted
+    int setSilentTime(int,int,java.lang.String) -> setSilentTime
+    byte[] extFunction(byte[]) -> extFunction
+    int onASNLConnected(java.lang.String,java.lang.String,java.lang.String,long) -> onASNLConnected
+    int onPSNLConnected(java.lang.String,java.lang.String,java.lang.String,long) -> onPSNLConnected
+    int sendByASNL(java.lang.String,java.lang.String,byte[]) -> sendByASNL
+    int receiveToPSNL(java.lang.String,java.lang.String,byte[]) -> receiveToPSNL
+    int onASNLNetworkConnected() -> onASNLNetworkConnected
+    int onASNLNetworkDisconnected() -> onASNLNetworkDisconnected
+com.igexin.sdk.b -> com.igexin.sdk.b:
+    com.igexin.sdk.GTServiceManager a -> a
+    com.igexin.sdk.GTServiceManager a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.sdk.c -> com.igexin.sdk.c:
+com.igexin.sdk.d -> com.igexin.sdk.d:
+    com.igexin.sdk.PushManager a -> a
+    com.igexin.sdk.PushManager a() -> a
+    void <clinit>() -> <clinit>
+com.igexin.sdk.message.BaseMessage -> com.igexin.sdk.message.BaseMessage:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    void <init>() -> <init>
+    java.lang.String getAppid() -> getAppid
+    void setAppid(java.lang.String) -> setAppid
+    java.lang.String getPkgName() -> getPkgName
+    void setPkgName(java.lang.String) -> setPkgName
+    java.lang.String getClientId() -> getClientId
+    void setClientId(java.lang.String) -> setClientId
+com.igexin.sdk.message.FeedbackCmdMessage -> com.igexin.sdk.message.FeedbackCmdMessage:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    long d -> d
+    void <init>() -> <init>
+    void <init>(java.lang.String,java.lang.String,java.lang.String,long,int) -> <init>
+    java.lang.String getTaskId() -> getTaskId
+    void setTaskId(java.lang.String) -> setTaskId
+    java.lang.String getActionId() -> getActionId
+    void setActionId(java.lang.String) -> setActionId
+    java.lang.String getResult() -> getResult
+    void setResult(java.lang.String) -> setResult
+    long getTimeStamp() -> getTimeStamp
+    void setTimeStamp(long) -> setTimeStamp
+com.igexin.sdk.message.GTCmdMessage -> com.igexin.sdk.message.GTCmdMessage:
+    int a -> a
+    void <init>() -> <init>
+    void <init>(int) -> <init>
+    int getAction() -> getAction
+    void setAction(int) -> setAction
+com.igexin.sdk.message.GTPushMessage -> com.igexin.sdk.message.GTPushMessage:
+    void <init>() -> <init>
+com.igexin.sdk.message.GTTransmitMessage -> com.igexin.sdk.message.GTTransmitMessage:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    byte[] d -> d
+    void <init>() -> <init>
+    void <init>(java.lang.String,java.lang.String,java.lang.String,byte[]) -> <init>
+    java.lang.String getMessageId() -> getMessageId
+    void setMessageId(java.lang.String) -> setMessageId
+    java.lang.String getTaskId() -> getTaskId
+    void setTaskId(java.lang.String) -> setTaskId
+    java.lang.String getPayloadId() -> getPayloadId
+    void setPayloadId(java.lang.String) -> setPayloadId
+    byte[] getPayload() -> getPayload
+    void setPayload(byte[]) -> setPayload
+com.igexin.sdk.message.SetTagCmdMessage -> com.igexin.sdk.message.SetTagCmdMessage:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    void <init>() -> <init>
+    void <init>(java.lang.String,java.lang.String,int) -> <init>
+    java.lang.String getSn() -> getSn
+    void setSn(java.lang.String) -> setSn
+    java.lang.String getCode() -> getCode
+    void setCode(java.lang.String) -> setCode
 com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton -> com.b.a.a.a:
     android.view.View contentView -> a
     void <init>(android.app.Activity,com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton$LayoutParams,int,android.graphics.drawable.Drawable,int,android.view.View,android.widget.FrameLayout$LayoutParams) -> <init>

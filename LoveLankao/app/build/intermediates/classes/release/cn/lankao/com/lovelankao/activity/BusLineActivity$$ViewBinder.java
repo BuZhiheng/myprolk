@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class BusLineActivity$$ViewBinder<T extends cn.lankao.com.lovelankao.activity.BusLineActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131427466, "field 'rvLine'");
-    target.rvLine = finder.castView(view, 2131427466, "field 'rvLine'");
+    view = finder.findRequiredView(source, 2131493002, "field 'rvLine'");
+    target.rvLine = finder.castView(view, 2131493002, "field 'rvLine'");
   }
 
   @Override public void unbind(T target) {

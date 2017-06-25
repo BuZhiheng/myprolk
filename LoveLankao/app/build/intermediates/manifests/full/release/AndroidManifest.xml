@@ -12,28 +12,34 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <permission
         android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao"
         android:protectionLevel="normal" >
     </permission>
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+ <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao" />
 
     <application
         android:name="cn.lankao.com.lovelankao.LApplication"
@@ -99,6 +105,7 @@
         <activity
             android:name="cn.lankao.com.lovelankao.activity.MainActivity"
             android:launchMode="singleTask" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.MessageBoardActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.PicShowActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.RegisterActivity" />
@@ -108,6 +115,7 @@
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareMsgActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.SquareSendActivity" />
+        <activity android:name="cn.lankao.com.lovelankao.activity.SquarePersonalActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.ShopLocationActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.TopActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.WebViewActivity" />
@@ -116,6 +124,76 @@
         <activity
             android:name="cn.lankao.com.lovelankao.wxapi.WXEntryActivity"
             android:exported="true" />
+
+        <service
+            android:name="cn.lankao.com.lovelankao.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service android:name="cn.lankao.com.lovelankao.service.PushIntentService" />
+        <!-- 第三方应用配置 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="EfrrWfWLdZ89Tv806TBbK" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="72qBudOA6z9uzbpgnPHH3" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="ZnppgIjubAA8BktsQCEMe3" />
+ <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.cn.lankao.com.lovelankao"
+            android:exported="true"
+            android:process=":pushservice" />
     </application>
 
 </manifest>

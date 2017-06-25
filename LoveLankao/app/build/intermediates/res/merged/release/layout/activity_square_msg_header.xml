@@ -20,7 +20,7 @@
                 android:layout_width="39dp"
                 android:layout_height="39dp"
                 android:layout_marginLeft="@dimen/common_margin"
-                android:src="@drawable/ic_launcher"/>
+                />
             <LinearLayout
                 android:layout_marginLeft="60dp"
                 android:layout_width="wrap_content"

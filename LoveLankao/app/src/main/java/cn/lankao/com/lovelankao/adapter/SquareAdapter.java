@@ -1,5 +1,6 @@
 package cn.lankao.com.lovelankao.adapter;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +28,7 @@ import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
 import cn.lankao.com.lovelankao.utils.TextUtil;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
+import cn.lankao.com.lovelankao.widget.MyDialog;
 /**
  * Created by BuZhiheng on 2016/4/3.
  */
@@ -195,14 +197,19 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
             holder.tvDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    square.delete(square.getObjectId(), new UpdateListener() {
+                    MyDialog.getAlertDialog(context, "提示", "确认删除?", true, new DialogInterface.OnClickListener() {
                         @Override
-                        public void done(BmobException e) {
-                            if (e == null){
-                                data.remove(square);
-                                notifyDataSetChanged();
-                                ToastUtil.show("删除成功");
-                            }
+                        public void onClick(DialogInterface dialog, int which) {
+                            square.delete(square.getObjectId(), new UpdateListener() {
+                                @Override
+                                public void done(BmobException e) {
+                                    if (e == null) {
+                                        data.remove(square);
+                                        notifyDataSetChanged();
+                                        ToastUtil.show("删除成功");
+                                    }
+                                }
+                            });
                         }
                     });
                 }

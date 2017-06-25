@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class SquareMsgActivity$$ViewBinder<T extends cn.lankao.com.lovelankao.activity.SquareMsgActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131427535, "field 'rvMsg'");
-    target.rvMsg = finder.castView(view, 2131427535, "field 'rvMsg'");
+    view = finder.findRequiredView(source, 2131493077, "field 'rvMsg'");
+    target.rvMsg = finder.castView(view, 2131493077, "field 'rvMsg'");
   }
 
   @Override public void unbind(T target) {

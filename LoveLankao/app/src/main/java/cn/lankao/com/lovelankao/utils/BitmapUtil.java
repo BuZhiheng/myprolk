@@ -183,7 +183,7 @@ public class BitmapUtil {
                 .setRadius(DensityUtil.dip2px(px))
                 .setCrop(true)
                 .setImageScaleType(ImageView.ScaleType.CENTER_INSIDE)
-                .setFailureDrawableId(R.drawable.ic_common_defult)
+                .setFailureDrawableId(R.drawable.ic_launcher)
                 .build();
     }
     public static ImageOptions getOptionCommon(){

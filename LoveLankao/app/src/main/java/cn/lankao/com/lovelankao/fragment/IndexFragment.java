@@ -24,6 +24,7 @@ import cn.lankao.com.lovelankao.activity.JockActivity;
 import cn.lankao.com.lovelankao.activity.LKBikeActivity;
 import cn.lankao.com.lovelankao.activity.LKNewsActivity;
 import cn.lankao.com.lovelankao.activity.LKPeopleActivity;
+import cn.lankao.com.lovelankao.activity.MessageBoardActivity;
 import cn.lankao.com.lovelankao.activity.RoadActivity;
 import cn.lankao.com.lovelankao.adapter.BannerIndexHolder;
 import cn.lankao.com.lovelankao.adapter.IndexServiceAdapter;
@@ -86,6 +87,7 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
         view.findViewById(R.id.ll_indexfrm_more_road).setOnClickListener(this);
         view.findViewById(R.id.fl_indexfrm_more_news).setOnClickListener(this);
         view.findViewById(R.id.ll_indexfrm_more_lkpeople).setOnClickListener(this);
+        view.findViewById(R.id.tv_indexfrm_msg_board).setOnClickListener(this);
         presenter.getData();
     }
     @Override
@@ -119,6 +121,10 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
             case R.id.ll_indexfrm_more_road:
                 Intent intentRoad = new Intent(getActivity(), RoadActivity.class);
                 startActivity(intentRoad);
+                break;
+            case R.id.tv_indexfrm_msg_board:
+                Intent intentBoard = new Intent(getActivity(), MessageBoardActivity.class);
+                startActivity(intentBoard);
                 break;
             default:
                 break;
