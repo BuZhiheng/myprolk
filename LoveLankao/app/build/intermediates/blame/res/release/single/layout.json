@@ -372,6 +372,10 @@
         "source": "D:\\git\\lankao\\LoveLankao\\app\\src\\main\\res\\layout\\activity_comment.xml"
     },
     {
+        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_msg_board_send.xml",
+        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\src\\main\\res\\layout\\activity_msg_board_send.xml"
+    },
+    {
         "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_top_item.xml",
         "source": "D:\\git\\lankao\\LoveLankao\\app\\src\\main\\res\\layout\\activity_top_item.xml"
     },

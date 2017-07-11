@@ -16547,6 +16547,8 @@ cn.lankao.com.lovelankao.R$drawable -> cn.lankao.com.lovelankao.R$drawable:
     int design_snackbar_background -> design_snackbar_background
     int ic_chatroom_newmsg -> ic_chatroom_newmsg
     int ic_chatroom_photo -> ic_chatroom_photo
+    int ic_check -> ic_check
+    int ic_checked -> ic_checked
     int ic_common_add -> ic_common_add
     int ic_common_addimg -> ic_common_addimg
     int ic_common_back_white -> ic_common_back_white
@@ -16601,6 +16603,7 @@ cn.lankao.com.lovelankao.R$drawable -> cn.lankao.com.lovelankao.R$drawable:
     int ic_minefrm_setting -> ic_minefrm_setting
     int ic_minefrm_tuijian -> ic_minefrm_tuijian
     int ic_minefrm_wz -> ic_minefrm_wz
+    int ic_msg_board -> ic_msg_board
     int ic_public_bike -> ic_public_bike
     int ic_public_bike1 -> ic_public_bike1
     int ic_quan_camera -> ic_quan_camera
@@ -16662,6 +16665,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int btn_chat_send -> btn_chat_send
     int btn_comment_send -> btn_comment_send
     int btn_login_login -> btn_login_login
+    int btn_msg_board_send -> btn_msg_board_send
     int btn_register_getcode -> btn_register_getcode
     int btn_register_register -> btn_register_register
     int btn_setting_exit -> btn_setting_exit
@@ -16702,6 +16706,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int et_comment_content -> et_comment_content
     int et_login_password -> et_login_password
     int et_login_username -> et_login_username
+    int et_msg_board_send -> et_msg_board_send
     int et_register_code -> et_register_code
     int et_register_nickname -> et_register_nickname
     int et_register_password -> et_register_password
@@ -16811,6 +16816,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int iv_mainfrm_item_photo -> iv_mainfrm_item_photo
     int iv_minefrm_photo -> iv_minefrm_photo
     int iv_msg_board_item_photo -> iv_msg_board_item_photo
+    int iv_msg_board_send_check -> iv_msg_board_send_check
     int iv_picshow_0 -> iv_picshow_0
     int iv_picshow_1 -> iv_picshow_1
     int iv_picshow_2 -> iv_picshow_2
@@ -16881,6 +16887,7 @@ cn.lankao.com.lovelankao.R$id -> cn.lankao.com.lovelankao.R$id:
     int ll_mainfrm_header_women -> ll_mainfrm_header_women
     int ll_mainfrm_header_zulin -> ll_mainfrm_header_zulin
     int ll_minefrm_user_msg -> ll_minefrm_user_msg
+    int ll_msg_board_send_check -> ll_msg_board_send_check
     int ll_popwinshare_content -> ll_popwinshare_content
     int ll_popwinshare_qq -> ll_popwinshare_qq
     int ll_popwinshare_qzone -> ll_popwinshare_qzone
@@ -17162,6 +17169,7 @@ cn.lankao.com.lovelankao.R$layout -> cn.lankao.com.lovelankao.R$layout:
     int activity_main -> activity_main
     int activity_msg_board -> activity_msg_board
     int activity_msg_board_item -> activity_msg_board_item
+    int activity_msg_board_send -> activity_msg_board_send
     int activity_my_msg -> activity_my_msg
     int activity_my_msg_item -> activity_my_msg_item
     int activity_photo_viewpage -> activity_photo_viewpage
@@ -18214,6 +18222,7 @@ cn.lankao.com.lovelankao.activity.MessageBoardActivity -> cn.lankao.com.lovelank
     void initView() -> initView
     void getData(int) -> getData
     void onClick(android.view.View) -> onClick
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
     int access$000(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> access$000
     int access$002(cn.lankao.com.lovelankao.activity.MessageBoardActivity,int) -> access$002
     void access$100(cn.lankao.com.lovelankao.activity.MessageBoardActivity,int) -> access$100
@@ -18236,6 +18245,31 @@ cn.lankao.com.lovelankao.activity.MessageBoardActivity$3 -> cn.lankao.com.lovela
     cn.lankao.com.lovelankao.activity.MessageBoardActivity this$0 -> this$0
     void <init>(cn.lankao.com.lovelankao.activity.MessageBoardActivity) -> <init>
     void done(java.util.List,cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object,java.lang.Object) -> done
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity -> cn.lankao.com.lovelankao.activity.MsgBoardSendActivity:
+    android.widget.EditText editText -> editText
+    android.widget.ImageView ivCheck -> ivCheck
+    boolean isCheck -> isCheck
+    java.lang.String nickName -> nickName
+    android.app.Dialog dialog -> dialog
+    void <init>() -> <init>
+    void onCreate(android.os.Bundle) -> onCreate
+    void initView() -> initView
+    void onClick(android.view.View) -> onClick
+    void check() -> check
+    void send() -> send
+    android.app.Dialog access$000(cn.lankao.com.lovelankao.activity.MsgBoardSendActivity) -> access$000
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder -> cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder:
+    void <init>() -> <init>
+    void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.activity.MsgBoardSendActivity,java.lang.Object) -> bind
+    void unbind(cn.lankao.com.lovelankao.activity.MsgBoardSendActivity) -> unbind
+    void unbind(java.lang.Object) -> unbind
+    void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object) -> bind
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1 -> cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1:
+    cn.lankao.com.lovelankao.activity.MsgBoardSendActivity this$0 -> this$0
+    void <init>(cn.lankao.com.lovelankao.activity.MsgBoardSendActivity) -> <init>
+    void done(java.lang.String,cn.bmob.v3.exception.BmobException) -> done
+    void done(java.lang.Object,cn.bmob.v3.exception.BmobException) -> done
     void done(java.lang.Object,java.lang.Object) -> done
 cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity -> cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity:
     android.support.v4.view.ViewPager mPager -> mPager
@@ -19426,6 +19460,7 @@ cn.lankao.com.lovelankao.model.CommonCode -> cn.lankao.com.lovelankao.model.Comm
     java.lang.String SP_USER_USER_POST_MSG -> SP_USER_USER_POST_MSG
     java.lang.String SP_REGISTER_CODE_PHONE -> SP_REGISTER_CODE_PHONE
     java.lang.String SP_REGISTER_CODE -> SP_REGISTER_CODE
+    java.lang.String COMMENT_MSG_BOARD_ID -> COMMENT_MSG_BOARD_ID
     java.lang.String MSG_NETWORK_ERR -> MSG_NETWORK_ERR
     void <init>() -> <init>
     void <clinit>() -> <clinit>

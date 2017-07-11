@@ -29,7 +29,7 @@
 # view res/layout/activity_square.xml #generated:34
 # view res/layout/activity_square_personal.xml #generated:7
 # view res/layout/activity_top.xml #generated:27
-# view res/layout/fragment_index.xml #generated:28
+# view res/layout/fragment_index.xml #generated:29
 # view res/layout/fragment_main.xml #generated:29
 # view res/layout/fragment_talknew.xml #generated:50
 -keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
@@ -83,7 +83,7 @@
 # view res/layout/activity_cook.xml #generated:43
 # view res/layout/activity_jock.xml #generated:33
 # view res/layout/activity_lknews.xml #generated:32
-# view res/layout/activity_msg_board.xml #generated:15
+# view res/layout/activity_msg_board.xml #generated:14
 # view res/layout/activity_my_msg.xml #generated:8
 # view res/layout/activity_read_weixin.xml #generated:32
 # view res/layout/activity_square.xml #generated:39
@@ -91,7 +91,7 @@
 # view res/layout/activity_top.xml #generated:32
 # view res/layout/activity_wz_city.xml #generated:8
 # view res/layout/activity_wz_msg.xml #generated:112
-# view res/layout/fragment_index.xml #generated:37
+# view res/layout/fragment_index.xml #generated:38
 # view res/layout/fragment_index_header.xml #generated:13
 # view res/layout/fragment_main.xml #generated:38
 # view res/layout/fragment_talknew.xml #generated:56
@@ -164,61 +164,64 @@
 # view AndroidManifest.xml #generated:108
 -keep class cn.lankao.com.lovelankao.activity.MessageBoardActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:110
--keep class cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity { <init>(...); }
-
 # view AndroidManifest.xml #generated:109
--keep class cn.lankao.com.lovelankao.activity.PicShowActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:112
--keep class cn.lankao.com.lovelankao.activity.ReadWeixinActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.MsgBoardSendActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:111
--keep class cn.lankao.com.lovelankao.activity.RegisterActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class cn.lankao.com.lovelankao.activity.PicShowActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:113
--keep class cn.lankao.com.lovelankao.activity.RoadActivity { <init>(...); }
+-keep class cn.lankao.com.lovelankao.activity.ReadWeixinActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class cn.lankao.com.lovelankao.activity.RegisterActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:114
+-keep class cn.lankao.com.lovelankao.activity.RoadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
 -keep class cn.lankao.com.lovelankao.activity.SettingActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:119
+# view AndroidManifest.xml #generated:120
 -keep class cn.lankao.com.lovelankao.activity.ShopLocationActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:51
 -keep class cn.lankao.com.lovelankao.activity.SplashActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:115
+# view AndroidManifest.xml #generated:116
 -keep class cn.lankao.com.lovelankao.activity.SquareActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:116
+# view AndroidManifest.xml #generated:117
 -keep class cn.lankao.com.lovelankao.activity.SquareMsgActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:118
+# view AndroidManifest.xml #generated:119
 -keep class cn.lankao.com.lovelankao.activity.SquarePersonalActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:117
+# view AndroidManifest.xml #generated:118
 -keep class cn.lankao.com.lovelankao.activity.SquareSendActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:120
+# view AndroidManifest.xml #generated:121
 -keep class cn.lankao.com.lovelankao.activity.TopActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:123
+# view AndroidManifest.xml #generated:124
 -keep class cn.lankao.com.lovelankao.activity.WZActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:122
+# view AndroidManifest.xml #generated:123
 -keep class cn.lankao.com.lovelankao.activity.WZCityActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:121
+# view AndroidManifest.xml #generated:122
 -keep class cn.lankao.com.lovelankao.activity.WebViewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:133
+# view AndroidManifest.xml #generated:134
 -keep class cn.lankao.com.lovelankao.service.PushIntentService { <init>(...); }
 
-# view AndroidManifest.xml #generated:128
+# view AndroidManifest.xml #generated:129
 -keep class cn.lankao.com.lovelankao.service.PushService { <init>(...); }
 
-# view AndroidManifest.xml #generated:124
+# view AndroidManifest.xml #generated:125
 -keep class cn.lankao.com.lovelankao.wxapi.WXEntryActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:63
@@ -232,7 +235,7 @@
 # view res/layout/activity_shop_loc.xml #generated:5
 -keep class com.baidu.mapapi.map.MapView { <init>(...); }
 
-# view res/layout/fragment_index.xml #generated:43
+# view res/layout/fragment_index.xml #generated:44
 # view res/layout/fragment_main.xml #generated:44
 -keep class com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader { <init>(...); }
 
@@ -243,25 +246,25 @@
 # view res/layout/include_viewpager.xml #generated:11
 -keep class com.bigkoo.convenientbanner.view.CBLoopViewPager { <init>(...); }
 
-# view AndroidManifest.xml #generated:192
+# view AndroidManifest.xml #generated:193
 -keep class com.igexin.download.DownloadProvider { <init>(...); }
 
-# view AndroidManifest.xml #generated:186
+# view AndroidManifest.xml #generated:187
 -keep class com.igexin.download.DownloadReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:182
+# view AndroidManifest.xml #generated:183
 -keep class com.igexin.download.DownloadService { <init>(...); }
 
-# view AndroidManifest.xml #generated:174
+# view AndroidManifest.xml #generated:175
 -keep class com.igexin.sdk.GActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:167
+# view AndroidManifest.xml #generated:168
 -keep class com.igexin.sdk.PushActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:155
+# view AndroidManifest.xml #generated:156
 -keep class com.igexin.sdk.PushReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:145
+# view AndroidManifest.xml #generated:146
 -keep class com.igexin.sdk.PushService { <init>(...); }
 
 # view AndroidManifest.xml #generated:86
@@ -272,6 +275,8 @@
 
 # onClick res/layout/activity_bus.xml #generated:12
 # onClick res/layout/activity_comment.xml #generated:36
+# onClick res/layout/activity_msg_board_send.xml #generated:29
+# onClick res/layout/activity_msg_board_send.xml #generated:72
 # onClick res/layout/activity_square_msg.xml #generated:19
 # onClick res/layout/activity_square_msg.xml #generated:28
 # onClick res/layout/activity_square_msg_header.xml #generated:147

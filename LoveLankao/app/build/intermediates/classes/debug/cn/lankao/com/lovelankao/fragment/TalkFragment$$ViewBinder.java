@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class TalkFragment$$ViewBinder<T extends cn.lankao.com.lovelankao.fragment.TalkFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131427739, "field 'recyclerView'");
-    target.recyclerView = finder.castView(view, 2131427739, "field 'recyclerView'");
-    view = finder.findRequiredView(source, 2131427738, "field 'refresh'");
-    target.refresh = finder.castView(view, 2131427738, "field 'refresh'");
-    view = finder.findRequiredView(source, 2131427740, "field 'tvMsg'");
-    target.tvMsg = finder.castView(view, 2131427740, "field 'tvMsg'");
+    view = finder.findRequiredView(source, 2131493286, "field 'recyclerView'");
+    target.recyclerView = finder.castView(view, 2131493286, "field 'recyclerView'");
+    view = finder.findRequiredView(source, 2131493285, "field 'refresh'");
+    target.refresh = finder.castView(view, 2131493285, "field 'refresh'");
+    view = finder.findRequiredView(source, 2131493287, "field 'tvMsg'");
+    target.tvMsg = finder.castView(view, 2131493287, "field 'tvMsg'");
   }
 
   @Override public void unbind(T target) {

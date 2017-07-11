@@ -77,6 +77,9 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         if (content != null && content.length() > 100){
             content = content.substring(0,80)+"...(全文)";
         }
+        if (square.getSquarePhoto1() != null){
+            content = content + "[图片]";
+        }
         holder.tvContent.setText(content);
         if (!TextUtil.isNull(square.getUserPhoto())){
             x.image().bind(holder.ivPhoto, square.getUserPhoto(), BitmapUtil.getOptionCommonRadius());
@@ -155,9 +158,6 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
                     public void done(BmobException e) {
                     }
                 });
-                final int click = square.getClickTimes() == null ? 1 : square.getClickTimes() + 1;
-//                holder.tvClickTimes.setText(click + "");
-                square.setClickTimes(click);
                 Intent intent = new Intent(context, SquareActivity.class);
                 intent.putExtra(CommonCode.INTENT_COMMON_STRING, square.getObjectId());
                 context.startActivity(intent);

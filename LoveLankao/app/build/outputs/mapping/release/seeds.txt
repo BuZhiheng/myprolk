@@ -7486,6 +7486,8 @@ cn.lankao.com.lovelankao.R$drawable: int design_fab_background
 cn.lankao.com.lovelankao.R$drawable: int design_snackbar_background
 cn.lankao.com.lovelankao.R$drawable: int ic_chatroom_newmsg
 cn.lankao.com.lovelankao.R$drawable: int ic_chatroom_photo
+cn.lankao.com.lovelankao.R$drawable: int ic_check
+cn.lankao.com.lovelankao.R$drawable: int ic_checked
 cn.lankao.com.lovelankao.R$drawable: int ic_common_add
 cn.lankao.com.lovelankao.R$drawable: int ic_common_addimg
 cn.lankao.com.lovelankao.R$drawable: int ic_common_back_white
@@ -7540,6 +7542,7 @@ cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_photo_bg
 cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_setting
 cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_tuijian
 cn.lankao.com.lovelankao.R$drawable: int ic_minefrm_wz
+cn.lankao.com.lovelankao.R$drawable: int ic_msg_board
 cn.lankao.com.lovelankao.R$drawable: int ic_public_bike
 cn.lankao.com.lovelankao.R$drawable: int ic_public_bike1
 cn.lankao.com.lovelankao.R$drawable: int ic_quan_camera
@@ -7601,6 +7604,7 @@ cn.lankao.com.lovelankao.R$id: int btn_bus_refresh
 cn.lankao.com.lovelankao.R$id: int btn_chat_send
 cn.lankao.com.lovelankao.R$id: int btn_comment_send
 cn.lankao.com.lovelankao.R$id: int btn_login_login
+cn.lankao.com.lovelankao.R$id: int btn_msg_board_send
 cn.lankao.com.lovelankao.R$id: int btn_register_getcode
 cn.lankao.com.lovelankao.R$id: int btn_register_register
 cn.lankao.com.lovelankao.R$id: int btn_setting_exit
@@ -7641,6 +7645,7 @@ cn.lankao.com.lovelankao.R$id: int et_chat_content
 cn.lankao.com.lovelankao.R$id: int et_comment_content
 cn.lankao.com.lovelankao.R$id: int et_login_password
 cn.lankao.com.lovelankao.R$id: int et_login_username
+cn.lankao.com.lovelankao.R$id: int et_msg_board_send
 cn.lankao.com.lovelankao.R$id: int et_register_code
 cn.lankao.com.lovelankao.R$id: int et_register_nickname
 cn.lankao.com.lovelankao.R$id: int et_register_password
@@ -7750,6 +7755,7 @@ cn.lankao.com.lovelankao.R$id: int iv_main_user
 cn.lankao.com.lovelankao.R$id: int iv_mainfrm_item_photo
 cn.lankao.com.lovelankao.R$id: int iv_minefrm_photo
 cn.lankao.com.lovelankao.R$id: int iv_msg_board_item_photo
+cn.lankao.com.lovelankao.R$id: int iv_msg_board_send_check
 cn.lankao.com.lovelankao.R$id: int iv_picshow_0
 cn.lankao.com.lovelankao.R$id: int iv_picshow_1
 cn.lankao.com.lovelankao.R$id: int iv_picshow_2
@@ -7820,6 +7826,7 @@ cn.lankao.com.lovelankao.R$id: int ll_mainfrm_header_service
 cn.lankao.com.lovelankao.R$id: int ll_mainfrm_header_women
 cn.lankao.com.lovelankao.R$id: int ll_mainfrm_header_zulin
 cn.lankao.com.lovelankao.R$id: int ll_minefrm_user_msg
+cn.lankao.com.lovelankao.R$id: int ll_msg_board_send_check
 cn.lankao.com.lovelankao.R$id: int ll_popwinshare_content
 cn.lankao.com.lovelankao.R$id: int ll_popwinshare_qq
 cn.lankao.com.lovelankao.R$id: int ll_popwinshare_qzone
@@ -8101,6 +8108,7 @@ cn.lankao.com.lovelankao.R$layout: int activity_login
 cn.lankao.com.lovelankao.R$layout: int activity_main
 cn.lankao.com.lovelankao.R$layout: int activity_msg_board
 cn.lankao.com.lovelankao.R$layout: int activity_msg_board_item
+cn.lankao.com.lovelankao.R$layout: int activity_msg_board_send
 cn.lankao.com.lovelankao.R$layout: int activity_my_msg
 cn.lankao.com.lovelankao.R$layout: int activity_my_msg_item
 cn.lankao.com.lovelankao.R$layout: int activity_photo_viewpage
@@ -9153,6 +9161,7 @@ cn.lankao.com.lovelankao.activity.MessageBoardActivity: void onCreate(android.os
 cn.lankao.com.lovelankao.activity.MessageBoardActivity: void initView()
 cn.lankao.com.lovelankao.activity.MessageBoardActivity: void getData(int)
 cn.lankao.com.lovelankao.activity.MessageBoardActivity: void onClick(android.view.View)
+cn.lankao.com.lovelankao.activity.MessageBoardActivity: void onActivityResult(int,int,android.content.Intent)
 cn.lankao.com.lovelankao.activity.MessageBoardActivity: int access$000(cn.lankao.com.lovelankao.activity.MessageBoardActivity)
 cn.lankao.com.lovelankao.activity.MessageBoardActivity: int access$002(cn.lankao.com.lovelankao.activity.MessageBoardActivity,int)
 cn.lankao.com.lovelankao.activity.MessageBoardActivity: void access$100(cn.lankao.com.lovelankao.activity.MessageBoardActivity,int)
@@ -9176,6 +9185,31 @@ cn.lankao.com.lovelankao.activity.MessageBoardActivity$3: cn.lankao.com.lovelank
 cn.lankao.com.lovelankao.activity.MessageBoardActivity$3: MessageBoardActivity$3(cn.lankao.com.lovelankao.activity.MessageBoardActivity)
 cn.lankao.com.lovelankao.activity.MessageBoardActivity$3: void done(java.util.List,cn.bmob.v3.exception.BmobException)
 cn.lankao.com.lovelankao.activity.MessageBoardActivity$3: void done(java.lang.Object,java.lang.Object)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: android.widget.EditText editText
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: android.widget.ImageView ivCheck
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: boolean isCheck
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: java.lang.String nickName
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: android.app.Dialog dialog
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: MsgBoardSendActivity()
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: void onCreate(android.os.Bundle)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: void initView()
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: void onClick(android.view.View)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: void check()
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: void send()
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity: android.app.Dialog access$000(cn.lankao.com.lovelankao.activity.MsgBoardSendActivity)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder: MsgBoardSendActivity$$ViewBinder()
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder: void bind(butterknife.ButterKnife$Finder,cn.lankao.com.lovelankao.activity.MsgBoardSendActivity,java.lang.Object)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder: void unbind(cn.lankao.com.lovelankao.activity.MsgBoardSendActivity)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder: void unbind(java.lang.Object)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$$ViewBinder: void bind(butterknife.ButterKnife$Finder,java.lang.Object,java.lang.Object)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1: cn.lankao.com.lovelankao.activity.MsgBoardSendActivity this$0
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1: MsgBoardSendActivity$1(cn.lankao.com.lovelankao.activity.MsgBoardSendActivity)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1: void done(java.lang.String,cn.bmob.v3.exception.BmobException)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1: void done(java.lang.Object,cn.bmob.v3.exception.BmobException)
+cn.lankao.com.lovelankao.activity.MsgBoardSendActivity$1: void done(java.lang.Object,java.lang.Object)
 cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity
 cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity: android.support.v4.view.ViewPager mPager
 cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity: java.util.List list
@@ -10365,6 +10399,7 @@ cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_USER_USERTYPE
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_USER_USER_POST_MSG
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_REGISTER_CODE_PHONE
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String SP_REGISTER_CODE
+cn.lankao.com.lovelankao.model.CommonCode: java.lang.String COMMENT_MSG_BOARD_ID
 cn.lankao.com.lovelankao.model.CommonCode: java.lang.String MSG_NETWORK_ERR
 cn.lankao.com.lovelankao.model.CommonCode: CommonCode()
 cn.lankao.com.lovelankao.model.CommonCode: void <clinit>()

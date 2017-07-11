@@ -18,7 +18,7 @@ public class TimeUtil {
         try {
             //在此日期之后恢复正常
             //一般要预留5天
-            Date date = sDateFormat.parse("2017-5-12 23:00:00");
+            Date date = sDateFormat.parse("2017-7-15 23:00:00");
             long lDate = date.getTime();
             long lNow = System.currentTimeMillis();
             if (lNow > lDate){

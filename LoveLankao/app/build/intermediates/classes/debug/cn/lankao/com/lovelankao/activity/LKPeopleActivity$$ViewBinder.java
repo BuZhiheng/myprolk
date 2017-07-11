@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class LKPeopleActivity$$ViewBinder<T extends cn.lankao.com.lovelankao.activity.LKPeopleActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131427516, "field 'mapView'");
-    target.mapView = finder.castView(view, 2131427516, "field 'mapView'");
+    view = finder.findRequiredView(source, 2131493052, "field 'mapView'");
+    target.mapView = finder.castView(view, 2131493052, "field 'mapView'");
   }
 
   @Override public void unbind(T target) {

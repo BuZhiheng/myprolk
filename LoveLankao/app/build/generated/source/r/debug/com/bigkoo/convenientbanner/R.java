@@ -354,7 +354,7 @@ public final class R {
 		public static final int activity_chooser_view_content = 0x7f0c003e;
 		public static final int always = 0x7f0c0033;
 		public static final int beginning = 0x7f0c0031;
-		public static final int cbLoopViewPager = 0x7f0c01d0;
+		public static final int cbLoopViewPager = 0x7f0c01cf;
 		public static final int cb_item_tag = 0x7f0c0004;
 		public static final int checkbox = 0x7f0c0053;
 		public static final int collapseActionView = 0x7f0c0034;
@@ -372,7 +372,7 @@ public final class R {
 		public static final int image = 0x7f0c0040;
 		public static final int listMode = 0x7f0c000c;
 		public static final int list_item = 0x7f0c0042;
-		public static final int loPageTurningPoint = 0x7f0c01d1;
+		public static final int loPageTurningPoint = 0x7f0c01d0;
 		public static final int middle = 0x7f0c0032;
 		public static final int never = 0x7f0c0036;
 		public static final int none = 0x7f0c0011;
