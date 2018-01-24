@@ -37,7 +37,7 @@ public class BannerIndexHolder implements Holder<LanKaoNews> {
     }
     @Override
     public void UpdateUI(final Context context, final int position, final LanKaoNews news) {
-        x.image().bind(iv, news.getNewsImg(), BitmapUtil.getOptionCommon());
+        BitmapUtil.loadImageNormal(context,iv,news.getNewsImg());
         tv.setText(news.getNewsTitle());
         tvIndex.setText((position + 1) + "/" + size);
         fLayout.setOnClickListener(new View.OnClickListener() {

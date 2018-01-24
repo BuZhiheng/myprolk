@@ -10,6 +10,11 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.load.resource.bitmap.FitCenter;
+
 import org.xutils.common.util.DensityUtil;
 import org.xutils.image.ImageOptions;
 import java.io.ByteArrayOutputStream;
@@ -161,6 +166,11 @@ public class BitmapUtil {
         intent.putExtra("return-data", true);
         context.startActivityForResult(intent, BitmapUtil.PIC_CROP);
     }
+    public static void loadImageNormal(Context context,ImageView imageView,String imgUrl){
+        Glide.with(context)
+                .load(imgUrl)
+                .into(imageView);
+    }
     public static ImageOptions getOptionCommonRadius(){
         /**
          * 联合xutils使用,设置图片圆角
@@ -202,8 +212,8 @@ public class BitmapUtil {
          *
          * */
         return new ImageOptions.Builder()
-                .setCrop(false)
-                .setImageScaleType(ImageView.ScaleType.FIT_CENTER)
+                .setCrop(true)
+                .setImageScaleType(ImageView.ScaleType.CENTER_CROP)
                 .build();
     }
     public static byte[] bitmapToByte(Bitmap bmp){

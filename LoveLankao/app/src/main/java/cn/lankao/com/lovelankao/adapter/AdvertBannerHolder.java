@@ -25,6 +25,7 @@ public class AdvertBannerHolder implements Holder<String> {
     @Override
     public View createView(Context context) {
         iv = new ImageView(context);
+        iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
         return iv;
     }
     @Override

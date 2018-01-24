@@ -1,5 +1,10 @@
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_green</item>
+        <item name="colorPrimaryDark">@color/color_green</item>
+        <item name="colorAccent">@color/color_green</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="textAllCaps">false</item>
     </style>
     <style name="PopwinTheme" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/popwin_share_enter</item>//进入时的动画

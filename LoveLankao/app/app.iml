@@ -145,6 +145,7 @@
     <orderEntry type="library" name="__local_aars__:C.\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\libs\baidumapapi_base_v3_7_3.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="org.xutils:xutils-3.3.26" level="project" />
     <orderEntry type="library" name="__local_aars__:C.\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\libs\locSDK_6.13.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="com.github.bumptech.glide:glide:3.7.0@jar" level="project" />
     <orderEntry type="library" name="org.apache.http.legacy-android-26" level="project" />
   </component>
 </module>

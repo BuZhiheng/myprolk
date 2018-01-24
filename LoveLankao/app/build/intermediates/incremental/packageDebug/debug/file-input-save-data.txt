@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jan 24 16:06:21 CST 2018
+#Wed Jan 24 17:22:07 CST 2018
 5.base=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 42.base=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 22.path=lib/armeabi-v7a/libbmob.so
