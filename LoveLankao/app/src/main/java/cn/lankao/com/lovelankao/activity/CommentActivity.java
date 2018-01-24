@@ -6,12 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.Comment;
 import cn.lankao.com.lovelankao.model.CommonCode;
-import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.viewcontroller.CommentActivityController;
 import cn.lankao.com.lovelankao.widget.ProDialog;
@@ -20,9 +19,9 @@ import cn.lankao.com.lovelankao.widget.ProDialog;
  */
 public class CommentActivity extends AppCompatActivity {
     private CommentActivityController controller;
-    @Bind(R.id.et_comment_content)
+    @BindView(R.id.et_comment_content)
     EditText etContent;
-    @Bind(R.id.tv_comment_last)
+    @BindView(R.id.tv_comment_last)
     TextView tvLast;
     private Dialog commentDialog;
     @Override

@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
@@ -21,9 +21,9 @@ import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
  * Created by buzhiheng on 2017/6/16.
  */
 public class SquarePersonalActivity extends AppCompatActivity {
-    @Bind(R.id.rv_square_personal)
+    @BindView(R.id.rv_square_personal)
     RecyclerView recyclerView;
-    @Bind(R.id.srl_square_personal)
+    @BindView(R.id.srl_square_personal)
     SwipeRefreshLayout refresh;
     private SquareAdapter adapter;
     private int cout = CommonCode.RV_ITEMS_COUT;

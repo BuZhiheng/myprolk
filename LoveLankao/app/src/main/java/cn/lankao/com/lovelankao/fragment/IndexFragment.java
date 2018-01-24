@@ -1,9 +1,9 @@
 package cn.lankao.com.lovelankao.fragment;
-import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,10 +14,10 @@ import com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader;
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
 import java.util.List;
-import butterknife.Bind;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
-import cn.lankao.com.lovelankao.activity.BusActivity;
 import cn.lankao.com.lovelankao.activity.ChatRoomActivity;
 import cn.lankao.com.lovelankao.activity.CookActivity;
 import cn.lankao.com.lovelankao.activity.JockActivity;
@@ -44,15 +44,15 @@ import cn.lankao.com.lovelankao.widget.MyDialog;
 public class IndexFragment extends Fragment implements IIndexView, View.OnClickListener{
     private IIndexPresenter presenter;
     private View view;
-    @Bind(R.id.srl_index_frm)
+    @BindView(R.id.srl_index_frm)
     SwipeRefreshLayout refreshLayout;
-    @Bind(R.id.banner_indexfrm)
+    @BindView(R.id.banner_indexfrm)
     ConvenientBanner banner;
-    @Bind(R.id.rv_indexfrm_service)
+    @BindView(R.id.rv_indexfrm_service)
     RecyclerView rvService;
-    @Bind(R.id.rv_indexfrm_lknews)
+    @BindView(R.id.rv_indexfrm_lknews)
     RecyclerView rvNews;
-    @Bind(R.id.rv_indexfrm_lknews_header)
+    @BindView(R.id.rv_indexfrm_lknews_header)
     RecyclerViewHeader header;
     private LKNewsAdapter adapterNews;
     private IndexServiceAdapter adapterService;

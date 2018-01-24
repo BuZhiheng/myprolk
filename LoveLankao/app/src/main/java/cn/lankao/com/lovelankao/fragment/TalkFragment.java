@@ -1,7 +1,7 @@
 package cn.lankao.com.lovelankao.fragment;
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +14,7 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.LoginActivity;
@@ -34,11 +34,11 @@ import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 public class TalkFragment extends Fragment implements ITalkView, View.OnClickListener {
     private ITalkPresnter presnter = new TalkController(this);
     private View view;
-    @Bind(R.id.rv_square_frm)
+    @BindView(R.id.rv_square_frm)
     RecyclerView recyclerView;
-    @Bind(R.id.srl_square_frm)
+    @BindView(R.id.srl_square_frm)
     SwipeRefreshLayout refresh;
-    @Bind(R.id.tv_squarefrm_msg)
+    @BindView(R.id.tv_squarefrm_msg)
     TextView tvMsg;
     private SquareAdapter adapter;
     private int cout = CommonCode.RV_ITEMS_COUT;

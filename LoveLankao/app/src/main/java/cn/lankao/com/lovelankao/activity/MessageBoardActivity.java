@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
@@ -22,9 +22,9 @@ import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
  * Created by buzhiheng on 2017/6/24.
  */
 public class MessageBoardActivity extends AppCompatActivity {
-    @Bind(R.id.rv_msg_board)
+    @BindView(R.id.rv_msg_board)
     RecyclerView recyclerView;
-    @Bind(R.id.srl_msg_board)
+    @BindView(R.id.srl_msg_board)
     SwipeRefreshLayout refresh;
     private MsgBoardAdapter adapter;
     private int cout = CommonCode.RV_ITEMS_COUT;

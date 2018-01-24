@@ -1,7 +1,7 @@
 package cn.lankao.com.lovelankao.viewcontroller;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -38,7 +38,7 @@ public class MainActivityController implements View.OnClickListener{
     private TextView tvLbs;
     private TextView tvTalk;
     private TextView tvUser;
-    ViewPager viewPager;
+    private ViewPager viewPager;
     private List<Fragment> fragments;
     private TalkFragment talkFragment = new TalkFragment();
     private MainFragment mainFragment = new MainFragment();
@@ -74,7 +74,7 @@ public class MainActivityController implements View.OnClickListener{
         fragments.add(talkFragment);
         fragments.add(mainFragment);
         fragments.add(mineFragment);
-        viewPager.setAdapter(new MyFragmentAdapter(context.getFragmentManager()));
+        viewPager.setAdapter(new MyFragmentAdapter(context.getSupportFragmentManager()));
         viewPager.addOnPageChangeListener(new MyFragmentListener());
         viewPager.setOffscreenPageLimit(4);
     }
@@ -103,12 +103,13 @@ public class MainActivityController implements View.OnClickListener{
             super(fm);
         }
         @Override
-        public Fragment getItem(int position) {
-            return fragments.get(position);
-        }
-        @Override
         public int getCount() {
             return fragments.size();
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return fragments.get(position);
         }
     }
     class MyFragmentListener implements ViewPager.OnPageChangeListener {

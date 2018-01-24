@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.Comment;
@@ -25,45 +25,45 @@ import cn.lankao.com.lovelankao.viewcontroller.SquareActivityController;
  */
 public class SquareActivity extends AppCompatActivity {
     private SquareActivityController controller;
-    @Bind(R.id.iv_square_item_photo)
+    @BindView(R.id.iv_square_item_photo)
     ImageView ivPhoto;
-    @Bind(R.id.tv_square_item_nickname)
+    @BindView(R.id.tv_square_item_nickname)
     TextView tvNickname;
-    @Bind(R.id.tv_square_item_time)
+    @BindView(R.id.tv_square_item_time)
     TextView tvTime;
-    @Bind(R.id.tv_square_item_title)
+    @BindView(R.id.tv_square_item_title)
     TextView tvTitle;
-    @Bind(R.id.tv_square_item_content)
+    @BindView(R.id.tv_square_item_content)
     TextView tvContent;
-    @Bind(R.id.tv_square_item_usertype)
+    @BindView(R.id.tv_square_item_usertype)
     TextView tvUserType;
-    @Bind(R.id.iv_square_item_photo1)
+    @BindView(R.id.iv_square_item_photo1)
     public ImageView ivPhoto1;
-    @Bind(R.id.iv_square_item_photo2)
+    @BindView(R.id.iv_square_item_photo2)
     public ImageView ivPhoto2;
-    @Bind(R.id.iv_square_item_photo3)
+    @BindView(R.id.iv_square_item_photo3)
     public ImageView ivPhoto3;
-    @Bind(R.id.iv_square_item_photo4)
+    @BindView(R.id.iv_square_item_photo4)
     public ImageView ivPhoto4;
-    @Bind(R.id.iv_square_item_photo5)
+    @BindView(R.id.iv_square_item_photo5)
     public ImageView ivPhoto5;
-    @Bind(R.id.iv_square_item_photo6)
+    @BindView(R.id.iv_square_item_photo6)
     public ImageView ivPhoto6;
-    @Bind(R.id.iv_square_item_liketimes)
+    @BindView(R.id.iv_square_item_liketimes)
     ImageView ivLikeTimes;
-    @Bind(R.id.tv_square_item_commenttimes)
+    @BindView(R.id.tv_square_item_commenttimes)
     TextView tvCommentTimes;
-    @Bind(R.id.tv_square_item_liketimes)
+    @BindView(R.id.tv_square_item_liketimes)
     TextView tvLikeTimes;
-    @Bind(R.id.tv_square_item_clicktimes)
+    @BindView(R.id.tv_square_item_clicktimes)
     TextView tvClickTimes;
-    @Bind(R.id.ll_square_item_liketimes)
+    @BindView(R.id.ll_square_item_liketimes)
     LinearLayout llLikes;
-    @Bind(R.id.ll_square_item_comment)
+    @BindView(R.id.ll_square_item_comment)
     LinearLayout llComment;
-    @Bind(R.id.ll_square_item_photo1)
+    @BindView(R.id.ll_square_item_photo1)
     public LinearLayout llPhoto1;
-    @Bind(R.id.ll_square_item_photo2)
+    @BindView(R.id.ll_square_item_photo2)
     public LinearLayout llPhoto2;
     private ImageOptions option;
     private ImageOptions optionPhoto;

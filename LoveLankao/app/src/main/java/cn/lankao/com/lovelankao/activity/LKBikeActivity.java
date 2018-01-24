@@ -20,7 +20,7 @@ import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.model.LatLng;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.ipresenter.ILKBikePresenter;
@@ -40,7 +40,7 @@ import cn.lankao.com.lovelankao.viewcontroller.LKPeoplePresenter;
  */
 public class LKBikeActivity extends AppCompatActivity implements ILKBikeView {
     private ILKBikePresenter presenter;
-    @Bind(R.id.map_bike)
+    @BindView(R.id.map_bike)
     MapView mapView;
     private BaiduMap map;
     private BitmapDescriptor bitmap;

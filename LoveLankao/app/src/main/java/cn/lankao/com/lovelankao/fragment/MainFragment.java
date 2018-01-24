@@ -1,8 +1,7 @@
 package cn.lankao.com.lovelankao.fragment;
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +13,7 @@ import com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.AdvertDetailActivity;
@@ -33,11 +32,11 @@ import cn.lankao.com.lovelankao.viewcontroller.MainFragmentController;
 public class MainFragment extends Fragment implements IMainFrmView, View.OnClickListener{
     private IMainFrmPresenter presenter = new MainFragmentController(this);
     private View view;
-    @Bind(R.id.srl_main_frm)
+    @BindView(R.id.srl_main_frm)
     SwipeRefreshLayout refresh;
-    @Bind(R.id.rv_mainfrm_shop)
+    @BindView(R.id.rv_mainfrm_shop)
     RecyclerView rvShop;
-    @Bind(R.id.rv_mainfrm_header)
+    @BindView(R.id.rv_mainfrm_header)
     RecyclerViewHeader header;
     private MyAdapter adapter;
     @Override

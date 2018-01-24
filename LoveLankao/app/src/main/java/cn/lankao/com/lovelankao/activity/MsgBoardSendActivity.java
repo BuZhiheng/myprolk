@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
@@ -24,9 +24,9 @@ import cn.lankao.com.lovelankao.widget.MyDialog;
  * Created by buzhiheng on 2017/6/25.
  */
 public class MsgBoardSendActivity extends AppCompatActivity {
-    @Bind(R.id.et_msg_board_send)
+    @BindView(R.id.et_msg_board_send)
     EditText editText;
-    @Bind(R.id.iv_msg_board_send_check)
+    @BindView(R.id.iv_msg_board_send_check)
     ImageView ivCheck;
     private boolean isCheck = false;
     private String nickName = "";

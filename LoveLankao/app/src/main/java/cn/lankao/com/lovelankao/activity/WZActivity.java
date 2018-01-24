@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.WzMsgAdapter;
@@ -24,17 +24,17 @@ import cn.lankao.com.lovelankao.viewcontroller.WzPresenter;
  */
 public class WZActivity extends AppCompatActivity implements IWzView {
     private IWzPresenter presenter;
-    @Bind(R.id.fl_wz_class)
+    @BindView(R.id.fl_wz_class)
     FrameLayout flClass;
-    @Bind(R.id.fl_wz_engine)
+    @BindView(R.id.fl_wz_engine)
     FrameLayout flEngine;
-    @Bind(R.id.et_wz_no)
+    @BindView(R.id.et_wz_no)
     EditText etNo;
-    @Bind(R.id.et_wz_class)
+    @BindView(R.id.et_wz_class)
     EditText etClass;
-    @Bind(R.id.et_wz_engine)
+    @BindView(R.id.et_wz_engine)
     EditText etEngine;
-    @Bind(R.id.rv_wz_msg)
+    @BindView(R.id.rv_wz_msg)
     RecyclerView rvWz;
     private WzMsgAdapter adapter;
     @Override

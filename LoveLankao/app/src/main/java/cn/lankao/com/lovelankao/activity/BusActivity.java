@@ -15,7 +15,7 @@ import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.model.LatLng;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.ipresenter.IBusPresenter;
@@ -29,11 +29,11 @@ import cn.lankao.com.lovelankao.viewcontroller.BusPresenter;
  */
 public class BusActivity extends AppCompatActivity implements IBusView {
     private IBusPresenter presenter;
-    @Bind(R.id.map_bus)
+    @BindView(R.id.map_bus)
     MapView mapView;
-    @Bind(R.id.tv_titlebar_right)
+    @BindView(R.id.tv_titlebar_right)
     TextView tvLine;
-    @Bind(R.id.btn_bus_refresh)
+    @BindView(R.id.btn_bus_refresh)
     Button btnRefresh;
     private String line = "";
     private BaiduMap map;

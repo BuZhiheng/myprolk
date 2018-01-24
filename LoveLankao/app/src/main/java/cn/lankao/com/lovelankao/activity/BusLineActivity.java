@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
@@ -18,7 +18,7 @@ import cn.lankao.com.lovelankao.model.BusLine;
  * Created by buzhiheng on 2017/5/2.
  */
 public class BusLineActivity extends AppCompatActivity {
-    @Bind(R.id.rv_bus_line)
+    @BindView(R.id.rv_bus_line)
     RecyclerView rvLine;
     private BusLineAdapter adapter;
     @Override

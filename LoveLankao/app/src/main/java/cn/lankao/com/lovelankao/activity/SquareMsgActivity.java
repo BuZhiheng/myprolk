@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.MySquareMsgAdapter;
@@ -20,7 +20,7 @@ import cn.lankao.com.lovelankao.viewcontroller.SquareMsgPresenter;
  */
 public class SquareMsgActivity extends AppCompatActivity implements ISquareMsgView{
     private ISquareMsgPresenter presenter;
-    @Bind(R.id.rv_square_msg)
+    @BindView(R.id.rv_square_msg)
     RecyclerView rvMsg;
     private MySquareMsgAdapter adapter;
     @Override

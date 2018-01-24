@@ -5,8 +5,8 @@
     android:versionName="1.6.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="23" />
+        android:minSdkVersion="18"
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -37,16 +37,17 @@
         android:protectionLevel="normal" >
     </permission>
 
-    <uses-permission android:name="android.permission.GET_TASKS" />
- <!-- 自定义权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 自定义权限 -->
     <uses-permission android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao" />
 
     <application
         android:name="cn.lankao.com.lovelankao.LApplication"
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="cn.lankao.com.lovelankao.activity.SplashActivity" >
             <intent-filter>
@@ -132,7 +133,10 @@
             android:label="PushService"
             android:process=":pushservice" />
         <service android:name="cn.lankao.com.lovelankao.service.PushIntentService" />
-        <!-- 第三方应用配置 -->
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" /> <!-- 第三方应用配置 -->
         <meta-data
             android:name="PUSH_APPID"
             android:value="EfrrWfWLdZ89Tv806TBbK" />
@@ -141,8 +145,7 @@
             android:value="72qBudOA6z9uzbpgnPHH3" />
         <meta-data
             android:name="PUSH_APPSECRET"
-            android:value="ZnppgIjubAA8BktsQCEMe3" />
- <!-- 配置SDK核心服务 -->
+            android:value="ZnppgIjubAA8BktsQCEMe3" /> <!-- 配置SDK核心服务 -->
         <service
             android:name="com.igexin.sdk.PushService"
             android:exported="true"
@@ -195,6 +198,10 @@
             android:authorities="downloads.cn.lankao.com.lovelankao"
             android:exported="true"
             android:process=":pushservice" />
+
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.WzCityAdapter;
@@ -20,7 +20,7 @@ import cn.lankao.com.lovelankao.viewcontroller.WzCityPresenter;
  */
 public class WZCityActivity extends AppCompatActivity implements IWzCityView {
     private IWzCityPresenter presenter;
-    @Bind(R.id.rv_wz_city)
+    @BindView(R.id.rv_wz_city)
     RecyclerView rvCity;
     private WzCityAdapter adapter;
     @Override

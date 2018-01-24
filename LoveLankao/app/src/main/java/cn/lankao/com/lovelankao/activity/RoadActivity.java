@@ -10,14 +10,14 @@ import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.model.LatLng;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 /**
  * Created by buzhiheng on 2017/5/2.
  */
 public class RoadActivity extends AppCompatActivity {
-    @Bind(R.id.map_road)
+    @BindView(R.id.map_road)
     MapView mapView;
     private BaiduMap map;
     @Override

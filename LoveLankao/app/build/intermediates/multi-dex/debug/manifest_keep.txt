@@ -1,0 +1,3 @@
+# Referenced at C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:43
+-keep class cn.lankao.com.lovelankao.LApplication { <init>(...); }
+

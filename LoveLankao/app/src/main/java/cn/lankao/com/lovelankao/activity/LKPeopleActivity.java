@@ -13,7 +13,7 @@ import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.model.LatLng;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter;
@@ -25,7 +25,7 @@ import cn.lankao.com.lovelankao.viewcontroller.LKPeoplePresenter;
  */
 public class LKPeopleActivity extends AppCompatActivity implements ILKPeopleView{
     private ILKPeoplePresenter presenter;
-    @Bind(R.id.map_lk_people)
+    @BindView(R.id.map_lk_people)
     MapView mapView;
     private BaiduMap map;
     private BitmapDescriptor bitmap;

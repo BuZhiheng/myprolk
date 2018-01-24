@@ -1,20 +1,19 @@
 package cn.lankao.com.lovelankao.fragment;
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import org.xutils.x;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.AdvertDetailActivity;
 import cn.lankao.com.lovelankao.activity.LoginActivity;
 import cn.lankao.com.lovelankao.activity.SettingActivity;
-import cn.lankao.com.lovelankao.activity.SquareMsgActivity;
 import cn.lankao.com.lovelankao.activity.SquarePersonalActivity;
 import cn.lankao.com.lovelankao.activity.WZCityActivity;
 import cn.lankao.com.lovelankao.activity.WebViewActivity;
@@ -32,13 +31,13 @@ import cn.lankao.com.lovelankao.viewcontroller.MineFragmentController;
 public class MineFragment extends Fragment implements IMineFrmView, View.OnClickListener{
     private MineFragmentController presenter = new MineFragmentController(this);
     private View view;
-    @Bind(R.id.tv_minefrm_nickname)
+    @BindView(R.id.tv_minefrm_nickname)
     TextView tvNickName;
-    @Bind(R.id.tv_minefrm_phone)
+    @BindView(R.id.tv_minefrm_phone)
     TextView tvPhone;
-    @Bind(R.id.tv_minefrm_jifen)
+    @BindView(R.id.tv_minefrm_jifen)
     TextView tvJifen;
-    @Bind(R.id.iv_minefrm_photo)
+    @BindView(R.id.iv_minefrm_photo)
     ImageView photo;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
