@@ -1,6 +1,4 @@
 package cn.lankao.com.lovelankao.adapter;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -10,16 +8,14 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.WebViewActivity;
 import cn.lankao.com.lovelankao.model.ReadNews;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.BitmapUtil;
+
 /**
  * Created by BuZhiheng on 2016/3/31.
  */
@@ -29,7 +25,6 @@ public class ReadAdapter extends RecyclerView.Adapter<ReadAdapter.MyViewHolder> 
     public ReadAdapter(Context context) {
         this.context = context;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
     }
 
     public void setData(List<ReadNews> data) {
@@ -52,7 +47,7 @@ public class ReadAdapter extends RecyclerView.Adapter<ReadAdapter.MyViewHolder> 
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         final ReadNews news = data.get(position);
         if (news.getThumbnail_pic_s() != null){
-            x.image().bind(holder.photo, news.getThumbnail_pic_s());
+            BitmapUtil.loadImageNormal(context,holder.photo,news.getThumbnail_pic_s());
         }
         holder.tvTitle.setText(news.getTitle());
         holder.tvSource.setText(news.getAuthor_name());

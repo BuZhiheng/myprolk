@@ -7,7 +7,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.bigkoo.convenientbanner.holder.Holder;
-import org.xutils.x;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.WebViewActivity;
 import cn.lankao.com.lovelankao.model.CommonCode;

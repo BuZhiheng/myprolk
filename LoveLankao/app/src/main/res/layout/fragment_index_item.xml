@@ -18,7 +18,6 @@
             android:id="@+id/iv_indexfrm_item_service_title"
             android:layout_width="39dp"
             android:layout_height="39dp"
-            android:src="@drawable/ic_launcher"
             />
         <TextView
             android:id="@+id/tv_indexfrm_item_title"

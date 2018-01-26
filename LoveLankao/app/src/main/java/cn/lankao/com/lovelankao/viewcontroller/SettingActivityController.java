@@ -5,14 +5,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Build;
-import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.ImageView;
 import org.greenrobot.eventbus.EventBus;
-import org.xutils.x;
 import java.io.File;
 import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.exception.BmobException;
@@ -40,7 +37,6 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
     private ProgressDialog dialog;
     public SettingActivityController(SettingActivity context){
         this.context = context;
-        x.view().inject(context);
         initView();
     }
     private void initView() {
@@ -50,7 +46,7 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
         context.findViewById(R.id.iv_setting_back).setOnClickListener(this);
         photo = (ImageView) context.findViewById(R.id.iv_setting_photo);
         photo.setOnClickListener(this);
-        x.image().bind(photo, PrefUtil.getString(CommonCode.SP_USER_PHOTO, CommonCode.APP_ICON), BitmapUtil.getOptionCommonRadius());
+        BitmapUtil.loadImageCircle(context,photo, PrefUtil.getString(CommonCode.SP_USER_PHOTO, CommonCode.APP_ICON));
     }
     private void saveBitmap(String path){
         final String userId = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
@@ -66,7 +62,7 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
                         dialog.dismiss();
                         ToastUtil.show("上传成功");
                         PrefUtil.putString(CommonCode.SP_USER_PHOTO, file.getFileUrl());
-                        x.image().bind(photo, file.getFileUrl(), BitmapUtil.getOptionCommonRadius());
+                        BitmapUtil.loadImageCircle(context,photo, file.getFileUrl());
                         myUser.setNickName(CommonCode.SP_USER_PHOTO);//user frm 界面更新头像
                         EventBus.getDefault().post(myUser);
                     }

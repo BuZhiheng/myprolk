@@ -1,6 +1,4 @@
 package cn.lankao.com.lovelankao.adapter;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -10,39 +8,28 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.baidu.mapapi.model.LatLng;
-
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.AdvertMsgActivity;
 import cn.lankao.com.lovelankao.model.AdvertNormal;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.BitmapUtil;
 import cn.lankao.com.lovelankao.utils.MapUtil;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
-
 /**
  * Created by BuZhiheng on 2016/3/31.
  */
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private Context context;
     private List<AdvertNormal> data;
-//    private ImageOptions options;
     public MyAdapter(Context context) {
         this.context = context;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
-//        options = new ImageOptions.Builder()
-//                .setRadius(DensityUtil.dip2px(5))
-//                .build();
     }
-
     public void setData(List<AdvertNormal> data) {
         this.data = data;
     }
@@ -64,7 +51,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         final AdvertNormal advert = data.get(position);
         if (advert.getAdvPhoto() == null){
         }else{
-            x.image().bind(holder.photo, advert.getAdvPhoto().getFileUrl());
+            BitmapUtil.loadImageNormal(context,holder.photo, advert.getAdvPhoto().getFileUrl());
         }
         if (advert.getAdvClicked() == null){
             holder.tvPoints.setText("点击量:0");

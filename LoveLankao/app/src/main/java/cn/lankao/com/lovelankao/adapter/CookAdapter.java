@@ -1,6 +1,4 @@
 package cn.lankao.com.lovelankao.adapter;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -10,17 +8,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.WebViewActivity;
 import cn.lankao.com.lovelankao.model.Cook;
 import cn.lankao.com.lovelankao.model.CommonCode;
-
+import cn.lankao.com.lovelankao.utils.BitmapUtil;
 /**
  * Created by BuZhiheng on 2016/3/31.
  */
@@ -32,7 +26,6 @@ public class CookAdapter extends RecyclerView.Adapter<CookAdapter.MyViewHolder> 
         this.context = context;
         this.url = url;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
     }
 
     public void setData(List<Cook> data) {
@@ -56,7 +49,7 @@ public class CookAdapter extends RecyclerView.Adapter<CookAdapter.MyViewHolder> 
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         final Cook cook = data.get(position);
         if (cook.getImg() != null){
-            x.image().bind(holder.photo, "http://tnfs.tngou.net/image"+cook.getImg());
+            BitmapUtil.loadImageNormal(context,holder.photo,"http://tnfs.tngou.net/image"+cook.getImg());
         }
         holder.tvTitle.setText(cook.getName());
         if (cook.getDescription() != null){

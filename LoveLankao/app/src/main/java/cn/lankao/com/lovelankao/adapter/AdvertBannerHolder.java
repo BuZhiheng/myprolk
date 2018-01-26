@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.bigkoo.convenientbanner.holder.Holder;
-import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 import cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity;
@@ -31,7 +30,7 @@ public class AdvertBannerHolder implements Holder<String> {
     @Override
     public void UpdateUI(final Context context, final int position, final String d) {
         final String s = list.get(position);
-        x.image().bind(iv, s, BitmapUtil.getOptionCommon());
+        BitmapUtil.loadImageNormal(context,iv,s);
         tvIndex.setText(position+1+"/"+list.size());
         iv.setOnClickListener(new View.OnClickListener() {
             @Override

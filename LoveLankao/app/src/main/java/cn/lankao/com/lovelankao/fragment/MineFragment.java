@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import org.xutils.x;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
@@ -72,7 +71,7 @@ public class MineFragment extends Fragment implements IMineFrmView, View.OnClick
     }
     @Override
     public void setPhoto(String fileUrl) {
-        x.image().bind(photo, fileUrl, BitmapUtil.getOptionCommonRadius());
+        BitmapUtil.loadImageCircle(getContext(),photo, fileUrl);
     }
     @Override
     public void setUserMsg(MyUser user) {

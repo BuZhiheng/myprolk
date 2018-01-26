@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import org.xutils.image.ImageOptions;
-import org.xutils.x;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
@@ -65,8 +63,6 @@ public class SquareActivity extends AppCompatActivity {
     public LinearLayout llPhoto1;
     @BindView(R.id.ll_square_item_photo2)
     public LinearLayout llPhoto2;
-    private ImageOptions option;
-    private ImageOptions optionPhoto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,8 +74,6 @@ public class SquareActivity extends AppCompatActivity {
         controller = new SquareActivityController(this,getIntent());
     }
     public void setData(final Square square,String userImg,Drawable drawable){
-        option = BitmapUtil.getOptionCommon();
-        optionPhoto = BitmapUtil.getOptionByRadius(15);
         tvNickname.setText(square.getNickName());
         tvTime.setText(square.getCreatedAt());
         tvContent.setText(square.getSquareContent());
@@ -92,7 +86,7 @@ public class SquareActivity extends AppCompatActivity {
             tvTitle.setVisibility(View.VISIBLE);
         }
         tvUserType.setText(TextUtil.getVipString(square.getSquareUserType()));
-        x.image().bind(ivPhoto, userImg, BitmapUtil.getOptionCommonRadius());
+        BitmapUtil.loadImageCircle(this,ivPhoto, userImg);
         ivLikeTimes.setImageDrawable(drawable);
         llLikes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,7 +100,7 @@ public class SquareActivity extends AppCompatActivity {
         tvLikeTimes.setText(times);
     }
     public void setIvPhoto(ImageView iv,String imgUrl){
-        x.image().bind(iv, imgUrl, option);
+        BitmapUtil.loadImageNormal(this,iv, imgUrl);
         iv.setVisibility(View.VISIBLE);
     }
     public void showToast(String toast){
@@ -146,9 +140,9 @@ public class SquareActivity extends AppCompatActivity {
         View view = LayoutInflater.from(this).inflate(R.layout.activity_square_comment,null);
         CommentHolder holder = new CommentHolder(view);
         if (TextUtil.isNull(comment.getUserPhotoUrl())){
-            x.image().bind(holder.ivPhoto, CommonCode.APP_ICON, optionPhoto);
+            BitmapUtil.loadImageCircle(this,holder.ivPhoto, CommonCode.APP_ICON);
         } else {
-            x.image().bind(holder.ivPhoto, comment.getUserPhotoUrl(), optionPhoto);
+            BitmapUtil.loadImageCircle(this,holder.ivPhoto, comment.getUserPhotoUrl());
         }
         holder.tvNickname.setText(comment.getUsername());
         holder.tvTime.setText(comment.getCreatedAt());

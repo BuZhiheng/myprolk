@@ -10,13 +10,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
-
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.FitCenter;
-
-import org.xutils.common.util.DensityUtil;
-import org.xutils.image.ImageOptions;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -166,55 +160,32 @@ public class BitmapUtil {
         intent.putExtra("return-data", true);
         context.startActivityForResult(intent, BitmapUtil.PIC_CROP);
     }
+    public static void loadImageCircle(Context context,ImageView imageView,String imgUrl){
+        Glide.with(context)
+                .load(imgUrl)
+                .error(R.drawable.ic_common_defult)
+                .bitmapTransform(new GlideCircleTransform(context))
+                .into(imageView);
+    }
     public static void loadImageNormal(Context context,ImageView imageView,String imgUrl){
         Glide.with(context)
                 .load(imgUrl)
                 .into(imageView);
     }
-    public static ImageOptions getOptionCommonRadius(){
-        /**
-         * 联合xutils使用,设置图片圆角
-         * dip2px ImageView宽度的一半
-         * */
-        return new ImageOptions.Builder()
-                //如果ImageView宽高为60(设置ImageView一半30)
-                .setRadius(DensityUtil.dip2px(30))
-                .setCrop(true)
-                .setImageScaleType(ImageView.ScaleType.CENTER_INSIDE)
-                .setFailureDrawableId(R.drawable.ic_common_defult)
-                .build();
+    public static void loadImageRadiusCommon(Context context,ImageView imageView,String imgUrl){
+        Glide.with(context)
+                .load(imgUrl)
+                .error(R.drawable.ic_common_defult)
+                .bitmapTransform(new GlideRoundTransform(context,30))
+                .into(imageView);
     }
-    public static ImageOptions getOptionByRadius(int px){
-        /**
-         * 联合xutils使用,设置图片圆角
-         * dip2px ImageView宽度的一半
-         * */
-        return new ImageOptions.Builder()
-                .setRadius(DensityUtil.dip2px(px))
-                .setCrop(true)
-                .setImageScaleType(ImageView.ScaleType.CENTER_INSIDE)
-                .setFailureDrawableId(R.drawable.ic_launcher)
-                .build();
-    }
-    public static ImageOptions getOptionCommon(){
-        /**
-         * 联合xutils使用,设置一般图片
-         *
-         * */
-        return new ImageOptions.Builder()
-                .setCrop(false)
-                .setImageScaleType(ImageView.ScaleType.FIT_XY)
-                .build();
-    }
-    public static ImageOptions getOptionPhotoPage(){
-        /**
-         * 联合xutils使用,设置一般图片
-         *
-         * */
-        return new ImageOptions.Builder()
-                .setCrop(true)
-                .setImageScaleType(ImageView.ScaleType.CENTER_CROP)
-                .build();
+
+    public static void loadImageRadius(Context context,ImageView imageView,String imgUrl,int dp){
+        Glide.with(context)
+                .load(imgUrl)
+                .error(R.drawable.ic_common_defult)
+                .transform(new GlideRoundTransform(context,dp))
+                .into(imageView);
     }
     public static byte[] bitmapToByte(Bitmap bmp){
         ByteArrayOutputStream output = new ByteArrayOutputStream();//初始化一个流对象

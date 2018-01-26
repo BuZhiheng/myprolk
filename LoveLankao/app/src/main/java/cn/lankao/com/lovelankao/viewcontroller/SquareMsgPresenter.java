@@ -42,7 +42,7 @@ public class SquareMsgPresenter implements ISquareMsgPresenter {
         query.findObjects(new FindListener<Comment>() {
             @Override
             public void done(List<Comment> list, BmobException e) {
-                if (list.size() > 0){
+                if (e == null){
                     view.setComment(list);
                 }
             }

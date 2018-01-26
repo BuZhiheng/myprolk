@@ -15,10 +15,6 @@ import android.widget.TextView;
 import com.baidu.mapapi.model.LatLng;
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
-
-import org.xutils.image.ImageOptions;
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
 import cn.bmob.v3.BmobQuery;
@@ -28,11 +24,9 @@ import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.UpdateListener;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.AdvertMsgActivity;
-import cn.lankao.com.lovelankao.activity.AllBusinessActivity;
 import cn.lankao.com.lovelankao.activity.CommentActivity;
 import cn.lankao.com.lovelankao.activity.LBSActivity;
 import cn.lankao.com.lovelankao.activity.LoginActivity;
-import cn.lankao.com.lovelankao.activity.PicShowActivity;
 import cn.lankao.com.lovelankao.activity.ShopLocationActivity;
 import cn.lankao.com.lovelankao.adapter.AdvertBannerHolder;
 import cn.lankao.com.lovelankao.model.AdvertNormal;
@@ -73,7 +67,6 @@ public class AdvertMsgController implements View.OnClickListener, SwipeRefreshLa
     private ProgressDialog dialog;
     public AdvertMsgController(AdvertMsgActivity context) {
         this.context = context;
-        x.view().inject(context);
         initView();
         intent = context.getIntent();
         if (intent != null) {
@@ -221,9 +214,9 @@ public class AdvertMsgController implements View.OnClickListener, SwipeRefreshLa
             final View view = LayoutInflater.from(context).inflate(R.layout.activity_square_comment, null);
             CommentHolder holder = new CommentHolder(view);
             if (TextUtil.isNull(comment.getUserPhotoUrl())){
-                x.image().bind(holder.ivPhoto, CommonCode.APP_ICON, BitmapUtil.getOptionByRadius(15));
+                BitmapUtil.loadImageCircle(context,holder.ivPhoto, CommonCode.APP_ICON);
             } else {
-                x.image().bind(holder.ivPhoto, comment.getUserPhotoUrl(), BitmapUtil.getOptionByRadius(15));
+                BitmapUtil.loadImageCircle(context,holder.ivPhoto, comment.getUserPhotoUrl());
             }
             holder.tvNickname.setText(comment.getUsername());
             holder.tvTime.setText(comment.getCreatedAt());
@@ -254,7 +247,7 @@ public class AdvertMsgController implements View.OnClickListener, SwipeRefreshLa
             holder.tvAverage = (TextView) view.findViewById(R.id.tv_mainfrm_item_average);
             holder.frameLayout = (FrameLayout) view.findViewById(R.id.fl_mainfrm_content);
             if (advert.getAdvPhoto() != null) {
-                x.image().bind(holder.photo, advert.getAdvPhoto().getFileUrl());
+                BitmapUtil.loadImageNormal(context,holder.photo, advert.getAdvPhoto().getFileUrl());
             }
             if (advert.getAdvClicked() == null) {
                 holder.tvPoints.setText("点击量:0");

@@ -61,6 +61,8 @@ public class MineFragmentController {
                     EventBus.getDefault().post(user);
                 }
             });
+        } else {
+            view.setPhoto(CommonCode.APP_ICON);
         }
     }
     @Subscribe

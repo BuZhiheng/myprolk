@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.bm.library.PhotoView;
-import org.xutils.x;
 import java.util.List;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.CommonCode;
@@ -46,7 +45,7 @@ public class PhotoViewPagerActivity extends AppCompatActivity {
                 PhotoView view = new PhotoView(PhotoViewPagerActivity.this);
                 view.enable();
                 view.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                x.image().bind(view, list.get(position), BitmapUtil.getOptionPhotoPage());
+                BitmapUtil.loadImageNormal(PhotoViewPagerActivity.this,view, list.get(position));
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

@@ -36,6 +36,10 @@ public class WindowUtils {
         float scale = LApplication.getCtx().getResources().getDisplayMetrics().density;
         return (int) (pxValue / scale + 0.5f);
     }
+    public static int dip2px( float dipValue) {
+        final float scale = LApplication.getCtx().getResources().getDisplayMetrics().density;
+        return (int) (dipValue * scale + 0.5f);
+    }
     public static String getAppVersionName() {
         String versionName = "";
         try {

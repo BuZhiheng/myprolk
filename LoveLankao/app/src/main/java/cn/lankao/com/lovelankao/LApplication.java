@@ -2,7 +2,6 @@ package cn.lankao.com.lovelankao;
 import android.app.Application;
 import android.content.Context;
 import com.baidu.mapapi.SDKInitializer;
-import org.xutils.x;
 import cn.bmob.v3.Bmob;
 /**
  * Created by BuZhiheng on 2016/3/30.
@@ -14,7 +13,6 @@ public class LApplication extends Application {
     public void onCreate() {
         super.onCreate();
         context = this;
-        x.Ext.init(this);
         SDKInitializer.initialize(this);
         //第一：默认初始化
         Bmob.initialize(this, "fe7893d2bc42ed427a178367a0e1d6b6");

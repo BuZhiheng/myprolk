@@ -1,5 +1,4 @@
 package cn.lankao.com.lovelankao.adapter;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
@@ -10,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 import cn.lankao.com.lovelankao.R;
@@ -29,7 +27,6 @@ public class LKNewsAdapter extends RecyclerView.Adapter<LKNewsAdapter.MyViewHold
     public LKNewsAdapter(Context context) {
         this.context = context;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
     }
     public void setData(List<LanKaoNews> data) {
         this.data = data;
@@ -51,7 +48,7 @@ public class LKNewsAdapter extends RecyclerView.Adapter<LKNewsAdapter.MyViewHold
         final LanKaoNews news = data.get(position);
         holder.photo.setImageDrawable(ContextCompat.getDrawable(context,R.drawable.ic_launcher));
         if (news.getNewsImg() != null){
-            x.image().bind(holder.photo,news.getNewsImg(), BitmapUtil.getOptionCommon());
+            BitmapUtil.loadImageNormal(context,holder.photo,news.getNewsImg());
         }
         holder.tvTitle.setText(news.getNewsTitle());
         holder.tvTime.setText(news.getNewsTime());

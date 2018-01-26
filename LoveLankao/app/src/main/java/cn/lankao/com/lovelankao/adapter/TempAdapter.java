@@ -1,12 +1,10 @@
 package cn.lankao.com.lovelankao.adapter;
-import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 import cn.lankao.com.lovelankao.R;
@@ -20,7 +18,6 @@ public class TempAdapter extends RecyclerView.Adapter<TempAdapter.MyViewHolder> 
     public TempAdapter(Context context) {
         this.context = context;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
     }
 
     public void setData(List<Jock> data) {

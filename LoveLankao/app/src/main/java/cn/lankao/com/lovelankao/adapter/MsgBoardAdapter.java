@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 import cn.lankao.com.lovelankao.R;
@@ -14,7 +13,6 @@ import cn.lankao.com.lovelankao.model.Comment;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
 import cn.lankao.com.lovelankao.utils.TextUtil;
-
 /**
  * Created by BuZhiheng on 2016/4/3.
  */
@@ -48,9 +46,9 @@ public class MsgBoardAdapter extends RecyclerView.Adapter<MsgBoardAdapter.MyView
         holder.tvContent.setText(comment.getContent());
         holder.tvTime.setText(comment.getCreatedAt());
         if(TextUtil.isNull(comment.getUserPhotoUrl())){
-            x.image().bind(holder.imageView, CommonCode.APP_ICON, BitmapUtil.getOptionByRadius(20));
+            BitmapUtil.loadImageCircle(context,holder.imageView, CommonCode.APP_ICON);
         } else {
-            x.image().bind(holder.imageView, comment.getUserPhotoUrl(), BitmapUtil.getOptionByRadius(20));
+            BitmapUtil.loadImageCircle(context,holder.imageView, comment.getUserPhotoUrl());
         }
     }
     class MyViewHolder extends RecyclerView.ViewHolder {

@@ -1,6 +1,4 @@
 package cn.lankao.com.lovelankao.adapter;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -10,16 +8,13 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.xutils.x;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.WebViewActivity;
 import cn.lankao.com.lovelankao.model.Top;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.BitmapUtil;
 
 /**
  * Created by BuZhiheng on 2016/3/31.
@@ -30,7 +25,6 @@ public class TopAdapter extends RecyclerView.Adapter<TopAdapter.MyViewHolder> {
     public TopAdapter(Context context) {
         this.context = context;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
     }
 
     public void setData(List<Top> data) {
@@ -53,7 +47,7 @@ public class TopAdapter extends RecyclerView.Adapter<TopAdapter.MyViewHolder> {
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         final Top news = data.get(position);
         if (news.getImg() != null){
-            x.image().bind(holder.photo, "http://tnfs.tngou.net/image"+news.getImg());
+            BitmapUtil.loadImageNormal(context,holder.photo, "http://tnfs.tngou.net/image"+news.getImg());
         }
         holder.tvTitle.setText(news.getTitle());
         holder.tvFrom.setText("文章来自:" + news.getFromname());

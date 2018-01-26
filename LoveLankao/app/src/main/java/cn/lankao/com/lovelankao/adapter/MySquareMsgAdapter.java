@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 import cn.lankao.com.lovelankao.R;
@@ -47,9 +46,9 @@ public class MySquareMsgAdapter extends RecyclerView.Adapter<MySquareMsgAdapter.
     public void onBindViewHolder(MyViewHolder holder, int position) {
         final Comment comment = data.get(position);
         if (TextUtil.isNull(comment.getUserPhotoUrl())){
-            x.image().bind(holder.iv, CommonCode.APP_ICON, BitmapUtil.getOptionByRadius(30));
+            BitmapUtil.loadImageCircle(context,holder.iv, CommonCode.APP_ICON);
         } else {
-            x.image().bind(holder.iv, comment.getUserPhotoUrl(), BitmapUtil.getOptionByRadius(30));
+            BitmapUtil.loadImageCircle(context,holder.iv, comment.getUserPhotoUrl());
         }
         holder.tvNickname.setText(comment.getUsername());
         if (!TextUtil.isNull(comment.getLastUserContent())){

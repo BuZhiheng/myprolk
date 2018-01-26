@@ -59,7 +59,6 @@ dependencies {
     compile 'com.bm.photoview:library:1.4.1'
     //bmob-sdk ：Bmob的android sdk包
     compile 'cn.bmob.android:bmob-sdk:3.5.3'
-    compile 'org.xutils:xutils:3.3.26'
 //    compile 'com.squareup.okhttp3:okhttp:3.2.0'
 //    compile 'io.reactivex:rxandroid:1.1.0'
 //    compile 'io.reactivex:rxjava:1.1.3'

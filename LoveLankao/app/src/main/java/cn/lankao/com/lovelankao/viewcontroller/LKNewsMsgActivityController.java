@@ -3,12 +3,12 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import org.xutils.image.ImageOptions;
-import org.xutils.x;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.LKNewsMsgActivity;
 import cn.lankao.com.lovelankao.model.LanKaoNews;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.BitmapUtil;
+
 /**
  * Created by BuZhiheng on 2016/4/20.
  */
@@ -23,7 +23,6 @@ public class LKNewsMsgActivityController implements View.OnClickListener {
         initData();
     }
     private void initVeiw() {
-        x.view().inject(context);
         context.setContentView(R.layout.activity_lknews_msg);
         tvTitle = (TextView) context.findViewById(R.id.tv_lknewsmsg_title);
         tvFromTime = (TextView) context.findViewById(R.id.tv_lknewsmsg_fromtime);
@@ -40,11 +39,7 @@ public class LKNewsMsgActivityController implements View.OnClickListener {
                 tvFromTime.setText(news.getNewsFrom()+"   "+news.getNewsTime());
                 tvContent.setText(news.getNewsContent());
                 if (news.getNewsImg() != null){
-                    ImageOptions imageOptions =new ImageOptions.Builder()
-                            .setCrop(false)// 如果ImageView的大小不是定义为wrap_content, 不要crop.
-                            .setImageScaleType(ImageView.ScaleType.FIT_XY)
-                            .build();
-                    x.image().bind(ivPhoto,news.getNewsImg(),imageOptions);
+                    BitmapUtil.loadImageNormal(context,ivPhoto,news.getNewsImg());
                 } else {
                     ivPhoto.setVisibility(View.GONE);
                 }

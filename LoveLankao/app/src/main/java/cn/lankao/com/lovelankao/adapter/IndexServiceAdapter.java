@@ -1,5 +1,4 @@
 package cn.lankao.com.lovelankao.adapter;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import org.xutils.x;
 import java.util.ArrayList;
 import java.util.List;
 import cn.lankao.com.lovelankao.R;
@@ -17,7 +15,6 @@ import cn.lankao.com.lovelankao.activity.WebViewActivity;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.model.MainService;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
-
 /**
  * Created by BuZhiheng on 2016/3/31.
  */
@@ -28,7 +25,6 @@ public class IndexServiceAdapter extends RecyclerView.Adapter<IndexServiceAdapte
     public IndexServiceAdapter(Context context) {
         this.context = context;
         data = new ArrayList<>();
-        x.view().inject((Activity) context);
     }
 
     public void setData(List<MainService> data) {
@@ -51,7 +47,7 @@ public class IndexServiceAdapter extends RecyclerView.Adapter<IndexServiceAdapte
         final MainService service = data.get(position);
         holder.tvTitle.setText(service.getTitle());
         if (service.getFile() != null){
-            x.image().bind(holder.ivPhoto,service.getFile().getFileUrl(), BitmapUtil.getOptionByRadius(30));
+            BitmapUtil.loadImageCircle(context,holder.ivPhoto,service.getFile().getFileUrl());
         }
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
