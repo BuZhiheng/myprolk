@@ -36,8 +36,6 @@ public class MainFragment extends Fragment implements IMainFrmView, View.OnClick
     SwipeRefreshLayout refresh;
     @BindView(R.id.rv_mainfrm_shop)
     RecyclerView rvShop;
-    @BindView(R.id.rv_mainfrm_header)
-    RecyclerViewHeader header;
     private MyAdapter adapter;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -48,7 +46,6 @@ public class MainFragment extends Fragment implements IMainFrmView, View.OnClick
     }
     private void initView() {
         rvShop.setLayoutManager(new LinearLayoutManager(getActivity()));
-        header.attachTo(rvShop);
         adapter = new MyAdapter(getActivity());
         rvShop.setAdapter(adapter);
         refresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {

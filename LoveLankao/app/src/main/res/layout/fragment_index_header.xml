@@ -209,7 +209,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="找菜谱"
+                        android:text="精品阅读"
                         android:textSize="@dimen/text_common_item_title"
                         android:textColor="@color/color_black_text"
                         />
@@ -218,13 +218,13 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="@dimen/common_margin"
-                        android:src="@drawable/ic_indexfrm_menu"/>
+                        android:src="@drawable/ic_indexfrm_news"/>
                 </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/common_margin"
-                    android:text="今天的饭我来!"
+                    android:text="掌上知天下!"
                     android:textSize="@dimen/text_common_item_title"
                     android:textColor="@color/color_gray"
                     />

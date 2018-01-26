@@ -103,15 +103,5 @@
         <activity android:name=".activity.WZActivity" />
         <activity android:name=".wxapi.WXEntryActivity"
             android:exported="true"/>
-        <service android:name=".service.PushService"
-                 android:exported="true"
-                 android:label="PushService"
-                 android:process=":pushservice"
-            />
-        <service android:name=".service.PushIntentService"/>
     </application>
-    <permission
-        android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao"
-        android:protectionLevel="normal" >
-    </permission>
 </manifest>

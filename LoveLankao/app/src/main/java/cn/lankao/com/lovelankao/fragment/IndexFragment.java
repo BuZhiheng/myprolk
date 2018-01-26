@@ -10,21 +10,19 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader;
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.holder.CBViewHolderCreator;
 import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.ChatRoomActivity;
-import cn.lankao.com.lovelankao.activity.CookActivity;
 import cn.lankao.com.lovelankao.activity.JockActivity;
 import cn.lankao.com.lovelankao.activity.LKBikeActivity;
 import cn.lankao.com.lovelankao.activity.LKNewsActivity;
 import cn.lankao.com.lovelankao.activity.LKPeopleActivity;
 import cn.lankao.com.lovelankao.activity.MessageBoardActivity;
+import cn.lankao.com.lovelankao.activity.ReadWeixinActivity;
 import cn.lankao.com.lovelankao.activity.RoadActivity;
 import cn.lankao.com.lovelankao.adapter.BannerIndexHolder;
 import cn.lankao.com.lovelankao.adapter.IndexServiceAdapter;
@@ -52,8 +50,6 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
     RecyclerView rvService;
     @BindView(R.id.rv_indexfrm_lknews)
     RecyclerView rvNews;
-    @BindView(R.id.rv_indexfrm_lknews_header)
-    RecyclerViewHeader header;
     private LKNewsAdapter adapterNews;
     private IndexServiceAdapter adapterService;
     @Override
@@ -72,7 +68,6 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
             }
         });
         rvNews.setLayoutManager(new LinearLayoutManager(getActivity()));
-        header.attachTo(rvNews);
         adapterNews = new LKNewsAdapter(getActivity());
         rvNews.setAdapter(adapterNews);
         LinearLayoutManager manager = new LinearLayoutManager(getActivity());
@@ -102,8 +97,8 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
                 startActivity(intentChat);
                 break;
             case R.id.ll_indexfrm_more_menu:
-                Intent intentMenu = new Intent(getActivity(), CookActivity.class);
-                intentMenu.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_COOK);
+                Intent intentMenu = new Intent(getActivity(), ReadWeixinActivity.class);
+//                intentMenu.putExtra(CommonCode.INTENT_COOK_OR_FOOD, CommonCode.INTENT_COOK);
                 startActivity(intentMenu);
                 break;
             case R.id.ll_indexfrm_more_bike:

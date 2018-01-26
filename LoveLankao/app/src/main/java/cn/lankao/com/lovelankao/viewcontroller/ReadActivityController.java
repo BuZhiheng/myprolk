@@ -17,6 +17,7 @@ import cn.lankao.com.lovelankao.model.ReadNews;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.GsonUtil;
 import cn.lankao.com.lovelankao.utils.OkHttpUtil;
+import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 import cn.lankao.com.lovelankao.widget.ProDialog;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
@@ -25,7 +26,7 @@ import rx.schedulers.Schedulers;
  * Created by BuZhiheng on 2016/4/18.
  */
 public class ReadActivityController implements SwipeRefreshLayout.OnRefreshListener, View.OnClickListener {
-    private final String url = "http://v.juhe.cn/toutiao/index?type=top&key=7a20bb53e95c5a8b6694109b65774692&ps=";
+    private final String url = "http://v.juhe.cn/weixin/query?pno=10&dtype=json&key=8853be3881b48cb96d20ba3c347640cd&ps=";
     private ReadWeixinActivity context;
     private RecyclerView rv;
     private SwipeRefreshLayout refresh;
@@ -58,7 +59,7 @@ public class ReadActivityController implements SwipeRefreshLayout.OnRefreshListe
                 JuheApiResult res = GsonUtil.jsonToObject(s,JuheApiResult.class);
                 if (res.getError_code() == 0){
                     try{
-                        JsonElement list = res.getResult().getAsJsonObject().getAsJsonArray("data");
+                        JsonElement list = res.getResult().getAsJsonObject().getAsJsonArray("list");
                         List<ReadNews> data = GsonUtil.jsonToList(list,ReadNews.class);
                         if (isRefresh){
                             adapter.setData(data);
@@ -88,17 +89,17 @@ public class ReadActivityController implements SwipeRefreshLayout.OnRefreshListe
         rv = (RecyclerView) context.findViewById(R.id.rv_read_activity);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(adapter);
-//        rv.addOnScrollListener(new OnRvScrollListener() {
-//            @Override
-//            public void toBottom() {
-//                if (canLoadMore) {
-//                    isRefresh = false;
-//                    canLoadMore = false;
-//                    page++;
-//                    initData();
-//                }
-//            }
-//        });
+        rv.addOnScrollListener(new OnRvScrollListener() {
+            @Override
+            public void toBottom() {
+                if (canLoadMore) {
+                    isRefresh = false;
+                    canLoadMore = false;
+                    page++;
+                    initData();
+                }
+            }
+        });
     }
     @Override
     public void onRefresh() {

@@ -3,26 +3,18 @@ apply plugin: 'com.android.application'
 android {
     buildToolsVersion "26.0.2"
     compileSdkVersion 26
-    aaptOptions.cruncherEnabled = false
-    aaptOptions.useNewCruncher = false
-    useLibrary 'org.apache.http.legacy'
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
     defaultConfig {
         applicationId "cn.lankao.com.lovelankao"
 
         minSdkVersion 18
         targetSdkVersion 22
-        versionCode 16
-        versionName "1.6.0"
+        versionCode 17
+        versionName "2.0"
         multiDexEnabled true
-        ndk {
-            //选择要添加的对应cpu类型的.so库。
-            abiFilters 'armeabi', 'armeabi-v7a', 'x86_64'
-        }
-        manifestPlaceholders = [
-                GETUI_APP_ID : "EfrrWfWLdZ89Tv806TBbK",
-                GETUI_APP_KEY : "72qBudOA6z9uzbpgnPHH3",
-                GETUI_APP_SECRET : "ZnppgIjubAA8BktsQCEMe3"
-        ]
     }
     dexOptions { // 低配置手机运行有问题
         jumboMode true
@@ -41,6 +33,36 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    signingConfigs {
+        debug {
+            storeFile file("$rootDir/lk.jks")
+            storePassword "BbB0603"
+            keyAlias "lk"
+            keyPassword "BbB0603"
+        }
+
+        release {
+            storeFile file("$rootDir/lk.jks")
+            storePassword "BbB0603"
+            keyAlias "lk"
+            keyPassword "BbB0603"
+        }
+    }
 //    lk.jks
 //    alias:lk
 //    psd:BbB0603
@@ -48,10 +70,10 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile files('libs/baidumapapi_base_v3_7_3.jar')
-    compile files('libs/baidumapapi_map_v3_7_3.jar')
-    compile files('libs/locSDK_6.13.jar')
-    compile files('libs/baidumapapi_util_v3_7_3.jar')
+//    compile files('libs/baidumapapi_base_v3_7_3.jar')
+//    compile files('libs/baidumapapi_map_v3_7_3.jar')
+//    compile files('libs/locSDK_6.13.jar')
+//    compile files('libs/baidumapapi_util_v3_7_3.jar')
     compile 'com.android.support:appcompat-v7:26.+'
 //    compile 'com.android.support:support-v4:+'
 //    compile 'com.android.support:support-v13:23.1.1'
@@ -70,7 +92,6 @@ dependencies {
 //    compile 'com.google.code.gson:gson:2.2.4'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.bigkoo:convenientbanner:2.0.5'
-    compile 'com.getui:sdk:2.10.2.0'
-    compile files('libs/open_sdk_r5509.jar')
-    compile files('libs/libammsdk.jar')
+//    compile files('libs/open_sdk_r5509.jar')
+//    compile files('libs/libammsdk.jar')
 }
