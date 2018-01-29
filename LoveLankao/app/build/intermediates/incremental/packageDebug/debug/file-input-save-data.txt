@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jan 29 10:43:49 CST 2018
+#Mon Jan 29 10:51:12 CST 2018
 17.baseType=DIRECTORY
 4.path=lib/armeabi-v7a/liblocSDK7b.so
 25.base=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
