@@ -1,18 +1,38 @@
 [
     {
-        "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\common_ll_bg.xml",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-v21\\common_ll_bg.xml"
     },
     {
-        "merged": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "E:\\GIT\\LKpro\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
-        "merged": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "D:\\git\\lankao\\LoveLankao\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\91ea05422b6682dfe4f1f0f0ce4bfe5b\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-v21\\abc_edit_text_material.xml"
     }
 ]

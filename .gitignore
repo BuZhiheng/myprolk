@@ -13,3 +13,5 @@
 build\
 \build
 app\build\
+*.jar
+*.class

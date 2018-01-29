@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.lankao.com.lovelankao"
-    android:versionCode="16"
-    android:versionName="1.6.0" >
+    android:versionCode="17"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="18"
@@ -31,14 +31,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-
-    <permission
-        android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao"
-        android:protectionLevel="normal" >
-    </permission>
-
-    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 自定义权限 -->
-    <uses-permission android:name="getui.permission.GetuiService.cn.lankao.com.lovelankao" />
 
     <application
         android:name="cn.lankao.com.lovelankao.LApplication"
@@ -127,78 +119,9 @@
             android:name="cn.lankao.com.lovelankao.wxapi.WXEntryActivity"
             android:exported="true" />
 
-        <service
-            android:name="cn.lankao.com.lovelankao.service.PushService"
-            android:exported="true"
-            android:label="PushService"
-            android:process=":pushservice" />
-        <service android:name="cn.lankao.com.lovelankao.service.PushIntentService" />
-
         <meta-data
             android:name="android.support.VERSION"
-            android:value="26.1.0" /> <!-- 第三方应用配置 -->
-        <meta-data
-            android:name="PUSH_APPID"
-            android:value="EfrrWfWLdZ89Tv806TBbK" />
-        <meta-data
-            android:name="PUSH_APPKEY"
-            android:value="72qBudOA6z9uzbpgnPHH3" />
-        <meta-data
-            android:name="PUSH_APPSECRET"
-            android:value="ZnppgIjubAA8BktsQCEMe3" /> <!-- 配置SDK核心服务 -->
-        <service
-            android:name="com.igexin.sdk.PushService"
-            android:exported="true"
-            android:label="NotificationCenter"
-            android:process=":pushservice" >
-            <intent-filter>
-                <action android:name="com.igexin.sdk.action.service.message" />
-            </intent-filter>
-        </service>
-
-        <receiver android:name="com.igexin.sdk.PushReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="android.intent.action.USER_PRESENT" />
-                <action android:name="com.igexin.sdk.action.refreshls" />
-                <action android:name="android.intent.action.MEDIA_MOUNTED" />
-                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
-                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name="com.igexin.sdk.PushActivity"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:process=":pushservice"
-            android:taskAffinity="com.igexin.sdk.PushActivityTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.igexin.sdk.GActivity"
-            android:excludeFromRecents="true"
-            android:exported="true"
-            android:process=":pushservice"
-            android:taskAffinity="com.igexin.sdk.PushActivityTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <service
-            android:name="com.igexin.download.DownloadService"
-            android:process=":pushservice" />
-
-        <receiver android:name="com.igexin.download.DownloadReceiver" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
-
-        <provider
-            android:name="com.igexin.download.DownloadProvider"
-            android:authorities="downloads.cn.lankao.com.lovelankao"
-            android:exported="true"
-            android:process=":pushservice" />
-
+            android:value="26.1.0" />
         <meta-data
             android:name="android.arch.lifecycle.VERSION"
             android:value="27.0.0-SNAPSHOT" />
