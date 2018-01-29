@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -31,23 +31,72 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <FrameLayout
+        <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_indexfrm_lknews"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scrollbars="none"
-                />
-            <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
-                android:id="@+id/rv_indexfrm_lknews_header"
+            android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar_index_frm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|top">
-                <include layout="@layout/fragment_index_header"/>
-            </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
-        </FrameLayout>
+                android:background="@color/color_white"
+                app:elevation="0dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll"
+                    >
+                    <include layout="@layout/fragment_index_header"/>
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+                <FrameLayout
+                    android:id="@+id/fl_indexfrm_more_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_ll_bg"
+                    android:paddingBottom="@dimen/common_margin"
+                    android:paddingTop="@dimen/common_margin"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin"
+                        android:text="兰考头条"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_black_text"
+                        />
+                    <TextView
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:text="查看更多"
+                        android:textSize="@dimen/text_common_item_title"
+                        android:textColor="@color/color_green"
+                        />
+                    <ImageView
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="@dimen/common_margin"
+                        android:src="@drawable/ic_common_right_green"/>
+                </FrameLayout>
+                <include layout="@layout/include_slid_img"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_indexfrm_lknews"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    />
+            </LinearLayout>
+        </android.support.design.widget.CoordinatorLayout>
     </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

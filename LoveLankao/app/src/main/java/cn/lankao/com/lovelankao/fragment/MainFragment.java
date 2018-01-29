@@ -1,6 +1,7 @@
 package cn.lankao.com.lovelankao.fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -34,6 +35,8 @@ public class MainFragment extends Fragment implements IMainFrmView, View.OnClick
     private View view;
     @BindView(R.id.srl_main_frm)
     SwipeRefreshLayout refresh;
+    @BindView(R.id.appbar_main_frm)
+    AppBarLayout appBarLayout;
     @BindView(R.id.rv_mainfrm_shop)
     RecyclerView rvShop;
     private MyAdapter adapter;
@@ -70,6 +73,17 @@ public class MainFragment extends Fragment implements IMainFrmView, View.OnClick
         view.findViewById(R.id.tv_mainfrm_tuiian).setOnClickListener(this);
         view.findViewById(R.id.tv_mainfrm_toall).setOnClickListener(this);
         view.findViewById(R.id.fl_mainfrm_more).setOnClickListener(this);
+
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                if (verticalOffset >= 0) {
+                    refresh.setEnabled(true);
+                } else {
+                    refresh.setEnabled(false);
+                }
+            }
+        });
         presenter.getData();
     }
     @Override

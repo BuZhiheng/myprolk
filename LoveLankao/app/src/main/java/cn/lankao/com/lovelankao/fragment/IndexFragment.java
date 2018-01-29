@@ -3,6 +3,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -50,6 +51,8 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
     RecyclerView rvService;
     @BindView(R.id.rv_indexfrm_lknews)
     RecyclerView rvNews;
+    @BindView(R.id.appbar_index_frm)
+    AppBarLayout appBarLayout;
     private LKNewsAdapter adapterNews;
     private IndexServiceAdapter adapterService;
     @Override
@@ -83,6 +86,16 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
         view.findViewById(R.id.fl_indexfrm_more_news).setOnClickListener(this);
         view.findViewById(R.id.ll_indexfrm_more_lkpeople).setOnClickListener(this);
         view.findViewById(R.id.tv_indexfrm_msg_board).setOnClickListener(this);
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                if (verticalOffset >= 0) {
+                    refreshLayout.setEnabled(true);
+                } else {
+                    refreshLayout.setEnabled(false);
+                }
+            }
+        });
         presenter.getData();
     }
     @Override
