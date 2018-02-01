@@ -101,6 +101,7 @@
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.WZCityActivity" />
         <activity android:name=".activity.WZActivity" />
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"/>
         <activity android:name=".wxapi.WXEntryActivity"
             android:exported="true"/>
     </application>

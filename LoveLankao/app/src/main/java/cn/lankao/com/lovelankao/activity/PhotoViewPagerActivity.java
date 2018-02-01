@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import com.bm.library.PhotoView;
 import java.util.List;
@@ -23,7 +24,9 @@ public class PhotoViewPagerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_viewpage);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Intent intent = getIntent();
+        //图片列表
         list = intent.getStringArrayListExtra(CommonCode.INTENT_COMMON_OBJ);
         if (list == null || list.size() == 0){
             finish();
@@ -60,6 +63,7 @@ public class PhotoViewPagerActivity extends AppCompatActivity {
                 container.removeView((View) object);
             }
         });
+        //要显示的图片URL地址
         String currImg = intent.getStringExtra(CommonCode.INTENT_COMMON_STRING);
         if (list.size() > 0){
             for (int i=0;i<list.size();i++){

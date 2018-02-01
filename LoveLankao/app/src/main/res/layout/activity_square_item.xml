@@ -70,61 +70,20 @@
             />
     </FrameLayout>
     <TextView
-        android:id="@+id/tv_square_item_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/common_margin"
-        android:text="@string/app_test"
-        android:textSize="@dimen/text_common_item_title"
-        android:textColor="@color/color_black"
-        />
-    <TextView
         android:id="@+id/tv_square_item_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/common_margin"
-        android:layout_marginRight="@dimen/common_margin"
-        android:layout_marginBottom="@dimen/common_margin"
+        android:layout_margin="@dimen/common_margin"
+        android:lineSpacingExtra="5dp"
         android:text="@string/app_test"
-        android:textColor="@color/color_black_text"
+        android:textSize="@dimen/text_common_item_title"
+        android:textColor="@color/color_black"
         />
     <cn.lankao.com.lovelankao.widget.FlowLayout
         android:id="@+id/fl_square_item_photo"
         android:layout_marginLeft="@dimen/common_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <!--<LinearLayout-->
-        <!--android:id="@+id/ll_square_item_photo"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp"-->
-        <!--android:layout_marginLeft="@dimen/common_margin"-->
-        <!--android:layout_marginRight="@dimen/common_margin"-->
-        <!--android:orientation="horizontal"-->
-        <!--&gt;-->
-
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_square_item_photo1"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:scaleType="centerCrop" />-->
-
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_square_item_photo2"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_marginLeft="@dimen/common_margin_little"-->
-            <!--android:layout_marginRight="@dimen/common_margin_little"-->
-            <!--android:layout_weight="1"-->
-            <!--android:scaleType="centerCrop" />-->
-        <!--<ImageView-->
-            <!--android:id="@+id/iv_square_item_photo3"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:scaleType="centerCrop"-->
-            <!--android:layout_height="match_parent"-->
-            <!--/>-->
-    <!--</LinearLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="39dp"

@@ -1,18 +1,13 @@
 package cn.lankao.com.lovelankao.viewcontroller;
-import android.Manifest;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.Build;
-import android.provider.Settings;
-import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import org.greenrobot.eventbus.EventBus;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import cn.bmob.v3.datatype.BmobFile;
@@ -22,91 +17,59 @@ import cn.bmob.v3.listener.UploadBatchListener;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.activity.LoginActivity;
 import cn.lankao.com.lovelankao.activity.SquareSendActivity;
+import cn.lankao.com.lovelankao.adapter.SquareSendPictureAdapter;
 import cn.lankao.com.lovelankao.model.Square;
-import cn.lankao.com.lovelankao.utils.BitmapUtil;
 import cn.lankao.com.lovelankao.model.CommonCode;
-import cn.lankao.com.lovelankao.utils.OkHttpUtil;
-import cn.lankao.com.lovelankao.utils.PermissionUtil;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.widget.ProDialog;
+import me.iwf.photopicker.PhotoPicker;
+import top.zibin.luban.Luban;
+import top.zibin.luban.OnCompressListener;
+import static android.app.Activity.RESULT_OK;
 /**
  * Created by BuZhiheng on 2016/4/4.
  */
 public class SquareSendActivityController implements View.OnClickListener, SquareSendActivity.SquareSendHolder {
     private SquareSendActivity context;
     private EditText etContent;
-    private EditText etTitle;
-    private ImageView ivChoose1;
-    private ImageView ivChoose2;
-    private ImageView ivChoose3;
-    private ImageView ivChoose4;
-    private ImageView ivChoose5;
-    private ImageView ivChoose6;
-    private int imgIndex;
+    private RecyclerView recyclerView;
     private String[] pathArr;
-    private Bitmap bitmap1;
-    private Bitmap bitmap2;
-    private Bitmap bitmap3;
-    private Bitmap bitmap4;
-    private Bitmap bitmap5;
-    private Bitmap bitmap6;
     private ProgressDialog dialog;
-    private String url;
-//    private final int REQUEST_EXTERNAL_STORAGE = 1;
-//    private String[] PERMISSIONS_STORAGE = {
-//            Manifest.permission.READ_EXTERNAL_STORAGE,
-//            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-//            Manifest.permission.MOUNT_UNMOUNT_FILESYSTEMS
-//    };
+    private ArrayList<String> finalPhotos = new ArrayList<>();
+    private SquareSendPictureAdapter adapter;
     public SquareSendActivityController(SquareSendActivity context) {
         this.context = context;
         initView();
     }
     private void initView() {
         dialog = ProDialog.getProDialog(context);
-        etContent = (EditText) context.findViewById(R.id.et_square_send_content);
-        etTitle = (EditText) context.findViewById(R.id.et_square_send_title);
-        ivChoose1 = (ImageView) context.findViewById(R.id.iv_square_choose_photo1);
-        ivChoose2 = (ImageView) context.findViewById(R.id.iv_square_choose_photo2);
-        ivChoose3 = (ImageView) context.findViewById(R.id.iv_square_choose_photo3);
-        ivChoose4 = (ImageView) context.findViewById(R.id.iv_square_choose_photo4);
-        ivChoose5 = (ImageView) context.findViewById(R.id.iv_square_choose_photo5);
-        ivChoose6 = (ImageView) context.findViewById(R.id.iv_square_choose_photo6);
+        etContent = context.findViewById(R.id.et_square_send_content);
+        recyclerView = context.findViewById(R.id.rv_square_send_picture);
+        LinearLayoutManager manager = new LinearLayoutManager(context);
+        manager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(manager);
+        adapter = new SquareSendPictureAdapter(context);
+        recyclerView.setAdapter(adapter);
         context.findViewById(R.id.btn_square_send).setOnClickListener(this);
         context.findViewById(R.id.iv_squaresend_back).setOnClickListener(this);
-        ivChoose1.setOnClickListener(this);
-        ivChoose2.setOnClickListener(this);
-        ivChoose3.setOnClickListener(this);
-        ivChoose4.setOnClickListener(this);
-        ivChoose5.setOnClickListener(this);
-        ivChoose6.setOnClickListener(this);
+        context.findViewById(R.id.iv_square_choose_photo).setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
-            case R.id.iv_square_choose_photo1:
-                chooseImg(R.id.iv_square_choose_photo1);
-                break;
-            case R.id.iv_square_choose_photo2:
-                chooseImg(R.id.iv_square_choose_photo2);
-                break;
-            case R.id.iv_square_choose_photo3:
-                chooseImg(R.id.iv_square_choose_photo3);
-                break;
-            case R.id.iv_square_choose_photo4:
-                chooseImg(R.id.iv_square_choose_photo4);
-                break;
-            case R.id.iv_square_choose_photo5:
-                chooseImg(R.id.iv_square_choose_photo5);
-                break;
-            case R.id.iv_square_choose_photo6:
-                chooseImg(R.id.iv_square_choose_photo6);
+            case R.id.iv_square_choose_photo:
+                PhotoPicker.builder()
+                        .setPhotoCount(6)
+                        .setShowCamera(true)
+                        .setShowGif(false)
+                        .setPreviewEnabled(false)
+                        .setSelected(finalPhotos)
+                        .start(context, PhotoPicker.REQUEST_CODE);
                 break;
             case R.id.btn_square_send:
-                sendMsg();
+                upLoading();
                 break;
             case R.id.iv_squaresend_back:
                 context.finish();
@@ -115,37 +78,25 @@ public class SquareSendActivityController implements View.OnClickListener, Squar
                 break;
         }
     }
-
-    private void sendMsg() {
+    private void upLoading(){
         if ("".equals(PrefUtil.getString(CommonCode.SP_USER_USERID, ""))){
             Intent intent = new Intent(context, LoginActivity.class);
             context.startActivity(intent);
             return;
-        }else if("".equals(etTitle.getText().toString())){
-            ToastUtil.show("请输入标题");
-            return;
-        } else if("".equals(etContent.getText().toString()) ||  etContent.getText().toString().length() < 10){
-            ToastUtil.show("内容至少输入10个字");
+        } else if (TextUtils.isEmpty(etContent.getText().toString())){
+            ToastUtil.show("请输入内容");
             return;
         }
         dialog.show();
-        OkHttpUtil.executor.execute(new Runnable() {
-            @Override
-            public void run() {
-                setPath();
-                upLoading();
-            }
-        });
-    }
-    private void upLoading(){
+        //设置图片路径,压缩图片
+
         final Square square = new Square();
-        square.setNickName(PrefUtil.getString(CommonCode.SP_USER_NICKNAME, "游客"));
+        square.setNickName(PrefUtil.getString(CommonCode.SP_USER_NICKNAME, "掌上兰考"));
         square.setUserPhoto(PrefUtil.getString(CommonCode.SP_USER_PHOTO, ""));
-        square.setSquareTitle(etTitle.getText().toString());
         square.setSquareContent(etContent.getText().toString());
         square.setSquareUserType(PrefUtil.getString(CommonCode.SP_USER_USERTYPE, ""));
         square.setUserId(PrefUtil.getString(CommonCode.SP_USER_USERID,""));
-        if (pathArr == null || pathArr.length == 0){
+        if (pathArr == null || pathArr.length == 0){//没有选择图片
             square.save(new SaveListener() {
                 @Override
                 public void done(Object o, BmobException e) {
@@ -204,118 +155,37 @@ public class SquareSendActivityController implements View.OnClickListener, Squar
             });
         }
     }
-    private void chooseImg(int i){
-        imgIndex = i;
-//        CharSequence[] items = {"相册", "相机"};
-//        new AlertDialog.Builder(context)
-//                .setTitle("选择图片来源")
-//                .setItems(items, new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        if (which == 0) {
-//                        } else {
-//                            checkCameraPermission();
-//                        }
-//                    }
-//                })
-//                .create().show();
-        BitmapUtil.startPicture(context);
-    }
-    public void checkCameraPermission() {
-        String permission = Manifest.permission.CAMERA;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (PermissionUtil.checkNoPermission(context, permission)) {
-                if (PermissionUtil.checkDismissPermissionWindow(context,
-                        permission)) {
-                    ToastUtil.show("权限被关闭,请打开相机权限");
-                    Intent intentSet = new Intent();
-                    intentSet.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                    Uri uri = Uri.fromParts("package", context.getPackageName(), null);
-                    intentSet.setData(uri);
-                    context.startActivity(intentSet);
-                    return;
-                }
-            } else {
-                url = BitmapUtil.startCamera(context);
-            }
-        } else {
-            url = BitmapUtil.startCamera(context);
-        }
-    }
-    private void setPath(){
-        List<String> list = new ArrayList<>();
-        if (bitmap1 != null){
-            String s = BitmapUtil.compressImage(context,bitmap1);
-            list.add(s);
-        } if (bitmap2 != null){
-            String s = BitmapUtil.compressImage(context,bitmap2);
-            list.add(s);
-        } if (bitmap3 != null){
-            String s = BitmapUtil.compressImage(context,bitmap3);
-            list.add(s);
-        } if (bitmap4 != null){
-            String s = BitmapUtil.compressImage(context,bitmap4);
-            list.add(s);
-        } if (bitmap5 != null){
-            String s = BitmapUtil.compressImage(context,bitmap5);
-            list.add(s);
-        } if (bitmap6 != null){
-            String s = BitmapUtil.compressImage(context,bitmap6);
-            list.add(s);
-        }
-        if (list.size() > 0){
-            pathArr = new String[list.size()];
-            for (int i=0;i<list.size();i++){
-                if (list.get(i) != null){
-                    pathArr[i] = list.get(i);
-                }
-            }
-        }
-    }
-    private void saveBitmap(Bitmap bitmap){
-        switch (imgIndex){
-            case R.id.iv_square_choose_photo1:
-                bitmap1 = bitmap;
-                ivChoose1.setImageBitmap(bitmap);
-                break;
-            case R.id.iv_square_choose_photo2:
-                bitmap2 = bitmap;
-                ivChoose2.setImageBitmap(bitmap);
-                break;
-            case R.id.iv_square_choose_photo3:
-                bitmap3 = bitmap;
-                ivChoose3.setImageBitmap(bitmap);
-                break;
-            case R.id.iv_square_choose_photo4:
-                bitmap4 = bitmap;
-                ivChoose4.setImageBitmap(bitmap);
-                break;
-            case R.id.iv_square_choose_photo5:
-                bitmap5 = bitmap;
-                ivChoose5.setImageBitmap(bitmap);
-                break;
-            case R.id.iv_square_choose_photo6:
-                bitmap6 = bitmap;
-                ivChoose6.setImageBitmap(bitmap);
-                break;
-        }
-    }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == context.RESULT_OK) {
-            if (requestCode == BitmapUtil.PIC_PICTURE){//相册
-                Bitmap b = BitmapUtil.getBitmapByPicture(context,data);
-                if (b == null){
-                    ToastUtil.show("相册选取失败,请拍照上传");
-                    return;
-                }
-                saveBitmap(b);
-            } else if (requestCode == BitmapUtil.PIC_CAMERA) {//相机
-                Bitmap b = BitmapFactory.decodeFile(url);
-                if (b == null) {
-                    ToastUtil.show("相册选取失败,请拍照上传");
-                    return;
-                }
-                saveBitmap(b);
+        if (resultCode != RESULT_OK){
+            return;
+        }
+        if (requestCode == PhotoPicker.REQUEST_CODE) {
+            if (data != null) {
+                finalPhotos = data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS);
+                adapter.setData(finalPhotos);
+                adapter.notifyDataSetChanged();
+                setUploadPath(finalPhotos);
+            }
+        }
+    }
+    private void setUploadPath(ArrayList<String> photos){
+        if (photos.size() > 0){
+            pathArr = new String[photos.size()];
+            for (int i=0;i<photos.size();i++){
+                int finalI = i;
+                Luban.with(context).load(photos.get(i)).setCompressListener(new OnCompressListener() {
+                    @Override
+                    public void onStart() {
+                    }
+                    @Override
+                    public void onSuccess(File file) {
+                        pathArr[finalI] = file.getAbsolutePath();
+                    }
+                    @Override
+                    public void onError(Throwable e) {
+                    }
+                }).launch();
             }
         }
     }

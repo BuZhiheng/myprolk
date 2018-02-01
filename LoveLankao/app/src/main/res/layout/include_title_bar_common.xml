@@ -19,5 +19,6 @@
         android:padding="12dp"
         android:src="@drawable/ic_common_back_white"
         android:onClick="onClick"
+        android:background="?attr/actionBarItemBackground"
         />
 </FrameLayout>

@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,21 +68,16 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         holder.tvTime.setText(square.getCreatedAt());
         holder.tvLikeTimes.setText(square.getLikeTimes() == null ? "0" : square.getLikeTimes() + "");
         holder.tvClickTimes.setText(square.getClickTimes() == null ? "0" : square.getClickTimes() + "");
-        if (square.getSquareTitle() == null){
-            holder.tvTitle.setVisibility(View.GONE);
-        } else {
-            holder.tvTitle.setText(square.getSquareTitle());
-            holder.tvTitle.setVisibility(View.VISIBLE);
-        }
         holder.tvUserType.setText(TextUtil.getVipString(square.getSquareUserType()));
         String content = square.getSquareContent();
         if (content != null && content.length() > 100){
             content = content.substring(0,80)+"...(全文)";
         }
-        if (square.getSquarePhoto1() != null){
-            content = content + "[图片]";
+        if(TextUtils.isEmpty(square.getSquareTitle())){
+            holder.tvContent.setText(content);
+        } else {
+            holder.tvContent.setText(square.getSquareTitle()+content);
         }
-        holder.tvContent.setText(content);
         if (!TextUtil.isNull(square.getUserPhoto())){
             BitmapUtil.loadImageCircle(context,holder.ivPhoto, square.getUserPhoto());
         } else {
@@ -226,7 +222,6 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
         ImageView ivPhoto;
         TextView tvNickname;
         TextView tvTime;
-        TextView tvTitle;
         TextView tvContent;
         TextView tvUserType;
         ImageView ivLikeTimes;
@@ -246,7 +241,6 @@ public class SquareAdapter extends RecyclerView.Adapter<SquareAdapter.MyViewHold
             ivLikeTimes = (ImageView) view.findViewById(R.id.iv_square_item_liketimes);
             tvNickname = (TextView) view.findViewById(R.id.tv_square_item_nickname);
             tvTime = (TextView) view.findViewById(R.id.tv_square_item_time);
-            tvTitle = (TextView) view.findViewById(R.id.tv_square_item_title);
             tvContent = (TextView) view.findViewById(R.id.tv_square_item_content);
             tvUserType = (TextView) view.findViewById(R.id.tv_square_item_usertype);
             tvLikeTimes = (TextView) view.findViewById(R.id.tv_square_item_liketimes);

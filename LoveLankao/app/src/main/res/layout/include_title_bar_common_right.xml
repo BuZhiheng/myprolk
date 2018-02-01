@@ -19,6 +19,7 @@
         android:padding="12dp"
         android:src="@drawable/ic_common_back_white"
         android:onClick="onClick"
+        android:background="?attr/actionBarItemBackground"
         />
     <TextView
         android:id="@+id/tv_titlebar_right"
@@ -31,5 +32,6 @@
         android:textColor="@color/color_white"
         android:textSize="@dimen/text_common_item_title"
         android:onClick="onClick"
+        android:background="?attr/actionBarItemBackground"
         />
 </FrameLayout>
