@@ -51,8 +51,8 @@ public class SquareSendActivityController implements View.OnClickListener, Squar
         recyclerView.setLayoutManager(manager);
         adapter = new SquareSendPictureAdapter(context);
         recyclerView.setAdapter(adapter);
-        context.findViewById(R.id.btn_square_send).setOnClickListener(this);
-        context.findViewById(R.id.iv_squaresend_back).setOnClickListener(this);
+        context.findViewById(R.id.tv_square_send).setOnClickListener(this);
+        context.findViewById(R.id.tv_square_cancel).setOnClickListener(this);
         context.findViewById(R.id.iv_square_choose_photo).setOnClickListener(this);
     }
     @Override
@@ -68,10 +68,10 @@ public class SquareSendActivityController implements View.OnClickListener, Squar
                         .setSelected(finalPhotos)
                         .start(context, PhotoPicker.REQUEST_CODE);
                 break;
-            case R.id.btn_square_send:
+            case R.id.tv_square_send:
                 upLoading();
                 break;
-            case R.id.iv_squaresend_back:
+            case R.id.tv_square_cancel:
                 context.finish();
                 break;
             default:

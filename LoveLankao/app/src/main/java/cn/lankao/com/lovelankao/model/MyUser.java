@@ -1,16 +1,13 @@
 package cn.lankao.com.lovelankao.model;
-import android.content.Intent;
-
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.datatype.BmobFile;
-import cn.lankao.com.lovelankao.activity.LoginActivity;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
 import cn.lankao.com.lovelankao.utils.TextUtil;
-
 /**
  * Created by BuZhiheng on 2016/4/2.
  */
 public class MyUser extends BmobObject{
+    private String androidVersion;
     private String mobile;
     private Integer coupon;//
     private String nickName;
@@ -97,5 +94,13 @@ public class MyUser extends BmobObject{
         } else {
             return true;
         }
+    }
+
+    public String getAndroidVersion() {
+        return androidVersion;
+    }
+
+    public void setAndroidVersion(String androidVersion) {
+        this.androidVersion = androidVersion;
     }
 }

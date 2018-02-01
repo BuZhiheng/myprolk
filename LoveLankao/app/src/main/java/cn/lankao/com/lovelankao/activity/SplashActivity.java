@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.baidu.location.BDLocation;
@@ -38,6 +39,7 @@ public class SplashActivity extends AppCompatActivity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  WindowManager.LayoutParams.FLAG_FULLSCREEN);
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -88,6 +90,7 @@ public class SplashActivity extends AppCompatActivity{
                     MyUser user = new MyUser();
                     user.setUserLat((float) bdLocation.getLatitude());
                     user.setUserLng((float) bdLocation.getLongitude());
+                    user.setAndroidVersion(WindowUtils.getAppVersionName());
                     user.update(userId, new UpdateListener() {
                         @Override
                         public void done(BmobException e) {

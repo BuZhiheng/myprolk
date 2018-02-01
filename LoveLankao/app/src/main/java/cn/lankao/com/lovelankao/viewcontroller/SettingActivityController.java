@@ -1,16 +1,11 @@
 package cn.lankao.com.lovelankao.viewcontroller;
-import android.Manifest;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.Build;
-import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.ImageView;
 import org.greenrobot.eventbus.EventBus;
 import java.io.File;
+import java.util.ArrayList;
 import cn.bmob.v3.datatype.BmobFile;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
@@ -21,19 +16,19 @@ import cn.lankao.com.lovelankao.model.MyUser;
 import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
 import cn.lankao.com.lovelankao.model.CommonCode;
-import cn.lankao.com.lovelankao.utils.OkHttpUtil;
-import cn.lankao.com.lovelankao.utils.PermissionUtil;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
-import cn.lankao.com.lovelankao.utils.TextUtil;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.widget.ProDialog;
+import me.iwf.photopicker.PhotoPicker;
+import top.zibin.luban.Luban;
+import top.zibin.luban.OnCompressListener;
+import static android.app.Activity.RESULT_OK;
 /**
  * Created by BuZhiheng on 2016/4/7.
  */
 public class SettingActivityController implements View.OnClickListener ,SettingActivity.SettingHolder{
     private SettingActivity context;
     private ImageView photo;
-    private String imageFilePath;
     private ProgressDialog dialog;
     public SettingActivityController(SettingActivity context){
         this.context = context;
@@ -48,47 +43,17 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
         photo.setOnClickListener(this);
         BitmapUtil.loadImageCircle(context,photo, PrefUtil.getString(CommonCode.SP_USER_PHOTO, CommonCode.APP_ICON));
     }
-    private void saveBitmap(String path){
-        final String userId = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
-        final BmobFile file = new BmobFile(new File(path));
-        file.upload(new UploadFileListener() {
-            @Override
-            public void done(BmobException e) {
-                final MyUser myUser = new MyUser();
-                myUser.setPhoto(file);
-                myUser.update(userId, new UpdateListener() {
-                    @Override
-                    public void done(BmobException e) {
-                        dialog.dismiss();
-                        ToastUtil.show("上传成功");
-                        PrefUtil.putString(CommonCode.SP_USER_PHOTO, file.getFileUrl());
-                        BitmapUtil.loadImageCircle(context,photo, file.getFileUrl());
-                        myUser.setNickName(CommonCode.SP_USER_PHOTO);//user frm 界面更新头像
-                        EventBus.getDefault().post(myUser);
-                    }
-                });
-            }
-        });
-    }
     @Override
     public void onClick(View v) {
         int id = v.getId();
         switch (id){
             case R.id.iv_setting_photo:
-                CharSequence[] items = {"相册", "相机"};
-                new AlertDialog.Builder(context)
-                        .setTitle("选择图片来源")
-                        .setItems(items, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (which == 0) {
-                                    BitmapUtil.startPicture(context);
-                                } else {
-                                    checkCameraPermission();
-//                                    imageFilePath = BitmapUtil.startCamera(context);
-                                }
-                            }
-                        })
-                        .create().show();
+                PhotoPicker.builder()
+                        .setPhotoCount(1)
+                        .setShowCamera(true)
+                        .setShowGif(false)
+                        .setPreviewEnabled(false)
+                        .start(context, PhotoPicker.REQUEST_CODE);
                 break;
             case R.id.btn_setting_zhuxiao:
                 MyUser user = new MyUser();
@@ -110,51 +75,50 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
                 break;
         }
     }
-    public void checkCameraPermission() {
-        String permission = Manifest.permission.CAMERA;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (PermissionUtil.checkNoPermission(context,permission)) {
-                if (PermissionUtil.checkDismissPermissionWindow(context,
-                        permission)) {
-                    ToastUtil.show("相机权限被关闭,请去>设置>权限管理打开");
-//                    Intent intentSet = new Intent();
-//                    intentSet.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-//                    Uri uri = Uri.fromParts("package", context.getPackageName(), null);
-//                    intentSet.setData(uri);
-//                    context.startActivity(intentSet);
-                    return;
-                }
-            } else {
-                imageFilePath = BitmapUtil.startCamera(context);
-            }
-        } else {
-            imageFilePath = BitmapUtil.startCamera(context);
-        }
-    }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == context.RESULT_OK) {
-            if (data == null){
-                return;
-            }
-            if (requestCode == BitmapUtil.PIC_PICTURE){//相册
-                Bitmap b = BitmapUtil.getBitmapByPicture(context,data);
-                String path = BitmapUtil.compressImage(context, b);
-                if (TextUtil.isNull(path)){
-                    ToastUtil.show("相册选取失败,请拍照上传");
+        if (resultCode != RESULT_OK){
+            return;
+        }
+        if (requestCode == PhotoPicker.REQUEST_CODE) {
+            if (data != null) {
+                ArrayList<String> datas = data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS);
+                if (datas == null || datas.size() == 0){
                     return;
                 }
-                saveBitmap(path);
-            } else if (requestCode == BitmapUtil.PIC_CAMERA){//相机
+                String path = datas.get(0);
+                final String userId = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
                 dialog.show();
-                OkHttpUtil.executor.execute(new Runnable() {
+                Luban.with(context).load(path).setCompressListener(new OnCompressListener() {
                     @Override
-                    public void run() {
-                        Bitmap photo = BitmapFactory.decodeFile(imageFilePath);
-                        String path = BitmapUtil.compressImage(context, photo);
-                        saveBitmap(path);
+                    public void onStart() {
                     }
-                });
+                    @Override
+                    public void onSuccess(File f) {
+                        final BmobFile file = new BmobFile(f);
+                        file.upload(new UploadFileListener() {
+                            @Override
+                            public void done(BmobException e) {
+                                final MyUser myUser = new MyUser();
+                                myUser.setPhoto(file);
+                                myUser.update(userId, new UpdateListener() {
+                                    @Override
+                                    public void done(BmobException e) {
+                                        dialog.dismiss();
+                                        ToastUtil.show("上传成功");
+                                        PrefUtil.putString(CommonCode.SP_USER_PHOTO, file.getFileUrl());
+                                        BitmapUtil.loadImageCircle(context,photo, file.getFileUrl());
+                                        myUser.setNickName(CommonCode.SP_USER_PHOTO);//user frm 界面更新头像
+                                        EventBus.getDefault().post(myUser);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                    @Override
+                    public void onError(Throwable e) {
+                    }
+                }).launch();
             }
         }
     }

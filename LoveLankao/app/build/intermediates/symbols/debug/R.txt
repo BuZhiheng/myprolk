@@ -978,7 +978,6 @@ int id btn_register_getcode 0x7f0c0127
 int id btn_register_register 0x7f0c0128
 int id btn_setting_exit 0x7f0c012e
 int id btn_setting_zhuxiao 0x7f0c012d
-int id btn_square_send 0x7f0c015a
 int id btn_square_send_camera 0x7f0c0157
 int id btn_square_send_cancel 0x7f0c0158
 int id btn_square_send_photo 0x7f0c0156
@@ -1164,7 +1163,6 @@ int id iv_square_item_photo5 0x7f0c0150
 int id iv_square_item_photo6 0x7f0c0151
 int id iv_square_send 0x7f0c0135
 int id iv_square_send_picture_item 0x7f0c015e
-int id iv_squaresend_back 0x7f0c0159
 int id iv_talkfrm_send 0x7f0c01ca
 int id iv_titlebar_back 0x7f0c01fd
 int id iv_top_back 0x7f0c015f
@@ -1414,6 +1412,7 @@ int id tv_register_cancle 0x7f0c0129
 int id tv_shoploc_nvg 0x7f0c0132
 int id tv_shoploc_title 0x7f0c0130
 int id tv_splash_code 0x7f0c0133
+int id tv_square_cancel 0x7f0c0159
 int id tv_square_comment_content 0x7f0c010e
 int id tv_square_comment_nickname 0x7f0c010a
 int id tv_square_comment_post 0x7f0c010f
@@ -1432,6 +1431,7 @@ int id tv_square_item_time 0x7f0c013e
 int id tv_square_item_title 0x7f0c0149
 int id tv_square_item_usertype 0x7f0c013d
 int id tv_square_msg_comment 0x7f0c0148
+int id tv_square_send 0x7f0c015a
 int id tv_squarefrm_msg 0x7f0c01d7
 int id tv_talkfrm_my 0x7f0c01d3
 int id tv_titlebar_right 0x7f0c01fe

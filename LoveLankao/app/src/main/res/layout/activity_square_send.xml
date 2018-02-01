@@ -8,6 +8,16 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/common_title_height"
         android:background="@color/color_green">
+        <TextView
+            android:id="@+id/tv_square_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/common_margin"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_common_item_title"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -17,16 +27,8 @@
             android:textColor="@color/color_white"
             android:textSize="@dimen/text_main_title" />
 
-        <ImageView
-            android:id="@+id/iv_squaresend_back"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/common_margin"
-            android:src="@drawable/ic_common_back_white" />
-
         <TextView
-            android:id="@+id/btn_square_send"
+            android:id="@+id/tv_square_send"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:paddingRight="@dimen/common_margin"
