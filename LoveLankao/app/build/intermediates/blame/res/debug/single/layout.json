@@ -12,12 +12,12 @@
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\53832da08e877dea766cd290462ef879\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_index_head.xml",
-        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_index_head.xml"
-    },
-    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_index_head.xml",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_index_head.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -32,20 +32,20 @@
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\91ea05422b6682dfe4f1f0f0ce4bfe5b\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main_items.xml",
-        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\fragment_main_items.xml"
-    },
-    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\91ea05422b6682dfe4f1f0f0ce4bfe5b\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\layout\\abc_expanded_menu_layout.xml"
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main_items.xml",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\fragment_main_items.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_advert_msg.xml",
@@ -96,12 +96,12 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_lbs.xml"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_square_send.xml",
-        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_square_send.xml"
-    },
-    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_custom.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\53832da08e877dea766cd290462ef879\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_square_send.xml",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_square_send.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_advertdetail.xml",
@@ -140,6 +140,10 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_setting.xml"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_activity_photo_picker.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_activity_photo_picker.xml"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bmob_update_dialog.xml",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\bmob_update_dialog.xml"
     },
@@ -162,6 +166,10 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_read_item.xml",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_read_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_activity_photo_pager.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_activity_photo_pager.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
@@ -234,6 +242,10 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_picker_fragment_image_pager.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_picker_fragment_image_pager.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
@@ -312,6 +324,10 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_msg_board_item.xml"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_fragment_photo_picker.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_fragment_photo_picker.xml"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_square_item_flowimg.xml",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_square_item_flowimg.xml"
     },
@@ -360,6 +376,10 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_web_view.xml"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_item_directory.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_item_directory.xml"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_msg.xml",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_my_msg.xml"
     },
@@ -400,6 +420,10 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_wz_city.xml"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_picker_item_pager.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_picker_item_pager.xml"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\53832da08e877dea766cd290462ef879\\res\\layout\\notification_media_action.xml"
     },
@@ -434,6 +458,10 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_toolbar.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
@@ -538,6 +566,10 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\include_slid_img_height10.xml",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\include_slid_img_height10.xml"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\__picker_item_photo.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\layout\\__picker_item_photo.xml"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_talknew.xml",

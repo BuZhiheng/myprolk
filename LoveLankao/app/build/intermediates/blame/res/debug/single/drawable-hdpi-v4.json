@@ -8,20 +8,24 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_square_commenttimes.png"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_msg_board.png",
-        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_msg_board.png"
-    },
-    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mainfrm_xiyu.png",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_mainfrm_xiyu.png"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bmob_update_btn_check_off_pressed_holo_light.png",
-        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\bmob_update_btn_check_off_pressed_holo_light.png"
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_msg_board.png",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_msg_board.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_photo_black_48dp.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_photo_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bmob_update_btn_check_off_pressed_holo_light.png",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\bmob_update_btn_check_off_pressed_holo_light.png"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_lbsfrm_map.png",
@@ -152,6 +156,10 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_common_call_yellow.png"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_checkbox_n.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_checkbox_n.png"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_minefrm_tuijian.png",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_minefrm_tuijian.png"
     },
@@ -206,6 +214,10 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_camera_n.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_camera_n.png"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mainfrm_hunqing.png",
@@ -286,6 +298,10 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_main_minec.png",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_main_minec.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_delete_n.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_delete_n.png"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
@@ -448,6 +464,10 @@
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_check.png"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_checkbox_marked.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_checkbox_marked.png"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_webviewact_share.png",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_webviewact_share.png"
     },
@@ -514,6 +534,14 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_talk_menu.png",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\ic_talk_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_delete_p.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_delete_p.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_delete_black_24dp.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_delete_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
@@ -622,5 +650,13 @@
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bmob_update_close_bg_tap.png",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\drawable-hdpi\\bmob_update_close_bg_tap.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_camera_p.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_camera_p.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\__picker_ic_broken_image_black_48dp.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-hdpi-v4\\__picker_ic_broken_image_black_48dp.png"
     }
 ]

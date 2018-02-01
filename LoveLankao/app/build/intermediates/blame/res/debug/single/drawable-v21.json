@@ -28,6 +28,10 @@
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\__picker_bg_material_item.xml",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-v21\\__picker_bg_material_item.xml"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },

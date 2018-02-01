@@ -1,5 +1,8 @@
 package cn.lankao.com.lovelankao.viewcontroller;
 import java.util.List;
+
+import cn.bmob.v3.okhttp3.FormBody;
+import cn.bmob.v3.okhttp3.RequestBody;
 import cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter;
 import cn.lankao.com.lovelankao.iview.IWzCityView;
 import cn.lankao.com.lovelankao.model.JWzCitys;
@@ -7,8 +10,6 @@ import cn.lankao.com.lovelankao.model.JWzProvince;
 import cn.lankao.com.lovelankao.model.JuheApiResult;
 import cn.lankao.com.lovelankao.utils.GsonUtil;
 import cn.lankao.com.lovelankao.utils.OkHttpUtil;
-import okhttp3.FormBody;
-import okhttp3.RequestBody;
 import rx.Subscriber;
 /**
  * Created by buzhiheng on 2017/4/22.

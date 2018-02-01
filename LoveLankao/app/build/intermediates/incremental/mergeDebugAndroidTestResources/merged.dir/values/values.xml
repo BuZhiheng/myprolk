@@ -9,6 +9,15 @@
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <color name="__picker_black_40">#282828</color>
+    <color name="__picker_common_primary">#f3f3f3</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+    <color name="__picker_pager_bg">#CA000000</color>
+    <color name="__picker_selected_bg">#44000000</color>
+    <color name="__picker_text_120">#787878</color>
+    <color name="__picker_text_40">#282828</color>
+    <color name="__picker_text_80">#505050</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -442,6 +451,10 @@
             <enum name="screen" value="15"/>
         </attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
+    <dimen name="__picker_item_camera_size">80dip</dimen>
+    <dimen name="__picker_item_directory_height">80dp</dimen>
+    <dimen name="__picker_item_photo_size">80dip</dimen>
+    <dimen name="__picker_iwf_actionBarSize">48dip</dimen>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -658,6 +671,19 @@
     <string name="BMUpdateNow">立即更新</string>
     <string name="BMUpdateSize">仅需要下载:</string>
     <string name="BMUpdateTitle">发现新版本</string>
+    <string name="__picker_all_image">All Images</string>
+    <string name="__picker_cancel">Cancel</string>
+    <string name="__picker_confirm_to_delete">Confirm to delete?</string>
+    <string name="__picker_delete">Delete</string>
+    <string name="__picker_deleted_a_photo">Deleted a photo</string>
+    <string name="__picker_done">Done</string>
+    <string name="__picker_done_with_count">Done(%1$d/%2$d)</string>
+    <string name="__picker_image_count">%1$d</string>
+    <string name="__picker_image_index">%1$d/%2$d</string>
+    <string name="__picker_over_max_count_tips">Up to %1$d photos can be selected</string>
+    <string name="__picker_title">Images</string>
+    <string name="__picker_undo">Undo</string>
+    <string name="__picker_yes">Yes</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -689,7 +715,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">Test-api</string>
+    <string name="app_name">Luban</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bmob_common_action_cancel">取消</string>
     <string name="bmob_common_action_continue">继续</string>

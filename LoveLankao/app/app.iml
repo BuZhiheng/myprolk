@@ -122,7 +122,9 @@
     <orderEntry type="library" name="android.arch.lifecycle:runtime-1.0.0" level="project" />
     <orderEntry type="library" name="com.android.support:appcompat-v7-26.1.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-annotations:26.1.0@jar" level="project" />
+    <orderEntry type="library" name="top.zibin:Luban-1.1.3" level="project" />
     <orderEntry type="library" name="com.android.support:support-core-utils-26.1.0" level="project" />
+    <orderEntry type="library" name="me.iwf.photopicker:PhotoPicker-0.8.4" level="project" />
     <orderEntry type="library" name="com.android.support:support-core-ui-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="org.hamcrest:hamcrest-core:1.3@jar" level="project" />
@@ -131,7 +133,7 @@
     <orderEntry type="library" name="com.jakewharton:butterknife-annotations:8.8.1@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="com.android.support.test.espresso:espresso-core-2.2.2" level="project" />
     <orderEntry type="library" name="com.oguzdev:CircularFloatingActionMenu-1.0.2" level="project" />
-    <orderEntry type="library" name="cn.bmob.android:bmob-sdk-3.5.3" level="project" />
+    <orderEntry type="library" name="cn.bmob.android:bmob-sdk-3.5.9" level="project" />
     <orderEntry type="library" scope="TEST" name="com.android.support.test:rules-0.5" level="project" />
     <orderEntry type="library" name="com.bm.photoview:library-1.4.1" level="project" />
     <orderEntry type="library" name="android.arch.core:common:1.0.0@jar" level="project" />

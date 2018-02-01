@@ -3,10 +3,11 @@ import android.util.Log;
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+
+import cn.bmob.v3.okhttp3.OkHttpClient;
+import cn.bmob.v3.okhttp3.Request;
+import cn.bmob.v3.okhttp3.RequestBody;
+import cn.bmob.v3.okhttp3.Response;
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
