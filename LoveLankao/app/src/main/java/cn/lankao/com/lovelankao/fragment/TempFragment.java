@@ -24,11 +24,10 @@ import rx.Subscriber;
  * Created by BuZhiheng on 2016/4/7.
  */
 public class TempFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
-    private final String url = "http://japi.juhe.cn/joke/content/list.from?key=da46a2a9e5d5a3bfefb5694bfa0e04c1&sort=asc&time=0000000000&pagesize=";
+    private final String url = "http://v.juhe.cn/joke/randJoke.php?&key=da46a2a9e5d5a3bfefb5694bfa0e04c1";
     private RecyclerView rv;
     private SwipeRefreshLayout refresh;
     private TempAdapter adapter;
-    private int page = 1;
     private boolean isRefresh = true;
     private boolean canLoadMore = true;
     private View view;
@@ -55,20 +54,13 @@ public class TempFragment extends Fragment implements SwipeRefreshLayout.OnRefre
                 if (canLoadMore) {
                     isRefresh = false;
                     canLoadMore = false;
-                    page++;
                     initData();
                 }
             }
         });
     }
     private void initData() {
-        String finalUrl;
-        if (isRefresh){
-            finalUrl = url+ CommonCode.RV_ITEMS_COUT+"&page="+1;
-        }else{
-            finalUrl = url+CommonCode.RV_ITEMS_COUT+"&page="+page;
-        }
-        OkHttpUtil.get(finalUrl, new Subscriber<String>() {
+        OkHttpUtil.get(url, new Subscriber<String>() {
             @Override
             public void onCompleted() {
             }
@@ -81,8 +73,7 @@ public class TempFragment extends Fragment implements SwipeRefreshLayout.OnRefre
                 JuheApiResult res = GsonUtil.jsonToObject(s, JuheApiResult.class);
                 if (res.getError_code() == 0) {
                     try {
-                        JsonElement list = res.getResult().getAsJsonObject().getAsJsonArray("data");
-                        List<Jock> data = GsonUtil.jsonToList(list, Jock.class);
+                        List<Jock> data = GsonUtil.jsonToList(res.getResult(), Jock.class);
                         if (isRefresh) {
                             adapter.setData(data);
                         } else {
@@ -101,7 +92,6 @@ public class TempFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     @Override
     public void onRefresh() {
         isRefresh = true;
-        page = 1;
         initData();
     }
 }
