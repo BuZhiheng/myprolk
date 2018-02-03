@@ -9,6 +9,6 @@
         android:layout_height="100dp"
         android:layout_marginTop="@dimen/common_margin"
         android:layout_marginRight="@dimen/common_margin"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         />
 </LinearLayout>

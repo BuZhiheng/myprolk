@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -101,7 +102,14 @@
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.WZCityActivity" />
         <activity android:name=".activity.WZActivity" />
-        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"/>
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="true"
+            />
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="true"
+            />
         <activity android:name=".wxapi.WXEntryActivity"
             android:exported="true"/>
     </application>

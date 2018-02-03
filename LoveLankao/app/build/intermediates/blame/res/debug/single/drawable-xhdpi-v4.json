@@ -28,12 +28,12 @@
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\PhotoPicker-0.8.4.aar\\ee883eccba152fe2b20fbb59bfe148b7\\res\\drawable-xhdpi-v4\\__picker_ic_camera_n.png"
     },
     {
-        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6639f9130097ded37ff5e85dddee616c\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",

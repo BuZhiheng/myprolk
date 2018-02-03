@@ -90,24 +90,21 @@
             >
             <ImageView
                 android:id="@+id/iv_square_item_photo1"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
                 android:scaleType="centerCrop"
                 android:layout_height="match_parent"
                 />
             <ImageView
                 android:id="@+id/iv_square_item_photo2"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:layout_marginLeft="@dimen/common_margin_little"
-                android:layout_marginRight="@dimen/common_margin_little"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
                 />
             <ImageView
                 android:id="@+id/iv_square_item_photo3"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 />
@@ -124,24 +121,21 @@
             >
             <ImageView
                 android:id="@+id/iv_square_item_photo4"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
                 android:scaleType="centerCrop"
                 android:layout_height="match_parent"
                 />
             <ImageView
                 android:id="@+id/iv_square_item_photo5"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:layout_marginLeft="@dimen/common_margin_little"
-                android:layout_marginRight="@dimen/common_margin_little"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
                 />
             <ImageView
                 android:id="@+id/iv_square_item_photo6"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 />

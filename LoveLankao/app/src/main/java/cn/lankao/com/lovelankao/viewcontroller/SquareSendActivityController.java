@@ -1,6 +1,9 @@
 package cn.lankao.com.lovelankao.viewcontroller;
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -20,6 +23,7 @@ import cn.lankao.com.lovelankao.activity.SquareSendActivity;
 import cn.lankao.com.lovelankao.adapter.SquareSendPictureAdapter;
 import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.PermissionUtil;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.widget.ProDialog;
@@ -55,18 +59,31 @@ public class SquareSendActivityController implements View.OnClickListener, Squar
         context.findViewById(R.id.tv_square_cancel).setOnClickListener(this);
         context.findViewById(R.id.iv_square_choose_photo).setOnClickListener(this);
     }
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onClick(View v) {
         int id = v.getId();
         switch (id) {
             case R.id.iv_square_choose_photo:
-                PhotoPicker.builder()
-                        .setPhotoCount(6)
-                        .setShowCamera(true)
-                        .setShowGif(false)
-                        .setPreviewEnabled(false)
-                        .setSelected(finalPhotos)
-                        .start(context, PhotoPicker.REQUEST_CODE);
+                if (PermissionUtil.checkNoPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE)){
+                    if (PermissionUtil.checkDismissPermissionWindow(context,Manifest.permission.READ_EXTERNAL_STORAGE)){
+                        ToastUtil.show("请给APP打开读写手机存储权限");
+                    }
+                } else {
+                    if (PermissionUtil.checkNoPermission(context, Manifest.permission.CAMERA)){
+                        if (PermissionUtil.checkDismissPermissionWindow(context,Manifest.permission.CAMERA)){
+                            ToastUtil.show("请给APP打开相机权限");
+                        }
+                    } else {
+                        PhotoPicker.builder()
+                                .setPhotoCount(6)
+                                .setShowCamera(true)
+                                .setShowGif(false)
+                                .setPreviewEnabled(false)
+                                .setSelected(finalPhotos)
+                                .start(context, PhotoPicker.REQUEST_CODE);
+                    }
+                }
                 break;
             case R.id.tv_square_send:
                 upLoading();

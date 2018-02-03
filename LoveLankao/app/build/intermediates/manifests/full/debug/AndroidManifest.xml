@@ -17,6 +17,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -115,7 +118,14 @@
         <activity android:name="cn.lankao.com.lovelankao.activity.WebViewActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.WZCityActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.WZActivity" />
-        <activity android:name="me.iwf.photopicker.PhotoPickerActivity" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name="cn.lankao.com.lovelankao.wxapi.WXEntryActivity"
             android:exported="true" />

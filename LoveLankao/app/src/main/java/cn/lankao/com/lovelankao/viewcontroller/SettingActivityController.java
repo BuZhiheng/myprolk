@@ -1,6 +1,9 @@
 package cn.lankao.com.lovelankao.viewcontroller;
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.widget.ImageView;
 import org.greenrobot.eventbus.EventBus;
@@ -16,6 +19,7 @@ import cn.lankao.com.lovelankao.model.MyUser;
 import cn.lankao.com.lovelankao.model.Square;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
 import cn.lankao.com.lovelankao.model.CommonCode;
+import cn.lankao.com.lovelankao.utils.PermissionUtil;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
 import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.widget.ProDialog;
@@ -39,21 +43,34 @@ public class SettingActivityController implements View.OnClickListener ,SettingA
         context.findViewById(R.id.btn_setting_zhuxiao).setOnClickListener(this);
         context.findViewById(R.id.btn_setting_exit).setOnClickListener(this);
         context.findViewById(R.id.iv_setting_back).setOnClickListener(this);
-        photo = (ImageView) context.findViewById(R.id.iv_setting_photo);
+        photo = context.findViewById(R.id.iv_setting_photo);
         photo.setOnClickListener(this);
         BitmapUtil.loadImageCircle(context,photo, PrefUtil.getString(CommonCode.SP_USER_PHOTO, CommonCode.APP_ICON));
     }
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onClick(View v) {
         int id = v.getId();
         switch (id){
             case R.id.iv_setting_photo:
-                PhotoPicker.builder()
-                        .setPhotoCount(1)
-                        .setShowCamera(true)
-                        .setShowGif(false)
-                        .setPreviewEnabled(false)
-                        .start(context, PhotoPicker.REQUEST_CODE);
+                if (PermissionUtil.checkNoPermission(context, Manifest.permission.READ_EXTERNAL_STORAGE)){
+                    if (PermissionUtil.checkDismissPermissionWindow(context,Manifest.permission.READ_EXTERNAL_STORAGE)){
+                        ToastUtil.show("请给APP打开读写手机存储权限");
+                    }
+                } else {
+                    if (PermissionUtil.checkNoPermission(context, Manifest.permission.CAMERA)){
+                        if (PermissionUtil.checkDismissPermissionWindow(context,Manifest.permission.CAMERA)){
+                            ToastUtil.show("请给APP打开相机权限");
+                        }
+                    } else {
+                        PhotoPicker.builder()
+                                .setPhotoCount(1)
+                                .setShowCamera(true)
+                                .setShowGif(false)
+                                .setPreviewEnabled(false)
+                                .start(context, PhotoPicker.REQUEST_CODE);
+                    }
+                }
                 break;
             case R.id.btn_setting_zhuxiao:
                 MyUser user = new MyUser();
