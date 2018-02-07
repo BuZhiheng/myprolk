@@ -2,15 +2,15 @@ package cn.lankao.com.lovelankao.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.viewcontroller.SquareSendActivityController;
 
 /**
  * Created by BuZhiheng on 2016/4/4.
  */
-public class SquareSendActivity extends AppCompatActivity{
+public class SquareSendActivity extends BaseActivity {
     private SquareSendActivityController controller;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

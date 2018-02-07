@@ -4,13 +4,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
-import com.baidu.mapapi.map.InfoWindow;
 import com.baidu.mapapi.map.LogoPosition;
 import com.baidu.mapapi.map.MapStatus;
 import com.baidu.mapapi.map.MapStatusUpdate;
@@ -24,17 +22,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.ipresenter.ILKBikePresenter;
-import cn.lankao.com.lovelankao.ipresenter.ILKPeoplePresenter;
 import cn.lankao.com.lovelankao.iview.ILKBikeView;
-import cn.lankao.com.lovelankao.iview.ILKPeopleView;
-import cn.lankao.com.lovelankao.model.AdvertNormal;
 import cn.lankao.com.lovelankao.model.CommonCode;
-import cn.lankao.com.lovelankao.model.MyUser;
 import cn.lankao.com.lovelankao.model.PublicBike;
 import cn.lankao.com.lovelankao.utils.PrefUtil;
-import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.viewcontroller.LKBikePresenter;
-import cn.lankao.com.lovelankao.viewcontroller.LKPeoplePresenter;
+
 /**
  * Created by buzhiheng on 2017/4/22.
  */
@@ -119,5 +112,10 @@ public class LKBikeActivity extends AppCompatActivity implements ILKBikeView {
         Bundle b = new Bundle();
         b.putSerializable(CommonCode.INTENT_COMMON_OBJ, bike);
         map.addOverlay(option.position(ll)).setExtraInfo(b);
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
     }
 }

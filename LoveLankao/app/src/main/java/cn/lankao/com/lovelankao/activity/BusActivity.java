@@ -113,4 +113,9 @@ public class BusActivity extends AppCompatActivity implements IBusView {
                 break;
         }
     }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
 }

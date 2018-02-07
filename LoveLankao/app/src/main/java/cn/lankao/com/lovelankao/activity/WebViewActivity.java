@@ -2,7 +2,6 @@ package cn.lankao.com.lovelankao.activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -11,6 +10,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.Shared;
 import cn.lankao.com.lovelankao.model.CommonCode;
@@ -20,7 +21,7 @@ import cn.lankao.com.lovelankao.widget.SharePopupWindow;
 /**
  * Created by BuZhiheng on 2016/4/7.
  */
-public class WebViewActivity extends AppCompatActivity implements View.OnClickListener {
+public class WebViewActivity extends BaseActivity implements View.OnClickListener {
     private LinearLayout layout;
     private TextView title;
     private WebView webView;

@@ -1,6 +1,5 @@
 package cn.lankao.com.lovelankao.activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -8,6 +7,7 @@ import android.widget.TextView;
 import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.MySquareMsgAdapter;
 import cn.lankao.com.lovelankao.ipresenter.ISquareMsgPresenter;
@@ -18,7 +18,7 @@ import cn.lankao.com.lovelankao.viewcontroller.SquareMsgPresenter;
 /**
  * Created by buzhiheng on 2017/4/22.
  */
-public class SquareMsgActivity extends AppCompatActivity implements ISquareMsgView{
+public class SquareMsgActivity extends BaseActivity implements ISquareMsgView{
     private ISquareMsgPresenter presenter;
     @BindView(R.id.rv_square_msg)
     RecyclerView rvMsg;

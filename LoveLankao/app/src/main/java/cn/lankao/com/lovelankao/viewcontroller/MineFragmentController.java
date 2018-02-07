@@ -4,7 +4,7 @@ import org.greenrobot.eventbus.Subscribe;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.QueryListener;
-import cn.lankao.com.lovelankao.LApplication;
+import cn.lankao.com.lovelankao.base.LApplication;
 import cn.lankao.com.lovelankao.iview.IMineFrmView;
 import cn.lankao.com.lovelankao.model.MyUser;
 import cn.lankao.com.lovelankao.model.CommonCode;

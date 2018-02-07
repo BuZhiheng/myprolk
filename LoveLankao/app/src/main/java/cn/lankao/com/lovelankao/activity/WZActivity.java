@@ -1,7 +1,6 @@
 package cn.lankao.com.lovelankao.activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.WzMsgAdapter;
 import cn.lankao.com.lovelankao.ipresenter.IWzPresenter;
@@ -22,7 +22,7 @@ import cn.lankao.com.lovelankao.viewcontroller.WzPresenter;
 /**
  * Created by buzhiheng on 2017/4/22.
  */
-public class WZActivity extends AppCompatActivity implements IWzView {
+public class WZActivity extends BaseActivity implements IWzView {
     private IWzPresenter presenter;
     @BindView(R.id.fl_wz_class)
     FrameLayout flClass;

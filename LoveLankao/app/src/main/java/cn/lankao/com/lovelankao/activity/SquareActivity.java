@@ -2,7 +2,6 @@ package cn.lankao.com.lovelankao.activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.Comment;
 import cn.lankao.com.lovelankao.model.CommonCode;
@@ -21,7 +21,7 @@ import cn.lankao.com.lovelankao.viewcontroller.SquareActivityController;
 /**
  * Created by BuZhiheng on 2016/4/4.
  */
-public class SquareActivity extends AppCompatActivity {
+public class SquareActivity extends BaseActivity {
     private SquareActivityController controller;
     @BindView(R.id.iv_square_item_photo)
     ImageView ivPhoto;

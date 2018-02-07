@@ -2,12 +2,12 @@ package cn.lankao.com.lovelankao.activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.Comment;
 import cn.lankao.com.lovelankao.model.CommonCode;
@@ -17,7 +17,7 @@ import cn.lankao.com.lovelankao.widget.ProDialog;
 /**
  * Created by buzhiheng on 2016/12/15.
  */
-public class CommentActivity extends AppCompatActivity {
+public class CommentActivity extends BaseActivity {
     private CommentActivityController controller;
     @BindView(R.id.et_comment_content)
     EditText etContent;

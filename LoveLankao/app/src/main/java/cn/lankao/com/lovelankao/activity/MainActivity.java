@@ -5,10 +5,8 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 import cn.lankao.com.lovelankao.viewcontroller.MainActivityController;
 import cn.lankao.com.lovelankao.R;
-
 public class MainActivity extends AppCompatActivity {
     private boolean canExit = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

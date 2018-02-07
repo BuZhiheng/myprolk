@@ -3,7 +3,7 @@ package cn.lankao.com.lovelankao.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import cn.lankao.com.lovelankao.LApplication;
+import cn.lankao.com.lovelankao.base.LApplication;
 public class PrefUtil {
 	private static final SharedPreferences settings;
 	static {

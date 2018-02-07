@@ -2,7 +2,6 @@ package cn.lankao.com.lovelankao.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -13,6 +12,7 @@ import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.MsgBoardAdapter;
 import cn.lankao.com.lovelankao.model.Comment;
@@ -21,7 +21,7 @@ import cn.lankao.com.lovelankao.widget.OnRvScrollListener;
 /**
  * Created by buzhiheng on 2017/6/24.
  */
-public class MessageBoardActivity extends AppCompatActivity {
+public class MessageBoardActivity extends BaseActivity {
     @BindView(R.id.rv_msg_board)
     RecyclerView recyclerView;
     @BindView(R.id.srl_msg_board)

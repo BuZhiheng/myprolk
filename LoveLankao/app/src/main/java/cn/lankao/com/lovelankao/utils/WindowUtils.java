@@ -10,7 +10,7 @@ import android.util.Log;
 import android.view.WindowManager;
 import java.text.DecimalFormat;
 import java.util.Random;
-import cn.lankao.com.lovelankao.LApplication;
+import cn.lankao.com.lovelankao.base.LApplication;
 /**
  * Created by buzhiheng on 2016/8/11.
  */

@@ -1,6 +1,6 @@
 package cn.lankao.com.lovelankao.utils;
 import android.widget.Toast;
-import cn.lankao.com.lovelankao.LApplication;
+import cn.lankao.com.lovelankao.base.LApplication;
 /**
  * Created by BuZhiheng on 2016/4/1.
  */

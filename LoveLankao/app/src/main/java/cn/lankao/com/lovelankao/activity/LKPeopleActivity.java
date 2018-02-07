@@ -74,4 +74,10 @@ public class LKPeopleActivity extends AppCompatActivity implements ILKPeopleView
         LatLng ll = new LatLng(user.getUserLat(), user.getUserLng());
         map.addOverlay(option.position(ll));
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
 }

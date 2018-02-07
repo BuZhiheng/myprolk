@@ -1,6 +1,5 @@
 package cn.lankao.com.lovelankao.activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -8,6 +7,7 @@ import android.widget.TextView;
 import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.WzCityAdapter;
 import cn.lankao.com.lovelankao.ipresenter.IWzCityPresenter;
@@ -18,7 +18,7 @@ import cn.lankao.com.lovelankao.viewcontroller.WzCityPresenter;
 /**
  * Created by buzhiheng on 2017/4/22.
  */
-public class WZCityActivity extends AppCompatActivity implements IWzCityView {
+public class WZCityActivity extends BaseActivity implements IWzCityView {
     private IWzCityPresenter presenter;
     @BindView(R.id.rv_wz_city)
     RecyclerView rvCity;

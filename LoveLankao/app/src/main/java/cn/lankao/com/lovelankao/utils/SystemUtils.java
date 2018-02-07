@@ -4,7 +4,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import java.util.List;
-import cn.lankao.com.lovelankao.LApplication;
+import cn.lankao.com.lovelankao.base.LApplication;
 /**
  * Created by buzhiheng on 2016/10/28.
  */

@@ -1,6 +1,5 @@
 package cn.lankao.com.lovelankao.activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -11,13 +10,14 @@ import butterknife.ButterKnife;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
+import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.adapter.BusLineAdapter;
 import cn.lankao.com.lovelankao.model.BusLine;
 /**
  * Created by buzhiheng on 2017/5/2.
  */
-public class BusLineActivity extends AppCompatActivity {
+public class BusLineActivity extends BaseActivity {
     @BindView(R.id.rv_bus_line)
     RecyclerView rvLine;
     private BusLineAdapter adapter;

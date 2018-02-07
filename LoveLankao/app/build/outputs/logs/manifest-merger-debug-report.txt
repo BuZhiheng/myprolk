@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
-INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
-INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
-INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
+INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
+INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
+INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\54130a931226ae7b337b89b2ae4cdd41\AndroidManifest.xml:17:1-31:12
 MERGED from [com.bigkoo:convenientbanner:2.0.5] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\convenientbanner-2.0.5.aar\bc25cbde4166e2ac7426d87c4985b0ed\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6639f9130097ded37ff5e85dddee616c\AndroidManifest.xml:17:1-31:12
@@ -14,6 +14,8 @@ MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\HOREN\.gradle\caches\tr
 MERGED from [com.oguzdev:CircularFloatingActionMenu:1.0.2] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\CircularFloatingActionMenu-1.0.2.aar\0ef3bdb2ac9c36bfd5aae48082e028f3\AndroidManifest.xml:2:1-11:12
 MERGED from [me.iwf.photopicker:PhotoPicker:0.8.4] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\PhotoPicker-0.8.4.aar\ee883eccba152fe2b20fbb59bfe148b7\AndroidManifest.xml:2:1-12:12
 MERGED from [top.zibin:Luban:1.1.3] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\Luban-1.1.3.aar\9c1d6714ef06b620c2554aaf07011610\AndroidManifest.xml:2:1-11:12
+MERGED from [me.yokeyword:fragmentation:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-1.2.6.aar\5e939844516b6bb47db50f3181b8580a\AndroidManifest.xml:2:1-11:12
+MERGED from [me.yokeyword:fragmentation-swipeback:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-swipeback-1.2.6.aar\9a37e2a05b0a85b5c23b2af30621f49c\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\a9c64a9577225114340f526892d852e9\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\daec7ca709cba95b764226d272775d15\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:transition:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c658c59f878c04447951d1d3371a71f2\AndroidManifest.xml:17:1-28:12
@@ -25,21 +27,22 @@ MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\HOREN
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\805b8936de7bc9ce45e452bef99e1809\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\4de53fccc9deb23b54a1680fb5b5b9ea\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91ea05422b6682dfe4f1f0f0ce4bfe5b\AndroidManifest.xml:17:1-31:12
+MERGED from [me.yokeyword:fragmentation-core:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-core-1.2.6.aar\c11865c9b1d8ab9415cf4fb795360e2c\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a9c9d650b73e92f95600b9df0aaa5ddc\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
-INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
-INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
+INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
+INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
+INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
 	package
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
 		INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-116:12
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:1-117:12
 		INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:2:11-69
@@ -140,7 +143,7 @@ ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:27:22-70
 application
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:28:5-115:19
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:28:5-116:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\54130a931226ae7b337b89b2ae4cdd41\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\54130a931226ae7b337b89b2ae4cdd41\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\6639f9130097ded37ff5e85dddee616c\AndroidManifest.xml:25:5-29:19
@@ -149,6 +152,10 @@ MERGED from [com.bm.photoview:library:1.4.1] C:\Users\HOREN\.gradle\caches\trans
 MERGED from [com.bm.photoview:library:1.4.1] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\library-1.4.1.aar\9b43ef4c7358d74f4722125f2fc2e072\AndroidManifest.xml:11:5-12:19
 MERGED from [cn.bmob.android:bmob-sdk:3.5.9] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.5.9.aar\5c073a4341f09be8cf0c451e2985116a\AndroidManifest.xml:11:5-14:19
 MERGED from [cn.bmob.android:bmob-sdk:3.5.9] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\bmob-sdk-3.5.9.aar\5c073a4341f09be8cf0c451e2985116a\AndroidManifest.xml:11:5-14:19
+MERGED from [me.yokeyword:fragmentation:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-1.2.6.aar\5e939844516b6bb47db50f3181b8580a\AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentation:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-1.2.6.aar\5e939844516b6bb47db50f3181b8580a\AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentation-swipeback:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-swipeback-1.2.6.aar\9a37e2a05b0a85b5c23b2af30621f49c\AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentation-swipeback:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-swipeback-1.2.6.aar\9a37e2a05b0a85b5c23b2af30621f49c\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\daec7ca709cba95b764226d272775d15\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\daec7ca709cba95b764226d272775d15\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\c658c59f878c04447951d1d3371a71f2\AndroidManifest.xml:22:5-26:19
@@ -169,6 +176,8 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\HOREN\
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\4de53fccc9deb23b54a1680fb5b5b9ea\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91ea05422b6682dfe4f1f0f0ce4bfe5b\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91ea05422b6682dfe4f1f0f0ce4bfe5b\AndroidManifest.xml:25:5-29:19
+MERGED from [me.yokeyword:fragmentation-core:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-core-1.2.6.aar\c11865c9b1d8ab9415cf4fb795360e2c\AndroidManifest.xml:9:5-20
+MERGED from [me.yokeyword:fragmentation-core:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-core-1.2.6.aar\c11865c9b1d8ab9415cf4fb795360e2c\AndroidManifest.xml:9:5-20
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a9c9d650b73e92f95600b9df0aaa5ddc\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a9c9d650b73e92f95600b9df0aaa5ddc\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
@@ -182,7 +191,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\HOREN\.gradle\caches
 	android:theme
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:34:9-40
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:29:9-37
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:29:9-42
 activity#cn.lankao.com.lovelankao.activity.SplashActivity
 ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:name
@@ -308,105 +317,105 @@ ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:83:19-55
 activity#cn.lankao.com.lovelankao.activity.LoginActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:84:9-60
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:84:9-85:15
 	android:name
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:84:19-57
 activity#cn.lankao.com.lovelankao.activity.MainActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:85:9-87:15
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:86:9-88:15
 	android:launchMode
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:86:13-44
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:87:13-44
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:85:19-56
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:86:19-56
 activity#cn.lankao.com.lovelankao.activity.MessageBoardActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:88:9-66
-	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:88:19-64
-activity#cn.lankao.com.lovelankao.activity.MsgBoardSendActivity
 ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:89:9-66
 	android:name
 		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:89:19-64
+activity#cn.lankao.com.lovelankao.activity.MsgBoardSendActivity
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:90:9-66
+	android:name
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:90:19-64
 activity#cn.lankao.com.lovelankao.activity.PicShowActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:90:9-62
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:91:9-62
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:90:19-59
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:91:19-59
 activity#cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:91:9-69
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:92:9-69
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:91:19-66
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:92:19-66
 activity#cn.lankao.com.lovelankao.activity.RegisterActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:92:9-63
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:93:9-63
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:92:19-60
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:93:19-60
 activity#cn.lankao.com.lovelankao.activity.ReadWeixinActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:93:9-65
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:94:9-65
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:93:19-62
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:94:19-62
 activity#cn.lankao.com.lovelankao.activity.RoadActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:94:9-58
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:95:9-58
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:94:19-56
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:95:19-56
 activity#cn.lankao.com.lovelankao.activity.SettingActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:95:9-62
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:96:9-62
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:95:19-59
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:96:19-59
 activity#cn.lankao.com.lovelankao.activity.SquareActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:96:9-61
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:97:9-61
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:96:19-58
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:97:19-58
 activity#cn.lankao.com.lovelankao.activity.SquareMsgActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:97:9-64
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:98:9-64
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:97:19-61
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:98:19-61
 activity#cn.lankao.com.lovelankao.activity.SquareSendActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:98:9-65
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:99:9-65
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:98:19-62
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:99:19-62
 activity#cn.lankao.com.lovelankao.activity.SquarePersonalActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:99:9-68
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:100:9-68
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:99:19-66
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:100:19-66
 activity#cn.lankao.com.lovelankao.activity.ShopLocationActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:100:9-67
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:101:9-67
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:100:19-64
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:101:19-64
 activity#cn.lankao.com.lovelankao.activity.TopActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:101:9-58
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:102:9-58
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:101:19-55
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:102:19-55
 activity#cn.lankao.com.lovelankao.activity.WebViewActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:102:9-62
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:103:9-62
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:102:19-59
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:103:19-59
 activity#cn.lankao.com.lovelankao.activity.WZCityActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:103:9-61
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:104:9-61
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:103:19-58
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:104:19-58
 activity#cn.lankao.com.lovelankao.activity.WZActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:104:9-57
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:105:9-57
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:104:19-54
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:105:19-54
 activity#me.iwf.photopicker.PhotoPickerActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:105:9-108:15
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:106:9-109:15
 	android:exported
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:107:13-36
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:108:13-36
 	android:theme
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:106:13-63
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:107:13-63
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:105:19-72
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:106:19-72
 activity#me.iwf.photopicker.PhotoPagerActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:109:9-112:15
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:110:9-113:15
 	android:exported
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:111:13-36
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:112:13-36
 	android:theme
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:110:13-63
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:111:13-63
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:109:19-71
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:110:19-71
 activity#cn.lankao.com.lovelankao.wxapi.WXEntryActivity
-ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:113:9-114:38
+ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:114:9-115:38
 	android:exported
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:114:13-36
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:115:13-36
 	android:name
-		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:113:19-56
+		ADDED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml:114:19-56
 uses-sdk
 INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml
@@ -431,6 +440,10 @@ MERGED from [me.iwf.photopicker:PhotoPicker:0.8.4] C:\Users\HOREN\.gradle\caches
 MERGED from [me.iwf.photopicker:PhotoPicker:0.8.4] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\PhotoPicker-0.8.4.aar\ee883eccba152fe2b20fbb59bfe148b7\AndroidManifest.xml:8:5-10:41
 MERGED from [top.zibin:Luban:1.1.3] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\Luban-1.1.3.aar\9c1d6714ef06b620c2554aaf07011610\AndroidManifest.xml:7:5-9:41
 MERGED from [top.zibin:Luban:1.1.3] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\Luban-1.1.3.aar\9c1d6714ef06b620c2554aaf07011610\AndroidManifest.xml:7:5-9:41
+MERGED from [me.yokeyword:fragmentation:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-1.2.6.aar\5e939844516b6bb47db50f3181b8580a\AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentation:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-1.2.6.aar\5e939844516b6bb47db50f3181b8580a\AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentation-swipeback:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-swipeback-1.2.6.aar\9a37e2a05b0a85b5c23b2af30621f49c\AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentation-swipeback:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-swipeback-1.2.6.aar\9a37e2a05b0a85b5c23b2af30621f49c\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\a9c64a9577225114340f526892d852e9\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\a9c64a9577225114340f526892d852e9\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\daec7ca709cba95b764226d272775d15\AndroidManifest.xml:20:5-44
@@ -453,6 +466,8 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\HOREN\
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\4de53fccc9deb23b54a1680fb5b5b9ea\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91ea05422b6682dfe4f1f0f0ce4bfe5b\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\91ea05422b6682dfe4f1f0f0ce4bfe5b\AndroidManifest.xml:21:5-23:58
+MERGED from [me.yokeyword:fragmentation-core:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-core-1.2.6.aar\c11865c9b1d8ab9415cf4fb795360e2c\AndroidManifest.xml:5:5-7:41
+MERGED from [me.yokeyword:fragmentation-core:1.2.6] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\fragmentation-core-1.2.6.aar\c11865c9b1d8ab9415cf4fb795360e2c\AndroidManifest.xml:5:5-7:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a9c9d650b73e92f95600b9df0aaa5ddc\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\HOREN\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a9c9d650b73e92f95600b9df0aaa5ddc\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\main\AndroidManifest.xml

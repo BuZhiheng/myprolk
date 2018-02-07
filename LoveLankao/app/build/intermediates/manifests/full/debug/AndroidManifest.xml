@@ -36,7 +36,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
-        android:name="cn.lankao.com.lovelankao.LApplication"
+        android:name="cn.lankao.com.lovelankao.base.LApplication"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
