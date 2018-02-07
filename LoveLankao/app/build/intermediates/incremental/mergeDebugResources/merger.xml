@@ -1965,10 +1965,16 @@
         <item name="colorAccent">@color/color_green</item>
         <item name="android:windowDisablePreview">true</item>
         <item name="textAllCaps">false</item>
-        <item name="android:windowIsTranslucent">true</item>
     </style><style name="PopwinTheme" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/popwin_share_enter</item>//进入时的动画
         <item name="android:windowExitAnimation">@anim/popwin_share_exit</item>//退出时的动画
+    </style><style name="SwipeBackTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_green</item>
+        <item name="colorPrimaryDark">@color/color_green</item>
+        <item name="colorAccent">@color/color_green</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style></file></source><source path="C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\build\generated\res\rs\debug"/><source path="C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\debug\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
             
             <enum name="src_over" value="3"/>

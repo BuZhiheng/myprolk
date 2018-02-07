@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.lankao.com.lovelankao"
-    android:versionCode="17"
-    android:versionName="2.0" >
+    android:versionCode="18"
+    android:versionName="2.1.0" >
 
     <uses-sdk
         android:minSdkVersion="18"
@@ -83,41 +83,97 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.AdvertMsgActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.AdvertDetailActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.AllBusinessActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.BusActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.BusLineActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.ChatRoomActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.CookActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.CommentActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.JockActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.LKBikeActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.LKNewsActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.LKNewsMsgActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.LKPeopleActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.LBSActivity" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.AdvertMsgActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.AdvertDetailActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.AllBusinessActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.BusActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.BusLineActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.ChatRoomActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.CookActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.CommentActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.JockActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.LKBikeActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.LKNewsActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.LKNewsMsgActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.LKPeopleActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.LBSActivity"
+            android:theme="@style/SwipeBackTheme" />
         <activity android:name="cn.lankao.com.lovelankao.activity.LoginActivity" />
         <activity
             android:name="cn.lankao.com.lovelankao.activity.MainActivity"
             android:launchMode="singleTask" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.MessageBoardActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.MsgBoardSendActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.PicShowActivity" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.MessageBoardActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.MsgBoardSendActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.PicShowActivity"
+            android:theme="@style/SwipeBackTheme" />
         <activity android:name="cn.lankao.com.lovelankao.activity.PhotoViewPagerActivity" />
         <activity android:name="cn.lankao.com.lovelankao.activity.RegisterActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.ReadWeixinActivity" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.ReadWeixinActivity"
+            android:theme="@style/SwipeBackTheme" />
         <activity android:name="cn.lankao.com.lovelankao.activity.RoadActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.SettingActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.SquareActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.SquareMsgActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.SquareSendActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.SquarePersonalActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.ShopLocationActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.TopActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.WebViewActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.WZCityActivity" />
-        <activity android:name="cn.lankao.com.lovelankao.activity.WZActivity" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.SettingActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.SquareActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.SquareMsgActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.SquareSendActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.SquarePersonalActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.ShopLocationActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.TopActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.WebViewActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.WZCityActivity"
+            android:theme="@style/SwipeBackTheme" />
+        <activity
+            android:name="cn.lankao.com.lovelankao.activity.WZActivity"
+            android:theme="@style/SwipeBackTheme" />
         <activity
             android:name="me.iwf.photopicker.PhotoPickerActivity"
             android:exported="true"

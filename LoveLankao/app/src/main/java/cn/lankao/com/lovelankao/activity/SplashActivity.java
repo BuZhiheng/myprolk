@@ -26,6 +26,8 @@ import cn.lankao.com.lovelankao.utils.WindowUtils;
  * Created by BuZhiheng on 2016/4/6.
  */
 public class SplashActivity extends AppCompatActivity{
+    private MyUser user = new MyUser();
+    private String userId = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
     Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -53,19 +55,13 @@ public class SplashActivity extends AppCompatActivity{
         String permission = Manifest.permission.ACCESS_FINE_LOCATION;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (PermissionUtil.checkNoPermission(this, permission)) {
-                String[] reqPer = new String[]{Manifest.permission.READ_PHONE_STATE,
-                        Manifest.permission.ACCESS_COARSE_LOCATION,
-                        Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.READ_EXTERNAL_STORAGE,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE
-                };
+                String[] reqPer = new String[]{ permission };
                 requestPermissions(reqPer, 100);
                 if (PermissionUtil.checkDismissPermissionWindow(this,
                         permission)) {
                     ToastUtil.show("定位权限获取失败,请去设置中打开");
-                    return;
                 }
-                ToastUtil.show("定位权限获取失败,请去设置中打开");
+                updataUser();
             } else {
                 //App已经获取定位权限
                 initLocation();
@@ -85,18 +81,20 @@ public class SplashActivity extends AppCompatActivity{
                 PrefUtil.putString(CommonCode.SP_LOCATION_ADDRESS, bdLocation.getAddrStr());
                 PrefUtil.putFloat(CommonCode.SP_LOCATION_LAT, (float) bdLocation.getLatitude());
                 PrefUtil.putFloat(CommonCode.SP_LOCATION_LNG, (float) bdLocation.getLongitude());
-                String userId = PrefUtil.getString(CommonCode.SP_USER_USERID,"");
-                if (!TextUtil.isNull(userId)){
-                    MyUser user = new MyUser();
-                    user.setUserLat((float) bdLocation.getLatitude());
-                    user.setUserLng((float) bdLocation.getLongitude());
-                    user.setAndroidVersion(WindowUtils.getAppVersionName());
-                    user.update(userId, new UpdateListener() {
-                        @Override
-                        public void done(BmobException e) {
-                        }
-                    });
-                }
+                user.setUserLat((float) bdLocation.getLatitude());
+                user.setUserLng((float) bdLocation.getLongitude());
+                updataUser();
+            }
+        });
+    }
+    private void updataUser(){
+        if (TextUtil.isNull(userId)){
+            return;
+        }
+        user.setAndroidVersion(WindowUtils.getAppVersionName());
+        user.update(userId, new UpdateListener() {
+            @Override
+            public void done(BmobException e) {
             }
         });
     }

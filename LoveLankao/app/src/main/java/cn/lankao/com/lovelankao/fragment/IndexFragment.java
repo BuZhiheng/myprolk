@@ -180,4 +180,19 @@ public class IndexFragment extends Fragment implements IIndexView, View.OnClickL
             }
         });
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (banner.isCanLoop()){
+            banner.startTurning(5000);
+        }
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (banner.isTurning()){
+            banner.stopTurning();
+        }
+    }
 }
