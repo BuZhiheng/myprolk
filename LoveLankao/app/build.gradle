@@ -32,6 +32,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    signingConfigs {
+        debug {
+            storeFile file("$rootDir/lk.jks")
+            storePassword "BbB0603"
+            keyAlias "lk"
+            keyPassword "BbB0603"
+        }
+        release {
+            storeFile file("$rootDir/lk.jks")
+            storePassword "BbB0603"
+            keyAlias "lk"
+            keyPassword "BbB0603"
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
