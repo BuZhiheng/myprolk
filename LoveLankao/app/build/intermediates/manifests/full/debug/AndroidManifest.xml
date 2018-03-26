@@ -167,6 +167,7 @@
             android:theme="@style/SwipeBackTheme" />
         <activity
             android:name="cn.lankao.com.lovelankao.activity.WebViewActivity"
+            android:hardwareAccelerated="true"
             android:theme="@style/SwipeBackTheme" />
         <activity
             android:name="cn.lankao.com.lovelankao.activity.WZCityActivity"

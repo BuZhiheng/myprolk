@@ -127,6 +127,7 @@
         <activity android:name=".activity.TopActivity"
             android:theme="@style/SwipeBackTheme"/>
         <activity android:name=".activity.WebViewActivity"
+            android:hardwareAccelerated="true"
             android:theme="@style/SwipeBackTheme"/>
         <activity android:name=".activity.WZCityActivity"
             android:theme="@style/SwipeBackTheme"/>

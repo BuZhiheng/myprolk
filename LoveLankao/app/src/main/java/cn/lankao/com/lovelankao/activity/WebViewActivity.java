@@ -1,11 +1,13 @@
 package cn.lankao.com.lovelankao.activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
@@ -43,6 +45,10 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
             title.setText(intent.getStringExtra(CommonCode.INTENT_ADVERT_TITLE));
             webUrl = intent.getStringExtra(CommonCode.INTENT_SETTING_URL);
             shareImg = intent.getStringExtra(CommonCode.INTENT_SHARED_IMG);
+            webView.getSettings().setPluginState(WebSettings.PluginState.ON);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+            }
             webView.getSettings().setJavaScriptEnabled(true);
             webView.setWebChromeClient(new WebChromeClient(){
                 @Override
