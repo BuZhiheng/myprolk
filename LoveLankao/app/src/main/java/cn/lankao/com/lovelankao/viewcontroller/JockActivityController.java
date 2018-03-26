@@ -119,7 +119,7 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
     public void onItemClick(String jock){
         shareString = jock;
         //设置layout在PopupWindow中显示的位置
-        popWin.showAtLocation(context.findViewById(R.id.srl_jock_activity), Gravity.BOTTOM , 0, 0);
+        popWin.show();
     }
     @Override
     public void onClick(View v) {
@@ -143,6 +143,10 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
                 shareWxText(ShareManager.SHARE_TYPE_SQUARE);
                 popWin.dismiss();
                 break;
+            case R.id.tv_popwinshare_cancel:
+                popWin.dismiss();
+                break;
+                default:break;
         }
     }
 }

@@ -3,6 +3,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.widget.Toast;
+
+import cn.lankao.com.lovelankao.utils.StatusBarUtil;
 import cn.lankao.com.lovelankao.viewcontroller.MainActivityController;
 import cn.lankao.com.lovelankao.R;
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.color_green_deep), 0);
         new MainActivityController(this);
     }
 

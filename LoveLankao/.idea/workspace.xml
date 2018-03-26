@@ -11,10 +11,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26781744-36c4-4c69-a2cb-d326daba3a52" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/utils/StatusBarUtil.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/widget/SharePopupWindow$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/compat/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/compat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/compat/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/compat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/compat/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/compat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreui/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreui/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreui/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreui/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreui/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreui/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreutils/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreutils/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreutils/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreutils/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreutils/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/coreutils/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/design/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/design/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/fragment/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/fragment/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/fragment/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/fragment/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/fragment/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/fragment/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/mediacompat/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/mediacompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/mediacompat/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/mediacompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/transition/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/transition/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/transition/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/transition/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/transition/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/transition/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v4/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v4/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v4/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v4/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v4/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v4/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/bmob/aar/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/bmob/aar/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$dimen.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$drawable.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$integer.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$layout.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$string.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$styleable.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusLineActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusLineActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusLineActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/BusLineActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/CommentActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/CommentActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/CommentActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/CommentActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKBikeActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKBikeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKBikeActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKBikeActivity_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKPeopleActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKPeopleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WebViewActivity$1.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WebViewActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WebViewActivity$2.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WebViewActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKPeopleActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/LKPeopleActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MainActivity$1.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MainActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MessageBoardActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MessageBoardActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MessageBoardActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MessageBoardActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MsgBoardSendActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MsgBoardSendActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MsgBoardSendActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/MsgBoardSendActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/PhotoViewPagerActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/PhotoViewPagerActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/RoadActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/RoadActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/RoadActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/RoadActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SplashActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SplashActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareActivity$CommentHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareActivity$CommentHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareMsgActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareMsgActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareMsgActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquareMsgActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquarePersonalActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquarePersonalActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquarePersonalActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/SquarePersonalActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZActivity_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZCityActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZCityActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZCityActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WZCityActivity_ViewBinding.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WebViewActivity.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/activity/WebViewActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/BannerIndexHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/BannerIndexHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/BusLineAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/BusLineAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/ChatRoomAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/ChatRoomAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/CookAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/CookAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/IndexServiceAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/IndexServiceAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/JockAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/JockAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/LKNewsAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/LKNewsAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/MsgBoardAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/MsgBoardAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/MyAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/MyAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/MySquareMsgAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/MySquareMsgAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/ReadAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/ReadAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/SquareAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/SquareAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/SquareAdapter.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/SquareAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/TempAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/TempAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/TopAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/TopAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/WzCityAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/WzCityAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/WzMsgAdapter$MyViewHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/adapter/WzMsgAdapter$MyViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/IndexFragment.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/IndexFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/IndexFragment_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/IndexFragment_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MainFragment.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MainFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MainFragment_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MainFragment_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MineFragment.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MineFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MineFragment_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/MineFragment_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/TalkFragment.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/TalkFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/TalkFragment_ViewBinding.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/TalkFragment_ViewBinding.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/TempFragment.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/fragment/TempFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AdvertDetailController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AdvertDetailController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AdvertMsgController$CommentHolder.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AdvertMsgController$CommentHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AdvertMsgController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AdvertMsgController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AllBusinessActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/AllBusinessActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/ChatRoomController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/ChatRoomController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/CookActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/CookActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/JockActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/JockActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LBSActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LBSActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LKNewsActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LKNewsActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LKNewsMsgActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LKNewsMsgActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LoginController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/MainActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/MainActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/PicShowActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/PicShowActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/ReadActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/ReadActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/RegisterController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/RegisterController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/SettingActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/SettingActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/ShopLocController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/ShopLocController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/SquareSendActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/SquareSendActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/TopActivityController.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/viewcontroller/TopActivityController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/widget/SharePopupWindow.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/cn/lankao/com/lovelankao/widget/SharePopupWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/com/bigkoo/convenientbanner/R$color.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/com/bigkoo/convenientbanner/R$color.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/com/bigkoo/convenientbanner/R$id.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/com/bigkoo/convenientbanner/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/com/bigkoo/convenientbanner/R$style.class" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/classes/debug/com/bigkoo/convenientbanner/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/packageDebug/debug/zip-cache/TEvLmjPoqOtVX3nS3iY+o3jINts=" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/packageDebug/debug/zip-cache/TEvLmjPoqOtVX3nS3iY+o3jINts=" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/res/debug/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/LoveLankao/app/build/outputs/apk/debug/app-debug.apk" />
@@ -57,12 +182,23 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/generated/source/r/debug/com/bigkoo/convenientbanner/R.java" afterPath="$PROJECT_DIR$/LoveLankao/app/build/generated/source/r/debug/com/bigkoo/convenientbanner/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/generated/source/r/debug/com/bm/library/R.java" afterPath="$PROJECT_DIR$/LoveLankao/app/build/generated/source/r/debug/com/bm/library/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/generated/source/r/debug/com/oguzdev/circularfloatingactionmenu/library/R.java" afterPath="$PROJECT_DIR$/LoveLankao/app/build/generated/source/r/debug/com/oguzdev/circularfloatingactionmenu/library/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/blame/res/debug/single/layout.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/LoveLankao/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/LoveLankao/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/viewcontroller/JockActivityController.java" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/viewcontroller/JockActivityController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/widget/SharePopupWindow.java" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/widget/SharePopupWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/res/layout/dialog_popwin_share.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/res/layout/dialog_popwin_share.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/res/values/attrs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoveLankao/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/LoveLankao/app/src/main/res/values/styles.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,66 +222,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LKPeopleActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/LKPeopleActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/LApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="129" column="45" lean-forward="false" selection-start-line="129" selection-start-column="45" selection-end-line="129" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebViewActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="e#2085#2295#0" expanded="true" />
-                <element signature="e#2294#2295#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1914,12 +1991,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/TimeUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/PermissionUtil.java" />
-        <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/viewcontroller/SquareSendActivityController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/BitmapUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/GlideCircleTransform.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_square_item_flowimg.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_square_msg_header.xml" />
@@ -1952,9 +2023,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/WZCityActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/AdvertDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/ChatRoomActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/fragment/IndexFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/LBSActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/ShopLocationActivity.java" />
@@ -1962,9 +2031,17 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/LKPeopleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/TextUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/widget/SharePopupWindow.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_popwin_share.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/viewcontroller/JockActivityController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/StatusBarUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
       </list>
     </option>
   </component>
@@ -2097,6 +2174,36 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoveLankao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LoveLankao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2146,7 +2253,7 @@
     <property name="android.profiler.active" value="true" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="SearchEverywhereHistoryKey" value="Web&#9;FILE&#9;file://C:/Users/HOREN/Documents/GitHub/myprolk/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/HOREN/Documents/GitHub/myprolk/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java&#10;main&#9;FILE&#9;file://C:/Users/HOREN/Documents/GitHub/myprolk/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java&#10;Web&#9;FILE&#9;file://C:/Users/HOREN/Documents/GitHub/myprolk/LoveLankao/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -2154,9 +2261,9 @@
       <recent name="cn.lankao.com.lovelankao.activity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.lankao.com.lovelankao.utils" />
       <recent name="cn.lankao.com.lovelankao.adapter" />
       <recent name="cn.lankao.com.lovelankao.widget" />
-      <recent name="cn.lankao.com.lovelankao.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HOREN\Documents\GitHub\myprolk\LoveLankao" />
@@ -2249,7 +2356,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522052796441" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522055944343" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2297,7 +2404,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522052796441" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522055944343" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2459,7 +2566,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522052796443" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1522055944343" />
       </method>
     </configuration>
     <list size="1">
@@ -2511,7 +2618,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2521,6 +2627,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2529,7 +2636,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2424581" sideWeight="0.36737967" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20770878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20770878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -2542,7 +2649,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2554,55 +2660,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/MsgBoardSendActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="25" column="54" lean-forward="false" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/PhotoViewPagerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/PicShowActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/ReadWeixinActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/RoadActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/SquareActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -2715,13 +2772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/AdvertMsgActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -2814,13 +2864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2851,51 +2894,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/LKPeopleActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/LApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="android-dummy://C:/Users/HOREN/Documents/GitHub/myprolk/LoveLankao//Theme Editor">
       <provider selected="true" editor-type-id="themeEditor">
         <state theme-name="AppTheme" module-name="app" proportion="0.67" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2917,13 +2918,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/WindowUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/viewcontroller/JockActivityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="48" column="54" lean-forward="true" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_popwin_share.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="101" column="23" lean-forward="false" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/widget/SharePopupWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/WebViewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="155">
+          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="e#2085#2295#0" expanded="true" />
             <element signature="e#2294#2295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/LApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/android/sdk/sources/android-26/android/app/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="288" column="23" lean-forward="false" selection-start-line="288" selection-start-column="23" selection-end-line="288" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/utils/StatusBarUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/base/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="13" column="91" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/lankao/com/lovelankao/activity/LKPeopleActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -18,4 +18,14 @@
         <item name="android:windowEnterAnimation">@anim/popwin_share_enter</item>//进入时的动画
         <item name="android:windowExitAnimation">@anim/popwin_share_exit</item>//退出时的动画
     </style>
+    <style name="NewActivityDialog" parent="Theme.AppCompat.Dialog">
+        <!-- 背景颜色及透明程度  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否没有标题  设置之后虚拟键盘会和布局重合-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!-- 是否浮现在activity之上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否模糊  -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
 </resources>

@@ -135,7 +135,7 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
 //                share.setDesc(info.share_describe);
 //                share.setUrl(info.share_url);
 //                share.setImgUrl(CommonCode.APP_ICON);
-                popWin.showAtLocation(findViewById(R.id.ll_webview_content), Gravity.BOTTOM , 0, 0);
+                popWin.show();
                 break;
             case R.id.ll_popwinshare_qq:
                 shareQQ(manager.SHARE_TYPE_CHAT);
