@@ -8,19 +8,17 @@ android {
     }
     defaultConfig {
         applicationId "cn.lankao.com.lovelankao"
-
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 18
-        versionName "2.1.0"
+        versionCode 19
+        versionName "2.2.0"
         multiDexEnabled true
-    }
-    dexOptions { // 低配置手机运行有问题
-        jumboMode true
-        preDexLibraries false
-//        incremental true//false
-        javaMaxHeapSize "4g"
-
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
     }
     buildTypes {
         release {
@@ -50,6 +48,20 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    dexOptions { // 低配置手机运行有问题
+        jumboMode true
+        preDexLibraries false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -57,6 +69,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
+    implementation files('libs/BaiduLBS_Android.jar')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support:design:26.+'
     compile 'com.bm.photoview:library:1.4.1'

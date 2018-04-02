@@ -1,4 +1,4 @@
-#Mon Mar 26 17:17:51 CST 2018
+#Fri Mar 30 14:18:57 CST 2018
 path.3=classes.dex
 path.2=classes.dex
 path.1=classes.dex
@@ -7,10 +7,10 @@ path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.4=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-base.3=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-base.2=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.1=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.0=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.3=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+base.2=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+base.1=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+base.0=C\:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.4=classes.dex
