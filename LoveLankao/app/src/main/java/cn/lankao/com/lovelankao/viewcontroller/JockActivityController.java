@@ -80,7 +80,6 @@ public class JockActivityController implements SwipeRefreshLayout.OnRefreshListe
         context.findViewById(R.id.iv_jock_back).setOnClickListener(this);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_jock_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         rv = (RecyclerView) context.findViewById(R.id.rv_activity_jock);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(adapter);

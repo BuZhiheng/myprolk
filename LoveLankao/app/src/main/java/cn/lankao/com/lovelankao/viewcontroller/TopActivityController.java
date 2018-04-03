@@ -89,7 +89,6 @@ public class TopActivityController implements SwipeRefreshLayout.OnRefreshListen
         adapter = new TopAdapter(context);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_top_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         rv = (RecyclerView) context.findViewById(R.id.rv_top_activity);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(adapter);

@@ -46,7 +46,6 @@ public class AdvertDetailController implements View.OnClickListener, SwipeRefres
         adapter = new MyAdapter(context);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_advertdetail_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         recyclerView = (RecyclerView) context.findViewById(R.id.rv_advert_act);
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.setAdapter(adapter);

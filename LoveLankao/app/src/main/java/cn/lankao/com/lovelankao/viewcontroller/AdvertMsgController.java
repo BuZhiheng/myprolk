@@ -100,7 +100,6 @@ public class AdvertMsgController implements View.OnClickListener, SwipeRefreshLa
         context.findViewById(R.id.iv_advertmsg_back).setOnClickListener(this);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_advertmsg_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         banner = (ConvenientBanner) context.findViewById(R.id.banner_advertdetail_photo);
         ivCall = (ImageView) context.findViewById(R.id.iv_advertdetail_call);
         tvIndex = (TextView) context.findViewById(R.id.tv_advertdetail_imgindex);

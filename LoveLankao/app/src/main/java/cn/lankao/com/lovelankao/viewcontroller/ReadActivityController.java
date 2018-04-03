@@ -85,7 +85,6 @@ public class ReadActivityController implements SwipeRefreshLayout.OnRefreshListe
         adapter = new ReadAdapter(context);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_read_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         rv = (RecyclerView) context.findViewById(R.id.rv_read_activity);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(adapter);

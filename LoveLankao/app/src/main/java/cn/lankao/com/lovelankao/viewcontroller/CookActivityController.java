@@ -117,7 +117,6 @@ public class CookActivityController implements SwipeRefreshLayout.OnRefreshListe
         adapter = new CookAdapter(context,toUrl);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_cook_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         rv = (RecyclerView) context.findViewById(R.id.rv_cook_activity);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(adapter);

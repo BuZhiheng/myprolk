@@ -76,7 +76,6 @@ public class LKNewsActivityController implements SwipeRefreshLayout.OnRefreshLis
         adapter = new LKNewsAdapter(context);
         refresh = (SwipeRefreshLayout)context.findViewById(R.id.srl_lknews_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         rv = (RecyclerView) context.findViewById(R.id.rv_lknews_activity);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(adapter);

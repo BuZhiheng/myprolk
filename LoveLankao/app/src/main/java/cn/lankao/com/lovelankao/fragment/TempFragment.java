@@ -44,7 +44,6 @@ public class TempFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         adapter = new TempAdapter(getActivity());
         refresh = (SwipeRefreshLayout)view.findViewById(R.id.srl_jock_activity);
         refresh.setOnRefreshListener(this);
-        refresh.setRefreshing(true);
         rv = (RecyclerView) view.findViewById(R.id.rv_activity_jock);
         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
         rv.setAdapter(adapter);
