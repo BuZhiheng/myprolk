@@ -84,6 +84,12 @@ public class TalkFragment extends Fragment implements ITalkView, View.OnClickLis
             tvMsg.setVisibility(View.VISIBLE);
         }
     }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){

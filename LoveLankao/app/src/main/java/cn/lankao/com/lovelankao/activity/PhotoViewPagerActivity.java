@@ -3,14 +3,13 @@ import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import com.bm.library.PhotoView;
 import java.util.List;
-
-import cn.lankao.com.lovelankao.base.BaseActivity;
 import cn.lankao.com.lovelankao.R;
 import cn.lankao.com.lovelankao.model.CommonCode;
 import cn.lankao.com.lovelankao.utils.BitmapUtil;
@@ -18,7 +17,7 @@ import cn.lankao.com.lovelankao.utils.TextUtil;
 /**
  * Created by buzhiheng on 2016/12/16.
  */
-public class PhotoViewPagerActivity extends BaseActivity {
+public class PhotoViewPagerActivity extends AppCompatActivity {
     private ViewPager mPager;
     private List<String> list;
     @Override

@@ -11,6 +11,6 @@ public class BaseActivity extends SwipeBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StatusBarUtil.setColor(this, getResources().getColor(R.color.color_green_deep), 0);
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.color_green), 0);
     }
 }

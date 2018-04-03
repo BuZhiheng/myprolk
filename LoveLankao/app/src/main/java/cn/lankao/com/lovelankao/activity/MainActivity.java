@@ -5,6 +5,7 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 
 import cn.lankao.com.lovelankao.utils.StatusBarUtil;
+import cn.lankao.com.lovelankao.utils.ToastUtil;
 import cn.lankao.com.lovelankao.viewcontroller.MainActivityController;
 import cn.lankao.com.lovelankao.R;
 public class MainActivity extends AppCompatActivity {
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        StatusBarUtil.setColor(this, getResources().getColor(R.color.color_green_deep), 0);
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.color_green), 0);
         new MainActivityController(this);
     }
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
             canExit = true;
-            Toast.makeText(this, "再次点击退出", Toast.LENGTH_SHORT).show();
+            ToastUtil.show("再次点击退出");
             new Thread() {
                 public void run() {
                     try {

@@ -312,6 +312,10 @@
         "source": "C:\\Users\\HOREN\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\54130a931226ae7b337b89b2ae4cdd41\\res\\layout\\design_layout_snackbar.xml"
     },
     {
+        "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\toast_tv.xml",
+        "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\toast_tv.xml"
+    },
+    {
         "merged": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_square_pop.xml",
         "source": "C:\\Users\\HOREN\\Documents\\GitHub\\myprolk\\LoveLankao\\app\\src\\main\\res\\layout\\activity_square_pop.xml"
     },
