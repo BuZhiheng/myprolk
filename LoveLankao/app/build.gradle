@@ -10,8 +10,8 @@ android {
         applicationId "cn.lankao.com.lovelankao"
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 19
-        versionName "2.2.0"
+        versionCode 20
+        versionName "2.3.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
